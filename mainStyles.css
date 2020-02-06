@@ -115,7 +115,7 @@ position: relative;
   20% { transform: skewX(0deg); }
   100% { transform: skewX(0deg); }  
 }
-h1 p{
+h1 p, .headline p{
 	font-family: serif;
 	display: inline;
 }
@@ -126,6 +126,9 @@ h1 p{
   font-family:'Rezland Logotype Font';
   font-weight:normal;
   font-size:42px
+}
+.headline p{
+	
 }
 
 svg {
