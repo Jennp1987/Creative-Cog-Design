@@ -94,6 +94,6 @@ var element = document.querySelector('.headline');
  */
 element.backgroundClipPolyfill({
   'patternID' : 'mypattern',
-  'patternURL' : 'http://timpietrusky.com/cdn/army.png',
+  'patternURL' : 'https://jennp1987.github.io/Creative-Cog-Design/images/creativeCogGradient.png',
   'class' : 'headline'
 });
