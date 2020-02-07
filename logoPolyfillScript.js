@@ -84,7 +84,8 @@ Element.prototype.backgroundClipPolyfill = function () {
         'class' : a['class'],
         'width' : this.width,
         'height' : this.height,
-        'text' : el.textContent
+        'text' : el.textContent,
+		'tspan' : el.textContent
       });
       
       el.parentNode.replaceChild(svg, el);
