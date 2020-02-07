@@ -11,7 +11,7 @@ Element.prototype.backgroundClipPolyfill = function () {
   }
   //for in loop. Loops through the properties of an object.
   function addAttributes(el, attributes) {
-//looping throuh key/value apairs in objs
+//looping throuh key/value pairs in objs
     for (var key in attributes) {
       el.setAttribute(key, attributes[key]);
     }
@@ -58,7 +58,7 @@ Element.prototype.backgroundClipPolyfill = function () {
     
     // Set text
     text.textContent = a.text;
-	tspan.textContent = a.tspan;
+//	tspan.textContent = a.tspan;
       
     // Add elements to pattern
     pattern.appendChild(image);

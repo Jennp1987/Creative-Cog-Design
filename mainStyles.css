@@ -133,7 +133,7 @@ svg {
   height: 2em;
   width: 50%;
 }
-tspan .headline{
+tspan {
 	font-family: serif;
 }
 
