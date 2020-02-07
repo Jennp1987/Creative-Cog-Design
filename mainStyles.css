@@ -124,7 +124,7 @@ h1, h1 .headline {
   font-weight: normal;
   font-size: 42px;
 }
-h1 .headline p{
+h1 p {
   font-family: serif;
   display: inline;
 }
