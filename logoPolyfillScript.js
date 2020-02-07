@@ -7,7 +7,7 @@ Element.prototype.backgroundClipPolyfill = function () {
       el = this;
 
   function hasBackgroundClip() {
-    return b.style.webkitBackgroundClip !== undefined;
+    return b.style.webkitBackgroundClip != undefined;
   }
   //for in loop. Loops through the properties of an object.
   function addAttributes(el, attributes) {
