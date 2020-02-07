@@ -119,8 +119,8 @@ position: relative;
 /*End Animations*/
 
 /*For IE*/
-.headline {
-  font-family:'Rezland Logotype Font', serif;
+h1 {
+  font-family:'Rezland Logotype Font';
   font-weight: normal;
   font-size: 42px;
 }
@@ -133,7 +133,7 @@ svg {
   height: 2em;
   width: 50%;
 }
-tspan{
+tspan .headline{
 	font-family: serif;
 }
 
