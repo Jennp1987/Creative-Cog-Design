@@ -121,11 +121,11 @@ position: relative;
 /*For IE*/
 .headline {
   font-family:'Rezland Logotype Font, serif;
-  font-weight:normal;
+  font-weight: normal;
   font-size:42px
 }
 h1 p, .headline p{
-	font-family: serif;
+/*	font-family: serif;*/
 	display: inline;
 }
 
