@@ -119,8 +119,8 @@ position: relative;
 /*End Animations*/
 
 /*For IE*/
-h1, h1 .headline {
-  font-family:'Rezland Logotype Font';
+.headline {
+  font-family:'Rezland Logotype Font', serif;
   font-weight: normal;
   font-size: 42px;
 }
