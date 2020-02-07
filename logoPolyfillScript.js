@@ -9,8 +9,9 @@ Element.prototype.backgroundClipPolyfill = function () {
   function hasBackgroundClip() {
     return b.style.webkitBackgroundClip != undefined;
   }
-  
+  //for in loop. Loops through the properties of an object.
   function addAttributes(el, attributes) {
+//looping throuh key/value apairs in objs
     for (var key in attributes) {
       el.setAttribute(key, attributes[key]);
     }
@@ -25,7 +26,8 @@ Element.prototype.backgroundClipPolyfill = function () {
         svg = createSvgElement('svg'),
         pattern = createSvgElement('pattern'),
         image = createSvgElement('image'),
-        text = createSvgElement('text');
+        text = createSvgElement('text'),
+		tspan = createSvgElement('tspan');
     
     // Add attributes to elements
     addAttributes(pattern, {
@@ -47,6 +49,12 @@ Element.prototype.backgroundClipPolyfill = function () {
       'class' : a['class'],
       'style' : 'fill:url(#' + a.id + ');'
     });
+	//tspan
+	addAttributes(tspan, {
+	  'x' : 0,
+      'y' : 80,
+	  'class' : a['class']  
+	});
     
     // Set text
     text.textContent = a.text;
@@ -57,6 +65,7 @@ Element.prototype.backgroundClipPolyfill = function () {
     // Add elements to SVG
     svg.appendChild(pattern);
     svg.appendChild(text);
+	svg.appendChild(tspan)
     
     return svg;
   }
