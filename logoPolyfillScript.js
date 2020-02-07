@@ -65,7 +65,7 @@ Element.prototype.backgroundClipPolyfill = function () {
     // Add elements to SVG
     svg.appendChild(pattern);
     svg.appendChild(text);
-	svg.appendChild(tspan)
+	svg.appendChild(tspan);
     
     return svg;
   }
