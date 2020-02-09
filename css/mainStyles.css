@@ -17,18 +17,43 @@ body {
 	background: #ffffff;
 }
 header { 
-	position: absolute;
-	top: 30%;
-	left: 30%;
+background: 
+/*
+    linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+*/
+    url('https://jennp1987.github.io/Creative-Cog-Design/images/finalCreativeCogBkgroundFinal.png');
+	background-size: cover;
+	height: 100vh;
+	width: 100%;
+	margin-bottom: 3.5em;
+	
 }
+
+/*
 header img{
 	width: 100%;
 	height: auto;}
-h1 {
-/*	position: relative;*/
-
+*/
+.container{
+	font-family:  brandon-grotesque, sans-serif;
+	position: absolute;
+	width: 50%;
+	height:auto;
+	top: 40%;
+	left: 15%;
+/*	text-align: center;*/
 }
-
+h1 {
+	color: white;
+	font-size: 4rem;
+}
+h2 {
+	font-size: 2.5rem;
+	color: #a4844e;
+}
 /*Begin Animations*/
 /*
 .container{
@@ -82,7 +107,9 @@ header img{
 section{
 	margin: auto 0;
 }
+
 img{
+	max-width: 30%;
 	width: 30%;
 	height: auto;
 	margin: auto;
@@ -90,6 +117,24 @@ img{
 }
 
 
+/*animation*/
+.animatedheader{
+	animation: fadeAndScale.3s cubic-bezier(0, 1.07,.75,1.42);
+	/*point of origin/registration point*/
+	transform-origin: center bottom;
+}
+@keyframes fadeAndScale{
+	from{
+		opacity: 0;
+		transform: scale3d(.75, .75, 1);
+		
+	}
+	to{
+		opacity: 1;
+		transform: scale3d(1, 1, 1);
+		
+	}
+}
 /*
 position: relative;
 	letter-spacing: 6px;
