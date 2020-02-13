@@ -18,12 +18,6 @@ body {
 }
 header { 
 background: 
-/*
-    linear-gradient(
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)
-    ),
-*/
     url('https://jennp1987.github.io/Creative-Cog-Design/images/finalCreativeCogBkgroundFinal.png');
 	background-size: cover;
 	height: 100vh;
@@ -31,79 +25,28 @@ background:
 	margin-bottom: 3.5em;
 	
 }
-
-/*
-header img{
-	width: 100%;
-	height: auto;}
-*/
 .container{
 	font-family:  brandon-grotesque, sans-serif;
 	position: absolute;
-	width: 50%;
+	width: 70%;
 	height:auto;
 	top: 40%;
 	left: 15%;
-/*	text-align: center;*/
 }
 h1 {
 	color: white;
-	font-size: 4rem;
+	font-size: 3em;
+	
 }
 h2 {
-	font-size: 2.5rem;
+	font-size: 1.75em;
 	color: #a4844e;
 }
-/*Begin Animations*/
-/*
-.container{
-font-family: brandon-grotesque, sans-serif;
-text-align: center;
-font-style: normal;
-position: absolute;
-top: 30%;
-left: 10%;
-transform: translate(-15%, -50%);
+h1, h2{
+	margin-top: 0;
+	margin-bottom: 0;
 }
-.container span{
-	display: block;
-}
-.frontEnd{
-	color: #ffffff;
-	font-size: 4em;
-	letter-spacing: .8em;
-	font-weight: 700;
-	background: #3f4756;
-	position: relative;
-	animation: text 3s 1;
-}
-.webDeveloper{
-	color: #a4844e;
-	font-size: 2em;
-}
-header{
-	position: relative;		
-}
-@keyframes text {
-	0%{
-		color: #3f4756;
-		margin-bottom: -45px;
-	}
-	30%{
-		letter-spacing: 25px;
-		margin-bottom: -45px;
-	}
-	85%{
-		letter-spacing: 8px;
-		margin-bottom: -45px;
-	}
-}
-header img{
- 	width: 100%;
-	height: auto;
-}
-*/
-/*End Header Animation*/
+
 section{
 	margin: auto 0;
 }
@@ -115,12 +58,34 @@ img{
 	margin: auto;
 	display: block;
 }
+/*SVG Animation*/
 
+.frontEnd {
+	position: absolute;
+	left: -20%;
+	top: 0%;
+}
+.webDeveloper{
+	position: absolute;
+	top: 100%;
+	right: 55%;
+}
+/*
+.webGraphics {
+	position: absolute;
+	top:100%;
+	
+	
+	
+}
+
+*/
 
 /*animation*/
+/*
 .animatedheader{
 	animation: fadeAndScale.3s cubic-bezier(0, 1.07,.75,1.42);
-	/*point of origin/registration point*/
+	point of origin/registration point
 	transform-origin: center bottom;
 }
 @keyframes fadeAndScale{
@@ -134,67 +99,6 @@ img{
 		transform: scale3d(1, 1, 1);
 		
 	}
-}
-/*
-position: relative;
-	letter-spacing: 6px;
-	color: #336699;
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	-moz-background-clip: text;
-	-moz-text-fill-color: transparent;
-	background-clip: text;
-	background-image: linear-gradient(45deg,
-		#3f4756,
-		#336699,
-		#a4844e,
-	    #6e531f);
-*/
-/*
-	background-image: -ms-linear-gradient(45deg,
-		#3f4756,
-		#336699,
-		#a4844e,
-	    #6e531f);
-*/
-
-
-
-
-
-/*
-@keyframes shake {
-  0% { transform: skewX(-15deg); }
-  5% { transform: skewX(15deg); }
-  10% { transform: skewX(-15deg); }
-  15% { transform: skewX(15deg); }
-  20% { transform: skewX(0deg); }
-  100% { transform: skewX(0deg); }  
-}
-*/
-
-/*End Animations*/
-
-/*For IE*/
-/*
-h1, .headline {
-  font-family:'Rezland Logotype Font';
-  font-weight: normal;
-  font-size: 42px;
-}
-p {
-  font-family: serif;
-  display: inline;
-}
-
-svg {
-  height: 2em;
-  width: 50%;
-}
-*/
-/*
-tspan {
-	font-family: serif;
 }
 */
 
