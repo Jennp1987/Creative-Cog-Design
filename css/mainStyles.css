@@ -28,10 +28,15 @@ background:
 .container{
 	font-family:  brandon-grotesque, sans-serif;
 	position: absolute;
-	width: 70%;
+/*	width: 70%;*/
 	height:auto;
+	width: 70%;
+	top:20%;
+	left: 5%;
+/*
 	top: 40%;
 	left: 15%;
+*/
 }
 h1 {
 	color: white;
@@ -60,15 +65,18 @@ img{
 }
 /*SVG Animation*/
 
-.frontEnd {
+.cls-1{
 	position: absolute;
-	left: -20%;
-	top: 0%;
+	left:7%;
+	
 }
-.webDeveloper{
+.cls-2{
 	position: absolute;
-	top: 100%;
+	top: 140%;
 	right: 55%;
+}
+.cls-5 {
+	
 }
 /*
 .webGraphics {
