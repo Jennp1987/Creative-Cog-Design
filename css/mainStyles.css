@@ -25,7 +25,7 @@ background:
 	margin-bottom: 3.5em;
 	
 }
-.container{
+.container,  h1{
 	font-family:  brandon-grotesque, sans-serif;
 	position: absolute;
 /*	width: 70%;*/
@@ -38,19 +38,25 @@ background:
 	left: 15%;
 */
 }
+/*
 h1 {
 	color: white;
 	font-size: 3em;
 	
 }
+*/
+/*
 h2 {
 	font-size: 1.75em;
 	color: #a4844e;
 }
+*/
+/*
 h1, h2{
 	margin-top: 0;
 	margin-bottom: 0;
 }
+*/
 
 section{
 	margin: auto 0;
@@ -65,17 +71,18 @@ img{
 }
 /*SVG Animation*/
 
-.cls-1{
+.frontEnd{
 	position: absolute;
 	left:7%;
+	transform: 
 	
 }
-.cls-2{
+.webDeveloper{
 	position: absolute;
 	top: 140%;
 	right: 55%;
 }
-.cls-5 {
+.webGraphics {
 	
 }
 /*
