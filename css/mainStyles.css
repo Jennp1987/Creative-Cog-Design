@@ -2,12 +2,14 @@
 padding: 0;
 margin: 0;
 }
+/*
 @font-face {
 	font-family: 'Rezland Logotype Font';
 	font-style: normal;
 	font-weight: normal;
 	src: local('Rezland Logotype Font'), url('REZ.woff') format('woff');
 }
+*/
 html,
 body {
 height: 100%;
@@ -25,39 +27,80 @@ background:
 	margin-bottom: 3.5em;
 	
 }
+/*Begin of header animation*/
+.container{
+	width: 50%;
+	height: auto;
+	padding: 5%;	
+	
+}
+.container h1{
+	font-size: 101px ;
+	color: #a4844e;
+	font-family: BrandonGrotesque-Thin, Brandon Grotesque;
+	font-weight: 200;
+	animation: move 3s ease-in-out 1s normal;
+	-webkit-animation: move 3s ease-in-out 1s normal;
+	-ms-animation: move 3s ease-in-out 1s normal;
+	-moz-animation: move 3s ease-in-out 1s normal;
+	transform: translate(50%, 90%);
+	-ms-transform: translate(50%, 90%);
+	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+	-ms-animation-fill-mode: forwards;
+	-moz-animation-fill-mode: forwards;
+}
+@-webkit-keyframes move{
+	0% {transform: translate(50%, 90%);}
+	100%{transform: translate(8%, 90%);}
+}
+.container h2{
+	font-size: 70px;
+	color: #fff;
+	font-family: BrandonGrotesque-Medium, Brandon Grotesque;
+	font-weight: 500;
+/*
+	-webkit-animation: webDeveloper 2s ease-in-out 1s normal;
+    animation: webDeveloper 2s ease-in-out 1s normal;
+*/
+	transform: translate(0%, 100%);
+}
+/*
+@keyframes webDeveloper{
+	0% {transform: translate(50%, 70%);}
+	100% {transform: translate(0%, 70%);}
+}
+*/
+.container h3{
+	font-size: 55px;
+	color: #a4844e;
+	font-family: BrandonGrotesque-Thin, Brandon Grotesque;
+	font-weight: 200;
+	-webkit-animation: webGraphics 3s ease-in-out 1s normal;
+    animation: webGraphics 3s ease-in-out 1s normal;
+	transform: translate(0%, 140%);
+	animation-delay: 1s;
+	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+	-ms-animation-fill-mode: forwards;
+	-moz-animation-fill-mode: forwards;
+}
+@keyframes webGraphics {
+	0% {transform:translate(0%, 140%);}
+	100%{transform: translate(50%, 140%);}
+}
+/*End of header animation*/
+/*
 .container,  h1{
 	font-family:  brandon-grotesque, sans-serif;
 	position: absolute;
-/*	width: 70%;*/
+
 	height:auto;
 	width: 70%;
 	top:20%;
 	left: 5%;
-/*
-	top: 40%;
-	left: 15%;
-*/
-}
-/*
-h1 {
-	color: white;
-	font-size: 3em;
-	
 }
 */
-/*
-h2 {
-	font-size: 1.75em;
-	color: #a4844e;
-}
-*/
-/*
-h1, h2{
-	margin-top: 0;
-	margin-bottom: 0;
-}
-*/
-
 section{
 	margin: auto 0;
 }
@@ -71,6 +114,7 @@ img{
 }
 /*SVG Animation*/
 
+/*
 .frontEnd{
 	position: absolute;
 	left:7%;
@@ -85,6 +129,7 @@ img{
 .webGraphics {
 	
 }
+*/
 /*
 .webGraphics {
 	position: absolute;
@@ -96,24 +141,5 @@ img{
 
 */
 
-/*animation*/
-/*
-.animatedheader{
-	animation: fadeAndScale.3s cubic-bezier(0, 1.07,.75,1.42);
-	point of origin/registration point
-	transform-origin: center bottom;
-}
-@keyframes fadeAndScale{
-	from{
-		opacity: 0;
-		transform: scale3d(.75, .75, 1);
-		
-	}
-	to{
-		opacity: 1;
-		transform: scale3d(1, 1, 1);
-		
-	}
-}
-*/
+
 
