@@ -22,70 +22,66 @@ body {
 /*Nav*/
 nav{
 	width: 100%;
-	height: 6.25em;
+	height: 4em;
 	background-color: #a4844e;
-
 }
-ul{
+nav ul{
 	list-style: none;
-	margin-left: 1em;
-	position: relative;/*needed in order to set 2nd ul to absolute*/
-	
+/*	margin-left: 1em;*/
+	position: relative;/*needed in order to set 2nd ul to absolute*/	
+}
+nav ul li {
+	float: left;
+ 	padding-top: .5em;
 }
 /*second UL*/
 nav ul ul{
 	display: none;
 	position: absolute;
 	top: 100%; /*to show at bottom of main menu*/
-	margin-left: 0;
-	
-}
-nav ul ul li{
-	float: none;
-	width: 6em;
-	height: 2em;
+	text-align: center;
 	padding: 0;
-
+/*	margin-left: 0;*/
+	
 }
-
-body > nav > ul > li:nth-child(2) > ul{
-/*
-	width: 6em;
-	height: 2em;
-*/
+/*gets the first li in the dropdown*/
+body > nav > ul > li:nth-child(2) > ul > li:nth-child(1){
+	clear:both;
+	
+}
+nav ul li a:hover{
+	color: #3f4756;
 	
 }
 
-nav ul li:hover > ul{
+nav ul li:hover > ul {
 	display: block;
-	background-color:#a4844e;
-	color: #fff;
-	font-size: 1.8em;
-	
+	background-color: #a4844e;
 }
-
-/*selects the first ul element in nav to add content after it*/
 nav > ul::after{
 	content: "";
 	display: block;
 	clear: both;
+}
+nav ul ul li{
+	float: none;
+}
+nav ul li a{
+	text-decoration: none;
+	color: #fff;
+	text-align: center;
+	display: block;
+	width: 175px;
+	padding: 1em 0;
+	font-weight: bold;
+	letter-spacing: 1px;
 	
 }
 
-nav li{
-	float: left;
-	padding: 2em;
-	width: 6em;
-	
-}
-li a{
-	text-decoration: none;
-	color: #fff;
-	font-size: 1.8em;		
-}
 /*End Nav*/
+
 header { 
-clear: both;
+/*clear: both;*/
 background: 
     url('https://jennp1987.github.io/Creative-Cog-Design/images/finalCreativeCogBkgroundFinal.png');
 	background-size: cover;
@@ -157,19 +153,10 @@ background:
 	100%{transform: translate(50%, 140%);}
 }
 /*End of header animation*/
-/*
-.container,  h1{
-	font-family:  brandon-grotesque, sans-serif;
-	position: absolute;
 
-	height:auto;
-	width: 70%;
-	top:20%;
-	left: 5%;
-}
-*/
 section{
 	margin: auto 0;
+
 }
 
 img{
@@ -178,35 +165,17 @@ img{
 	height: auto;
 	margin: auto;
 	display: block;
-}
-/*SVG Animation*/
-
-/*
-.frontEnd{
-	position: absolute;
-	left:7%;
-	transform: 
-	
-}
-.webDeveloper{
-	position: absolute;
-	top: 140%;
-	right: 55%;
-}
-.webGraphics {
-	
-}
-*/
-/*
-.webGraphics {
-	position: absolute;
-	top:100%;
-	
-	
-	
+	margin-bottom: 2em;
 }
 
-*/
+/*ABOUT ARTICLE*/
+.about p{
+	max-width: 450px;
+	margin: 0 auto;
+	font-size: 1.5em;
+}
 
-
+body > article > p:nth-child(4){
+	text-decoration-line: underline;
+}
 
