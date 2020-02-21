@@ -16,8 +16,9 @@ height: 100%;
 margin: 0;
 }
 body {
-	font-family: Brandon Grotesque, sans-serif;
+	font-family: Brandon Grotesque;
 	background: #ffffff;
+	font-size: 100%;
 }
 /*Nav*/
 nav{
@@ -83,11 +84,13 @@ nav ul li a{
 header { 
 /*clear: both;*/
 background: 
-    url('https://jennp1987.github.io/Creative-Cog-Design/images/creativeCogBkground.svg');
+    url('https://jennp1987.github.io/Creative-Cog-Design/images/finalCreativeCogBkground.svg');
 	background-size: cover;
 	height: 100vh;
 	width: 100%;
 	margin-bottom: 3.5em;
+	background-repeat: no-repeat;
+/*	background-color: #3f4756;*/
 	
 }
 /*Begin of header animation*/
