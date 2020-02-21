@@ -83,7 +83,7 @@ nav ul li a{
 header { 
 /*clear: both;*/
 background: 
-    url('https://jennp1987.github.io/Creative-Cog-Design/images/finalCreativeCogBkgroundFinal.png');
+    url('https://jennp1987.github.io/Creative-Cog-Design/images/CreativeCogBkground.svg');
 	background-size: cover;
 	height: 100vh;
 	width: 100%;
@@ -151,7 +151,7 @@ section{
 
 img{
 	max-width: 90%;
-	width: 50%;
+	width: 49%;
 	height: auto;
 	margin: auto;
 	display: block;
@@ -176,6 +176,8 @@ body > section > article.about > p:nth-child(3){
 	max-width: 100%;
 	width: 100%;
 	height: auto;
+	position: relative;
+	z-index: 1;
 }
 /*END ABOUT ARTICLE*/
 /*BEGIN PROJECTS ARTICLE*/
@@ -183,4 +185,6 @@ body > section > article.about > p:nth-child(3){
 	background-color: #3f4756;
 	width: 100%;
 	height: 20em;
+	position: absolute;
+	top: 214%;
 }
