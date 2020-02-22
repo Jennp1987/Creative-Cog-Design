@@ -1,7 +1,8 @@
-*{
-padding: 0;
-margin: 0;
+* {
+	padding: 0;
+	margin: 0;
 }
+
 /*
 @font-face {
 	font-family: 'Rezland Logotype Font';
@@ -12,62 +13,74 @@ margin: 0;
 */
 html,
 body {
-height: 100%;
-margin: 0;
+	height: 100%;
+	margin: 0;
 }
+
 body {
 	font-family: Brandon Grotesque;
 	background: #ffffff;
 	font-size: 100%;
 }
+
 /*Nav*/
-nav{
+nav {
 	width: 100%;
 	height: 4em;
 	background-color: #a4844e;
 }
-nav ul{
+
+nav ul {
 	list-style: none;
-/*	margin-left: 1em;*/
-	position: relative;/*needed in order to set 2nd ul to absolute*/	
+	/*	margin-left: 1em;*/
+	position: relative;
+	/*needed in order to set 2nd ul to absolute*/
 }
+
 nav ul li {
 	float: left;
- 	padding-top: .5em;
+	padding-top: .5em;
 }
+
 /*second UL*/
-nav ul ul{
+nav ul ul {
 	display: none;
 	position: absolute;
-	top: 100%; /*to show at bottom of main menu*/
+	top: 100%;
+	/*to show at bottom of main menu*/
 	text-align: center;
 	padding: 0;
-/*	margin-left: 0;*/
-	
+	/*	margin-left: 0;*/
+
 }
+
 /*gets the first li in the dropdown*/
-body > nav > ul > li:nth-child(2) > ul > li:nth-child(1){
-	clear:both;
-	
+body > nav > ul > li:nth-child(2) > ul > li:nth-child(1) {
+	clear: both;
+
 }
-nav ul li a:hover{
+
+nav ul li a:hover {
 	color: #336699;
-	
+
 }
 
 nav ul li:hover > ul {
 	display: block;
 	background-color: #a4844e;
 }
-nav > ul::after{
+
+nav > ul::after {
 	content: "";
 	display: block;
 	clear: both;
 }
-nav ul ul li{
+
+nav ul ul li {
 	float: none;
 }
-nav ul li a{
+
+nav ul li a {
 	text-decoration: none;
 	color: #fff;
 	text-align: center;
@@ -76,31 +89,33 @@ nav ul li a{
 	padding: 1em 0;
 	font-weight: bold;
 	letter-spacing: 1px;
-	
+
 }
 
 /*End Nav*/
 
-header { 
-/*clear: both;*/
-background: 
-    url('https://jennp1987.github.io/Creative-Cog-Design/images/creativeCogBkground.svg');
+header {
+	/*clear: both;*/
+	background:
+		url('https://jennp1987.github.io/Creative-Cog-Design/images/finalCreativeCogBkground.png');
 	background-size: cover;
 	height: 100vh;
 	width: 100%;
 	margin-bottom: 3.5em;
-/*	background-color: #3f4756;*/
-	
+	/*	background-color: #3f4756;*/
+
 }
+
 /*Begin of header animation*/
-.container{
+.container {
 	width: 50%;
 	height: auto;
-	padding: 5%;	
-	
+	padding: 5%;
+
 }
-.container h1{
-	font-size: 101px ;
+
+.container h1 {
+	font-size: 101px;
 	color: #a4844e;
 	font-family: BrandonGrotesque-Thin, Brandon Grotesque;
 	font-weight: 200;
@@ -115,11 +130,18 @@ background:
 	-ms-animation-fill-mode: forwards;
 	-moz-animation-fill-mode: forwards;
 }
-@-webkit-keyframes move{
-	0% {transform: translate(50%, 90%);}
-	100%{transform: translate(8%, 90%);}
+
+@-webkit-keyframes move {
+	0% {
+		transform: translate(50%, 90%);
+	}
+
+	100% {
+		transform: translate(8%, 90%);
+	}
 }
-.container h2{
+
+.container h2 {
 	font-size: 70px;
 	color: #fff;
 	font-family: BrandonGrotesque-Medium, Brandon Grotesque;
@@ -127,13 +149,13 @@ background:
 	transform: translate(0%, 100%);
 }
 
-.container h3{
+.container h3 {
 	font-size: 55px;
 	color: #a4844e;
 	font-family: BrandonGrotesque-Thin, Brandon Grotesque;
 	font-weight: 200;
 	-webkit-animation: webGraphics 3s ease-in-out 1s normal;
-    animation: webGraphics 3s ease-in-out 1s normal;
+	animation: webGraphics 3s ease-in-out 1s normal;
 	transform: translate(0%, 140%);
 	animation-delay: 1s;
 	animation-fill-mode: forwards;
@@ -141,17 +163,24 @@ background:
 	-ms-animation-fill-mode: forwards;
 	-moz-animation-fill-mode: forwards;
 }
+
 @keyframes webGraphics {
-	0% {transform:translate(0%, 140%);}
-	100%{transform: translate(50%, 140%);}
+	0% {
+		transform: translate(0%, 140%);
+	}
+
+	100% {
+		transform: translate(50%, 140%);
+	}
 }
+
 /*End of header animation*/
 
-section{
+section {
 	margin-top: 7em;
 }
-
-img{
+/*lLOGO*/
+img {
 	max-width: 90%;
 	width: 49%;
 	height: auto;
@@ -161,32 +190,78 @@ img{
 }
 
 /*ABOUT ARTICLE*/
-article.about{
-	margin-top: em;
+article.about {
 	margin-bottom: 5em;
 }
-.about p{
+
+.about p {
 	max-width: 750px;
 	margin: 0 auto;
 	font-size: 2em;
 }
 
-body > section > article.about > p:nth-child(3){
+body > section > article.about > p:nth-child(3) {
 	text-decoration-line: underline;
 }
-#homePgDiv img{
+
+#homePgDiv img {
 	max-width: 100%;
 	width: 100%;
 	height: auto;
 	position: relative;
-	z-index: 1;
+	z-index: 2;
 }
+
 /*END ABOUT ARTICLE*/
 /*BEGIN PROJECTS ARTICLE*/
-#projects{
+#projects {
 	background-color: #3f4756;
 	width: 100%;
-	height: 20em;
+	height: 40em;
 	position: absolute;
 	top: 214%;
+	text-align: center;
+	padding-top: 25em;
+	
+}
+
+.circle {
+	display: inline-block;
+	height: 25em;
+	width: 30em;
+	padding-top: 60px;
+	line-height: 18px;
+	border-radius: 50%;
+	color: white;
+	margin: 0 0 0 -100px;
+/*	box-shadow: 10px 15px 30px rgba(0, 0, 0, .5);*/
+/*	margin: auto 0;*/
+
+}
+#projects > a:nth-child(1){
+	position: relative;
+	z-index: 2;
+	background-color: #a4844e; 
+	
+}
+#projects > a:nth-child(2){
+	position: relative;
+	z-index: 1;
+	 background-color: #336699;
+	
+}
+.circle p{
+	margin-top: 3.5em;
+	font-size: 3em;
+}
+/*END PROJECTS ARTICLE*/
+/*BEGIN ASIDE - FIND ME*/
+ .findMe{
+	background-color: white;
+	width: 100%;
+	height: auto;
+	position: static;
+/*	position: relative;*/
+/*	top: 50em;*/
+	
 }
