@@ -95,7 +95,6 @@ nav ul li a {
 /*End Nav*/
 
 header {
-	/*clear: both;*/
 	background:
 		url('https://jennp1987.github.io/Creative-Cog-Design/images/finalCreativeCogBkground.png');
 	background-size: cover;
@@ -178,7 +177,9 @@ header {
 
 section {
 	margin-top: 7em;
+	margin-bottom: 50em;
 }
+
 /*lLOGO*/
 img {
 	max-width: 90%;
@@ -222,7 +223,8 @@ body > section > article.about > p:nth-child(3) {
 	top: 214%;
 	text-align: center;
 	padding-top: 25em;
-	
+
+
 }
 
 .circle {
@@ -234,34 +236,84 @@ body > section > article.about > p:nth-child(3) {
 	border-radius: 50%;
 	color: white;
 	margin: 0 0 0 -100px;
-/*	box-shadow: 10px 15px 30px rgba(0, 0, 0, .5);*/
-/*	margin: auto 0;*/
+	/*	box-shadow: 10px 15px 30px rgba(0, 0, 0, .5);*/
+	/*	margin: auto 0;*/
 
 }
-#projects > a:nth-child(1){
+
+#projects > a:nth-child(1) {
 	position: relative;
 	z-index: 2;
-	background-color: #a4844e; 
-	
+	background-color: #a4844e;
+
 }
-#projects > a:nth-child(2){
+
+#projects > a:nth-child(2) {
 	position: relative;
 	z-index: 1;
-	 background-color: #336699;
-	
+	background-color: #336699;
+
 }
-.circle p{
+
+.circle p {
 	margin-top: 3.5em;
 	font-size: 3em;
 }
+
 /*END PROJECTS ARTICLE*/
 /*BEGIN ASIDE - FIND ME*/
- .findMe{
+.findMe {
 	background-color: white;
 	width: 100%;
 	height: auto;
-	position: static;
-/*	position: relative;*/
-/*	top: 50em;*/
-	
+	padding-top: 7em;
+	padding-bottom: 7em;
+
+	/*	display: block;*/
+	/*	position: relative;*/
+	/*	top: 50em;*/
+
+}
+
+h4 {
+	font-size: 4em;
+	color: #3f4756;
+	text-align: center;
+}
+
+aside ul {
+	list-style: none;
+
+}
+
+aside li {
+	width: 50%;
+	height: auto;
+	font-size: 2em;
+	margin: 0 auto;
+	line-height: 2em;
+}
+
+/*END ASIDE - FIND ME*/
+/*BEGIN FOOTER*/
+footer {
+	background-color: #a4844e;
+	width: 100%;
+	height: auto;
+	padding: 2em 0 2em 0;
+}
+
+footer p {
+	text-align: center;
+	color: #fff;
+	font-size: 1.2em;
+	line-height: 1.5em;
+}
+
+/*MEDIA QUERIES*/
+@media only screen and (max-width: 2512px){
+	#projects {
+		top: 203%;
+		margin-top: .2em;
+	}
 }
