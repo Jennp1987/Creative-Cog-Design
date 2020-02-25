@@ -1,30 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 	<meta charset="UTF-8">
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<title>Creative Cog Design</title>
-	<link rel="stylesheet" type="text/css" href="css/mainStyles.css" />
+	<title>vertical nav bar</title>
+	<link href="css/scrap.css" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
-	<!--<link rel="stylesheet" href="https://use.typekit.net/ufy4eie.css">-->
-
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 </head>
-
 <body>
-	<nav>
+	<nav class="menu-activea">
+		<p>MENU</p>
 		<ul>
-			<li><a href="#">Home</a></li>
-			<li><a href="#">Projects</a>
-				<ul>
-					<li><a href="#">Web</a></li>
-					<li><a href="#">Graphics</a></li>
-				</ul>
+			<li>HOME</li>
+			<li>PROJECTS
+			<ul>
+				<li>WEB</li>
+				<li>GRAPHICS</li>
+			</ul>
 			</li>
-			<li><a href="#">About</a></li>
-			<li><a href="#">Hire</a></li>
+			<li>ABOUT</li>
+			<li>HIRE</li>
 		</ul>
 	</nav>
+	<main>
 	<header>
 		<div class="container">
 			<h1>FRONT END</h1>
@@ -32,25 +30,12 @@
 			<h3>web &amp; graphic designer</h3>
 		</div>
 	</header>
-
 	<section>
 		<img src="images/creativeCogLogoSvg.svg" alt="creative cognition design" title="logo">
 		<article class="about skew">
 			<p>Dedicated to delivering creative assets that have a positive user experience, aesthetically pleasing layouts, and engaging functionality that provide enjoyable digital experiences.</p><br>
 			<p>Read Story Here.</p>
 		</article>
-<!--
-		<div id="homePgDiv">
-<img src="images/diagHomePageDiv.svg" alt="design element creative cog design">
-		</div>
--->
-<!--
-
-	<div class="skewDiv">
-		
-	</div>
--->
-
 		<article id="projects" class="skew">
 			<a href="#" class="circle">
 				<p>WEB</p>
@@ -72,6 +57,38 @@
 	<p>&copy; 2020 Creative Cog Design</p>
 	<p>San Diego, CA</p>
 	</footer>
-</body>
+	</main>
+		<script>
+		(function() {
+			var nav = $('nav'),
+				menu = $('nav p'),
+				main = $('main'),
+				open = false,
+				hover = false;
 
+			menu.on('click', function() {
+				open = !open ? true : false;
+				nav.toggleClass('menu-active');
+				main.toggleClass('menu-active');
+				nav.removeClass('menu-hover');
+				main.removeClass('menu-hover');
+				console.log(open);
+
+
+			});
+			menu.hover(
+				function() {
+					if (!open) {
+						nav.addClass('menu-hover');
+						main.addClass('menu-hover');
+					}
+				},
+				function() {
+					nav.removeClass('menu-hover');
+					main.removeClass('menu-hover');
+				}
+			);
+		})();
+	</script>
+</body>
 </html>

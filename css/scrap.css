@@ -1,74 +1,117 @@
 * {
-	padding: 0;
-	margin: 0;
-}
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+		}
+
+		body {
+			font-family: BrandonGrotesque, sans-serif;
+			perspective-origin: 0% 50%;
+			perspective: 800px;
+			background: #21212d;
+			width: 100%;
+			height: auto;
+		}
+
+		main {
+			transition: transform 150ms ease-out;
+		}
+
+		nav {
+			font-family: BrandonGrotesque-Medium, sans-serif;
+			z-index: 100;
+			position: absolute;
+			top: 0px;
+			bottom: 0px;
+			left: 0px;
+			right: 0px;
+			width: 16em;
+			background-color: #353441;
+			transform: translateX(-16em);
+		}
+
+		nav.menu-active {
+			transform: translateX(0);
+		}
+
+		nav.menu-hover {
+			transform: translateX(-15em);
+
+		}
+
+		nav p {
+			font-family: BrandonGrotesque-Medium, Brandon Grotesque;
+			z-index: 300;
+			display: block;
+			position: absolute;
+			top: 0;
+			right: -65px;
+			height: 60px;
+			width: 65px;
+			line-height: 60px;
+			font-size: 0.8em;
+			letter-spacing: .1em;
+			color: white;
+			text-transform: uppercase;
+			text-align: center;
+			background-color: #63531F;
+/*			background-color: #a4844e;*/
+			background-color: #353441;
+			cursor: pointer;
+		}
+
+		nav p:hover {
+			color: #353441;
+			background: white;
+		}
+
+		nav ul {
+			margin: 0;
+			padding: 0;
+		}
+
+		nav li {
+			display: inline-block;
+			padding: 0 1em;
+			width: 100%;
+			height: 60px;
+			color: #9dc6d1;
+			line-height: 60px;
+			background-color: #353441;
+			transition: all 0.5s ease-in;
+
+		}
 
 /*
-@font-face {
-	font-family: 'Rezland Logotype Font';
-	font-style: normal;
-	font-weight: normal;
-	src: local('Rezland Logotype Font'), url('REZ.woff') format('woff');
-}
+		nav li::nth-of-type(2n) {
+			background-color: #3a3947;
+		}
 */
-html,
-body {
-	height: 100%;
-	margin: 0;
-}
 
-body {
-	font-family: Brandon Grotesque;
-	background: #ffffff;
-	font-size: 100%;
-}
-
-/*Nav*/
-nav {
-	width: 100%;
-	height: 4em;
-	background-color: #a4844e;
-}
-
-nav ul {
-	list-style: none;
-	/*	margin-left: 1em;*/
-	position: relative;
-	/*needed in order to set 2nd ul to absolute*/
-}
-
-nav ul li {
-	float: left;
-	padding-top: .5em;
-}
-
+		nav li:hover {
+			background: #a4844e;
+			color: white;
+		}
 /*second UL*/
-nav ul ul {
+nav ul li {
+	position: relative;
+}
+nav ul li ul {
 	display: none;
 	position: absolute;
-	top: 100%;
+	left: 100%;
+	top: 0;
 	/*to show at bottom of main menu*/
 	text-align: center;
 	padding: 0;
 	/*	margin-left: 0;*/
 
 }
-
-/*gets the first li in the dropdown*/
-body > nav > ul > li:nth-child(2) > ul > li:nth-child(1) {
-	clear: both;
-
-}
-
-nav ul li a:hover {
-	color: #336699;
-
-}
-
 nav ul li:hover > ul {
 	display: block;
 	background-color: #a4844e;
 	z-index: 11;
+
 }
 
 nav > ul::after {
@@ -76,32 +119,106 @@ nav > ul::after {
 	display: block;
 	clear: both;
 }
+/*second UL*/
 
-nav ul ul li {
-	float: none;
-}
+		main {
+			z-index: 0;
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			bottom: 0px;
+			right: 0px;
+			display: flex;
+			align-items: center;
+/*			overflow: hidden;*/
+/*			background-image: url("https://jennp1987.github.io/Creative-Cog-Design/images/finalCreativeCogBkground.png");*/
+			transform-origin: 0% 50%;
+/*			background-size: cover;*/
 
-nav ul li a {
-	text-decoration: none;
-	color: #fff;
-	text-align: center;
-	display: block;
-	width: 175px;
-	padding: 1em 0;
-	font-weight: bold;
-	letter-spacing: 1px;
+		}
 
-}
+/*
+		main::after {
+			content: '';
+			display: block;
+			position: absolute;
+			z-index: 1;
+			top: 0px;
+			left: 0px;
+			bottom: 0px;
+			right: 0px;
+			background: linear-gradient(to right, transparent, rgba(33, 33, 45, .5));
+			visibility: hidden;
+			opacity: 0;
+			transition: opacity 150ms ease-out,
+				visibility 0s 150ms;
+		}
+*/
 
-/*End Nav*/
+
+		main.menu-active {
+
+			transform: translateX(1em) rotateY(1deg);
+		}
+
+
+		main.menu-active::after {
+			visibility: visible;
+			opacity: 1;
+			transition: opacity 150ms ease-out,
+				visibility 0s,
+
+		}
+
+
+		main.menu-hover {
+			border-radius: 0.001px;
+			transform: translateX(1em) rotateY(1deg);
+		}
+
+
+	 main {
+			position: absolute;
+			top: 0px;
+			bottom: 0px;
+			left: 0px;
+			right: 0px;
+			margin: auto;
+			padding: 1em 4em;
+			max-width: 100%;
+/*			overflow: auto;*/
+			background-color: rgba(255, 255, 255, .5);
+
+		}
+
+
+/*
+		section h1 {
+			font-weight: 800;
+			text-transform: uppercase;
+			font-size: 2em;
+
+		}
+*/
+
+/*
+		section p {
+
+			display: inline-block;
+			margin: 16px 0;
+
+		}
+*/
 
 header {
 
 
+/*
 	position: relative;
 	z-index: 10;
 	clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10vw), 0 100%);
-/*	margin-bottom: -10vw;*/
+	margin-bottom: -10vw;
+*/
 /*	padding-top: 3.5em;*/
 
 /*
@@ -118,14 +235,37 @@ header {
 
 
 }
-
+/*HEADING*/
+h1{
+	font-size: 101px;
+	color: #a4844e;
+	font-family: BrandonGrotesque-Thin, Brandon Grotesque;
+	font-weight: 200;
+	
+}
+h2{
+	font-size: 70px;
+	color: #fff;
+	font-family: BrandonGrotesque-Medium, Brandon Grotesque;
+	font-weight: 500;
+}
+h3{
+	font-size: 55px;
+	color: #a4844e;
+	font-family: BrandonGrotesque-Thin, Brandon Grotesque;
+	font-weight: 200;
+	
+}
 /*Begin of header animation*/
+
+
 .container {
 	width: 50%;
 	height: auto;
 	padding: 5%;
 
 }
+
 
 .container h1 {
 	font-size: 101px;
@@ -144,6 +284,8 @@ header {
 	-moz-animation-fill-mode: forwards;
 }
 
+
+
 @-webkit-keyframes move {
 	0% {
 		transform: translate(50%, 90%);
@@ -154,6 +296,8 @@ header {
 	}
 }
 
+
+
 .container h2 {
 	font-size: 70px;
 	color: #fff;
@@ -161,6 +305,8 @@ header {
 	font-weight: 500;
 	transform: translate(0%, 100%);
 }
+
+
 
 .container h3 {
 	font-size: 55px;
@@ -177,6 +323,7 @@ header {
 	-moz-animation-fill-mode: forwards;
 }
 
+
 @keyframes webGraphics {
 	0% {
 		transform: translate(0%, 140%);
@@ -187,13 +334,16 @@ header {
 	}
 }
 
+
 /*End of header animation*/
 
 section {
-	margin-top: 7em;
+/*	margin-top: 7em;*/
 /*	margin-bottom: 50em;*/
+	padding-top: 7em;
 	width: 100%;
 	height:auto;
+	background-color: white;
 	
 }
 
@@ -309,7 +459,7 @@ article .skew:after{
 
 .circle {
 	display: inline-block;
-	height: 25em;
+	height: 30em;
 	width: 30em;
 	padding-top: 60px;
 	line-height: 18px;
@@ -394,10 +544,5 @@ footer p {
 
 /*MEDIA QUERIES*/
 @media only screen and (max-width: 2512px){
-	#projects {
-/*
-		top: 203%;
-		margin-top: .2em;
-*/
-	}
+
 }
