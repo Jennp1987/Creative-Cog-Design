@@ -132,19 +132,24 @@ header {
 	color: #a4844e;
 	font-family: BrandonGrotesque-Thin, Brandon Grotesque;
 	font-weight: 200;
+/*
 	animation: move 3s ease-in-out 1s normal;
 	-webkit-animation: move 3s ease-in-out 1s normal;
 	-ms-animation: move 3s ease-in-out 1s normal;
 	-moz-animation: move 3s ease-in-out 1s normal;
+*/
 	transform: translate(50%, 90%);
 	-ms-transform: translate(50%, 90%);
+/*
 	animation-fill-mode: forwards;
 	-webkit-animation-fill-mode: forwards;
 	-ms-animation-fill-mode: forwards;
 	-moz-animation-fill-mode: forwards;
+*/
 }
 
 @-webkit-keyframes move {
+/*
 	0% {
 		transform: translate(50%, 90%);
 	}
@@ -152,6 +157,7 @@ header {
 	100% {
 		transform: translate(8%, 90%);
 	}
+*/
 }
 
 .container h2 {
@@ -167,17 +173,22 @@ header {
 	color: #a4844e;
 	font-family: BrandonGrotesque-Thin, Brandon Grotesque;
 	font-weight: 200;
+/*
 	-webkit-animation: webGraphics 3s ease-in-out 1s normal;
 	animation: webGraphics 3s ease-in-out 1s normal;
+*/
 	transform: translate(0%, 140%);
+/*
 	animation-delay: 1s;
 	animation-fill-mode: forwards;
 	-webkit-animation-fill-mode: forwards;
 	-ms-animation-fill-mode: forwards;
 	-moz-animation-fill-mode: forwards;
+*/
 }
 
 @keyframes webGraphics {
+/*
 	0% {
 		transform: translate(0%, 140%);
 	}
@@ -185,6 +196,7 @@ header {
 	100% {
 		transform: translate(50%, 140%);
 	}
+*/
 }
 
 /*End of header animation*/
