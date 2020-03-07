@@ -5,60 +5,70 @@
 	<title>vertical nav bar</title>
 	<link href="css/scrap.css" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
-	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 </head>
+
 <body>
 	<nav class="menu-activea">
 		<p>MENU</p>
 		<ul>
 			<li>HOME</li>
 			<li>PROJECTS
-			<ul>
-				<li>WEB</li>
-				<li>GRAPHICS</li>
-			</ul>
+				<ul>
+					<li>WEB</li>
+					<li>GRAPHICS</li>
+				</ul>
 			</li>
 			<li>ABOUT</li>
 			<li>HIRE</li>
 		</ul>
 	</nav>
 	<main>
-	<header>
-		<div class="container">
-			<h1>FRONT END</h1>
-			<h2>WEB DEVELOPER</h2>
-			<h3>web &amp; graphic designer</h3>
-		</div>
-	</header>
-	<section>
-		<img src="images/creativeCogLogoSvg.svg" alt="creative cognition design" title="logo">
-		<article class="about skew">
-			<p>Dedicated to delivering creative assets that have a positive user experience, aesthetically pleasing layouts, and engaging functionality that provide enjoyable digital experiences.</p><br>
-			<p>Read Story Here.</p>
-		</article>
-		<article id="projects" class="skew">
-			<a href="#" class="circle">
-				<p>WEB</p>
-			</a>
-			<a href="#" class="circle">
-				<p>GRAPHICS</p>
-			</a>
-		</article>
-	</section>
-	<aside class="findMe">
-		<h4>Find Me</h4>
-		<ul>
-			<li>LinkedIn <a href="http://www.linkedin.com/in/jennifer-anne-phillips/">http://www.linkedin.com/in/jennifer-anne-phillips/</a></li>
-			<li>Github <a href="http://www.github.com/jennp1987">http://www.github.com/jennp1987</a></li>
-		</ul>
-	</aside>
+		<header>
+			<div class="container">
+				<h1>FRONT END</h1>
+				<h2>WEB DEVELOPER</h2>
+				<h3>web &amp; graphic designer</h3>
+			</div>
+		</header>
+		<section>
+			<img src="images/creativeCogLogoSvg.svg" alt="creative cognition design" title="logo">
+			<article class="about skew">
+				<p>Dedicated to delivering creative assets that have a positive user experience, aesthetically pleasing layouts, and engaging functionality that provide enjoyable digital experiences.</p><br>
+				<p>Read Story Here.</p>
+			</article>
+			<article id="projects" class="skew">
+				<a href="#" class="circle">
+					<p>WEB</p>
+				</a>
+				<a href="#" class="circle">
+					<p>GRAPHICS</p>
+				</a>
+			</article>
+		</section>
+		<aside class="findMe">
+			<article>
+					<p>"One of Jennifer's best attributes is her attention to detail and thoroughness. She can be trusted to think through problems critically and follow up diligently which is invaluable in web design and development work. She is willing to research tasks on her own and then present thoughtfully laid out options."</p><br>
+				<p> - Susan Rust</p>
+			</article>
+			<article>
+				<p>"Jenn is a dedicated, professional, and skilled team member. Her attention to detail perfectly complements her abilities as a web master. Jenn's calm and collected communication style ensures the team moves towards achieving our goals with a clear, unified vision."
+				</p><br>
+				<p> - Juli Beck</p>
+			</article>
+			<h4>Find Me</h4>
+			<ul>
+				<li>LinkedIn <a href="http://www.linkedin.com/in/jennifer-anne-phillips/">http://www.linkedin.com/in/jennifer-anne-phillips/</a></li>
+				<li>Github <a href="http://www.github.com/jennp1987">http://www.github.com/jennp1987</a></li>
+			</ul>
+		</aside>
 
-	<footer>
-	<p>&copy; 2020 Creative Cog Design</p>
-	<p>San Diego, CA</p>
-	</footer>
+		<footer>
+			<p>&copy; 2020 Creative Cog Design</p>
+			<p>San Diego, CA</p>
+		</footer>
 	</main>
-		<script>
+	<script>
 		(function() {
 			var nav = $('nav'),
 				menu = $('nav p'),
@@ -76,24 +86,24 @@
 
 
 			});
-			main.on("click", function () {
+			main.on("click", function() {
 				open = !open ? true : false;
 				nav.toggleClass('menu-active');
 				main.toggleClass('menu-active');
-				
+
 			});
-//			menu.hover(
-//				function() {
-//					if (!open) {
-//						nav.addClass('menu-hover');
-//						main.addClass('menu-hover');
-//					}
-//				},
-//				function() {
-//					nav.removeClass('menu-hover');
-//					main.removeClass('menu-hover');
-//				}
-//			);
+//						menu.hover(
+//							function() {
+//								if (!open) {
+//									nav.addClass('menu-hover');
+//									main.addClass('menu-hover');
+//								}
+//							},
+//							function() {
+//								nav.removeClass('menu-hover');
+//								main.removeClass('menu-hover');
+//							}
+//						);
 		})();
 	</script>
 </body>

@@ -27,19 +27,24 @@
 			right: 0px;
 			width: 16em;
 			background-color: #353441;
+			/*Makes Nav dissapear*/
 			transform: translateX(-16em);
 		}
 
 		nav.menu-active {
+			/*positions nav*/
 			transform: translateX(0);
 		}
 
-/*
+
+
 		nav.menu-hover {
+			/*pops on hover*/
 			transform: translateX(-15em);
 
 		}
-*/
+
+
 
 		nav p {
 			font-family: BrandonGrotesque-Medium, Brandon Grotesque;
@@ -56,7 +61,7 @@
 			color: white;
 			text-transform: uppercase;
 			text-align: center;
-			background-color: #63531F;
+/*			background-color: #63531F;*/
 /*			background-color: #a4844e;*/
 			background-color: #353441;
 			cursor: pointer;
@@ -66,10 +71,15 @@
 			color: #353441;
 			background: white;
 		}
-
+/*Start of fallbacks*/
 		nav ul {
 			margin: 0;
 			padding: 0;
+			/*fallbacks*/
+/*
+			list-style-type: none;
+			position: relative;
+*/
 		}
 
 		nav li {
@@ -81,8 +91,23 @@
 			line-height: 60px;
 			background-color: #353441;
 			transition: all 0.5s ease-in;
+			/*fallbacks*/
+/*			display: none;*/
 
 		}
+/*FALLBACKS COMPLETELY*/
+/*
+nav ul ul{
+	display: none;
+	position: absolute;
+	top: 100%;
+}
+nav li:hover{
+	display: inline-block;
+	z-index: 500;
+}
+*/
+/*END FALLBACKS COMPLETELY*/
 
 /*
 		nav li::nth-of-type(2n) {
@@ -105,7 +130,7 @@ nav ul li ul {
 	top: 0;
 	/*to show at bottom of main menu*/
 	text-align: center;
-	padding: 0;
+/*	padding: 0;*/
 	/*	margin-left: 0;*/
 
 }
@@ -116,11 +141,13 @@ nav ul li:hover > ul {
 
 }
 
+/*
 nav > ul::after {
 	content: "";
 	display: block;
 	clear: both;
 }
+*/
 /*second UL*/
 
 		main {
@@ -542,17 +569,54 @@ article .skew:after{
 }
 
 /*END PROJECTS ARTICLE*/
+
+/*BEGIN ARTICLE FOR TESTIMONIES*/
+.findMe article{
+/*
+	width: 100%;
+	height: auto;
+*/
+	display: inline-block;
+	background-color: #9dc6d1;
+	border-radius: 1em;
+	line-height: 1.5em;
+	
+	
+}
+.findMe > article:nth-child(1){
+	float: left;
+	width: 30%;
+	height: 15em;
+	margin: 0 10%;
+	padding: 2%;
+	
+}
+.findMe > article:nth-child(2){
+	width: 30%;
+	height: auto;
+	margin: 0 10%;
+	padding: 2%;
+	height: 15em;
+	
+}
+.findMe > article > p{
+	margin: 0 auto;
+}
+
+/*END ARTICLE FOR TESTIMONIES*/
+
 /*BEGIN ASIDE - FIND ME*/
 .findMe {
 	background-color: white;
 	width: 100%;
 	height: auto;
-	padding-top: 7em;
+/*	padding-top: 7em;*/
 	padding-bottom: 7em;
 
 	/*	display: block;*/
 	/*	position: relative;*/
 	/*	top: 50em;*/
+/*	margin: 0 auto;*/
 
 }
 
@@ -560,6 +624,7 @@ h4 {
 	font-size: 4em;
 	color: #3f4756;
 	text-align: center;
+	margin-top: 1.5em;
 }
 
 aside ul {
