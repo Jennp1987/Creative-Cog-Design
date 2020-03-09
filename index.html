@@ -73,12 +73,14 @@
 			var nav = $('nav'),
 				menu = $('nav p'),
 				main = $('main'),
+				nestedNav = $('nav ul li ul'),
 				open = false,
 				hover = false;
-
+			/*Opens*/
 			menu.on('click', function() {
 				open = !open ? true : false;
 				nav.toggleClass('menu-active');
+				nestedNav.toggleClass('menu-active');
 				main.toggleClass('menu-active');
 				nav.removeClass('menu-hover');
 				main.removeClass('menu-hover');
@@ -86,6 +88,9 @@
 
 
 			});
+			/*For Sub Menu for Mobile*/
+			
+			/*To Close*/
 			main.on("click", function() {
 				open = !open ? true : false;
 				nav.toggleClass('menu-active');
