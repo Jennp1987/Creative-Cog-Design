@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>jquery nav</title>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+<style>
+	ul {
+		width: 100px;
+		position: absolute;
+		left: 100px;
+		top: 0;
+	}
+	#nav {
+		left: 0;
+	}
+
+	li ul {
+		display: none;
+	}
+
+</style>
+
+<body>
+	<!--
+	<nav>
+		<ul id="nav">
+			<li><a href="#">Menu</a>
+			<ul>
+			<li>HOME</li>
+			<li>PROJECTS
+				<ul>
+					<li>WEB</li>
+					<li>GRAPHICS</li>
+				</ul>
+			</li>
+			<li>ABOUT</li>
+			<li>HIRE</li>
+			</ul>
+			</li>
+		</ul>
+	</nav>
+	
+-->
+	<ul id="nav">
+		<li><a href="#">MENU</a>
+			<ul>
+				<li><a href="#">HOME</a></li>
+				<li><a href="#">PROJECTS</a>
+					<ul>
+						<li><a href="#">WEB</a></li>
+						<li><a href="#">GRAPHICS</a></li>
+					</ul>
+				</li>
+				<li><a href="#">ABOUT</a></li>
+				<li><a href="#">HIRE</a></li>
+			</ul>
+		</li>
+	</ul>
+	<script>
+		//		$('nav p').hover(function() {
+		//			$(this).children('ul').stop().slideToggle(400);
+		//
+		//		});
+
+		$('li').hover(function() {
+			$(this).children('ul').stop().slideToggle(400);
+		});
+	</script>
+
+</body>
+
+</html>
