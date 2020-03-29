@@ -115,7 +115,7 @@ nav li:hover{
 		}
 */
 
-		nav li:hover {
+		nav li:hover, body > nav > ul > li:nth-child(2) > ul > li:hover {
 			background: #a4844e;
 			color: white;
 		}
@@ -132,7 +132,7 @@ nav ul li ul {
 	text-align: center;
 /*	padding: 0;*/
 	/*	margin-left: 0;*/
-
+	
 }
 nav ul li:hover > ul {
 	display: block;
