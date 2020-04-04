@@ -1,100 +1,110 @@
 * {
-			box-sizing: border-box;
-			margin: 0;
-			padding: 0;
-		}
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
 
-		body {
-			font-family: BrandonGrotesque, sans-serif;
-			perspective-origin: 0% 50%;
-			perspective: 800px;
-			background: #21212d;
-			width: 100%;
-			height: auto;
-		}
+body {
+	font-family: BrandonGrotesque, sans-serif;
+	perspective-origin: 0% 50%;
+	perspective: 800px;
+	background: #21212d;
+	width: 100%;
+	height: auto;
+}
 
-		main {
-			transition: transform 150ms ease-out;
-		}
+main {
+	transition: transform 150ms ease-out;
+}
 
-		nav {
-			font-family: BrandonGrotesque-Medium, sans-serif;
-			z-index: 100;
-			position: absolute;
-			top: 0px;
-			bottom: 0px;
-			left: 0px;
-			right: 0px;
-			width: 16em;
-			background-color: #353441;
-			/*Makes Nav dissapear*/
-			transform: translateX(-16em);
-		}
+nav {
+	font-family: BrandonGrotesque-Medium, sans-serif;
+	z-index: 100;
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	width: 16em;
+	background-color: #353441;
+	/*Makes Nav dissapear*/
+	transform: translateX(-16em);
+}
 
-		nav.menu-active {
-			/*positions nav*/
-			transform: translateX(0);
-		}
-
-
-
-		nav.menu-hover {
-			/*pops on hover*/
-			transform: translateX(-15em);
-
-		}
+nav.menu-active {
+	/*positions nav*/
+	transform: translateX(0);
+}
 
 
 
-		nav p {
-			font-family: BrandonGrotesque-Medium, Brandon Grotesque;
-			z-index: 300;
-			display: block;
-			position: absolute;
-			top: 0;
-			right: -65px;
-			height: 60px;
-			width: 65px;
-			line-height: 60px;
-			font-size: 0.8em;
-			letter-spacing: .1em;
-			color: white;
-			text-transform: uppercase;
-			text-align: center;
-/*			background-color: #63531F;*/
-/*			background-color: #a4844e;*/
-			background-color: #353441;
-			cursor: pointer;
-		}
+nav.menu-hover {
+	/*pops on hover*/
+	transform: translateX(-15em);
 
-		nav p:hover {
-			color: #353441;
-			background: white;
-		}
+}
+
+
+
+nav p {
+	font-family: BrandonGrotesque-Medium, Brandon Grotesque;
+	z-index: 300;
+	display: block;
+	position: absolute;
+	top: 0;
+	right: -65px;
+	height: 60px;
+	width: 65px;
+	line-height: 60px;
+	font-size: 0.8em;
+	letter-spacing: .1em;
+	color: white;
+	text-transform: uppercase;
+	text-align: center;
+	/*			background-color: #63531F;*/
+	/*			background-color: #a4844e;*/
+	background-color: #353441;
+	cursor: pointer;
+}
+
+nav p:hover {
+	color: #353441;
+	background: white;
+}
+
 /*Start of fallbacks*/
-		nav ul {
-			margin: 0;
-			padding: 0;
-			/*fallbacks*/
-/*
+nav ul {
+	margin: 0;
+	padding: 0;
+	/*fallbacks*/
+	/*
 			list-style-type: none;
 			position: relative;
 */
-		}
+}
 
-		nav li {
-			display: inline-block;
-			padding: 0 1em;
-			width: 100%;
-			height: 60px;
-			color: #9dc6d1;
-			line-height: 60px;
-			background-color: #353441;
-			transition: all 0.5s ease-in;
-			/*fallbacks*/
-/*			display: none;*/
+nav li {
+	display: inline-block;
+	padding: 0 1em;
+	width: 100%;
+	height: 60px;
+	color: #9dc6d1;
+	line-height: 60px;
+	background-color: #353441;
+	transition: all 0.5s ease-in;
+	/*fallbacks*/
+	/*			display: none;*/
 
-		}
+}
+nav ul li a {
+	color: #9dc6d1;
+
+}
+a{
+	text-decoration: none;
+	
+}
+
 /*FALLBACKS COMPLETELY*/
 /*
 nav ul ul{
@@ -115,14 +125,20 @@ nav li:hover{
 		}
 */
 
-		nav li:hover, body > nav > ul > li:nth-child(2) > ul > li:hover {
-			background: #a4844e;
-			color: white;
-		}
+nav li:hover,
+body > nav > ul > li:nth-child(2) > ul > li:hover {
+	background: #a4844e;
+	
+/*	background-color: #6e531f;*/
+/*	color: #353441;*/
+
+}
+
 /*second UL*/
 nav ul li {
 	position: relative;
 }
+
 nav ul li ul {
 	display: none;
 	position: absolute;
@@ -130,13 +146,14 @@ nav ul li ul {
 	top: 0;
 	/*to show at bottom of main menu*/
 	text-align: center;
-/*	padding: 0;*/
+	/*	padding: 0;*/
 	/*	margin-left: 0;*/
-	
+
 }
+
 nav ul li:hover > ul {
 	display: block;
-/*	background-color: #a4844e;*/
+	/*	background-color: #a4844e;*/
 	z-index: 11;
 
 }
@@ -150,21 +167,21 @@ nav > ul::after {
 */
 /*second UL*/
 
-		main {
-			z-index: 0;
-			position: absolute;
-			top: 0px;
-			left: 0px;
-			bottom: 0px;
-			right: 0px;
-			display: flex;
-			align-items: center;
-/*			overflow: hidden;*/
-/*			background-image: url("https://jennp1987.github.io/Creative-Cog-Design/images/finalCreativeCogBkground.png");*/
-			transform-origin: 0% 50%;
-/*			background-size: cover;*/
+main {
+	z-index: 0;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	bottom: 0px;
+	right: 0px;
+/*	display: flex;*/
+	align-items: center;
+	/*			overflow: hidden;*/
+	/*			background-image: url("https://jennp1987.github.io/Creative-Cog-Design/images/finalCreativeCogBkground.png");*/
+/*	transform-origin: 0% 50%;*/
+	/*			background-size: cover;*/
 
-		}
+}
 
 /*
 		main::after {
@@ -185,10 +202,10 @@ nav > ul::after {
 */
 
 
-		main.menu-active {
+main.menu-active {
 
-			transform: translateX(1em) rotateY(1deg);
-		}
+	transform: translateX(1em) rotateY(1deg);
+}
 
 
 /*
@@ -210,19 +227,20 @@ nav > ul::after {
 */
 
 
-	 main {
-			position: absolute;
-			top: 0px;
-			bottom: 0px;
-			left: 0px;
-			right: 0px;
-			margin: auto;
-			padding: 1em 4em;
-			max-width: 100%;
-/*			overflow: auto;*/
-			background-color: rgba(255, 255, 255, .5);
+main {
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	margin: auto;
+	padding: 1em 4em;
+	max-width: 100%;
+	/*			overflow: auto;*/
+		background-color: #3f4756;
+	
 
-		}
+}
 
 
 /*
@@ -246,15 +264,15 @@ nav > ul::after {
 header {
 
 
-/*
+	/*
 	position: relative;
 	z-index: 10;
 	clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10vw), 0 100%);
 	margin-bottom: -10vw;
 */
-/*	padding-top: 3.5em;*/
+	/*	padding-top: 3.5em;*/
 
-/*
+	/*
 	background:
 		url('https://jennp1987.github.io/Creative-Cog-Design/images/finalCreativeCogBkground.png');
 	background-size: cover;
@@ -264,31 +282,35 @@ header {
 	height: 50em;
 	/*margin-bottom: 3.5em;
 */
-	background-color: #3f4756;
+
 
 
 }
+
 /*HEADING*/
-h1{
+h1 {
 	font-size: 101px;
 	color: #a4844e;
 	font-family: BrandonGrotesque-Thin, Brandon Grotesque;
 	font-weight: 200;
-	
+
 }
-h2{
+
+h2 {
 	font-size: 70px;
 	color: #fff;
 	font-family: BrandonGrotesque-Medium, Brandon Grotesque;
 	font-weight: 500;
 }
-h3{
+
+h3 {
 	font-size: 55px;
 	color: #a4844e;
 	font-family: BrandonGrotesque-Thin, Brandon Grotesque;
 	font-weight: 200;
-	
+
 }
+
 /*Begin of header animation*/
 
 
@@ -296,38 +318,52 @@ h3{
 	width: 100%;
 	height: auto;
 	padding: 5%;
+	/*	padding: 15% 30%;*/
+/*	background-color: #f2faff;*/
+
 
 }
 
 
 .container h1 {
 	font-size: 101px;
-	color: #a4844e;
+	color: ;
 	font-family: BrandonGrotesque-Thin, Brandon Grotesque;
+	-webkit-text-stroke: 1px #a4844e;
+	-webkit-text-fill-color:#21212d;
 	font-weight: 200;
 	transform: translate(0%, 150%);
-/*
+
+	/*
 	animation: move 3s ease-in-out 1s normal;
 	-webkit-animation: move 3s ease-in-out 1s normal;
 	-ms-animation: move 3s ease-in-out 1s normal;
 	-moz-animation: move 3s ease-in-out 1s normal;
 */
-/*
+
+
+	/*
 	transform: translate(50%, 90%);
+
 	-ms-transform: translate(50%, 90%);
 */
-/*
+
+
+	/*
 	animation-fill-mode: forwards;
 	-webkit-animation-fill-mode: forwards;
 	-ms-animation-fill-mode: forwards;
+
 	-moz-animation-fill-mode: forwards;
 */
+
 }
 
 
 
-@-webkit-keyframes move {
 /*
+@-webkit-keyframes move {
+	
 	0% {
 		transform: translate(50%, 90%);
 	}
@@ -335,8 +371,10 @@ h3{
 	100% {
 		transform: translate(8%, 90%);
 	}
-*/
+
 }
+*/
+
 
 
 
@@ -345,27 +383,28 @@ h3{
 	color: #fff;
 	font-family: BrandonGrotesque-Medium, Brandon Grotesque;
 	font-weight: 500;
-	transform: translate(50%, 170%);
-/*	transform: translate(0%, 100%);*/
-	
+	transform: translate(8%, 170%);
 	animation: move 3s ease-in-out 1s normal;
 	-webkit-animation: move 3s ease-in-out 1s normal;
 	-ms-animation: move 3s ease-in-out 1s normal;
 	-moz-animation: move 3s ease-in-out 1s normal;
-
-/*
-	transform: translate(50%, 90%);
-	-ms-transform: translate(50%, 90%);
-*/
-
 	animation-fill-mode: forwards;
 	-webkit-animation-fill-mode: forwards;
 	-ms-animation-fill-mode: forwards;
 	-moz-animation-fill-mode: forwards;
+	
+	animation: fadeIn ease 8s;
+	-webkit-animation: fadeIn ease 8s;
+	-moz-animation: fadeIn ease 8s;
+	-o-animation: fadeIn ease 8s;
+	-ms-animation: fadeIn ease 8s;
+
 
 }
 
+
 @-webkit-keyframes move {
+
 	0% {
 		transform: translate(50%, 170%);
 	}
@@ -373,21 +412,74 @@ h3{
 	100% {
 		transform: translate(8%, 170%);
 	}
+
 }
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+@-moz-keyframes fadeOut {
+	0% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+	}
+}
+
+@-webkit-keyframes fadeOut {
+	0% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+	}
+}
+
+@-o-keyframes fadeOut {
+	0% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+	}
+}
+
+@-ms-keyframes fadeOut {
+	0% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+	}
+}
+
 
 
 .container h3 {
 	font-size: 55px;
-	color: #a4844e;
+/*	color: #a4844e;*/
 	font-family: BrandonGrotesque-Thin, Brandon Grotesque;
 	font-weight: 200;
+	transform: translate(50%, 190%);
 	
-/*
+	/*
 	-webkit-animation: webGraphics 3s ease-in-out 1s normal;
 	animation: webGraphics 3s ease-in-out 1s normal;
 */
-	transform: translate(50%, 190%);
-/*
+
+	/*
 	animation-delay: 1s;
 	animation-fill-mode: forwards;
 	-webkit-animation-fill-mode: forwards;
@@ -398,7 +490,7 @@ h3{
 
 
 @keyframes webGraphics {
-/*
+	/*
 	0% {
 		transform: translate(0%, 140%);
 	}
@@ -413,13 +505,16 @@ h3{
 /*End of header animation*/
 
 section {
-/*	margin-top: 7em;*/
-/*	margin-bottom: 50em;*/
+	/*	margin-top: 7em;*/
+	/*	margin-bottom: 50em;*/
 	padding: 7em 0;
 	width: 100%;
-	height:auto;
+	height: auto;
 	background-color: white;
-	
+
+}
+.container button{
+	display: block;
 }
 
 /*LOGO*/
@@ -436,7 +531,7 @@ img {
 article.about {
 	width: 100%;
 	height: 25em;
-/*	margin-bottom: 5em;*/
+	/*	margin-bottom: 5em;*/
 	background-color: white;
 	position: relative;
 	z-index: 10;
@@ -522,11 +617,13 @@ article .skew:after{
 	background-color: #3f4756;
 	width: 100%;
 	height: 45em;
-/*	position: absolute;
+	/*	position: absolute;
 	top: 214%;
 */
 	text-align: center;
 	padding-top: 10em;
+/*	background: #21212d;*/
+	
 
 
 
@@ -547,6 +644,7 @@ article .skew:after{
 }
 
 #projects > a:nth-child(1) {
+	font-family: BrandonGrotesque-Medium, Brandon Grotesque;
 	position: relative;
 	z-index: 2;
 	background-color: #a4844e;
@@ -556,10 +654,11 @@ article .skew:after{
 }
 
 #projects > a:nth-child(2) {
+	font-family: BrandonGrotesque-Medium, Brandon Grotesque;
 	position: relative;
 	z-index: 1;
 	background-color: #336699;
-	
+
 
 }
 
@@ -571,8 +670,8 @@ article .skew:after{
 /*END PROJECTS ARTICLE*/
 
 /*BEGIN ARTICLE FOR TESTIMONIES*/
-.findMe article{
-/*
+.findMe article {
+	/*
 	width: 100%;
 	height: auto;
 */
@@ -580,26 +679,29 @@ article .skew:after{
 	background-color: #9dc6d1;
 	border-radius: 1em;
 	line-height: 1.5em;
-	
-	
+
+
 }
-.findMe > article:nth-child(1){
+
+.findMe > article:nth-child(1) {
 	float: left;
 	width: 30%;
 	height: 15em;
 	margin: 0 10%;
 	padding: 2%;
-	
+
 }
-.findMe > article:nth-child(2){
+
+.findMe > article:nth-child(2) {
 	width: 30%;
 	height: auto;
 	margin: 0 10%;
 	padding: 2%;
 	height: 15em;
-	
+
 }
-.findMe > article > p{
+
+.findMe > article > p {
 	margin: 0 auto;
 }
 
@@ -610,13 +712,13 @@ article .skew:after{
 	background-color: white;
 	width: 100%;
 	height: auto;
-/*	padding-top: 7em;*/
+	/*	padding-top: 7em;*/
 	padding-bottom: 7em;
 
 	/*	display: block;*/
 	/*	position: relative;*/
 	/*	top: 50em;*/
-/*	margin: 0 auto;*/
+	/*	margin: 0 auto;*/
 
 }
 
@@ -658,19 +760,41 @@ footer p {
 }
 
 /*MEDIA QUERIES*/
-@media only screen and (max-width: 1133px){
-	.container h3{
+@media only screen and (max-width: 1133px) {
+	.container h3 {
 		font-size: 50px;
-		transform: translate(40%, 190%);
+		/*		transform: translate(40%, 190%);*/
 	}
 
 }
+
 @media only screen and (max-width: 1080px) {
-	.circle{
+	.circle {
 		height: 25em;
 		width: 25em;
 	}
-	.circle p{
+
+	.circle p {
 		font-size: 2.5em;
 	}
+}
+
+@media only screen and (max-width: 991px) {
+	main {
+		padding: 0;
+	}
+	main.menu-active {
+		transform: none;
+	}
+
+	.container h2 {
+		animation: none;
+		transform: none;
+		/*		animation-fill-mode: none;*/
+	}
+
+	.container h3 {
+		transform: none;
+	}
+
 }
