@@ -6,7 +6,7 @@
 
 body {
 	font-family: BrandonGrotesque, sans-serif;
-	perspective-origin: 0% 50%;
+/*	perspective-origin: 0% 50%;*/
 	perspective: 800px;
 	background: #21212d;
 	width: 100%;
@@ -169,11 +169,13 @@ nav > ul::after {
 
 main {
 	z-index: 0;
-	position: absolute;
+/*	position: absolute;*/
+/*
 	top: 0px;
 	left: 0px;
 	bottom: 0px;
 	right: 0px;
+*/
 /*	display: flex;*/
 	align-items: center;
 	/*			overflow: hidden;*/
@@ -228,6 +230,7 @@ main.menu-active {
 
 
 main {
+
 	position: absolute;
 	top: 0px;
 	bottom: 0px;
@@ -236,8 +239,7 @@ main {
 	margin: auto;
 	padding: 1em 4em;
 	max-width: 100%;
-	/*			overflow: auto;*/
-		background-color: #3f4756;
+	background-color: #3f4756;
 	
 
 }
@@ -279,10 +281,11 @@ header {
 	height: 100vh;
 */
 	max-width: 100%;
-	height: 50em;
+/*	height: 50em;*/
 	background: url('https://jennp1987.github.io/Creative-Cog-Design/images/creativeCogNewHeader.png');
 	background-size: cover;
 	height: 100vh;
+	background-color: rgba(0,0,0,0.5);
 	/*margin-bottom: 3.5em;
 */
 
@@ -387,7 +390,7 @@ h3 {
 	color: #fff;
 	font-family: BrandonGrotesque-Medium, Brandon Grotesque;
 	font-weight: 500;
-	transform: translate(8%, 170%);
+	transform: translate(8%, 190%);
 	animation: move 3s ease-in-out 1s normal;
 	-webkit-animation: move 3s ease-in-out 1s normal;
 	-ms-animation: move 3s ease-in-out 1s normal;
@@ -476,7 +479,7 @@ h3 {
 /*	color: #a4844e;*/
 	font-family: BrandonGrotesque-Thin, Brandon Grotesque;
 	font-weight: 200;
-	transform: translate(50%, 190%);
+	transform: translate(50%, 270%);
 	
 	/*
 	-webkit-animation: webGraphics 3s ease-in-out 1s normal;
