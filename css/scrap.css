@@ -90,12 +90,12 @@ main{
 /*END MAIN*/
 
 /*HEADER*/
-header {
+.jumbotron {
 	width: 100%;
 	background: url('https://jennp1987.github.io/Creative-Cog-Design/images/creativeCogNewHeader6-01.png');
 	background-size: cover;
 	background-position: center;
-	height: 100%;
+	height: auto;
 	background-repeat: no-repeat;
 
 }
@@ -144,12 +144,16 @@ h3 {
 	font-size: 70px;
 	color: #fff;
 	font-family: BrandonGrotesque-Medium, Brandon Grotesque !important;
+
+	font-weight: 500;
+/*	transform: translate(8%, 190%);*/
 /*
-	font-weight: 500;transform: translate(8%, 190%);
 	animation: move 3s ease-in-out 1s normal;
 	-webkit-animation: move 3s ease-in-out 1s normal;
 	-ms-animation: move 3s ease-in-out 1s normal;
 	-moz-animation: move 3s ease-in-out 1s normal;
+*/
+/*
 	animation-fill-mode: forwards;
 	-webkit-animation-fill-mode: forwards;
 	-ms-animation-fill-mode: forwards;
@@ -161,9 +165,11 @@ h3 {
 	-o-animation: fadeIn ease 8s;
 	-ms-animation: fadeIn ease 8s;
 */
+
 }
 
 
+/*
 @-webkit-keyframes move {
 
 	0% {
@@ -175,6 +181,7 @@ h3 {
 	}
 
 }
+*/
 
 @keyframes fadeIn {
 	0% {
@@ -232,21 +239,70 @@ h3 {
 	font-size: 55px;
 	font-family: BrandonGrotesque-Thin, Brandon Grotesque !important;
 	font-weight: 200;
-/*	transform: translate(50%, 270%);*/
-
-@media only screen and (max-width: 1199px){
+/*transform: translate(50%, 270%);*/
+}
+/*LG SCREEN*/
+@media only screen and (max-width: 1199px) and (min-width: 992px){
 	.headerContainer h1{
-		font-size: 60px !important;
+		font-size: 50px !important;
 	}
 	h1{
-		font-size: 60px !important;
+		font-size: 50px !important;
 	}
 	.headerContainer h2{
 		font-size: 40px !important;
 	}
 	.headerContainer h3{
-			font-size: 25px !important;
+			font-size: 20px !important;
 	}
 	
 }
-
+/*MED SCREEN*/
+@media only screen and (max-width: 991px) and (min-width: 768px){
+	.headerContainer h1{
+		font-size: 40px !important;
+	}
+	h1{
+		font-size: 40px !important;
+	}
+	.headerContainer h2{
+		font-size: 30px !important;
+	}
+	.headerContainer h3{
+			font-size: 18px !important;
+	}
+	
+}
+/*SM SCREEN*/
+@media only screen and (max-width: 767px ) and (min-width: 577px) {
+	.headerContainer h1{
+		font-size: 25px !important;
+	}
+	h1{
+		font-size: 25px !important;
+	}
+	.headerContainer h2{
+		font-size: 20px !important;
+	}
+	.headerContainer h3{
+			font-size: 10px !important;
+	}
+	
+}
+/*EX SM SCREEN*/
+@media only screen and (max-width: 576px) {
+	.headerContainer h1{
+		font-size: 28px !important;
+	}
+	h1{
+		font-size: 28px !important;
+	}
+	.headerContainer h2{
+		font-size: 20px !important;
+	}
+	.headerContainer h3{
+			font-size: 12px !important;
+	}
+	
+	
+}
