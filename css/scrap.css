@@ -112,7 +112,7 @@ h1,h2,h3{
 h1 {
 	font-size: 101px;
 	color: #a4844e;
-	font-family: BrandonGrotesque-Thin, Brandon Grotesque;
+	font-family: BrandonGrotesque-Thin, Brandon Grotesque !important;
 	font-weight: 200;
 
 }
@@ -120,32 +120,47 @@ h1 {
 h2 {
 	font-size: 70px;
 	color: #fff;
-	font-family: BrandonGrotesque-Medium, Brandon Grotesque;
+	font-family: BrandonGrotesque-Medium, Brandon Grotesque !important;
 	font-weight: 500;
 }
 
 h3 {
 	font-size: 55px;
 	color: #a4844e;
-	font-family: BrandonGrotesque-Thin, Brandon Grotesque;
+	font-family: BrandonGrotesque-Thin, Brandon Grotesque !important;
 	font-weight: 200;
 
 }
 .headerContainer h1 {
 	font-size: 101px;
-	color: ;
-	font-family: BrandonGrotesque-Thin, Brandon Grotesque;
+	font-family: BrandonGrotesque-Thin, Brandon Grotesque !important;
 	-webkit-text-stroke: 1px #a4844e;
 	-webkit-text-fill-color:#21212d;
 	font-weight: 200;
-
+/*	transform: translate(0%, 150%);*/
 }
 
 .headerContainer h2 {
 	font-size: 70px;
 	color: #fff;
-	font-family: BrandonGrotesque-Medium, Brandon Grotesque;
-	font-weight: 500;
+	font-family: BrandonGrotesque-Medium, Brandon Grotesque !important;
+/*
+	font-weight: 500;transform: translate(8%, 190%);
+	animation: move 3s ease-in-out 1s normal;
+	-webkit-animation: move 3s ease-in-out 1s normal;
+	-ms-animation: move 3s ease-in-out 1s normal;
+	-moz-animation: move 3s ease-in-out 1s normal;
+	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+	-ms-animation-fill-mode: forwards;
+	-moz-animation-fill-mode: forwards;
+	
+	animation: fadeIn ease 8s;
+	-webkit-animation: fadeIn ease 8s;
+	-moz-animation: fadeIn ease 8s;
+	-o-animation: fadeIn ease 8s;
+	-ms-animation: fadeIn ease 8s;
+*/
 }
 
 
@@ -215,9 +230,23 @@ h3 {
 
 .headerContainer h3 {
 	font-size: 55px;
-	font-family: BrandonGrotesque-Thin, Brandon Grotesque;
+	font-family: BrandonGrotesque-Thin, Brandon Grotesque !important;
 	font-weight: 200;
+/*	transform: translate(50%, 270%);*/
+
+@media only screen and (max-width: 1199px){
+	.headerContainer h1{
+		font-size: 60px !important;
+	}
+	h1{
+		font-size: 60px !important;
+	}
+	.headerContainer h2{
+		font-size: 40px !important;
+	}
+	.headerContainer h3{
+			font-size: 25px !important;
+	}
+	
 }
-
-
 
