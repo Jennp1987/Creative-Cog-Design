@@ -1,28 +1,223 @@
+
 /*
-* {
+ *{
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
 }
 */
 
-li{
-	list-style: none;
+body {
+	font-family: BrandonGrotesque, sans-serif !important;
+/*	perspective-origin: 0% 50%;*/
+/*	perspective: 800px;*/
+	background-color: #21212d !important;
+/*
+	width: 100%;
+	height: auto;
+*/
 }
 
-button{
-	padding: 0 0 !important;
+/*NAV*/
+nav {
+	font-family: BrandonGrotesque-Medium, sans-serif;
+}
+.navbar > button {
+	background-color: #353441 ;
+	color: white;
+	font-family: BrandonGrotesque-Medium, Brandon Grotesque;
+	line-height: 60px;
+	font-size: 0.8em;
+	letter-spacing: .1em;
+	border-radius: 0 ;
+}
+
+.navbar > button:hover {
+	color: #353441 !important;
+	background: white !important;
+
+}
+/*
+.navbar > button > div > ul > li > a{
+	margin-left: 1em;
 	
 	
 }
-button .navbar-toggler{
-	color: yellow;
-	background-color: black !important;
+*/
+.navbar-nav .nav-link{
+	padding-left: 1em !important;
+}
+.navbar li {
+	list-style: none;
 	
+
+}
+
+#collapseExample > ul > li.nav-item.dropdown.show > div{
+	background-color: #353441;
+}
+
+.navbar li, collapseExample > ul > li.nav-item.dropdown > div{
+	background-color: #353441;
 	
 }
-body > div > div > nav > button{
-	color: yellow;
-	background-color: black !important;
-	
+/*STYLES A*/
+#collapseExample > ul > li > a, #collapseExample > ul > li.nav-item.dropdown.show > div > div:nth-child(1) > a, #collapseExample > ul > li.nav-item.dropdown.show > div > div:nth-child(2) > a {
+	color: #9dc6d1;
+
 }
+/*HOVER STYLE*/
+.navbar li:hover,
+#collapseExample > ul > li.nav-item.dropdown.show > div > div:nth-child(1):hover,
+#collapseExample > ul > li.nav-item.dropdown.show > div > div > a:nth-child(1):hover{
+	background-color: #a4844e;
+
+}
+/*STYLE THE INNER OF INNER DROPDOWN*/
+#collapseExample > ul > li.nav-item.dropdown.show > div{
+	padding: 0;
+	border: none;
+}
+/*END NAV*/
+
+/*MAIN*/
+/*
+main{
+	width: 100%;
+	height:100%;
+}
+*/
+/*END MAIN*/
+
+/*HEADER*/
+header {
+	width: 100%;
+	background: url('https://jennp1987.github.io/Creative-Cog-Design/images/creativeCogNewHeader6-01.png');
+	background-size: cover;
+	background-position: center;
+	height: 100%;
+	background-repeat: no-repeat;
+
+}
+div .headerContainer{
+	width: inherit;
+	height: inherit;
+	padding: 0 0 0 50px;
+}
+/*
+h1,h2,h3{
+	display: inline-block;
+}
+*/
+h1 {
+	font-size: 101px;
+	color: #a4844e;
+	font-family: BrandonGrotesque-Thin, Brandon Grotesque;
+	font-weight: 200;
+
+}
+
+h2 {
+	font-size: 70px;
+	color: #fff;
+	font-family: BrandonGrotesque-Medium, Brandon Grotesque;
+	font-weight: 500;
+}
+
+h3 {
+	font-size: 55px;
+	color: #a4844e;
+	font-family: BrandonGrotesque-Thin, Brandon Grotesque;
+	font-weight: 200;
+
+}
+.headerContainer h1 {
+	font-size: 101px;
+	color: ;
+	font-family: BrandonGrotesque-Thin, Brandon Grotesque;
+	-webkit-text-stroke: 1px #a4844e;
+	-webkit-text-fill-color:#21212d;
+	font-weight: 200;
+
+}
+
+.headerContainer h2 {
+	font-size: 70px;
+	color: #fff;
+	font-family: BrandonGrotesque-Medium, Brandon Grotesque;
+	font-weight: 500;
+}
+
+
+@-webkit-keyframes move {
+
+	0% {
+		transform: translate(50%, 170%);
+	}
+
+	100% {
+		transform: translate(8%, 170%);
+	}
+
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+@-moz-keyframes fadeOut {
+	0% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+	}
+}
+
+@-webkit-keyframes fadeOut {
+	0% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+	}
+}
+
+@-o-keyframes fadeOut {
+	0% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+	}
+}
+
+@-ms-keyframes fadeOut {
+	0% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+	}
+}
+
+
+
+.headerContainer h3 {
+	font-size: 55px;
+	font-family: BrandonGrotesque-Thin, Brandon Grotesque;
+	font-weight: 200;
+}
+
+
+
