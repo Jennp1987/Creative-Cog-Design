@@ -137,7 +137,7 @@ h3 {
 	-webkit-text-stroke: 1px #a4844e;
 	-webkit-text-fill-color:#21212d;
 	font-weight: 200;
-/*	transform: translate(0%, 150%);*/
+	transform: translate(0%, 80%);
 }
 
 .headerContainer h2 {
@@ -146,7 +146,7 @@ h3 {
 	font-family: BrandonGrotesque-Medium, Brandon Grotesque !important;
 
 	font-weight: 500;
-/*	transform: translate(8%, 190%);*/
+	transform: translate(8%, 90%);
 /*
 	animation: move 3s ease-in-out 1s normal;
 	-webkit-animation: move 3s ease-in-out 1s normal;
@@ -239,7 +239,7 @@ h3 {
 	font-size: 55px;
 	font-family: BrandonGrotesque-Thin, Brandon Grotesque !important;
 	font-weight: 200;
-/*transform: translate(50%, 270%);*/
+transform: translate(30%, 100%);
 }
 /*LG SCREEN*/
 @media only screen and (max-width: 1199px) and (min-width: 992px){
