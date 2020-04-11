@@ -125,7 +125,7 @@ h1,h2,h3{
 h1 {
 	font-size: 101px;
 	color: #a4844e;
-	font-family: BrandonGrotesque-Thin, Brandon Grotesque !important;
+	font-family: brandon-grotesque, sans-serif!important;
 	font-weight: 300;
 	font-style: normal;
 
@@ -134,7 +134,7 @@ h1 {
 h2 {
 	font-size: 70px;
 	color: #fff;
-	font-family: BrandonGrotesque-Medium, Brandon Grotesque !important;
+	font-family: brandon-grotesque, sans-serif!important;
 	font-weight: 500;
 	font-style: normal;
 }
@@ -142,14 +142,14 @@ h2 {
 h3 {
 	font-size: 55px;
 	color: #a4844e;
-	font-family: BrandonGrotesque-Thin, Brandon Grotesque !important;
+	font-family: brandon-grotesque, sans-serif;
 	font-weight: 300;
 	font-style: normal;
 }
 
 .headerContainer h1 {
 	font-size: 101px;
-	font-family: BrandonGrotesque-Thin, Brandon Grotesque !important;
+	font-family: brandon-grotesque, sans-serif!important;
 	-webkit-text-stroke: 1px #a4844e;
 	-webkit-text-fill-color: #21212d;
 	font-weight: 300;
@@ -160,7 +160,7 @@ h3 {
 .headerContainer h2 {
 	font-size: 70px;
 	color: #fff;
-	font-family: BrandonGrotesque-Medium, Brandon Grotesque !important;
+	font-family: brandon-grotesque, sans-serif !important;
 	font-weight: 500;
 	font-style: normal;
 	transform: translate(8%, 90%);
@@ -254,7 +254,7 @@ h3 {
 
 .headerContainer h3 {
 	font-size: 55px;
-	font-family: BrandonGrotesque-Thin, Brandon Grotesque !important;
+	font-family: brandon-grotesque, sans-serif !important;
 	font-weight: 300;
 	font-style: normal;
 	transform: translate(30%, 100%);
