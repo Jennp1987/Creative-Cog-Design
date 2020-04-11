@@ -126,7 +126,8 @@ h1 {
 	font-size: 101px;
 	color: #a4844e;
 	font-family: BrandonGrotesque-Thin, Brandon Grotesque !important;
-	font-weight: 200;
+	font-weight: 300;
+	font-style: normal;
 
 }
 
@@ -135,14 +136,15 @@ h2 {
 	color: #fff;
 	font-family: BrandonGrotesque-Medium, Brandon Grotesque !important;
 	font-weight: 500;
+	font-style: normal;
 }
 
 h3 {
 	font-size: 55px;
 	color: #a4844e;
 	font-family: BrandonGrotesque-Thin, Brandon Grotesque !important;
-	font-weight: 200;
-
+	font-weight: 300;
+	font-style: normal;
 }
 
 .headerContainer h1 {
