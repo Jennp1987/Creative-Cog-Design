@@ -102,11 +102,12 @@ main{
 /*HEADER*/
 .jumbotron {
 	width: 100%;
-	background: url('https://jennp1987.github.io/Creative-Cog-Design/images/creativeCogHeaderNew4.png');
+	background: url('https://jennp1987.github.io/Creative-Cog-Design/images/creativeCogHeaderNewpng825.png');
 	background-size: cover;
 	background-position: center;
 	height: auto;
 	background-repeat: no-repeat;
+	background-color: #21212d;
 	
 }
 
