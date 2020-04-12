@@ -25,7 +25,8 @@ nav {
 .navbar > button {
 	background-color: #353441;
 	color: white;
-	font-family: BrandonGrotesque-Medium, Brandon Grotesque;
+	font-family: brandon-grotesque, sans-serif;
+	font-weight: 200;
 	line-height: 60px;
 	font-size: 0.8em;
 	letter-spacing: .1em;
@@ -101,7 +102,7 @@ main{
 
 /*HEADER*/
 .jumbotron {
-	width: 100%;
+	max-width: 100%;
 	background: url('https://jennp1987.github.io/Creative-Cog-Design/images/creativeCogHeaderNewpng825.png');
 	background-size: cover;
 	background-position: center;
@@ -124,7 +125,10 @@ h1,h2,h3{
 }
 */
 h1 {
+	display: inline-block;
 	font-size: 101px;
+	width: 70%;
+	height: auto;
 	color: #a4844e;
 	font-family: brandon-grotesque, sans-serif!important;
 	font-weight: 300;
@@ -133,7 +137,10 @@ h1 {
 }
 
 h2 {
+	display: inline-block;
 	font-size: 70px;
+	width: 70%;
+	height: auto;
 	color: #fff;
 	font-family: brandon-grotesque, sans-serif!important;
 	font-weight: 500;
@@ -141,8 +148,11 @@ h2 {
 }
 
 h3 {
+	display: inline-block;
 	font-size: 55px;
 	color: #a4844e;
+	width: 70%;
+	height: auto;
 	font-family: brandon-grotesque, sans-serif;
 	font-weight: 300;
 	font-style: normal;
