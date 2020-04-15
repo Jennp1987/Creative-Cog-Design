@@ -360,18 +360,7 @@ h3 {
 		padding-right: 0px !important;
 
 	}
-	.jumbotron {
-	max-width: 100%;
-	background: url('https://jennp1987.github.io/Creative-Cog-Design/images/creativeCogHeaderNewMobile.png');
-
-	background-size: cover;
-	background-position: center;
-	height: 100%;
-	background-repeat: no-repeat;
-	background-color: #21212d;
-
-
-}
+	
 
 
 
@@ -451,6 +440,18 @@ h3 {
 	.headerContainer h3 {
 		font-size: 12px !important;
 	}
+	.jumbotron {
+	max-width: 100%;
+	background: url('https://jennp1987.github.io/Creative-Cog-Design/images/creativeCogHeaderNewMobile.png');
+
+	background-size: cover;
+	background-position: center;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-color: #21212d;
+
+
+}
 
 
 }
