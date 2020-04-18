@@ -450,7 +450,7 @@ h3 {
 @media only screen and (max-width: 576px) and (min-width: 363px) {
 
 	div .headerContainer{
-		padding: 0 0 0 100px;
+		padding: 2em 0 0 100px;
 	}
 
 	body > div > div > div.col-lg-8.col-md-8.col-sm-12 .headerContainer h1 {
