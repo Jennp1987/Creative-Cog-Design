@@ -78,12 +78,12 @@ collapseExample > ul > li.nav-item.dropdown > div {
 	background-color: #a4844e;
 
 }
-li .dropdown a:active{
+li .dropdown a:active, #collapseExample > ul > li.nav-item.dropdown, #collapseExample > ul > li.nav-item.dropdown > a{
 	color: white;
-	outline: none;
+	outline: none !important;
 }
 
-/*STYLE THE INNER OF INNER DROPDOWN*/
+/*STYLE THE INNER OF DROPDOWN*/
 #collapseExample > ul > li.nav-item.dropdown.show > div {
 	padding: 0;
 	border: none;
