@@ -80,7 +80,7 @@ collapseExample > ul > li.nav-item.dropdown > div {
 }
 li .dropdown a:active{
 	color: white;
-	border: none;
+	outline: none;
 }
 
 /*STYLE THE INNER OF INNER DROPDOWN*/
