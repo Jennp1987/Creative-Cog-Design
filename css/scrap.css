@@ -78,7 +78,7 @@ collapseExample > ul > li.nav-item.dropdown > div {
 	background-color: #a4844e;
 
 }
-li .dropdown a:active, #collapseExample > ul > li.nav-item.dropdown, #collapseExample > ul > li.nav-item.dropdown > a{
+li .dropdown a:active, #collapseExample > ul > li.nav-item.dropdown{
 	color: white;
 	outline: none !important;
 }
