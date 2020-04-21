@@ -7,7 +7,7 @@
 
 body {
 	font-family: BrandonGrotesque, sans-serif !important;
-	perspective-origin: 0% 50%;
+/*	perspective-origin: 0% 50%;*/
 	perspective: 800px;
 	background-color: #21212d !important;
 	border-top: 1em #3f4756 solid;
@@ -378,6 +378,11 @@ h3 {
 	div .headerContainer{
 		padding: 0 0 0 48px;
 	}
+/*
+	main.menu-active{
+		transform: none;
+	}
+*/
 	.headerContainer h1 {
 		font-size: 45px !important;
 	}
@@ -399,6 +404,9 @@ h3 {
 	body > div > div > div.col-lg-2.col-md-2.col-sm-12.navDiv {
 		position: absolute !important;
 
+	}
+	main.menu-active{
+		transform: none;
 	}
 
 	header .jumbotron {
