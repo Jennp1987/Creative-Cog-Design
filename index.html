@@ -126,21 +126,21 @@
 					</div>
 				</nav>
 			</div>
-<!--			<div class="container">-->
-				<div class="col-lg-8 col-md-8 col-sm-12">
-					<main>
-						<header class="jumbotron">
-<!--						<image src="images/creativeCogHeaderNew4.png" alt="#"></image>-->
-							<div class="headerContainer">
-								<h1>FRONT END</h1>
-								<h2 class="fade-in">WEB DEVELOPER</h2>
-								<h3>web &amp; graphic designer</h3>
-							</div>
-						</header>
-					</main>
-				</div>
-				<div class="col-lg-2 col-md-2 col-sm-0"></div>
-<!--			</div>-->
+			<!--			<div class="container">-->
+			<div class="col-lg-8 col-md-8 col-sm-12">
+				<main>
+					<header class="jumbotron">
+						<!--						<image src="images/creativeCogHeaderNew4.png" alt="#"></image>-->
+						<div class="headerContainer">
+							<h1>FRONT END</h1>
+							<h2 class="fade-in">WEB DEVELOPER</h2>
+							<h3>web &amp; graphic designer</h3>
+						</div>
+					</header>
+				</main>
+			</div>
+			<div class="col-lg-2 col-md-2 col-sm-0"></div>
+			<!--			</div>-->
 			<!--END ROW-->
 		</div>
 		<!--END DIV CONTAINER-FLUID-->
@@ -148,19 +148,26 @@
 	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 
 	<script>
+		//open and close menu
 		$(document).click(function(event) {
 			var clickover = $(event.target);
 			var $navbar = $(".navbar-collapse");
 			var _opened = $navbar.hasClass("show");
-			if (_opened === true && !clickover.hasClass("navbar-toggler")) {
+			var $main = $('main');
+			if (_opened === true  && !clickover.hasClass("navbar-toggler")) {
 				$navbar.collapse('hide');
+				$main.removeClass('menu-active');
+				
+			} else {
+				$main.addClass('menu-active');
 			}
+
 		});
 	</script>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-	
+
 </body>
 
 </html>
