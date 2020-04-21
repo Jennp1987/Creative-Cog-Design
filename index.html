@@ -148,16 +148,20 @@
 	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 
 	<script>
+		//&& !clickover.hasClass("navbar-toggler")
 		//open and close menu
 		$(document).click(function(event) {
 			var clickover = $(event.target);
 			var $navbar = $(".navbar-collapse");
 			var _opened = $navbar.hasClass("show");
+			var _navToggle = $(".navbar-toggler");
+			var _closed = _navToggle.hasClass('collapsed');
 			var $main = $('main');
-			if (_opened === true  && !clickover.hasClass("navbar-toggler")) {
+			if (_opened === true) {
 				$navbar.collapse('hide');
 				$main.removeClass('menu-active');
-				
+			} else if (_closed === true) {
+				$main.removeClass('menu-active');
 			} else {
 				$main.addClass('menu-active');
 			}
