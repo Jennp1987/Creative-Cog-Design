@@ -39,6 +39,7 @@ main.menu-active {
 /*NAV*/
 nav {
 	font-family: BrandonGrotesque-Medium, sans-serif;
+	z-index: 100;
 }
 
 .navbar > button {
