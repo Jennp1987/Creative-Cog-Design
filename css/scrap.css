@@ -109,6 +109,9 @@ li .dropdown a:active, #collapseExample > ul > li.nav-item.dropdown.show > a{
 	padding: 0;
 	border: none;
 }
+body > div > div{
+	z-index: 400;
+}
 
 /*END NAV*/
 
