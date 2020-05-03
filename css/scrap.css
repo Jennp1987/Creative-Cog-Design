@@ -16,6 +16,14 @@ body {
 	height: auto;
 */
 }
+/*PRELOADING BCKG IMG*/
+/*
+body::after{
+	position:absolute; width:0; height:0; overflow:hidden; z-index:-1;
+	content: url('https://jennp1987.github.io/Creative-Cog-Design/images/creativeCogHeaderNewpng825.png');
+}
+*/
+
 /*MAIN*/
 main{
 transition: transform 150ms ease-out;
@@ -28,13 +36,11 @@ transition: transform 150ms ease-out;
 /*	padding: 1em 4em;*/
 	max-width: 100%;
 	background-color: #3f4756;
-transform: none;
+	transform: none;
 }
 main.menu-active {
-
 	transform: translateX(1em) rotateY(1deg);
 }
-
 
 /*NAV*/
 nav {
@@ -73,6 +79,7 @@ nav {
 
 .navbar li {
 	list-style: none;
+	padding-right: .5em;
 
 
 }
@@ -100,7 +107,8 @@ collapseExample > ul > li.nav-item.dropdown > div {
 	background-color: #a4844e;
 
 }
-li .dropdown a:active, #collapseExample > ul > li.nav-item.dropdown.show > a{
+.navbar-toggler:focus,
+ li .dropdown a:active, #collapseExample > ul > li.nav-item.dropdown.show > a{
 	outline: none;
 }
 
@@ -127,7 +135,12 @@ main{
 */
 
 /*END MAIN*/
-
+/*
+.jumbotron::after{
+	position:absolute; width:0; height:0; overflow:hidden; z-index:-1;
+	content: url('https://jennp1987.github.io/Creative-Cog-Design/images/creativeCogHeaderNewpng825.png');
+}
+*/
 /*HEADER*/
 .jumbotron {
 	max-width: 100%;
@@ -350,6 +363,7 @@ h3 {
 
 }
 
+
 /*LG SCREEN*/
 @media only screen and (max-width: 1199px) and (min-width: 992px) {
 	div .headerContainer{
@@ -371,6 +385,15 @@ h3 {
 		font-size: 30px !important;
 	}
 
+}
+
+/*LG SCREEN TO MEDIUM*/
+@media only screen and (max-width: 1119px) and (min-width: 768px) {
+/*
+	.navbar-collapse{
+		padding-right: .5em !important;
+	}
+*/
 }
 
 /*MED SCREEN*/
