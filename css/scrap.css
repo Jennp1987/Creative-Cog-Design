@@ -124,23 +124,6 @@ body > div > div{
 
 /*END NAV*/
 
-/*MAIN*/
-
-/*
-main{
-	width: 100%;
-	height:100%;
-
-}
-*/
-
-/*END MAIN*/
-/*
-.jumbotron::after{
-	position:absolute; width:0; height:0; overflow:hidden; z-index:-1;
-	content: url('https://jennp1987.github.io/Creative-Cog-Design/images/creativeCogHeaderNewpng825.png');
-}
-*/
 /*HEADER*/
 .jumbotron {
 	max-width: 100%;
@@ -163,46 +146,9 @@ div .headerContainer {
 
 }
 
-/*
-h1,h2,h3{
-	display: inline-block;
-}
-*/
-/* h1 {
-	display: inline-block;
-	font-size: 101px;
-	width: 70%;
-	height: auto;
-	color: #a4844e;
-	font-family: brandon-grotesque, sans-serif !important;
-	font-weight: 300;
-	font-style: normal;
-
-} */
-
-/* h2 {
-	display: inline-block;
-	font-size: 70px;
-	width: 70%;
-	height: auto;
-	color: #fff;
-	font-family: brandon-grotesque, sans-serif !important;
-	font-weight: 500;
-	font-style: normal;
-} */
-
- h3 {
-	display: inline-block;
-	font-size: 55px;
-	color: #a4844e;
-	width: 70%;
-	height: auto;
-	font-family: brandon-grotesque, sans-serif;
-	font-weight: 300;
-	font-style: normal;
-} 
-
 .headerContainer h1 {
+	width: 70%;
+	height: auto;
 	font-size: 101px;
 	font-family: brandon-grotesque, sans-serif !important;
 	-webkit-text-stroke: 1px #a4844e;
@@ -213,28 +159,14 @@ h1,h2,h3{
 }
 
 .headerContainer h2 {
+	width: 70%;
+	height: auto;
 	font-size: 70px;
 	color: #fff;
 	font-family: brandon-grotesque, sans-serif !important;
 	font-weight: 500;
 	font-style: normal;
 	transform: translate(8%, 90%);
-
-/*
-	animation: move 3s ease-in-out 1s normal;
-	-webkit-animation: move 3s ease-in-out 1s normal;
-	-ms-animation: move 3s ease-in-out 1s normal;
-	-moz-animation: move 3s ease-in-out 1s normal;
-*/
-
-
-/*
-	animation-fill-mode: forwards;
-	-webkit-animation-fill-mode: forwards;
-	-ms-animation-fill-mode: forwards;
-	-moz-animation-fill-mode: forwards;
-*/
-	
 	animation: fadeIn ease 8s;
 	-webkit-animation: fadeIn ease 8s;
 	-moz-animation: fadeIn ease 8s;
@@ -244,20 +176,6 @@ h1,h2,h3{
 
 }
 
-
-/*
-@-webkit-keyframes move {
-
-	0% {
-		transform: translate(50%, 170%);
-	}
-
-	100% {
-		transform: translate(8%, 170%);
-	}
-
-}
-*/
 
 @keyframes fadeIn {
 	0% {
@@ -312,12 +230,21 @@ h1,h2,h3{
 
 
 .headerContainer h3 {
+	width: 70%;
+	height: auto;
+	color: #a4844e;
 	font-size: 55px;
 	font-family: brandon-grotesque, sans-serif !important;
 	font-weight: 300;
 	font-style: normal;
 	transform: translate(30%, 100%);
+	
 }
+
+.headerContainer h1, .headerContainer h2, .headerContainer h3{
+	display: inline-block;
+}
+
 
 /*SECTION BEGIN*/
 section{
@@ -516,7 +443,7 @@ img{
 	}
 
 	.headerContainer h2 {
-		font-size: 35px !important;
+		font-size: 32px !important;
 	}
 
 	.headerContainer h3 {
