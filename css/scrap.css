@@ -66,13 +66,6 @@ nav {
 
 }
 
-/*
-.navbar > button > div > ul > li > a{
-	margin-left: 1em;
-	
-	
-}
-*/
 .navbar-nav .nav-link {
 	padding-left: 1em !important;
 }
@@ -147,9 +140,11 @@ div .headerContainer {
 }
 
 .headerContainer h1 {
-	width: 70%;
+	display: inline-block;
+	width: 60%;
 	height: auto;
-	font-size: 101px;
+	/* font-size: 101px; */
+	font-size: 80px;
 	font-family: brandon-grotesque, sans-serif !important;
 	-webkit-text-stroke: 1px #a4844e;
 	-webkit-text-fill-color: #21212d;
@@ -159,9 +154,11 @@ div .headerContainer {
 }
 
 .headerContainer h2 {
-	width: 70%;
+	display: inline-block;
+	width: 60%;
 	height: auto;
-	font-size: 70px;
+	/* font-size: 70px; */
+	font-size: 60px;
 	color: #fff;
 	font-family: brandon-grotesque, sans-serif !important;
 	font-weight: 500;
@@ -230,6 +227,7 @@ div .headerContainer {
 
 
 .headerContainer h3 {
+	display: inline-block;
 	width: 70%;
 	height: auto;
 	color: #a4844e;
@@ -264,19 +262,19 @@ img{
 /*EX EX LG SCREEN*/
 @media only screen and (max-width: 1582px) and (min-width: 1552px){
 	div .headerContainer{
-		/* padding: 0 0 0 125px; */
+		 padding: 0 0 5em 120px; 
 	}
 	
 }
 @media only screen and (max-width: 1551px) and (min-width: 1433px) {
 	div .headerContainer{
-		/* padding: 0 0 0 125px; */
+		 padding: 0 0 5em 125px; 
 	}
 	.headerContainer h1{
-		font-size: 70px !important;
+		font-size: 75px !important;
 	}
 	.headerContainer h2{
-		font-size: 55px;
+		font-size: 53px;
 		
 	}
 	.headerContainer h3{
@@ -287,18 +285,14 @@ img{
 /*EX LG SCREEN*/
 @media only screen and (max-width: 1432px) and (min-width: 1200px) {
 	div .headerContainer{
-		/* padding: 0 0 0 110px; */
+		 padding: 0 0 5em 110px; 
 	}
 	.headerContainer h1 {
-		font-size: 68px !important;
-	}
-
-	h1 {
-		font-size: 68px !important;
+		font-size: 63px !important;
 	}
 
 	.headerContainer h2 {
-		font-size: 50px !important;
+		font-size: 44px !important;
 	}
 
 	.headerContainer h3 {
@@ -312,22 +306,18 @@ img{
 /*LG SCREEN*/
 @media only screen and (max-width: 1199px) and (min-width: 992px) {
 	div .headerContainer{
-		padding: 0 0 5em 105px; 
+		padding: 0 0 5em 70px; 
 	}
 	.headerContainer h1 {
-		font-size: 55px !important;
-	}
-
-	h1 {
-		font-size: 55px !important;
+		font-size: 50px !important;
 	}
 
 	.headerContainer h2 {
-		font-size: 40px !important;
+		font-size: 35px !important;
 	}
 
 	.headerContainer h3 {
-		font-size: 30px !important;
+		font-size: 28px !important;
 	}
 
 }
@@ -344,7 +334,7 @@ img{
 /*MED SCREEN*/
 @media only screen and (max-width: 991px) and (min-width: 768px) {
 	div .headerContainer{
-		 padding: 0 0 5em 48px; 
+		 padding: 0 0 5em 15px; 
 	}
 /*
 	main.menu-active{
@@ -352,16 +342,16 @@ img{
 	}
 */
 	.headerContainer h1 {
-		font-size: 45px !important;
+		font-size: 40px !important;
 	}
 
 
 	.headerContainer h2 {
-		font-size: 32px !important;
+		font-size: 29px !important;
 	}
 
 	.headerContainer h3 {
-		font-size: 25px !important;
+		font-size: 23px !important;
 	}
 
 }
@@ -436,18 +426,18 @@ img{
 		padding-right: 0px !important;
 	}
 	div .headerContainer{
-		/* padding: 0 0 0 100px; */
+		padding: 0 0 0 85px; 
 	}
 	.headerContainer h1 {
-		font-size: 43px !important;
+		font-size: 40px !important;
 	}
 
 	.headerContainer h2 {
-		font-size: 32px !important;
+		font-size: 29px !important;
 	}
 
 	.headerContainer h3 {
-		font-size: 25px !important;
+		font-size: 23px !important;
 	}
 
 }
@@ -456,19 +446,14 @@ img{
 @media only screen and (max-width: 576px) and (min-width: 363px) {
 
 	div .headerContainer{
-		padding: 2em 0 3em 100px; 
+		padding: 2em 0 3em 85px; 
 	}
-
-	body > div > div > div.col-lg-8.col-md-8.col-sm-12 .headerContainer h1 {
-		font-size: 28px !important;
-	}
-
 	h1 {
-		font-size: 28px !important;
+		font-size: 25px !important;
 	}
 
 	.headerContainer h2 {
-		font-size: 20px !important;
+		font-size: 18px !important;
 	}
 
 	.headerContainer h3 {
@@ -482,7 +467,7 @@ img{
 		/* padding: 2em 0 0 20px; */
 	}
 	h1 {
-		font-size: 28px !important;
+		font-size: 23px !important;
 /*		transform: translate(0%, 80%);*/
 	}
 
