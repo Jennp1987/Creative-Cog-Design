@@ -107,19 +107,22 @@
 			var _navToggle = $(".navbar-toggler");
 			var _closed = _navToggle.hasClass('collapsed');
 			var $main = $('main');
-			
-			//IF IT'S OPEN AND IF YOU CLICK ON THE BUTTON YOU CLOSE THE MENU
-			 if (_opened === true && clickover.hasClass('navbar-toggler')) {
+			//FIRST CONDITION ---
+			//SECOND CONDITION --- _opened === true &&
+			//IF IT'S OPEN AND IF YOU CLICK ON THE BUTTON YOU CLOSE THE MENU AND REMOVES SKEW
+			 if ( _opened === true && clickover.hasClass('navbar-toggler')) {
 				$main.removeClass('menu-active');
-				$navbar.collapse('hide');
+				//$navbar.collapse('hide');
+
 			//CLOSES NAV AND REMOVES SKEW WHEN YOU CLICK OFF OF NAV
-			 } else if (_opened === true && !clickover.hasClass('navbar-toggler')) {
-				$navbar.collapse('hide');
-				$main.removeClass('menu-active');
-			//IF ITS CLOSED AND HAS BEEN OPEN - WORKS
+			//  } else if (!clickover.hasClass('navbar-toggler')) {
+			// 	//$navbar.collapse('hide');
+			// 	$main.removeClass('menu-active');
+
+			//IF ITS CLOSED REMOVE CLASS 
 			} else if (clickover.hasClass('navbar-toggler collapsed')) {
 				$main.removeClass('menu-active');
-			//REMOVE CLASS IF CLICK EVENT IS NOT ON BUTTON. USED FOR A TAGS. 
+			//REMOVE CLASS IF CLICK EVENT IS NOT ON BUTTON. USED FOR A TAGS. AND FOR CLICKING OFF ON PAGE.  
 			} else if ( !clickover.hasClass('navbar-toggler')) {
 				$main.removeClass('menu-active');
 			}else {
