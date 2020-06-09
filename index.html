@@ -37,7 +37,7 @@
 
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="#">ABOUT</a>
+								<a class="nav-link" href="/pages/about.html">ABOUT</a>
 							</li>
 							<li class="nav-item">
 								<a class="nav-link" href="#">HIRE</a>
@@ -48,7 +48,8 @@
 			</div>
 			<!--<div class="container">-->
 			<div class="col-lg-8 col-md-8 col-sm-12">
-				<main>
+				<!--class='menu-active'-->
+				<main >
 					<header class="jumbotron">
 						<div class="headerContainer">
 							<h1>FRONT END</h1>
@@ -60,7 +61,7 @@
 						<img src="images/creativeCogLogoSvg.svg" alt="creative cognition design" title="logo">
 				<article class="about skew">
 					<p>Dedicated to delivering creative assets that have a positive user experience, aesthetically pleasing layouts, and engaging functionality that provide enjoyable digital experiences.</p><br>
-					<p>Read Story Here.</p>
+					<a href='/pages/about.html'>Read Story Here.</a>
 				</article>
 					</section>
 				</main> 
@@ -74,7 +75,31 @@
 
 	<script>
 		//&& !clickover.hasClass("navbar-toggler")
+		//if (clickover._navToggle === true)
+		//if (clickover.hasClass("navbar-toggler") === true) 
 		//open and close menu
+		//_closed === true &&
+		// $(document).click(function(event) {
+		// 	var clickover = $(event.target);
+		// 	var $navbar = $(".navbar-collapse");
+		// 	var _opened = $navbar.hasClass("show");
+		// 	var $main = $('main');
+		// 	//CLOSES NAV AND REMOVES SKEW WHEN YOU CLICK OFF OF NAV
+		// 	//IF IT'S OPEN AND IF YOU CLICK ON ANOTHER ELEMENT BESIDES THE NAV BUTTON YOU CLOSE THE MENU
+		// 	if (_opened === true && !clickover.hasClass("navbar-toggler")) {
+		// 		$navbar.collapse('hide');
+		// 		$main.removeClass('menu-active');
+		// 		//IF YOU CLICK ANOTHER ELEMENT BESIDES THE NAV BUTTON IT DOES NOT HAVE SKEW. NEEDED FOR A TAGS
+		// 	} else if (!clickover.hasClass("navbar-toggler")) {
+		// 		$main.removeClass('menu-active');
+		// 	} else if (_opened === true && clickover.hasClass("navbar-toggler")){
+		// 		$main.removeClass('menu-active');
+		// 	} else {
+		// 		$main.addClass('menu-active');
+		// 	}
+
+		// });
+
 		$(document).click(function(event) {
 			var clickover = $(event.target);
 			var $navbar = $(".navbar-collapse");
@@ -82,12 +107,22 @@
 			var _navToggle = $(".navbar-toggler");
 			var _closed = _navToggle.hasClass('collapsed');
 			var $main = $('main');
-			if (_opened === true) {
+			
+			//IF IT'S OPEN AND IF YOU CLICK ON THE BUTTON YOU CLOSE THE MENU
+			 if (_opened === true && clickover.hasClass('navbar-toggler')) {
+				$main.removeClass('menu-active');
+				$navbar.collapse('hide');
+			//CLOSES NAV AND REMOVES SKEW WHEN YOU CLICK OFF OF NAV
+			 } else if (_opened === true && !clickover.hasClass('navbar-toggler')) {
 				$navbar.collapse('hide');
 				$main.removeClass('menu-active');
-			} else if (_closed === true) {
+			//IF ITS CLOSED AND HAS BEEN OPEN - WORKS
+			} else if (clickover.hasClass('navbar-toggler collapsed')) {
 				$main.removeClass('menu-active');
-			} else {
+			//REMOVE CLASS IF CLICK EVENT IS NOT ON BUTTON. USED FOR A TAGS. 
+			} else if ( !clickover.hasClass('navbar-toggler')) {
+				$main.removeClass('menu-active');
+			}else {
 				$main.addClass('menu-active');
 			}
 
