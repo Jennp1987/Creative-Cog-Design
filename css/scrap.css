@@ -247,22 +247,124 @@ div .headerContainer {
 /*SECTION BEGIN*/
 section{
 	background-color: white;
-	padding: 5em 0;
-
+	padding: 2em 0;
+	width: 100%;
+	height: auto;
+	/* z-index: 10; */
+	/* clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10vw), 0 100%);
+	margin-bottom: -10vw; */
+}
+/*SECOND CONTAINER*/
+/* .container-fluid {
+	padding-left: 0 !important;
+	padding-right: 0 !important; 
+} */
+/*FIRST CONTAINER*/
+body > div.container-fluid{
+	/* padding-right: 0px !important;
+} */
+}
+/*SECOND CONTAINER*/
+body > div > div.row > div.col-lg-8.col-md-8.col-sm-12 > main > section > div.container-fluid{
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+}
+.row{
+	/* margin-left: 15px !important;
+	margin-right: 15px !important; */
+}
+div.skew{
+	background-color: white;
+	position: relative;
+	z-index: 10;
+	clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10vw), 0 100%);
+	margin-bottom: -10vw;
+}
+article.about {
+	width: 100%;
+	height: 25em;
+	
+		/* margin-bottom: 5em; */
+	/* background-color: white;
+	position: relative;
+	z-index: 10;
+	clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10vw), 0 100%);
+	margin-bottom: -10vw; */
 }
 img{
 	max-width: 90%;
-	width: 49%;
+	width: 60%;
 	height: auto;
 	margin: auto;
 	display: block;
 
 }
+.about p {
+	max-width: 750px;
+	margin: 0 auto;
+	font-size: 1.3em;
+}
+.about a{
+	
+}
+body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > section > div.col-12.skew > article > a{
+	text-align: right;
+}
+#projects {
+	background-color: #3f4756;
+	width: 100%;
+	height: auto;
+	text-align: center;
+	padding-top: 10em; 
+	padding-bottom: 5em;
+}
+.circle {
+	display: inline-block;
+	height: 30em;
+	width: 30em;
+	padding-top: 60px;
+	line-height: 18px;
+	border-radius: 50%;
+	color: white;
+	margin: 0 0 0 -100px;
+	/*	box-shadow: 10px 15px 30px rgba(0, 0, 0, .5);*/
+	/*	margin: auto 0;*/
+
+}
+#projects > a:nth-child(1) {
+	font-family: BrandonGrotesque-Medium, Brandon Grotesque;
+	position: relative;
+	z-index: 2;
+	background-color: #a4844e;
+	margin: 0 auto;
+
+
+}
+
+#projects > a:nth-child(2) {
+	font-family: BrandonGrotesque-Medium, Brandon Grotesque;
+	position: relative;
+	z-index: 1;
+	background-color: #336699;
+
+
+}
+
+.circle p {
+	margin-top: 3.5em;
+	font-size: 3em;
+}
+
+
 
 /*EX EX LG SCREEN*/
 @media only screen and (max-width: 1582px) and (min-width: 1552px){
 	div .headerContainer{
 		 padding: 0 0 5em 120px; 
+	}
+	.container {
+	/* padding-left: 0 !important;
+	padding-right: 0 !important; */
 	}
 	
 }
@@ -280,6 +382,11 @@ img{
 	.headerContainer h3{
 		font-size: 38px;
 	}
+	/* .container{
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+	} */
+	
 	
 }
 /*EX LG SCREEN*/

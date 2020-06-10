@@ -11,8 +11,9 @@
 </head>
 <body>
 	<div class="container-fluid">
-		<!--BEGIN ROW-->
-		 <div class="row">
+		<!-- BEGIN ROW -->
+		  <div class="row">
+			  <!--BEGIN NAV-->
 			<div class="col-lg-2 col-md-2 col-sm-12 navDiv">
 				<nav class="navbar sticky-top">
 					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapseExample">MENU</button>
@@ -45,8 +46,10 @@
 						</ul>
 					</div>
 				</nav>
+				<!--END NAV COL-->
 			</div>
 			<!--<div class="container">-->
+			<!--BEHIN MIDDLE COL-->
 			<div class="col-lg-8 col-md-8 col-sm-12">
 				<!--class='menu-active'-->
 				<main >
@@ -58,19 +61,47 @@
 						</div>
 					</header>
 					<section>
-						<img src="images/creativeCogLogoSvg.svg" alt="creative cognition design" title="logo">
-				<article class="about skew">
-					<p>Dedicated to delivering creative assets that have a positive user experience, aesthetically pleasing layouts, and engaging functionality that provide enjoyable digital experiences.</p><br>
-					<a href='/pages/about.html'>Read Story Here.</a>
+						<!-- BEGIN SECOND CONTAINER -->
+						<!-- <div class="container-fluid"> -->
+						<!-- <div class = "row"> -->
+							<div class = "col-12">
+							<img src="images/creativeCogLogoSvg.svg" alt="creative cognition design" title="logo">
+						</div>
+						<!-- </div> -->
+					<!-- <div class="row">  -->
+						<!-- <div class="col-2"></div> -->
+						<div class="col-12 skew">
+						<article class="about">
+					<p>Dedicated to delivering creative assets that have a positive user experience, aesthetically pleasing layouts, and engaging functionality that provide enjoyable digital experiences. <a href='/pages/about.html'>Read Story Here.</a></p><br>
+					
 				</article>
-					</section>
+				</div>
+				<!-- <div class="col-2"></div> -->
+			<!-- </div> -->
+		
+				<article id="projects" class="skew">
+					<a href="#" class="circle">
+						<p>WEB</p>
+					</a>
+					<a href="#" class="circle">
+						<p>GRAPHICS</p>
+					</a>
+				</article>
+				<!--END SECOND CONTAINER-->
+				<!-- </div> -->
+				</section>
+			
+			<!--END MIDDLE MAIN CO-->
+				</div>
 				</main> 
-		</div>
+		
 		<div class="col-lg-2 col-md-2 col-sm-0"></div>
 			<!--END ROW-->
 		</div>
-		<!--END DIV CONTAINER-FLUID-->
-	</div>
+			<!--END DIV CONTAINER-FLUID-->
+		</div>
+		
+	<!-- </div> -->
 	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 
 	<script>
@@ -115,14 +146,14 @@
 				//$navbar.collapse('hide');
 
 			//CLOSES NAV AND REMOVES SKEW WHEN YOU CLICK OFF OF NAV
-			//  } else if (!clickover.hasClass('navbar-toggler')) {
-			// 	//$navbar.collapse('hide');
-			// 	$main.removeClass('menu-active');
+			 } else if (!clickover.hasClass('navbar-toggler')) {
+				$navbar.collapse('hide');
+				$main.removeClass('menu-active');
 
 			//IF ITS CLOSED REMOVE CLASS 
 			} else if (clickover.hasClass('navbar-toggler collapsed')) {
 				$main.removeClass('menu-active');
-			//REMOVE CLASS IF CLICK EVENT IS NOT ON BUTTON. USED FOR A TAGS. AND FOR CLICKING OFF ON PAGE.  
+			//REMOVE CLASS IF CLICK EVENT IS NOT ON BUTTON. USED FOR A TAGS. 
 			} else if ( !clickover.hasClass('navbar-toggler')) {
 				$main.removeClass('menu-active');
 			}else {
