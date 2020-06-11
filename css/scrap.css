@@ -120,7 +120,8 @@ body > div > div{
 /*HEADER*/
 .jumbotron {
 	max-width: 100%;
-	background: url('https://jennp1987.github.io/Creative-Cog-Design/images/creativeCogHeaderNewpng825.png');
+	/* background: url('https://jennp1987.github.io/Creative-Cog-Design/images/creativeCogHeaderNewpng825.png'); */
+	background: url('https://jennp1987.github.io/Creative-Cog-Design/images/ccHeader.png');
 	background-size: cover;
 	background-position: center;
 	height: 65em;
