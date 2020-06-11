@@ -123,7 +123,7 @@ body > div > div{
 	background: url('https://jennp1987.github.io/Creative-Cog-Design/images/creativeCogHeaderNewpng825.png');
 	background-size: cover;
 	background-position: center;
-	height: 100%;
+	height: 65em;
 	background-repeat: no-repeat;
 	background-color: #21212d;
 	border-radius: 0 !important;
@@ -150,6 +150,7 @@ div .headerContainer {
 	-webkit-text-fill-color: #21212d;
 	font-weight: 300;
 	font-style: normal;
+	/* transform: translate(0%, 80%); */
 	transform: translate(0%, 80%);
 }
 
@@ -163,6 +164,7 @@ div .headerContainer {
 	font-family: brandon-grotesque, sans-serif !important;
 	font-weight: 500;
 	font-style: normal;
+	/* transform: translate(8%, 90%); */
 	transform: translate(8%, 90%);
 	animation: fadeIn ease 8s;
 	-webkit-animation: fadeIn ease 8s;
@@ -172,7 +174,6 @@ div .headerContainer {
 
 
 }
-
 
 @keyframes fadeIn {
 	0% {
@@ -224,8 +225,6 @@ div .headerContainer {
 	}
 }
 
-
-
 .headerContainer h3 {
 	display: inline-block;
 	width: 70%;
@@ -235,6 +234,7 @@ div .headerContainer {
 	font-family: brandon-grotesque, sans-serif !important;
 	font-weight: 300;
 	font-style: normal;
+	/* transform: translate(30%, 100%); */
 	transform: translate(30%, 100%);
 	
 }
@@ -242,37 +242,15 @@ div .headerContainer {
 .headerContainer h1, .headerContainer h2, .headerContainer h3{
 	display: inline-block;
 }
-
-
+/*HEADER END*/
 /*SECTION BEGIN*/
 section{
 	background-color: white;
 	padding: 2em 0;
 	width: 100%;
 	height: auto;
-	/* z-index: 10; */
-	/* clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10vw), 0 100%);
-	margin-bottom: -10vw; */
 }
-/*SECOND CONTAINER*/
-/* .container-fluid {
-	padding-left: 0 !important;
-	padding-right: 0 !important; 
-} */
-/*FIRST CONTAINER*/
-body > div.container-fluid{
-	/* padding-right: 0px !important;
-} */
-}
-/*SECOND CONTAINER*/
-body > div > div.row > div.col-lg-8.col-md-8.col-sm-12 > main > section > div.container-fluid{
-	padding-left: 0 !important;
-	padding-right: 0 !important;
-}
-.row{
-	/* margin-left: 15px !important;
-	margin-right: 15px !important; */
-}
+
 div.skew{
 	background-color: white;
 	position: relative;
@@ -284,7 +262,7 @@ article.about {
 	width: 100%;
 	height: 25em;
 	
-		/* margin-bottom: 5em; */
+	/* margin-bottom: 5em; */
 	/* background-color: white;
 	position: relative;
 	z-index: 10;
@@ -307,9 +285,9 @@ img{
 .about a{
 	
 }
-body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > section > div.col-12.skew > article > a{
+/* body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > section > div.col-12.skew > article > a{
 	text-align: right;
-}
+} */
 #projects {
 	background-color: #3f4756;
 	width: 100%;
