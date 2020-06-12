@@ -121,8 +121,9 @@ body > div > div{
 .jumbotron {
 	max-width: 100%; 
 	/* background: url('https://jennp1987.github.io/Creative-Cog-Design/images/creativeCogHeaderNewpng825.png');   */
-	background: url('https://jennp1987.github.io/Creative-Cog-Design/images/header.png'); 
-	/* background: url('../images/cCHeaderNew1.png'); */
+	/* background: url('https://jennp1987.github.io/Creative-Cog-Design/images/header.png');  */
+	 /* background: url('../images/header.png');  */
+	 background: url('../images/header2.png'); 
 	background-size: cover;
 	/* background-size: contain; */
 	background-position: center;
@@ -153,11 +154,9 @@ body > div > div{
 div .headerContainer {
 	width: inherit;
 	height: inherit;
-	padding: 0 0 5em 130px;
-	/* padding: 0 0 0 10px; */
-	/* background-color: rgba(255, 132, 230, 0.85);  */
-	/* position: relative;
-    z-index: 2; */
+	/* padding: 0 0 5em 130px; */
+	padding: 0 0 5em 140px;
+
 
 }
 
