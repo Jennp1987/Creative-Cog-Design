@@ -593,6 +593,20 @@ img{
 	section {
 		padding-top: 3em;
 	}
+	.circle{
+		height:15em;
+		width: 15em;
+		padding-top: 0;
+
+	}
+	#projects > a:nth-child(2){
+		margin: 3em auto 0 auto;
+	}
+	.circle p{
+		/* margin-top:2.5em;*/
+		font-size: 2.5em; 
+		margin: 2.9em auto;
+	}
 	
 
 }
