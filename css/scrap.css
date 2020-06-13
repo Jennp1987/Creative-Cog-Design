@@ -645,7 +645,7 @@ img{
 	section {
 		padding-top: 3em;
 	}
-	.circle p, #projects > a > p{
+	.circle p, #projects > a:nth-child(1) > p, #projects > a:nth-child(2) > p{
 		/* margin-top:2.5em;*/
 		font-size: 2.5em; 
 		margin: 2.9em auto;
