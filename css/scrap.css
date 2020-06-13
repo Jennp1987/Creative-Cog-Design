@@ -348,8 +348,7 @@ img{
 
 
 }
-#projects > a > p,
-.circle p {
+#projects > a:nth-child(1) > p, #projects > a:nth-child(2) > p {
 	margin-top: 3.5em;
 	font-size: 3em;
 	font-family: BrandonGrotesque-Medium, Brandon Grotesque;
