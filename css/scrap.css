@@ -323,6 +323,9 @@ img{
 	padding-bottom: 10em;
 	margin: 0 auto;
 }
+.center{
+	margin: 0 auto;
+}
 #projects h2{
 	color: white;
 	font-family: BrandonGrotesque, Brandon Grotesque;
@@ -331,8 +334,9 @@ img{
 	/* font-family: brandon-grotesque, sans-serif !important; */
 	/* font-weight: 300; */
 	font-style: normal;
-	font-weight: 700;
-	letter-spacing: 3px;
+	/* font-weight: 700; */
+	font-weight: 500;
+	letter-spacing: 2px;
 
 
 }
@@ -344,12 +348,10 @@ img{
 	line-height: 18px;
 	border-radius: 50%;
 	color: white;
-	margin: 0 0 0 -100px;
-	/*	box-shadow: 10px 15px 30px rgba(0, 0, 0, .5);*/
-	/*	margin: auto 0;*/
+	margin: 0 0 0 -100px; 
 
 }
-#projects > a:nth-child(3) {
+#projects > div > a:nth-child(3) {
 	font-family: BrandonGrotesque-Medium, Brandon Grotesque;
 	position: relative;
 	z-index: 1;
@@ -359,8 +361,7 @@ img{
 
 
 }
-
-#projects > a:nth-child(2) {
+#projects > div > a:nth-child(2) {
 	position: relative;
 	z-index: 2;
 	/* background-color: #336699; */
@@ -370,11 +371,13 @@ img{
 
 }
 #projects > a > p,
-#projects > a:nth-child(2) > p, #projects > a:nth-child(3) > p {
+#projects > div > a:nth-child(2) > p, #projects > div > a:nth-child(3) > p {
 	margin-top: 3.5em;
 	font-size: 3em;
 	font-family: BrandonGrotesque, Brandon Grotesque;
 	font-weight: 350;
+	
+	
 }
 /*SECTION END*/
 
