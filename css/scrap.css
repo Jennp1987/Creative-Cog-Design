@@ -180,7 +180,8 @@ div .headerContainer {
 	/* width: 60%; */
 	height: auto;
 	/* font-size: 70px; */
-	font-size: 60px;
+	/* font-size: 60px; */
+	font-size: 3.75em;
 	color: #fff;
 	font-family: brandon-grotesque, sans-serif !important;
 	font-weight: 500;
@@ -292,19 +293,21 @@ article.about {
 	margin-bottom: -10vw; */
 }
 img{
-	max-width: 90%;
+	/* max-width: 90%; */
+	width: 60%;
 	/* width: 60%; */
-	width: 55%;
+	/* width: 55%; */
 	height: auto;
 	margin: auto;
 	display: block;
 
 }
 .about p {
-	max-width: 750px;
-	/* max-width: 700px; */
+	/* max-width: 725px; */
+	max-width: 695px;
 	margin: 0 auto;
-	font-size: 1.3em;
+	/* font-size: 1.3em; */
+	font-size: 1.5em
 }
 .about a{
 	
@@ -314,8 +317,24 @@ img{
 	width: 100%;
 	height: auto;
 	text-align: center;
-	padding-top: 10em; 
-	padding-bottom: 5em;
+	/* padding-top: 10em; 
+	padding-bottom: 5em; */
+	padding-top: 15em; 
+	padding-bottom: 10em;
+	margin: 0 auto;
+}
+#projects h2{
+	color: white;
+	font-family: BrandonGrotesque, Brandon Grotesque;
+	font-size: 3.75em;
+	margin-bottom: 1.5em;
+	/* font-family: brandon-grotesque, sans-serif !important; */
+	/* font-weight: 300; */
+	font-style: normal;
+	font-weight: 700;
+	letter-spacing: 3px;
+
+
 }
 .circle {
 	display: inline-block;
@@ -330,30 +349,34 @@ img{
 	/*	margin: auto 0;*/
 
 }
-#projects > a:nth-child(1) {
+#projects > a:nth-child(3) {
 	font-family: BrandonGrotesque-Medium, Brandon Grotesque;
 	position: relative;
-	z-index: 2;
-	background-color: #a4844e;
-	margin: 0 auto;
+	z-index: 1;
+	/* background-color: #a4844e; */
+	/* margin: 0 auto; */
+	background-color:#a3abbd;
 
 
 }
 
 #projects > a:nth-child(2) {
-	
 	position: relative;
-	z-index: 1;
-	background-color: #336699;
+	z-index: 2;
+	/* background-color: #336699; */
+	/* background-color: #a3abbd; */
+	background-color: #a4844e;
 
 
 }
-#projects > a:nth-child(1) > p, #projects > a:nth-child(2) > p {
+#projects > a > p,
+#projects > a:nth-child(2) > p, #projects > a:nth-child(3) > p {
 	margin-top: 3.5em;
 	font-size: 3em;
-	font-family: BrandonGrotesque-Medium, Brandon Grotesque;
+	font-family: BrandonGrotesque, Brandon Grotesque;
+	font-weight: 350;
 }
-
+/*SECTION END*/
 
 
 /*EX EX LG SCREEN*/
