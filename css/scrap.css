@@ -341,7 +341,7 @@ img{
 }
 
 #projects > a:nth-child(2) {
-	font-family: BrandonGrotesque-Medium, Brandon Grotesque;
+	
 	position: relative;
 	z-index: 1;
 	background-color: #336699;
@@ -352,6 +352,7 @@ img{
 .circle p {
 	margin-top: 3.5em;
 	font-size: 3em;
+	font-family: BrandonGrotesque-Medium, Brandon Grotesque;
 }
 
 
