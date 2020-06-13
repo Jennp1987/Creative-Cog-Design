@@ -348,7 +348,7 @@ img{
 
 
 }
-
+#projects > a > p,
 .circle p {
 	margin-top: 3.5em;
 	font-size: 3em;
@@ -603,7 +603,7 @@ img{
 	#projects > a:nth-child(2){
 		margin: 3em auto 0 auto;
 	}
-	.circle p{
+	.circle p, #projects > a > p{
 		/* margin-top:2.5em;*/
 		font-size: 2.5em; 
 		margin: 2.9em auto;
@@ -645,7 +645,7 @@ img{
 	section {
 		padding-top: 3em;
 	}
-	.circle p{
+	.circle p, #projects > a > p{
 		/* margin-top:2.5em;*/
 		font-size: 2.5em; 
 		margin: 2.9em auto;
