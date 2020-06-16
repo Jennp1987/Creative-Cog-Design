@@ -6,7 +6,7 @@
 
 
 body {
-	font-family: BrandonGrotesque, sans-serif !important;
+	font-family: BrandonGrotesque, Helvetica, sans-serif !important;
 /*	perspective-origin: 0% 50%;*/
 	perspective: 800px;
 	background-color: #21212d !important;
@@ -253,11 +253,14 @@ div .headerContainer {
 	height: auto;
 	color: #a4844e;
 	font-size: 55px;
-	font-family: brandon-grotesque, sans-serif !important;
-	font-weight: 300;
+	/*font-family: brandon-grotesque, sans-serif !important; */
+	/* font-weight: 300; */
 	font-style: normal;
+	/* font-weight: 200; */
 	/* transform: translate(30%, 100%); */
 	/* transform: translate(30%, 100%); */
+	font-family: BrandonGrotesque, Brandon Grotesque;
+	font-weight: 350;
 	
 }
 
@@ -272,8 +275,19 @@ section{
 	width: 100%;
 	height: auto;
 	padding-top: 10em;
+	margin: 0 auto;
 }
 
+section > div > h2{
+	text-align: center;
+	font-size: 82px;
+	font-family: brandon-grotesque, sans-serif !important;
+	-webkit-text-stroke: 2px #a4844e;
+	-webkit-text-fill-color: white;
+	font-weight: 300;
+	font-style: normal;
+
+}
 div.skew{
 	background-color: white;
 	position: relative;
@@ -283,7 +297,7 @@ div.skew{
 }
 article.about {
 	width: 100%;
-	height: 25em;
+	height: 30em !important;
 	padding-top: 2em;
 	/* margin-bottom: 5em; */
 	/* background-color: white;
@@ -304,13 +318,29 @@ img{
 }
 .about p {
 	/* max-width: 725px; */
-	max-width: 695px;
+	/* max-width: 695px; */
+	/* max-width: 700px; */
+	max-width: 705px;
 	margin: 0 auto;
 	/* font-size: 1.3em; */
-	font-size: 1.5em
+	font-size: 1.5em;
+	/* font-family: brandon-grotesque, sans-serif;
+	font-style: normal;
+	font-weight: 400; */
+	/* font-family: Helvetica, sans-serif; */
+	font-family: open-sans, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	color: #383838;
 }
-.about a{
-	
+/*ABOUT LINK*/
+body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > section > div.col-12.skew > article > p > a{
+	text-decoration: underline;
+	color: #383838;
+	/* color: black; */
+	/* font-size: 3em; */
+	/* font-family: BrandonGrotesque, Brandon Grotesque;
+	font-weight: 400; */
 }
 #projects {
 	background-color: #3f4756;
@@ -323,9 +353,9 @@ img{
 	padding-bottom: 10em;
 	margin: 0 auto;
 }
-.center{
+/* .center{
 	margin: 0 auto;
-}
+} */
 #projects h2{
 	color: white;
 	font-family: BrandonGrotesque, Brandon Grotesque;
@@ -342,36 +372,40 @@ img{
 }
 .circle {
 	display: inline-block;
-	height: 30em;
-	width: 30em;
+	/* height: 30em;
+	width: 30em; */
 	padding-top: 60px;
 	line-height: 18px;
 	border-radius: 50%;
 	color: white;
-	margin: 0 0 0 -100px; 
+	margin: 0 0 0 -100px;
+	height: 25em;
+	width: 25em; 
+	
 
 }
-#projects > div > a:nth-child(3) {
+
+#projects > a:nth-child(3){ 
 	font-family: BrandonGrotesque-Medium, Brandon Grotesque;
 	position: relative;
 	z-index: 1;
 	/* background-color: #a4844e; */
 	/* margin: 0 auto; */
 	background-color:#a3abbd;
+	text-decoration: underline;
 
 
 }
-#projects > div > a:nth-child(2) {
+#projects > a:nth-child(2){ 
 	position: relative;
 	z-index: 2;
-	/* background-color: #336699; */
-	/* background-color: #a3abbd; */
 	background-color: #a4844e;
+	text-decoration: underline;
 
 
 }
-#projects > a > p,
-#projects > div > a:nth-child(2) > p, #projects > div > a:nth-child(3) > p {
+/* #projects > a > p, */
+#projects > a:nth-child(2) > p, #projects > a:nth-child(3) > p {
 	margin-top: 3.5em;
 	font-size: 3em;
 	font-family: BrandonGrotesque, Brandon Grotesque;

@@ -1,0 +1,52 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body{
+    width: 100%;
+    height: auto;
+}
+#projects{
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+    }
+.circle {
+        height: 30em;
+        width: 30em;
+        line-height: 18px;
+        border-radius: 50%;
+        color: white;
+        margin: 0 0 0 0px; 
+        
+}
+
+#projects > div > a:nth-child(2){
+        position: relative;
+        z-index: 1;
+        background-color:#a3abbd;
+        text-decoration: underline;
+}
+   
+
+#projects > div > a:nth-child(3){ 
+    
+        position: relative;
+        z-index: 2;
+        background-color: #a4844e;
+        text-decoration: underline;
+    
+    
+}
+#projects > a:nth-child(2) > p, #projects > a:nth-child(3) > p {
+	margin-top: 3.5em;
+	font-size: 3em;
+	font-family: BrandonGrotesque, Brandon Grotesque;
+	font-weight: 350;
+	
+	
+}
+    
+    
