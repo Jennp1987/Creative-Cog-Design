@@ -1,52 +1,60 @@
-* {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
+#projects {
+	background-color: #3f4756;
+	width: 100%;
+	height: auto;
+	text-align: center;
+	padding-top: 15em; 
+	padding-bottom: 10em;
+	margin: 0 auto;
 }
-body{
-    width: 100%;
-    height: auto;
+
+#projects h2{
+	color: white;
+	font-family: BrandonGrotesque, Brandon Grotesque;
+	font-size: 3.75em;
+	margin-bottom: 1.5em;
+	font-style: normal;
+	font-weight: 500;
+	letter-spacing: 2px;
+
+
 }
-#projects{
-    width: auto;
-    height: auto;
-    margin: 0 auto;
-    text-align: center;
-    }
 .circle {
-        height: 30em;
-        width: 30em;
-        line-height: 18px;
-        border-radius: 50%;
-        color: white;
-        margin: 0 0 0 0px; 
-        
-}
+	display: inline-block;
+	height: 200px;
+	width: 200px; 
+	line-height: 18px;
+	border-radius: 50%;
+	color: white;
 
-#projects > div > a:nth-child(2){
-        position: relative;
-        z-index: 1;
-        background-color:#a3abbd;
-        text-decoration: underline;
 }
-   
+#projects div a{ 
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+#projects div a:nth-child(1){ 
+	position: relative;
+	z-index: 1;
+	background-color:#a3abbd;
+	text-decoration: underline;
 
-#projects > div > a:nth-child(3){ 
-    
-        position: relative;
-        z-index: 2;
-        background-color: #a4844e;
-        text-decoration: underline;
-    
-    
+
 }
-#projects > a:nth-child(2) > p, #projects > a:nth-child(3) > p {
-	margin-top: 3.5em;
+#projects div a:nth-child(2){ 
+	position: relative;
+	z-index: 3;
+	background-color: #a4844e;
+	text-decoration: underline;
+  margin-left: -100px
+}
+#projects div{
+	margin-top: 4em;
 	font-size: 3em;
 	font-family: BrandonGrotesque, Brandon Grotesque;
 	font-weight: 350;
-	
-	
+  display: flex;
+  justify-content: center;
 }
     
     
