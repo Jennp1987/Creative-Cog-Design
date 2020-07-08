@@ -267,7 +267,7 @@ div .headerContainer {
 	/* font-weight: 200; */
 	/* transform: translate(30%, 100%); */
 	/* transform: translate(30%, 100%); */
-	font-family: BrandonGrotesque, Brandon Grotesque;
+	font-family: BrandonGrotesque, Brandon Grotesque, sans-serif !important;
 	font-weight: 350;
 	
 }
@@ -488,6 +488,7 @@ body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > section > div.col-12
 	border-radius: 3em;
 	line-height: 1.5em;
 	color: white;
+
 	/* border-color: #a3abbd;
 	border: 5px solid; */
 
@@ -495,7 +496,7 @@ body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > section > div.col-12
 }
 
 .findMe > article:nth-child(1) {
-	float: left;
+	/* float: left; */
 	width: 30%;
 	/* height: 15em; */
 	height: auto;
