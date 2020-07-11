@@ -447,7 +447,7 @@ body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > section > div.col-12
 	/* margin: 0 auto; */
 	background-color:#a3abbd;
 	text-decoration: underline;
-	font-family: BrandonGrotesque, Brandon Grotesque, sans-serif !important;
+	
 
 
 }
@@ -457,11 +457,14 @@ body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > section > div.col-12
 	background-color: #a4844e;
 	text-decoration: underline;
 	margin-left: -100px;
-	font-family: BrandonGrotesque, Brandon Grotesque, sans-serif !important;
-
+	
 
 }
-
+#projects > div > a:nth-child(1) > p, #projects > div > a:nth-child(2) > p{
+	font-family: BrandonGrotesque, Brandon Grotesque, sans-serif !important;
+	font-weight: 350;
+	font-style: normal;
+}
 /* #projects div a:nth-child(2) p, #projects div a:nth-child(1) p {
 	margin-top: 3.5em;
 	font-size: 3em;
