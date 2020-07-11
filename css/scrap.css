@@ -462,9 +462,10 @@ body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > section > div.col-12
 }
 #projects > div > a:nth-child(1) > p, #projects > div > a:nth-child(2) > p{
 	font-family: BrandonGrotesque, Brandon Grotesque, sans-serif !important;
-	font-weight: 350;
-	font-style: normal;
+	font-weight: 350 !important;
+	font-style: normal !important;
 }
+
 /* #projects div a:nth-child(2) p, #projects div a:nth-child(1) p {
 	margin-top: 3.5em;
 	font-size: 3em;
