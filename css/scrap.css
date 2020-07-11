@@ -6,7 +6,7 @@
 
 
 body {
-	font-family: BrandonGrotesque, Helvetica, sans-serif !important;
+	font-family: brandon-grotesque, Helvetica, sans-serif !important;
 /*	perspective-origin: 0% 50%;*/
 	perspective: 800px;
 	background-color: #21212d !important;
@@ -44,7 +44,7 @@ main.menu-active {
 
 /*NAV*/
 nav {
-	font-family: BrandonGrotesque-Medium, sans-serif;
+	/* font-family: Brandon Grotesque-Medium, sans-serif; */
 /*	z-index: 100;*/
 }
 
@@ -261,13 +261,11 @@ div .headerContainer {
 	height: auto;
 	color: #a4844e;
 	font-size: 55px;
-	/*font-family: brandon-grotesque, sans-serif !important; */
-	/* font-weight: 300; */
 	font-style: normal;
 	/* font-weight: 200; */
 	/* transform: translate(30%, 100%); */
 	/* transform: translate(30%, 100%); */
-	font-family: BrandonGrotesque, Brandon Grotesque, brandon-grotesque, sans-serif !important;
+	font-family: brandon-grotesque, sans-serif !important;
 	font-weight: 350;
 	
 }
@@ -403,7 +401,7 @@ body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > section > div.col-12
 
 #projects h2{
 	color: white;
-	font-family: BrandonGrotesque, Brandon Grotesque, brandon-grotesque, sans-serif !important;
+	font-family: brandon-grotesque, sans-serif !important;
 	font-size: 3.75em;
 	margin-bottom: 1.5em;
 	/* font-family: brandon-grotesque, sans-serif !important; */
@@ -418,8 +416,8 @@ body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > section > div.col-12
 #projects div{
 	/* margin-top: 4em; */
 	font-size: 4em;
-	font-family: BrandonGrotesque, Brandon Grotesque, brandon-grotesque, sans-serif !important;
-	font-weight: 350;
+	/* font-family: brandon-grotesque, sans-serif !important;
+	font-weight: 350; */
     /* display: flex;
     justify-content: center;  */
 }
@@ -440,11 +438,8 @@ body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > section > div.col-12
 
 }
 #projects div a:nth-child(1){ 
-	/* font-family: BrandonGrotesque-Medium, Brandon Grotesque; */
 	position: relative;
 	z-index: 1;
-	/* background-color: #a4844e; */
-	/* margin: 0 auto; */
 	background-color:#a3abbd;
 	text-decoration: underline;
 	
@@ -461,19 +456,11 @@ body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > section > div.col-12
 
 }
 #projects > div > a:nth-child(1) > p, #projects > div > a:nth-child(2) > p{
-	font-family: BrandonGrotesque, Brandon Grotesque, brandon-grotesque, sans-serif !important;
+	font-family: brandon-grotesque, sans-serif !important;
 	font-weight: 350 !important;
 	font-style: normal !important;
 }
 
-/* #projects div a:nth-child(2) p, #projects div a:nth-child(1) p {
-	margin-top: 3.5em;
-	font-size: 3em;
-	font-family: BrandonGrotesque, Brandon Grotesque;
-	font-weight: 350;
-	
-	
-} */
 #projects div a{ 
 	display: flex;
 	justify-content: center;
@@ -483,46 +470,44 @@ body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > section > div.col-12
 
 /*BEGIN ASIDE FIND ME*/
 /*BEGIN ARTICLE FOR TESTIMONIES*/
-.findMe article {
-	/*
-	width: 100%;
-	height: auto;
-*/
+.findMe {
+
 	display: inline-block;
-	/* background-color: #9dc6d1; */
-	background-color:  #5a86ad;
-	border-radius: 3em;
-	line-height: 1.5em;
-	color: white;
+	
+	
+	padding-top: 8em;
+	background-color: white;
 
 	/* border-color: #a3abbd;
 	border: 5px solid; */
 
 
 }
-
-.findMe > article:nth-child(1) {
+/*TESTIMONIALS*/
+.findMe > article:nth-child(1), .findMe > article:nth-child(2) {
 	/* float: left; */
-	width: 30%;
+	width: 40%;
 	/* height: 15em; */
 	height: auto;
 	margin: 0 10%;
 	padding: 2%;
+	background-color: #5a86ad;
+	border-radius: 3em;
+	/* border: 6px solid #3f4756; */
+	line-height: 1.6em;
+	color: white;
+	font-family: open-sans, sans-serif;
+	font-size: 1.1em;
+	font-weight: 200;
+	letter-spacing: .2em;
 
 }
-
-.findMe > article:nth-child(2) {
-	width: 30%;
-	height: auto;
-	margin: 0 10%;
-	padding: 2%;
-	/* height: 15em; */
-	height: auto;
-
-}
-
 .findMe > article > p {
 	margin: 0 auto;
+}
+/*JULI'S REVIEW*/
+ body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > article > article:nth-child(2) > p:nth-child(3){
+	margin-top: 1.9em;
 }
 
 
@@ -530,29 +515,32 @@ body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > section > div.col-12
 /*END ARTICLE FOR TESTIMONIES*/
 
 /*BEGIN ASIDE - FIND ME*/
-.findMe {
+ main > aside{
 	background-color: white;
 	width: inherit;
 	height: auto;
 	padding-bottom: 7em;
+	padding-top: 7em;
+	margin: 0 auto;
 
 }
 
-h4 {
-	font-size: 4em;
+main > aside > h4 {
+	font-size: 3em;
 	color: #3f4756;
 	text-align: center;
 	margin-top: 1.5em;
+	display: block;
 }
 
 aside ul {
 
 	list-style: none;
-
+	display: block;
 }
 
 aside li {
-	width: 45%;
+	width: 80%;
 	height: auto;
 	font-size: 2em;
 	margin: 0 auto;
