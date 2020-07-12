@@ -378,9 +378,8 @@ body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > section > div.col-12
 	font-weight: 400; */
 }
 body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > section > div.col-12.skew > article > p > a:hover{
-	/* color: #9dc6d1; */
-	/* color: #bbd1df; */
-	color:#21212d
+	color:#3f4756;
+	/* color:#21212d; */
 	/* background-color: #a4844e; */
 	/* border-radius: 50px;
 	width: 65px;
@@ -450,7 +449,7 @@ body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > section > div.col-12
 	position: relative;
 	z-index: 2;
 	background-color: #a4844e;
-	text-decoration: underline;
+	/* text-decoration: underline; */
 	margin-left: -100px;
 	
 
@@ -459,6 +458,17 @@ body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > section > div.col-12
 	font-family: brandon-grotesque, sans-serif !important;
 	font-weight: 350 !important;
 	font-style: normal !important;
+	color: white;
+	text-decoration: underline;
+}
+#projects > div > a:nth-child(1) > p:visited, #projects > div > a:nth-child(2) > p:visited{
+	color: #3f4756;
+}
+#projects > div > a:nth-child(1) > p:hover, #projects > div > a:nth-child(2) > p:hover{
+	color: #3f4756;
+	/* color:#21212d; */
+	text-decoration: underline;
+	
 }
 
 #projects div a{ 
@@ -522,6 +532,7 @@ body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > section > div.col-12
 	padding-bottom: 7em;
 	padding-top: 7em;
 	margin: 0 auto;
+	text-align: center;;
 
 }
 
@@ -546,7 +557,12 @@ aside li {
 	margin: 0 auto;
 	line-height: 2em;
 }
-
+aside a{
+	color: #5a86ad;
+}
+aside a:hover, aside a:visited{
+	color: #3f4756;
+}
 /*END ASIDE - FIND ME*/
 /*BEGIN FOOTER*/
 footer {
@@ -561,6 +577,13 @@ footer p {
 	color: #fff;
 	font-size: 1.2em;
 	line-height: 1.5em;
+}
+@media only screen and (max-width: 1706px) {
+	.circle{
+		width: 8em;
+		height: 8em;
+
+	}
 }
 
 /*EX EX LG SCREEN*/
@@ -593,10 +616,10 @@ footer p {
 	.headerContainer h3{
 		font-size: 38px;
 	}
-	/* .container{
-		padding-left: 0 !important;
-		padding-right: 0 !important;
-	} */
+	.circle{
+		height: 7.8em;
+		width: 7.8em;
+	}
 	
 	
 }
@@ -619,6 +642,21 @@ footer p {
 
 	.headerContainer h3 {
 		font-size: 35px !important;
+	}
+	section > div > h2.outlineText{
+		font-size: 75px;
+	}
+	.about p{
+		max-width: 670px; 
+		font-size: 1.3em;
+	}
+	.circle{
+		width: 6.5em;
+		height:6.5em;
+
+	}
+	#projects > div > a:nth-child(1) > p, #projects > div > a:nth-child(2) > p{
+		font-size: 1em;
 	}
 
 
