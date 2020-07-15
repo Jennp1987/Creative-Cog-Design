@@ -483,27 +483,30 @@ body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > section > div.col-12
 .findMe {
 
 	display: inline-block;
-	
-	
 	padding-top: 8em;
 	background-color: white;
+	/*for slider*/
+	width: 100%;
+	height: auto;
+	text-align: center; 
+	margin: 0 auto;
 
-	/* border-color: #a3abbd;
-	border: 5px solid; */
+
 
 
 }
+#carouselExampleSlidesOnly{
+	width: 40%; 
+}
+
 /*TESTIMONIALS*/
-.findMe > article:nth-child(1), .findMe > article:nth-child(2) {
-	/* float: left; */
+/* .findMe > article:nth-child(1), .findMe > article:nth-child(2) {
 	width: 40%;
-	/* height: 15em; */
 	height: auto;
 	margin: 0 10%;
 	padding: 2%;
 	background-color: #5a86ad;
 	border-radius: 3em;
-	/* border: 6px solid #3f4756; */
 	line-height: 1.6em;
 	color: white;
 	font-family: open-sans, sans-serif;
@@ -511,14 +514,40 @@ body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > section > div.col-12
 	font-weight: 200;
 	letter-spacing: .2em;
 
-}
+} */
 .findMe > article > p {
 	margin: 0 auto;
 }
-/*JULI'S REVIEW*/
- body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > article > article:nth-child(2) > p:nth-child(3){
-	margin-top: 1.9em;
+
+
+/*test for slider*/
+
+/* .slider{
+	width: 375px;
+	height: 535px;
+	margin: 0 auto;
+	overflow: hidden;
+
 }
+.slides{
+	display: block;
+	width: 8000px;
+	height: 535px;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+
+}
+.slide{
+	float: left;
+	height: 535px;
+	width: 375px;
+
+} */
+/*JULI'S REVIEW*/
+ /* body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > article > article:nth-child(2) > p:nth-child(3){
+	margin-top: 1.9em;
+} */
 
 
 /*END ASIDE FIND ME*/

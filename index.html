@@ -93,11 +93,34 @@
 				</div>
 				</article>
 				</section>
-				<article class="findMe d-flex justify-content-around">
-						<!-- <div class="p-2 order-3 my-flex-item">1</div>
-						<div class="p-2 order-1 mr-auto my-flex-item">2</div>
-						<div class="p-2 order-2 my-flex-item">3</div> -->
-					<article class="">
+				<!-- d-flex justify-content-around -->
+				<article class="findMe d-flex justify-content-center">
+					<!--BOOTSTRAP BEGIN-->
+					<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel" >
+						<div class="carousel-inner">
+						  <div class="carousel-item active" data-interval="60000">
+							  <img src="images/testimonials1.png" class="d-block w-100" alt="...">
+						  </div>
+						  <div class="carousel-item" data-interval="60000">
+							<img src="images/testimonials2.png" class="d-block w-100" alt="...">
+						  </div>
+						</div>
+					  </div>
+					  <!--BOOTSTRAP END-->
+				<!-- <div>
+					<h3>What People Say About Me</h3>
+				</div>
+				<div class="slider">
+					<ul class="slides">
+						<li class="slide">
+							<img src="images/testimonials1.png" width="378px" height="535px" alt="">
+						</li>
+						<li class="slide">
+							<img src="images/testimonials2.png" width="375px" height="535px" alt="">
+						</li>
+					</ul>
+				</div> -->
+					<!-- <article class="">
 							<p>"One of Jennifer's best attributes is her attention to detail and thoroughness. She can be trusted to think through problems critically and follow up diligently which is invaluable in web design and development work. She is willing to research tasks on her own and then present thoughtfully laid out options."</p><br>
 						<p>Susan Rust</p>
 						<p>CEO</p> 
@@ -109,7 +132,8 @@
 						<p>Juli Beck</p>
 						<p>Lead Graphic Designer</p> 
 						<p>Flashpoint Marketing</p>
-					</article>
+					</article> -->
+
 				</article>
 				<aside class="onlineContacts ">
 					<h4>Find Me</h4>
@@ -135,31 +159,6 @@
 	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 
 	<script>
-		//&& !clickover.hasClass("navbar-toggler")
-		//if (clickover._navToggle === true)
-		//if (clickover.hasClass("navbar-toggler") === true) 
-		//open and close menu
-		//_closed === true &&
-		// $(document).click(function(event) {
-		// 	var clickover = $(event.target);
-		// 	var $navbar = $(".navbar-collapse");
-		// 	var _opened = $navbar.hasClass("show");
-		// 	var $main = $('main');
-		// 	//CLOSES NAV AND REMOVES SKEW WHEN YOU CLICK OFF OF NAV
-		// 	//IF IT'S OPEN AND IF YOU CLICK ON ANOTHER ELEMENT BESIDES THE NAV BUTTON YOU CLOSE THE MENU
-		// 	if (_opened === true && !clickover.hasClass("navbar-toggler")) {
-		// 		$navbar.collapse('hide');
-		// 		$main.removeClass('menu-active');
-		// 		//IF YOU CLICK ANOTHER ELEMENT BESIDES THE NAV BUTTON IT DOES NOT HAVE SKEW. NEEDED FOR A TAGS
-		// 	} else if (!clickover.hasClass("navbar-toggler")) {
-		// 		$main.removeClass('menu-active');
-		// 	} else if (_opened === true && clickover.hasClass("navbar-toggler")){
-		// 		$main.removeClass('menu-active');
-		// 	} else {
-		// 		$main.addClass('menu-active');
-		// 	}
-
-		// });
 
 		$(document).click(function(event) {
 			var clickover = $(event.target);
@@ -191,6 +190,27 @@
 			}
 
 		});
+
+		/*Slider*/
+		// var currentSlide = 1;
+		// var $slider = $('.slides');
+		// var slideCount = $slider.children().length;
+		// $slideTime = 2000;
+		// $animationTime = 2000;
+
+		// setInterval(function() {
+		// 	$slider.animate({
+		// 		marginLeft: '-375px'
+		// 	}, $animationTime, function() {
+		// 		currentSlide++;
+		// 		if(currentSlide === slideCount){
+		// 			currentSlide = 1;
+		// 			$(this).css("margin-left", "0px");
+		// 		}
+		// 	});
+		// }, $slideTime);
+		//console.log(slideCount);
+
 
 	</script>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
