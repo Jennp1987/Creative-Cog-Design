@@ -490,13 +490,38 @@ body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > section > div.col-12
 	height: auto;
 	text-align: center; 
 	margin: 0 auto;
-
+	/* background-color: #21212d; */
 
 
 
 }
 #carouselExampleSlidesOnly{
-	width: 40%; 
+	/* width: 40%;  */
+}
+.carousel-item div {
+	width: 405px;
+	height: 350px;
+	border: solid 5px #a4844e;
+	border-radius: 30px;
+	text-align: left;
+	font-size: 1.2em;
+	font-weight: bolder;
+	padding: .8em;
+	display: block;
+	position: relative;
+	/* margin-top: 100px; */
+}
+/*Testimonial circles*/
+.testimonialCircle{
+	width:5em;
+	height:5em;
+	color: #a3abbd;
+	border-radius: 50%;
+	position: absolute;
+}
+
+#carouselExampleSlidesOnly > div > div:nth-child(1) > div > p:nth-child(3),#carouselExampleSlidesOnly > div > div:nth-child(1) > div > p:nth-child(4),#carouselExampleSlidesOnly > div > div:nth-child(1) > div > p:nth-child(5), #carouselExampleSlidesOnly > div > div.carousel-item.active > div > p:nth-child(3), #carouselExampleSlidesOnly > div > div.carousel-item.active > div > p:nth-child(4), #carouselExampleSlidesOnly > div > div.carousel-item.active > div > p:nth-child(5){
+	line-height: .5em;
 }
 
 /*TESTIMONIALS*/
