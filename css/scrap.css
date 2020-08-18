@@ -782,6 +782,16 @@ footer p {
 	#projects > div > a:nth-child(1) > p, #projects > div > a:nth-child(2) > p{
 		font-size: 1em;
 	}
+	main > aside{
+		/* text-align: left; */
+	}
+	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(1)  {
+		font-size: 1.6em;
+	}
+	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(2){
+		font-size: 1.6em;
+	}
+
 
 
 }
@@ -822,6 +832,15 @@ footer p {
 	}
 	#projects > div > a:nth-child(1) > p, #projects > div > a:nth-child(2) > p{
 		font-size: 1em;
+	}
+	main > aside{
+		/* text-align: left; */
+	}
+	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(1)  {
+		font-size: 1.3em;
+	}
+	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(2){
+		font-size: 1.3em;
 	}
 
 }
@@ -881,6 +900,25 @@ footer p {
 	}
 	#projects > div > a:nth-child(1) > p{
 		margin-right: .8em;
+	}
+	main > aside > h4{
+		font-size: 2.3em;
+		margin-bottom: 1em;
+	}
+	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(1)  {
+		font-size: 1.2em;
+	}
+	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(1) > a{
+		display: block;
+		/* text-align: left; */
+	}
+	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(2){
+		font-size: 1.2em;
+	}
+	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(2)> a{
+		display: block;
+		/* text-align: left; */
+		font-size: 1em;
 	}
 
 }
@@ -995,6 +1033,28 @@ footer p {
 		 margin-right: .4em; 
 	}
 
+	main > aside > h4{
+		font-size: 2.3em;
+		margin-bottom: 1em;
+	}
+	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(1)  {
+		font-size: 1.2em;
+	}
+	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(1) > a{
+		/* display: block; */
+		/* text-align: left; */
+	}
+	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(2){
+		font-size: 1.2em;
+	}
+	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(2)> a{
+		/* display: block; */
+		/* text-align: left; */
+		font-size: 1em;
+	}
+
+
+
 }
 
 /*EX SM SCREEN*/
@@ -1057,6 +1117,32 @@ footer p {
 	#projects > div > a:nth-child(1) > p{
 		 margin-right: 2.1em; 
 	}
+	#carouselExampleSlidesOnly{
+		width: 300px;
+		height: 430px;
+		padding: .8em .8em 1em .8em;
+	}
+	main > aside > h4{
+		font-size: 2.3em;
+		margin-bottom: 1em;
+	}
+	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(1)  {
+		font-size: 1.2em;
+	}
+	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(1) > a{
+		/* display: block; 
+		text-align: left; */
+	}
+	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(2){
+		font-size: 1.2em;
+		margin-top: 2em;
+	}
+	
+	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(2)> a{
+		/* display: block; */
+		/* text-align: left; */
+		font-size: 1em;
+	}
 	
 
 }
@@ -1109,5 +1195,31 @@ footer p {
 	}
 	#projects > div > a:nth-child(1) > p{
 		 margin-right: 2em; 
+	}
+	#carouselExampleSlidesOnly{
+		width: 300px;
+		height: 430px;
+		padding: .8em .8em 1em .8em;
+	}
+	main > aside > h4{
+		font-size: 2.3em;
+		margin-bottom: 1em;
+	}
+	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(1)  {
+		font-size: 1.2em;
+	}
+	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(1) > a{
+		/* display: block; 
+		text-align: left; */
+	}
+	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(2){
+		font-size: 1.2em;
+		margin-top: 2em;
+	}
+	
+	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(2)> a{
+		/* display: block; */
+		/* text-align: left; */
+		font-size: 1em;
 	}
 }
