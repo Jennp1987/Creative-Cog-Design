@@ -332,7 +332,7 @@ div.skew{
 }
 article.about {
 	width: 100%;
-	height: 30em !important;
+	height: 30em ;
 	padding-top: 2em;
 	/* margin-bottom: 5em; */
 	/* background-color: white;
@@ -1090,6 +1090,7 @@ footer p {
 	.jumbotron{
 		padding-top: 20% !important;
 		padding-bottom: 10% !important;
+		/* padding: 0 !important; */
 	}
 
 	div .headerContainer{
@@ -1109,16 +1110,22 @@ footer p {
 	section {
 		padding-top: 3em;
 	}
+	article.about{
+		height: 20em;
+	}
 	section > div > h2.outlineText{
-		font-size: 55px;
-		-webkit-text-stroke: 1.5px #a4844e;
+		font-size: 38px;
+		-webkit-text-stroke: 1.25px #a4844e;
 		/*-webkit-text-fill-color: white; */
 	}
 	.about p{
 		/* max-width: 670px;  */
 		max-width: 600px; 
 		/* min-width: 600px; */
-		font-size: 1.3em;
+		font-size: 1.1em;
+	}
+	#projects {
+		padding-top: 10em; 
 	}
 	#projects > div{
 		flex-direction: column;
@@ -1126,8 +1133,6 @@ footer p {
 
 	}
 	.circle{
-		/* width: 3.5em;
-		height:3.5em; */
 		width: 5em;
 		height: 5em;
 
@@ -1137,22 +1142,11 @@ footer p {
 		margin-bottom: 1em;
 	}
 	#projects div a:nth-child(2){
-		/* margin: 3em auto 0 auto; */
 		 margin-left: 0 !important;
 
 	}
-
-	.circle p, #projects > a > p{
-		/* margin-top:2.5em;*/
-		/* font-size: 2.5em; 
-		margin: 2.9em auto; */
-	}
-
 	#projects > div > a:nth-child(1) > p, #projects > div > a:nth-child(2) > p{
 		font-size: 1em;
-	}
-	#projects > div > a:nth-child(1) > p{
-		 /* margin-right: 2.1em;  */
 	}
 	#carouselExampleSlidesOnly{
 		width: 300px;
@@ -1166,10 +1160,7 @@ footer p {
 	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(1)  {
 		font-size: 1.2em;
 	}
-	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(1) > a{
-		/* display: block; 
-		text-align: left; */
-	}
+
 	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(2){
 		font-size: 1.2em;
 		margin-top: 2em;
@@ -1205,24 +1196,41 @@ footer p {
 		font-size: 12px !important;
 /*		transform: translate(30%, 100%);*/
 	}
-	/* .circle{
-		height:15em;
-		width: 15em;
-		padding-top: 0;
-
-	} */
 	#projects > a:nth-child(2){
-		margin: 3em auto 0 auto;
+		/* margin: 3em auto 0 auto; */
 	}
 	section {
 		padding-top: 3em;
 	}
-	.circle p, #projects > a:nth-child(1) > p, #projects > a:nth-child(2) > p{
-		/* margin-top:2.5em;*/
+	/* .circle p, #projects > a:nth-child(1) > p, #projects > a:nth-child(2) > p{
 		font-size: 2.5em; 
 		margin: 2.9em auto;
+	} */
+	#projects > div{
+		flex-direction: column;
+		align-items: center;
+
 	}
-		.circle{
+	#projects h2{
+		font-size: 3em;
+	}
+	.circle{
+		width: 4em;
+		height: 4em;
+
+	}
+	/*bottom of first circle*/
+	#projects > div > a:nth-child(1){
+		margin-bottom: 1em;
+	}
+	#projects div a:nth-child(2){
+		 margin-left: 0 !important;
+
+	}
+	#projects > div > a:nth-child(1) > p, #projects > div > a:nth-child(2) > p{
+		font-size: 1em;
+	}
+		/* .circle{
 		width: 3.5em;
 		height:3.5em;
 
@@ -1232,7 +1240,7 @@ footer p {
 	}
 	#projects > div > a:nth-child(1) > p{
 		 margin-right: 2em; 
-	}
+	} */
 	#carouselExampleSlidesOnly{
 		width: 300px;
 		height: 430px;
