@@ -386,13 +386,77 @@ body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > section > div.col-12
 	height: 85px; */
 
 }
+/*PROJECTS*/
+/* #projects {
+	background-color: #3f4756;
+	width: 100%;
+	height: auto;
+	text-align: center;
+	padding-top: 15em; 
+	padding-bottom: 10em;
+	margin: 0 auto;
+}
+
+#projects h2{
+	color: white;
+	font-family: BrandonGrotesque, Brandon Grotesque;
+	font-size: 3.75em;
+	margin-bottom: 1.5em;
+	font-style: normal;
+	font-weight: 500;
+	letter-spacing: 2px;
+
+
+}
+.circle {
+	display: inline-block;
+	height: 200px;
+	width: 200px; 
+	line-height: 18px;
+	border-radius: 50%;
+	color: white;
+
+}
+#projects div a{ 
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+#projects div a:nth-child(1){ 
+	position: relative;
+	z-index: 1;
+	background-color:#a3abbd;
+	text-decoration: underline;
+
+
+}
+#projects div a:nth-child(2){ 
+	position: relative;
+	z-index: 3;
+	background-color: #a4844e;
+	text-decoration: underline;
+  margin-left: -100px
+}
+#projects div{
+	margin-top: 4em;
+	font-size: 3em;
+	font-family: BrandonGrotesque, Brandon Grotesque;
+	font-weight: 350;
+  display: flex;
+  justify-content: center;
+} */
+    
+    
+
+
+
+
+/*HAS d-flex class*/
 #projects {
 	background-color: #3f4756;
 	width: 100%;
 	height: auto;
 	text-align: center;
-	/* padding-top: 10em; 
-	padding-bottom: 5em; */
 	padding-top: 15em; 
 	padding-bottom: 10em;
 	margin: 0 auto;
@@ -403,38 +467,25 @@ body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > section > div.col-12
 	font-family: brandon-grotesque, sans-serif !important;
 	font-size: 3.75em;
 	margin-bottom: 1.5em;
-	/* font-family: brandon-grotesque, sans-serif !important; */
-	/* font-weight: 300; */
 	font-style: normal !important;
-	/* font-weight: 700; */
 	font-weight: 500 !important;
 	letter-spacing: 2px;
 
 
 }
 #projects div{
-	/* margin-top: 4em; */
 	font-size: 4em;
-	/* font-family: brandon-grotesque, sans-serif !important;
-	font-weight: 350; */
-    /* display: flex;
-    justify-content: center;  */
+	justify-content: center; 
+	display: flex;
 }
 .circle {
 	display: inline-block;
 	height: 9em;
 	width: 9em;
-	/* padding-top: 60px; */
 	line-height: 18px;
 	border-radius: 50%;
 	color: white;
-	/* margin: 0 0 0 -100px; */
-	/* height: 12em;
-	width: 12em;  */
-	/* height: 10em;
-	width: 10em;  */
 	
-
 }
 #projects div a:nth-child(1){ 
 	position: relative;
@@ -449,7 +500,6 @@ body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > section > div.col-12
 	position: relative;
 	z-index: 2;
 	background-color: #a4844e;
-	/* text-decoration: underline; */
 	margin-left: -100px;
 	
 
@@ -466,7 +516,6 @@ body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > section > div.col-12
 }
 #projects > div > a:nth-child(1) > p:hover, #projects > div > a:nth-child(2) > p:hover{
 	color: #3f4756;
-	/* color:#21212d; */
 	text-decoration: underline;
 	
 }
@@ -514,28 +563,7 @@ body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > section > div.col-12
 
 
 
-	/* .carousel-item { */
-		/* #carouselExampleSlidesOnly > div.carousel-inner	 { */
-	/* div.carousel-item { */
-	div.carousel-inner{
-	/* width: 405px;
-	height: 350px;
-	border: solid 5px #a4844e;
-	border-radius: 30px;
-	text-align: left;
-	font-size: 1.2em;
-	font-weight: bolder;
-	padding: .8em;
-	display: block;
-	 position: relative; 
-	 z-index: 1; */
-	 
-
-	 /* margin-top: 100px;  */
-}
-/*Testimonial circles*/
-/* #carouselExampleSlidesOnly > div > div.carousel-item.active > div.testimonialCircle,#carouselExampleSlidesOnly > div > div.carousel-item.active > div.testimonialCircle, */
-/* div.testimonialCircle, #carouselExampleSlidesOnly > div > div:nth-child(1) > div.testimonialCircle,#carouselExampleSlidesOnly > div > div:nth-child(2) > div.testimonialCircle {  */
+	
 	div.testimonialCircle {
 	border-radius: 40px;
 	border: none;
@@ -1092,31 +1120,39 @@ footer p {
 		/* min-width: 600px; */
 		font-size: 1.3em;
 	}
+	#projects > div{
+		flex-direction: column;
+		align-items: center;
 
+	}
 	.circle{
-		height:15em;
-		width: 15em;
-		padding-top: 0;
+		/* width: 3.5em;
+		height:3.5em; */
+		width: 5em;
+		height: 5em;
 
 	}
-	#projects > a:nth-child(2){
-		margin: 3em auto 0 auto;
+	/*bottom of first circle*/
+	#projects > div > a:nth-child(1){
+		margin-bottom: 1em;
 	}
+	#projects div a:nth-child(2){
+		/* margin: 3em auto 0 auto; */
+		 margin-left: 0 !important;
+
+	}
+
 	.circle p, #projects > a > p{
 		/* margin-top:2.5em;*/
-		font-size: 2.5em; 
-		margin: 2.9em auto;
+		/* font-size: 2.5em; 
+		margin: 2.9em auto; */
 	}
-	.circle{
-		width: 3.5em;
-		height:3.5em;
 
-	}
 	#projects > div > a:nth-child(1) > p, #projects > div > a:nth-child(2) > p{
-		font-size: .8em;
+		font-size: 1em;
 	}
 	#projects > div > a:nth-child(1) > p{
-		 margin-right: 2.1em; 
+		 /* margin-right: 2.1em;  */
 	}
 	#carouselExampleSlidesOnly{
 		width: 300px;
