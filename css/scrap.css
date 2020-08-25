@@ -1114,7 +1114,7 @@ footer p {
 		height: 20em;
 	}
 	section > div > h2.outlineText{
-		font-size: 38px;
+		font-size: 38px !important;
 		-webkit-text-stroke: 1.25px #a4844e;
 		/*-webkit-text-fill-color: white; */
 	}
