@@ -132,6 +132,7 @@ body > div > div{
 	/* background: url('https://jennp1987.github.io/Creative-Cog-Design/images/header.png');  */
 	 /* background: url('../images/header.png');  */
 	 background: url('../images/header2.png'); 
+	 /* background: url('../images/newMobileHeader182620.png'); */
 	background-size: cover;
 	/* background-size: contain; */
 	background-position: center;
@@ -1106,7 +1107,7 @@ footer p {
 		/* padding-top: 20% !important;
 		padding-bottom: 10% !important; */
 		/* padding: 0 !important; */
-		background: url('../images/newMobileHeader82620.png'); 
+		background: url('../images/newMobileHeader182620.png'); 
 	}
 
 	div .headerContainer{
