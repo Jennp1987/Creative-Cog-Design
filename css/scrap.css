@@ -1107,7 +1107,8 @@ footer p {
 		/* padding-top: 20% !important;
 		padding-bottom: 10% !important; */
 		/* padding: 0 !important; */
-		background: url('../images/newMobileSmallHeader382620.png');
+		background: url('../images/newMobileSmallHeader482620.png');
+		background-repeat: no-repeat;
 		/* width: 60%;
 		height: 60%;  */
 	}
