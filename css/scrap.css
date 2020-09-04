@@ -1102,12 +1102,14 @@ footer p {
 }
 
 /*EX SM SCREEN*/
+/*NEEDED TO FIX THE HEADINGS*/
 @media only screen and (max-width: 576px) and (min-width: 575px) {
 	.jumbotron{
 		/* padding-top: 20% !important;
 		padding-bottom: 10% !important; */
 		/* padding: 0 !important; */
-		background: url('../images/newMobileSmallHeader82620230pm.png');
+		/* background: url('../images/newMobileSmallHeader94204pm.png'); */
+		background: url('../images/newMobileHeader94205pm.png');
 		background-repeat: no-repeat;
 		/* width: 60%;
 		height: 60%;  */
@@ -1229,7 +1231,9 @@ footer p {
 		/* padding-top: 20% !important;
 		padding-bottom: 10% !important; */
 		/* padding: 0 !important; */
-		background: url('../images/newMobileSmallHeader82620230pm.png');
+		/* background: url('../images/newMobileSmallHeader82620230pm.png'); */
+		background: url('../images/newMobileHeader94205pm.png');
+		
 		background-repeat: no-repeat;
 		/* width: 60%;
 		height: 60%;  */
