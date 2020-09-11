@@ -127,7 +127,8 @@ body > div > div{
 
 /*HEADER*/
 .jumbotron {
-	max-width: 100%; 
+	width: 100%;
+	/* max-width: 100%;  */
 	/* background: url('https://jennp1987.github.io/Creative-Cog-Design/images/creativeCogHeaderNewpng825.png');   */
 	/* background: url('https://jennp1987.github.io/Creative-Cog-Design/images/header.png');  */
 	 /* background: url('../images/header.png');  */
@@ -1109,14 +1110,19 @@ footer p {
 		padding-bottom: 10% !important; */
 		/* padding: 0 !important; */
 		/* background: url('../images/newMobileSmallHeader94204pm.png'); */
-		background: url('../images/newMobileHeader94205pm.png');
-		background-repeat: no-repeat;
+
+		/* background: url('../images/mobileHeader91020320pm.png'); */
+		/* background-repeat: no-repeat; */
+		background:none;
+		background-color: #21212d !important;
 		/* width: 60%;
+
 		height: 60%;  */
 		width: 100%;
 		/* height: 15em; */
 		height: auto;
 		padding-left: 5em !important; 
+		padding-bottom: 22% !important;
 	}
 
 	div .headerContainer{
@@ -1226,21 +1232,24 @@ footer p {
 		display: block;
 	}
 }
-@media only screen and (max-width: 574px) and (min-width: 363px) {
+@media only screen and (max-width: 574px) and (min-width: 460px) {
 	.jumbotron{
 		/* padding-top: 20% !important;
 		padding-bottom: 10% !important; */
 		/* padding: 0 !important; */
 		/* background: url('../images/newMobileSmallHeader82620230pm.png'); */
-		background: url('../images/newMobileHeader94205pm.png');
-		
-		background-repeat: no-repeat;
+		/* background: url('../images/newMobileHeader94205pm.png'); */
+		/* background: url('../images/mobileHeader91020320pm.png'); */
+		background:none;
+		background-color: #21212d !important;
+		/* background-repeat: no-repeat; */
 		/* width: 60%;
 		height: 60%;  */
 		width: 100%;
 		/* height: 15em; */
 		height: auto;
 		/* padding: 4rem 5.5rem !important; */
+		padding-bottom: 22% !important;
 	}
 
 	div .headerContainer{
@@ -1353,27 +1362,52 @@ footer p {
 	
 
 }
-@media only screen and (max-width: 362px){
+@media only screen and (max-width: 459px) and (min-width: 363px){
 	.jumbotron{
 		padding-top: 20% !important;
 		padding-bottom: 10% !important;
+		padding-left: 0 !important;
+		background:none;
+		background-color: #21212d !important;
+		padding-bottom: 22% !important;
+
+
 	}
 	div .headerContainer{
 		/* padding: 2em 0 0 20px; */
 	}
-	h1 {
-		font-size: 23px !important;
+	.headerContainer h1 {
+		/* font-size: 23px !important; */
+		font-size: 33px !important;
+		margin-top: 1em;
 /*		transform: translate(0%, 80%);*/
+		padding-left: 0 !important;
 	}
 
 	.headerContainer h2 {
-		font-size: 20px !important;
+		/* font-size: 20px !important; */
+		font-size: 29px !important;
 /*		transform: translate(8%, 90%);*/
+		padding-left: 10px !important;
 	}
 
 	.headerContainer h3 {
-		font-size: 12px !important;
+		font-size: 22px !important;
 /*		transform: translate(30%, 100%);*/
+		padding-left: 18px !important;
+	}
+	/*div with logo*/
+	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > section > div:nth-child(1){
+	padding: 10px !important;
+	}
+	section > div > h2.outlineText{
+		font-size: 39px !important;
+		-webkit-text-stroke: 1.25px #a4844e;
+
+	}
+	.about p{
+		font-size: 1.4em;
+		/* padding-left: .1em; */
 	}
 	#projects > a:nth-child(2){
 		/* margin: 3em auto 0 auto; */
