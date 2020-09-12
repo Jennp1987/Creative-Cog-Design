@@ -1103,7 +1103,7 @@ footer p {
 }
 
 /*EX SM SCREEN*/
-/*NEEDED TO FIX THE HEADINGS*/
+/*NEEDED TO FIX POSITION OF THE HEADINGS*/
 @media only screen and (max-width: 576px) and (min-width: 575px) {
 	.jumbotron{
 		/* padding-top: 20% !important;
@@ -1232,6 +1232,7 @@ footer p {
 		display: block;
 	}
 }
+/*EX SMALL*/
 @media only screen and (max-width: 574px) and (min-width: 460px) {
 	.jumbotron{
 		/* padding-top: 20% !important;
@@ -1362,6 +1363,7 @@ footer p {
 	
 
 }
+/*EX SM*/
 @media only screen and (max-width: 459px) and (min-width: 363px){
 	.jumbotron{
 		padding-top: 20% !important;
@@ -1381,20 +1383,20 @@ footer p {
 		font-size: 33px !important;
 		margin-top: 1em;
 /*		transform: translate(0%, 80%);*/
-		padding-left: 0 !important;
+		/* padding-left: 0 !important; */
 	}
 
 	.headerContainer h2 {
 		/* font-size: 20px !important; */
 		font-size: 29px !important;
 /*		transform: translate(8%, 90%);*/
-		padding-left: 10px !important;
+		padding-left: 10px !important; 
 	}
 
 	.headerContainer h3 {
 		font-size: 22px !important;
 /*		transform: translate(30%, 100%);*/
-		padding-left: 18px !important;
+		/* padding-left: 18px !important; */
 	}
 	/*div with logo*/
 	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > section > div:nth-child(1){
@@ -1406,7 +1408,7 @@ footer p {
 
 	}
 	.about p{
-		font-size: 1.4em;
+		font-size: 1.3em;
 		/* padding-left: .1em; */
 	}
 	#projects > a:nth-child(2){
