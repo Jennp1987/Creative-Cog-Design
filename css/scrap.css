@@ -717,7 +717,7 @@ aside a:hover, aside a:visited{
 	color: #3f4756;
 }
 aside ul li, aside ul li a{
-	font-weight: bolder;
+	/* font-weight: bolder; */
 }
 /*END ASIDE - FIND ME*/
 /*BEGIN FOOTER*/
@@ -1043,11 +1043,11 @@ footer p {
 	}
 
 	.headerContainer h2 {
-		font-size: 29px !important;
+		font-size: 35px !important;
 	}
 
 	.headerContainer h3 {
-		font-size: 23px !important;
+		font-size: 29px !important;
 	}
 	.container{
 		padding-left: 3em !important;
@@ -1121,7 +1121,7 @@ footer p {
 		width: 100%;
 		/* height: 15em; */
 		height: auto;
-		padding-left: 5em !important; 
+		/* padding-left: 5em !important; */
 		padding-bottom: 22% !important;
 	}
 
@@ -1135,12 +1135,12 @@ footer p {
 
 	.headerContainer h2 {
 		/* font-size: 19px !important; */
-		font-size: 25px !important;
+		font-size: 30px !important;
 	}
 
 	.headerContainer h3 {
 		/* font-size: 15px !important; */
-		font-size: 20px !important;
+		font-size: 24px !important;
 	}
 	section {
 		padding-top: 3em;
@@ -1263,12 +1263,12 @@ footer p {
 
 	.headerContainer h2 {
 		/* font-size: 19px !important; */
-		font-size: 25px !important;
+		font-size: 30px !important;
 	}
 
 	.headerContainer h3 {
 		/* font-size: 15px !important; */
-		font-size: 20px !important;
+		font-size: 24px !important;
 	}
 	section {
 		padding-top: 3em;
@@ -1411,6 +1411,9 @@ footer p {
 		-webkit-text-stroke: 1.25px #a4844e;
 
 	}
+	article.about{
+		height: 25em;
+	}
 	.about p{
 		font-size: 1.3em;
 		/* padding-left: .1em; */
@@ -1425,6 +1428,10 @@ footer p {
 		font-size: 2.5em; 
 		margin: 2.9em auto;
 	} */
+	#projects{
+		padding-top: 10em;
+		padding-bottom: 8em;
+	}
 	#projects > div{
 		flex-direction: column;
 		align-items: center;
