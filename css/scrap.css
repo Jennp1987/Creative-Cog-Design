@@ -1388,9 +1388,9 @@ footer p {
 
 	.headerContainer h2 {
 		/* font-size: 20px !important; */
-		font-size: 29px !important;
+		font-size: 28px !important;
 /*		transform: translate(8%, 90%);*/
-		padding-left: 10px !important; 
+		/* padding-left: 10px !important;  */
 	}
 
 	.headerContainer h3 {
@@ -1400,7 +1400,11 @@ footer p {
 	}
 	/*div with logo*/
 	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > section > div:nth-child(1){
-	padding: 10px !important;
+	/* padding: 10px !important; */
+	}
+	/*Padding for Heading*/
+	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > header > div > div > div:nth-child(1) > .col-10, body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > header > div > div > div:nth-child(2) > .col-9, body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > header > div > div > div:nth-child(3) > .col-8{
+		padding-left: 0 !important;
 	}
 	section > div > h2.outlineText{
 		font-size: 39px !important;
