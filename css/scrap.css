@@ -1369,9 +1369,11 @@ footer p {
 		padding-top: 20% !important;
 		padding-bottom: 10% !important;
 		padding-left: 0 !important;
-		background:none;
+		/* background:none; */
 		background-color: #21212d !important;
 		padding-bottom: 22% !important;
+		background: url('../images/mobileMax459px4.png');
+		background-size: contain;
 
 
 	}
