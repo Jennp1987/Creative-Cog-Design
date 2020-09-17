@@ -528,13 +528,20 @@ body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > section > div.col-12
 	align-items: center
   }
 /*SECTION END*/
-
-/*BEGIN ASIDE FIND ME*/
+ #recommendations {
+	width: 100%;
+	height: auto;
+	text-align: center;
+	padding: 7em 0 3em 0;
+	background-color: white;
+	
+}
+/*BEGIN FIND ME*/
 /*BEGIN ARTICLE FOR TESTIMONIES*/
 .findMe {
-
-	display: inline-block;
-	padding-top: 8em;
+   
+	 display: inline-block; 
+	/* padding-top: 8em; */
 	background-color: white;
 	/*for slider*/
 	width: 100%;
@@ -542,10 +549,19 @@ body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > section > div.col-12
 	text-align: center; 
 	margin: 0 auto;
 	/* background-color: #21212d; */
+	display: flex;
+	justify-content: center;
 
 
 
 }
+/* .findMe h3 {
+	width: 100%;
+	height: auto;
+	text-align: center;
+	padding: 3em 0;
+	
+} */
 #carouselExampleSlidesOnly{
 	 /* width: 40%;  
 	 height: auto; */
@@ -1193,10 +1209,17 @@ footer p {
 	#projects > div > a:nth-child(1) > p, #projects > div > a:nth-child(2) > p{
 		font-size: 1em;
 	}
+	/* body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > #recommendations {
+		background-color: white !important;
+		width: 100%;
+		height: auto;
+	} */
+	
 	#carouselExampleSlidesOnly{
 		width: 300px;
 		height: 430px;
 		padding: .8em .8em 1em .8em;
+		/* display: block; */
 	}
 	main > aside > h4{
 		font-size: 2.3em;
@@ -1384,12 +1407,14 @@ footer p {
 		/* padding-top: 20% !important; */
 		/* padding-bottom: 10% !important; */
 		padding-left: 0 !important;
+		padding-bottom: 0 !important;
 		/* background:none; */
 		background-color: #21212d !important;
-		padding-bottom: 22% !important;
-		background: url('../images/mobileMax459px8.png');
-		background-size: contain;
+		padding-bottom: 22% !important; 
+		background: url('../images/mobileMax459px9.png');
+		/* background-size: contain; */
 		background-repeat: none;
+		background-size: cover;
 
 
 	}
