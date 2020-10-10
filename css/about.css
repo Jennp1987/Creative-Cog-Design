@@ -29,7 +29,7 @@ transition: transform 150ms ease-out;
 	right: 0px;
 	margin: auto;
 	max-width: 100%;
-	background-color: #3f4756;
+	background-color: #3f4756 !important;
 	transform: none;
 }
 main.menu-active {
@@ -110,20 +110,88 @@ collapseExample > ul > li.nav-item.dropdown > div {
 }
 /*END NAV*/
 
-/*section*/
-section {
-	margin: 0 auto;
-}
-section img{
-	width: 1024px;
-	height: 678px;
+/*section fixed*/
+.jumbotron.img-fluid {
+	/* background: url('../images/aboutMeLgPhoto.jpg') center center no-repeat fixed;   */
+	background: url('../images/aboutPhoto8.jpg') center center no-repeat fixed;
+ 	/* background-size: contain;   */
+	max-width: 100%;
+	height: 854px;
+	/* height: 100%; */
+	/* height:auto; */
 	margin: 0 auto;
 	display: block;
+	padding: 0 !important;
+	margin-bottom: 0 !important;
+	border-radius: 0 !important;
+	background-color: #21212d !important;
+	/* background-color: none !important; */
+	/* background-color:white !important; */
+}
+div.overlay{
+	/* max-width: inherit; */
+
+	/* width: 100%;
+	height: 854px;  */
+
+	/* height: 100%; */
+	/* margin: 0 auto;
+	display: block; */
+
+	/* position: absolute;  */
+    /* opacity: 0.20; */
+	/* background-color: rgba(75, 119, 190, 1); */
+	/* z-index: 10;  */
+
 
 }
 
 
 /*section end*/
+/*ARTICLE BEGIN*/
+article{
+	background-color: white;
+	text-align: left;
+	padding-top: 3em;
+}
+article h1{
+	text-align: center;
+	font-size: 3em;
+	/* color:#a3abbd; */
+	color: #3f4756;
+}
+/* article h1 span{
+	font-family: brandon-grotesque, sans-serif !important;
+		-webkit-text-stroke: 1.5px #a4844e;
+		-webkit-text-fill-color: white;
+		font-weight: 300;
+		font-style: normal;  
+} */
+article p{
+	margin: 0 auto;
+	margin-bottom: 0;
+	max-width: 695px;
+	height:auto;
+	font-family: open-sans, sans-serif;
+	font-weight: 400;
+	font-size: 1.5em;
+	font-style: normal;
+	color: #383838;
+}
+
+article > p > a{
+	/* text-align: left;
+	max-width: 695px; */
+	color: #5a86ad;
+	text-decoration: underline;
+	cursor: grab;
+}
+  p a:hover, p a:visited{
+	color: #3f4756;
+}
+
+
+/*ARTICLE ENDS*/
 
 
 /*BEGIN ASIDE - FIND ME*/
@@ -134,7 +202,9 @@ section img{
 	padding-bottom: 7em;
 	padding-top: 7em;
 	margin: 0 auto;
-	text-align: center;;
+	text-align: center;
+	display: ;
+
 
 }
 

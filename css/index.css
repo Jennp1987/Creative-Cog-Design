@@ -114,8 +114,7 @@ collapseExample > ul > li.nav-item.dropdown > div {
 /*HEADER*/
 .jumbotron {
 	width: 100%;
-	 background: url('../images/header2.png'); 
-	
+	background: url('../images/header2.png'); 
 	background-size: cover;
 	background-position: center;
 	height: auto;
@@ -281,7 +280,8 @@ section > div > h2.outlineText{
 		/* color: #a4844e;
 		font-size: 82px;
 		font-weight: 300; */
-	
+		font-size: 80px;
+        color: white;
 	    text-shadow: 
 	   0 0 3px #a4844e,
 	   0 0 3px #a4844e,  
