@@ -366,7 +366,7 @@ body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > section > div.col-12
 #projects div a:nth-child(1){ 
 	position: relative;
 	z-index: 1;
-	background-color:#a3abbd;
+	background-color: #a3abbd;
 	text-decoration: underline;
 	
 }
@@ -734,7 +734,7 @@ footer p {
 		font-size: 1.2em;
 	}
 	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(1) > a{
-		display: block;
+		 display: block; 
 	}
 	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(2){
 		font-size: 1.2em;
@@ -757,20 +757,20 @@ footer p {
 		transform: none;
 	}
 
-	header .jumbotron {
-		position: relative;
+	 header .jumbotron {
+		/* position: relative; */
 
+	} 
+	body > div > div > div.col-lg-2.col-md-2.col-sm-12 > nav, .navDiv {
+		 padding: 0 !important; 
 	}
-	body > div > div > div.col-lg-2.col-md-2.col-sm-12 > nav {
-		padding: 0 !important;
-	}
-	.navDiv {
+	/* .navDiv {
 		padding-left: 0px !important;
-		padding-right: 0px !important;
+		padding-right: 0px !important; 
 		
 
 
-	}
+	}*/
 	
 
 	body > div > div > div.col-lg-8.col-md-8.col-sm-12 {
