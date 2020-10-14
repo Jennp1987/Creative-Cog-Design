@@ -522,8 +522,10 @@ body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > section > div.col-12
 	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%6db3b7' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
 }
 .carousel-control-next-icon{
-	background-image: url("https://jennp1987.github.io/Creative-Cog-Design/images/leftAngle.svgz") !important; 
+	background: url("https://jennp1987.github.io/Creative-Cog-Design/images/leftAngle1.svg")  no-repeat!important; 
+	background-size: 100%;
 }
+/* <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70 108.5"><line x1="7.5" y1="7.5" x2="62.5" y2="45.5" fill="none" stroke="#000" stroke-linecap="round" stroke-miterlimit="10" stroke-width="15"/><line x1="62.5" y1="46" x2="24.5" y2="101" fill="none" stroke="#000" stroke-linecap="round" stroke-miterlimit="10" stroke-width="15"/></svg> */
 /*END ASIDE FIND ME*/
 /*END ARTICLE FOR TESTIMONIES*/
 
