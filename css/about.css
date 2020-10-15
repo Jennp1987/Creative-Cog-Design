@@ -149,12 +149,36 @@ div.overlay{
 
 /*section end*/
 /*ARTICLE BEGIN*/
-article{
+/* div.skew{
+	background-color: white;
+	position: relative;
+	z-index: 10;
+	clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10vw), 0 100%);
+	margin-bottom: -10vw;
+} */
+/* div.skew{
 	background-color: white;
 	text-align: left;
 	padding-top: 3em;
+	position: relative;
+	z-index: 10;
+	clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10vw), 0 100%);
+	margin-bottom: -10vw; 
+	
+} */
+
+article:nth-child(2){
+	width: 100%;
+	height: auto;
+	background-color: white;
+	padding-top: 3em;
+	/* padding: 3em 0 15em 0;
+	position: relative;
+	z-index: 10;
+	clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10vw), 0 100%);
+	margin-bottom: -10vw;  */
 }
-article h1{
+article:nth-child(2) h1{
 	text-align: center;
 	font-size: 3em;
 	/* color:#a3abbd; */
@@ -167,7 +191,7 @@ article h1{
 		font-weight: 300;
 		font-style: normal;  
 } */
-article p{
+article:nth-child(2) p{
 	margin: 0 auto;
 	margin-bottom: 0;
 	max-width: 695px;
@@ -180,7 +204,7 @@ article p{
 	line-height: 2em;
 }
 
-article > p > a{
+article:nth-child(2) > p > a{
 	/* text-align: left;
 	max-width: 695px; */
 	color: #5a86ad;
@@ -192,20 +216,38 @@ article > p > a{
 }
 
 
-/*ARTICLE ENDS*/
+/*1st ARTICLE ENDS*/
+/*2nd ARTICLE*/
 
+article:nth-child(3) {
+	width: 100%;
+	height: 10em;
+	text-align: center;	
+} 
+div.D-flex{
+	display: flex;
+	justify-content: center;
+	margin:5em auto;
+	width: 100%;
+	height: auto;
+}
 
+button{
+	/* display: inline; */
+}
+
+/*
 /*BEGIN ASIDE - FIND ME*/
  main > aside{
-	background-color: white;
+	/* background-color: white; */
+	/* background-color: #3f4756; */
+	background-color: #a3abbd;
 	width: inherit;
 	height: auto;
 	padding-bottom: 7em;
 	padding-top: 7em;
 	margin: 0 auto;
 	text-align: center;
-	display: ;
-
 
 }
 
@@ -221,6 +263,8 @@ aside ul {
 
 	list-style: none;
 	display: block;
+	/* background-color: white;
+} */
 }
 
 aside li {
@@ -229,12 +273,14 @@ aside li {
 	font-size: 2em;
 	margin: 0 auto;
 	line-height: 2em;
+	
 }
 aside a{
 	color: #5a86ad;
 }
 aside a:hover, aside a:visited{
-	color: #3f4756;
+	/* color: #3f4756; */
+	color: #5a86ad;
 }
 aside ul li, aside ul li a{
 	/* font-weight: bolder; */
