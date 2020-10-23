@@ -323,7 +323,7 @@ img{
 	color: #383838;
 }
 /*ABOUT LINK*/
-body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > section > div.col-12.skew > article > p > a{
+body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > section > article.about > p > a{
 	text-decoration: underline;
 	color: #5a86ad;
 }
@@ -443,7 +443,7 @@ body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > section > div.col-12
 	/* border-radius: 100%; */
 	text-align: left;
 	font-size: 1.2em;
-	font-weight: bolder;
+	/* font-weight: bolder; */
 	padding: .8em;
 	display: block;
 	 position: relative; 
@@ -453,7 +453,12 @@ body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > section > div.col-12
 	height: 95%; */
 	width: 35%;
 	height: 40%;
-	border-radius: 5%;
+	font-family: open-sans, sans-serif;
+	font-style: normal;
+	color: #383838;
+	line-height: 26.1px;
+	font-weight: 400;
+	
 }
 
 	div.testimonialCircle {
@@ -616,7 +621,15 @@ footer p {
 	font-size: 1.2em;
 	line-height: 1.5em;
 }
+@media only screen and (max-width: 1770px) and (min-width:1707px ) {
+	#carouselExampleControls{
+		width: 43%;
+	}
+}
 @media only screen and (max-width: 1706px) {
+	#carouselExampleControls{
+		width: 43%;
+	}
 	.circle{
 		width: 8em;
 		height: 8em;
@@ -652,6 +665,10 @@ footer p {
 		height: 7.8em;
 		width: 7.8em;
 	}
+	#carouselExampleControls{
+		width: 45%;
+	}
+	
 	
 	
 }
@@ -693,6 +710,11 @@ footer p {
 	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(2){
 		font-size: 1.6em;
 	}
+	#carouselExampleControls{
+		width: 80% !important;
+		font-size: 1.3em;
+		border-radius: 0;
+	}
 
 
 
@@ -720,7 +742,8 @@ footer p {
 		font-size: 70px;
 	}
 	.about p{
-		max-width: 655px;
+		/* max-width: 655px; */
+		max-width: 600px;
 		font-size: 1.4em;
 	}
 	.circle{
@@ -736,6 +759,11 @@ footer p {
 	}
 	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(2){
 		font-size: 1.3em;
+	}
+	#carouselExampleControls{
+		width: 70% !important;
+		font-size: 1.3em;
+		
 	}
 
 }
@@ -769,7 +797,8 @@ footer p {
 		-webkit-text-fill-color: white;
 	}
 	.about p{
-		max-width: 645px;
+		/* max-width: 645px; */
+		max-width: 450px;
 		font-size: 1.3em;
 	}
 	#projects h2{
@@ -801,6 +830,11 @@ footer p {
 	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(2)> a{
 		display: block;
 		font-size: 1em;
+	}
+	#carouselExampleControls{
+		width: 78% !important;
+		font-size: 1.2em;
+		
 	}
 
 }
@@ -882,7 +916,7 @@ footer p {
 		-webkit-text-stroke: 1.5px #a4844e;
 	}
 	.about p{
-		max-width: 600px; 
+		max-width: 550px; 
 		font-size: 1.4em;
 	}
 	#projects h2{
@@ -912,6 +946,11 @@ footer p {
 	}
 	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(2)> a{
 		font-size: 1em;
+	}
+	#carouselExampleControls{
+		width: 80% !important;
+		font-size: 1.2em;
+		
 	}
 }
 
@@ -952,8 +991,8 @@ footer p {
 		-webkit-text-stroke: 1.25px #a4844e;
 	}
 	.about p{
-		max-width: 600px; 
-		font-size: 1.1em;
+		max-width: 550px; 
+		font-size: 1.2em;
 	}
 	#projects {
 		padding-top: 10em; 
@@ -1027,6 +1066,11 @@ footer p {
 		font-size: .8em !important;
 		width: 100%;
 		display: block;
+	}
+	#carouselExampleControls{
+		width: 85% !important;
+		font-size: 1.1em;
+		
 	}
 }
 /*EX SMALL*/
@@ -1067,9 +1111,10 @@ footer p {
 		-webkit-text-stroke: 1.25px #a4844e;
 	}
 	.about p{
-		max-width: 600px; 
+		max-width: 400px; 
 		font-size: 1.1em;
 	}
+	
 	#projects {
 		padding-top: 10em; 
 	}
@@ -1141,6 +1186,11 @@ footer p {
 		font-size: .8em !important;
 		width: 100%;
 		display: block;
+	}
+	#carouselExampleControls{
+		width: 85% !important;
+		font-size: 1.2em;
+		
 	}
 
 }
@@ -1184,6 +1234,7 @@ footer p {
 	}
 	.about p{
 		font-size: 1.3em;
+		max-width: 330px;
 	}
 	section {
 		padding-top: 3em;

@@ -172,6 +172,7 @@ article:nth-child(2){
 	height: auto;
 	background-color: white;
 	padding-top: 3em;
+	padding-bottom: 4em;
 	/* padding: 3em 0 15em 0;
 	position: relative;
 	z-index: 10;
@@ -217,31 +218,62 @@ article:nth-child(2) > p > a{
 
 
 /*1st ARTICLE ENDS*/
-/*2nd ARTICLE*/
+
+/*2nd ARTICLE - Contact*/
 
 article:nth-child(3) {
+	background: url("../images/aboutContactBackground5.png") no-repeat center center;
+	background-size: cover;
 	width: 100%;
 	height: 10em;
-	text-align: center;	
+	/* text-align: center;	 */
+	/* padding-bottom: 5em; */
 } 
 div.D-flex{
 	display: flex;
 	justify-content: center;
-	margin:5em auto;
+	/* margin:5em auto; */
 	width: 100%;
 	height: auto;
+	padding-top: 2.8em;
+	/* padding-bottom: 5em; */
+	/* margin-top: 5em;
+	margin-bottom: 5em; */
+
 }
 
-button{
-	/* display: inline; */
+.D-flex p{
+	margin-right: 3em;
+	font-size: 3em;
+	color: white;
+	/* margin-top: 4em; */
+	
+}
+.D-flex button{
+	width: 10em;
+	height: 3.5em;
+	background-color: #5a86ad;
+	/* background-color: #a3abbd; */
+	border: none;
+
+	border-radius: 3px;
+	/* font-size: 1.5em; */
+	/* margin-top:5em; */
+	
+}
+.D-flex button a{
+	font-family: open-sans, sans-serif !important;
+	color: white;
+}
+.D-flex p{
+	/* padding-bottom: 5em; */
+
 }
 
 /*
 /*BEGIN ASIDE - FIND ME*/
  main > aside{
-	/* background-color: white; */
-	/* background-color: #3f4756; */
-	background-color: #a3abbd;
+	background-color: white; 
 	width: inherit;
 	height: auto;
 	padding-bottom: 7em;
@@ -279,8 +311,8 @@ aside a{
 	color: #5a86ad;
 }
 aside a:hover, aside a:visited{
-	/* color: #3f4756; */
-	color: #5a86ad;
+	color: #3f4756;
+	/* color: #5a86ad; */
 }
 aside ul li, aside ul li a{
 	/* font-weight: bolder; */
