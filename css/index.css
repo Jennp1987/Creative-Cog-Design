@@ -439,24 +439,25 @@ body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > section > div.col-12
 	height: 365px; */
 	/* width: 70%;
 	height: 95%; */
-	border: solid 5px #a4844e;
+	/* color:#a4844e; */
+	border: solid 5px rgb(164,132,78,.8);
 	/* border-radius: 100%; */
 	text-align: left;
-	font-size: 1.2em;
+	font-size: 1.3em;
 	/* font-weight: bolder; */
-	padding: .8em;
+	padding: 1em;
 	display: block;
 	 position: relative; 
 	 z-index: 1;
 	 margin: 0 auto;
 	 /* width: 50%;
 	height: 95%; */
-	width: 35%;
+	width: 48%;
 	height: 40%;
 	font-family: open-sans, sans-serif;
 	font-style: normal;
 	color: #383838;
-	line-height: 26.1px;
+	line-height: 30px;
 	font-weight: 400;
 	
 }
@@ -532,7 +533,8 @@ body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > section > div.col-12
 	/* width: 30% !important;
 	height: 80% !important; */
 	margin: 0 auto;
-	width: 70% !important;
+	/* width: 70% !important; */
+	width: 85% !important;
 	height: 50% !important;
 	/* display: block; */
 }
@@ -542,19 +544,23 @@ body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > section > div.col-12
 	background-size: 100%;
 	width: 100%;
 	height: 100%;
-	color: #3f4756 !important;
+	color:	rgb(220,220,220) !important;
+	/* color: #3f4756 !important; */
 	/* opacity: .75 !important; */
+	margin-right: 1em;
 }
 .carousel-control-next-icon{
 	background: url("https://jennp1987.github.io/Creative-Cog-Design/images/rightAngle5-01.svg")  no-repeat !important; 
 	background-size: 100%;
 	width: 100%;
 	height: 100%;
-	color: #3f4756 !important;
+	color:	rgb(220,220,220) !important;
+	margin-left: 1em;
+	/* color: #3f4756 !important; */
 	/* opacity: .75 !important; */
 }
 .carousel-control-prev, .carousel-control-next {
-	opacity: .75 !important;
+	/* opacity: .75 !important; */
 }
 #carouselExampleControls a:hover, #carouselExampleControls a:visited{
 	color:#5a86ad;
@@ -603,9 +609,9 @@ aside a{
 aside a:hover, aside a:visited{
 	color: #3f4756;
 }
-aside ul li, aside ul li a{
-	/* font-weight: bolder; */
-}
+/* aside ul li, aside ul li a{
+	font-weight: bolder; 
+} */
 /*END ASIDE - FIND ME*/
 /*BEGIN FOOTER*/
 footer {
@@ -623,12 +629,15 @@ footer p {
 }
 @media only screen and (max-width: 1770px) and (min-width:1707px ) {
 	#carouselExampleControls{
-		width: 43%;
+		/* width: 48%; */
+		/* width: 60%; */
 	}
+
 }
 @media only screen and (max-width: 1706px) {
 	#carouselExampleControls{
-		width: 43%;
+		/* width: 43%; */
+		/* width: 60%; */
 	}
 	.circle{
 		width: 8em;
@@ -643,6 +652,12 @@ footer p {
 		padding-top: 20%;
 		padding-bottom: 20%;
 	}
+	#carouselExampleControls{
+		/* width: 60%; */
+	}
+	
+	
+
 
 	
 }
@@ -666,7 +681,7 @@ footer p {
 		width: 7.8em;
 	}
 	#carouselExampleControls{
-		width: 45%;
+		/* width: 45%; */
 	}
 	
 	
@@ -701,20 +716,30 @@ footer p {
 		height:6.5em;
 
 	}
+	#recommendations > h3{
+		font-size: 3.2em;
+	}
+	#carouselExampleControls{
+		/* width: 80% !important;
+		font-size: 1.3em;
+		border-radius: 0; */
+	}
 	#projects > div > a:nth-child(1) > p, #projects > div > a:nth-child(2) > p{
 		font-size: 1em;
 	}
+	aside h4{
+		margin-bottom: .5em;
+	}
 	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(1)  {
 		font-size: 1.6em;
+		margin-bottom: 1em;
 	}
 	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(2){
 		font-size: 1.6em;
+		
 	}
-	#carouselExampleControls{
-		width: 80% !important;
-		font-size: 1.3em;
-		border-radius: 0;
-	}
+	
+
 
 
 
@@ -754,16 +779,31 @@ footer p {
 	#projects > div > a:nth-child(1) > p, #projects > div > a:nth-child(2) > p{
 		font-size: 1em;
 	}
+	#recommendations > h3{
+		font-size: 3.2em;
+	}
+	#carouselExampleControls{
+		width: 70% !important;
+		/*font-size: 1.3em; */
+		/* width: 60%; */
+		
+	}
+	#back > span.carousel-control-prev-icon{
+		margin-left: 10px;
+	}
+	aside h4{
+		margin-bottom: .5em;
+	}
 	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(1)  {
 		font-size: 1.3em;
+		margin-bottom: 1em;
 	}
 	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(2){
 		font-size: 1.3em;
 	}
-	#carouselExampleControls{
-		width: 70% !important;
-		font-size: 1.3em;
-		
+
+	aside ul li, aside ul li a{
+		font-weight: bolder !important; 
 	}
 
 }
@@ -775,6 +815,7 @@ footer p {
 		padding-right: .5em !important;
 	}
 */
+
 }
 
 /*MED SCREEN*/
@@ -791,15 +832,25 @@ footer p {
 	.headerContainer h3 {
 		font-size: 23px !important;
 	}
+	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > section{
+		padding-top: 5em;
+	}
 	section > div > h2.outlineText{
 		font-size: 52px;
 		-webkit-text-stroke: 1.5px #a4844e;
 		-webkit-text-fill-color: white;
 	}
+	article.about{
+		height: 20em;
+	}
 	.about p{
 		/* max-width: 645px; */
-		max-width: 450px;
-		font-size: 1.3em;
+		max-width: 450px !important;
+		font-size: 1.2em !important;
+	}
+	#projects{
+		padding-top: 10em;
+		padding-bottom: 8em;
 	}
 	#projects h2{
 		font-size: 3.25em;
@@ -814,12 +865,21 @@ footer p {
 	#projects > div > a:nth-child(1) > p{
 		margin-right: .8em;
 	}
+	#recommendations > h3{
+		font-size: 2.5em;
+	}
+	#carouselExampleControls{
+		width: 80% !important;
+		font-size: 1.1em;
+		
+	}
 	main > aside > h4{
 		font-size: 2.3em;
 		margin-bottom: 1em;
 	}
 	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(1)  {
 		font-size: 1.2em;
+		margin-bottom: 1.5em;
 	}
 	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(1) > a{
 		 display: block; 
@@ -831,10 +891,9 @@ footer p {
 		display: block;
 		font-size: 1em;
 	}
-	#carouselExampleControls{
-		width: 78% !important;
-		font-size: 1.2em;
-		
+
+	aside ul li, aside ul li a{
+		font-weight: bolder !important; 
 	}
 
 }
@@ -857,14 +916,6 @@ footer p {
 	body > div > div > div.col-lg-2.col-md-2.col-sm-12 > nav, .navDiv {
 		 padding: 0 !important; 
 	}
-	/* .navDiv {
-		padding-left: 0px !important;
-		padding-right: 0px !important; 
-		
-
-
-	}*/
-	
 
 	body > div > div > div.col-lg-8.col-md-8.col-sm-12 {
 		padding-left: 0px !important;
@@ -874,6 +925,12 @@ footer p {
 	.jumbotron {
 	max-width: 100%;
 
+}
+body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(1){
+	margin-bottom: 1.5em;
+}
+	aside ul li, aside ul li a{
+		font-weight: bolder !important; 
 }
 }
 
@@ -911,13 +968,27 @@ footer p {
 	.container{
 		padding-left: 3em !important;
 	}
+	 body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > section{
+		padding-top: 5em;
+		/* height: 28em; */
+	} 
 	section > div > h2.outlineText{
 		font-size: 63px;
 		-webkit-text-stroke: 1.5px #a4844e;
 	}
+	article.project{
+		
+	}
+	article.about{
+		height: 23em;
+	}
 	.about p{
 		max-width: 550px; 
 		font-size: 1.4em;
+	}
+	#projects{
+		padding-top: 10em;
+		padding-bottom: 8em;
 	}
 	#projects h2{
 		font-size: 3.25em;
@@ -946,6 +1017,9 @@ footer p {
 	}
 	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(2)> a{
 		font-size: 1em;
+	}
+	#recommendations > h3{
+		font-size: 3em;
 	}
 	#carouselExampleControls{
 		width: 80% !important;
@@ -981,7 +1055,7 @@ footer p {
 		font-size: 24px !important;
 	}
 	section {
-		padding-top: 3em;
+		padding-top: 5em;
 	}
 	article.about{
 		height: 20em;
@@ -995,7 +1069,7 @@ footer p {
 		font-size: 1.2em;
 	}
 	#projects {
-		padding-top: 10em; 
+		padding-top: 10em !important; 
 	}
 	#projects h2{
 		font-size: 3.25em;
@@ -1021,7 +1095,9 @@ footer p {
 	#projects > div > a:nth-child(1) > p, #projects > div > a:nth-child(2) > p{
 		font-size: 1em;
 	}
-	
+	#recommendations > h3{
+		font-size: 3em;
+	}
 	#carouselExampleSlidesOnly{
 		width: 300px;
 		height: 430px;
@@ -1034,10 +1110,10 @@ footer p {
 	aside ul a{
 		display: block;
 		width: 100%;
-		font-weight: bolder;
+		font-weight: bolder !important;
 	}
 	aside ul li{
-		font-weight: bolder;
+		font-weight: bolder !important;
 	}
 	
 	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(1)   {
@@ -1068,10 +1144,12 @@ footer p {
 		display: block;
 	}
 	#carouselExampleControls{
-		width: 85% !important;
+		/* width: 85% !important; */
+		width: 80% !important;
 		font-size: 1.1em;
 		
 	}
+	
 }
 /*EX SMALL*/
 @media only screen and (max-width: 574px) and (min-width: 460px) {
@@ -1101,7 +1179,7 @@ footer p {
 		font-size: 24px !important;
 	}
 	section {
-		padding-top: 3em;
+		padding-top: 5em;
 	}
 	article.about{
 		height: 20em;
@@ -1166,7 +1244,7 @@ footer p {
 		width:100%;
 	}
 	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(1) > a{
-		font-size: .8em;
+		font-size: 1em;
 		display: block;
 		width: 100%;
 	}
@@ -1183,9 +1261,12 @@ footer p {
 		display: block;
 	}
 	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(2) > a{
-		font-size: .8em !important;
+		font-size: 1em !important;
 		width: 100%;
 		display: block;
+	}
+	#recommendations > h3{
+		font-size: 2.5em;
 	}
 	#carouselExampleControls{
 		width: 85% !important;
@@ -1207,9 +1288,6 @@ footer p {
 
 
 	}
-	div .headerContainer{
-	
-	}
 	.headerContainer h1 {
 		font-size: 33px !important;
 		margin-top: 1em;
@@ -1230,10 +1308,10 @@ footer p {
 		-webkit-text-stroke: 1.25px #a4844e;
 	}
 	article.about{
-		height: 25em;
+		height: 20em;
 	}
 	.about p{
-		font-size: 1.3em;
+		font-size: 1.1em;
 		max-width: 330px;
 	}
 	section {
@@ -1281,9 +1359,24 @@ footer p {
 	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(2){
 		font-size: 1.2em;
 		margin-top: 2em;
+		/* display: block;
+		width: 100%; */
 	}
 	
 	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(2)> a{
 		font-size: 1em;
+		display: block;
+		width: 100%;
+	}
+	#recommendations > h3{
+		font-size: 2.5em;
+	}
+	#carouselExampleControls{
+		width: 80% !important;
+		font-size: 1.2em;
+		
+	}
+	#back > span.carousel-control-prev-icon{
+		margin-left: 10px;
 	}
 }
