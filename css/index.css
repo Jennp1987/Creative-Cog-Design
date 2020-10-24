@@ -37,10 +37,6 @@ main.menu-active {
 }
 
 /*NAV*/
-nav {
-	
-}
-
 .navbar > button {
 	background-color: #353441;
 	color: white;
@@ -65,8 +61,6 @@ nav {
 .navbar li {
 	list-style: none;
 	padding-right: .5em;
-
-
 }
 
 #collapseExample > ul > li.nav-item.dropdown.show > div {
@@ -74,7 +68,7 @@ nav {
 }
 
 .navbar li,
-collapseExample > ul > li.nav-item.dropdown > div {
+#collapseExample > ul > li.nav-item.dropdown > div {
 	background-color: #353441;
 
 }
@@ -95,12 +89,11 @@ collapseExample > ul > li.nav-item.dropdown > div {
 }
 .navbar li a:hover {
 	background-color: #a4844e;
-	
 
 }
 .navbar-toggler:focus,
  li .dropdown a:active, #collapseExample > ul > li.nav-item.dropdown.show > a{
-	outline: none;
+	text-decoration: none;
 }
 
 /*STYLE THE INNER Of DROPDOWN*/
@@ -262,9 +255,6 @@ section > div > h2.outlineText{
      
 }
 
-
- 
- /* @supports (	-webkit-text-stroke: 2px #a4844e) { */
 	section > div > h2.outlineText{
 		text-align: center;
 		font-size: 82px;
@@ -274,12 +264,9 @@ section > div > h2.outlineText{
 		font-weight: 300;
 		font-style: normal;  
 	
-		}
-	/*}*/
+}
 	_:-ms-lang(x), h2.outlineText  {
-		/* color: #a4844e;
-		font-size: 82px;
-		font-weight: 300; */
+
 		font-size: 80px;
         color: white;
 	    text-shadow: 
@@ -288,14 +275,7 @@ section > div > h2.outlineText{
 	   0 0 3px #a4844e,
 	   0 0 3px #a4844e,
 	   0 0 3px #a4844e;   
-		 } 
-div.skew{
-	/* background-color: white;
-	position: relative;
-	z-index: 10;
-	clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10vw), 0 100%);
-	margin-bottom: -10vw; */
-}
+ } 
 article.about {
 	width: 100%;
 	height: 30em ;
@@ -404,6 +384,8 @@ body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > section > div.col-12
 	align-items: center
   }
 /*SECTION END*/
+/*BEGIN TESTIMONIALS*/
+
  #recommendations {
 	width: 100%;
 	height: auto;
@@ -416,127 +398,103 @@ body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > section > div.col-12
 	font-size: 3.5em;
 	color: #3f4756;
 }
-/*BEGIN FIND ME*/
-/*BEGIN ARTICLE FOR TESTIMONIES*/
+/*BEGIN ARTICLE FOR TESTIMONIES SLIDER*/
 .findMe {
-	 display: inline-block; 
-	background-color: white;
-	/*for slider*/
-	width: 100%;
-	height: auto;
-	text-align: center; 
+	display: inline-block; 
+   background-color: white;
+   width: 100%;
+   height: auto;
+   text-align: center; 
+   margin: 0 auto;
+   display: flex;
+   justify-content: center;
+
+}
+#carouselExampleControls{
+   border: solid 5px rgb(164,132,78,.8);
+   text-align: left;
+   font-size: 1.3em;
+   padding: 1em;
+   display: block;
+	position: relative; 
+	z-index: 1;
 	margin: 0 auto;
-	display: flex;
-	justify-content: center;
-
-
-
+   width: 48%;
+   height: 40%;
+   font-family: open-sans, sans-serif;
+   font-style: normal;
+   color: #383838;
+   line-height: 30px;
+   font-weight: 400;
+   
 }
-
-/* #carouselExampleSlidesOnly{ */
-	#carouselExampleControls{
-	 /* width: 405px;
-	height: 365px; */
-	/* width: 70%;
-	height: 95%; */
-	/* color:#a4844e; */
-	border: solid 5px rgb(164,132,78,.8);
-	/* border-radius: 100%; */
-	text-align: left;
-	font-size: 1.3em;
-	/* font-weight: bolder; */
-	padding: 1em;
-	display: block;
-	 position: relative; 
-	 z-index: 1;
-	 margin: 0 auto;
-	 /* width: 50%;
-	height: 95%; */
-	width: 48%;
-	height: 40%;
-	font-family: open-sans, sans-serif;
-	font-style: normal;
-	color: #383838;
-	line-height: 30px;
-	font-weight: 400;
-	
-}
-
-	div.testimonialCircle {
-	border-radius: 40px;
-	border: none;
-	position: absolute; 
-	z-index: 10; 
-}
-#carouselExampleControls > div > .carousel-item{
-	/* width: 80%;
-	height: 80%; */
+   div.testimonialCircle {
+   border-radius: 40px;
+   border: none;
+   position: absolute; 
+   z-index: 10; 
 }
 #circleOne{
-	border: solid 3px #a3abbd;
-	left: -35px; 
-	top: -38px; 
-	width: 60px;
-	height: 60px;
+   border: solid 3px #a3abbd;
+   left: -35px; 
+   top: -38px; 
+   width: 60px;
+   height: 60px;
 }
 #circleTwo{
-	border: solid 3px #a3abbd;
-	bottom: 10px;
-	right: 10px; 
-	width: 24px;
-	height: 24px;
+   border: solid 3px #a3abbd;
+   bottom: 10px;
+   right: 10px; 
+   width: 24px;
+   height: 24px;
 }
 #circleThree{
-	background: 3px  #a3abbd;
-	width: 20px;
-	height: 20px;
-	top: -35px;
-	left: 30px;
+   background: 3px  #a3abbd;
+   width: 20px;
+   height: 20px;
+   top: -35px;
+   left: 30px;
 }
 #circleFour{
-	background: 3px #a3abbd;
-	bottom: 3px;
-	right: -25px; 
-	width: 10px;
-	height: 10px;
+   background: 3px #a3abbd;
+   bottom: 3px;
+   right: -25px; 
+   width: 10px;
+   height: 10px;
 }
 #circleFive{
-	background: 3px #a3abbd;
-	bottom: -27px;
-	right: -6px; 
-	width: 17px;
-	height: 17px;
+   background: 3px #a3abbd;
+   bottom: -27px;
+   right: -6px; 
+   width: 17px;
+   height: 17px;
 }
 #circleSix{
-	background: 3px #a3abbd;
-	width: 10px;
-	height: 10px;
-	left: -25px;
-	top: 29px;
+   background: 3px #a3abbd;
+   width: 10px;
+   height: 10px;
+   left: -25px;
+   top: 29px;
 }
 /*NAME & POSITION*/
+
 #carouselExampleControls > div.carousel-inner > div.carousel-item.active > p:nth-child(3),
 #carouselExampleControls > div > div:nth-child(1) > div > p:nth-child(3),#carouselExampleControls > div > div:nth-child(1) > p:nth-child(4),#carouselExampleControls > div > div:nth-child(1) > p:nth-child(5), #carouselExampleControls > div > div.carousel-item.active > div > p:nth-child(3), #carouselExampleControls > div > div.carousel-item.active > p:nth-child(4), #carouselExampleControls > div > div.carousel-item.active >  p:nth-child(5){
-	line-height: .5em;
+   line-height: .5em;
+}
+/*ADJUST MARGIN FOR LINK*/
+#carouselExampleControls > div.carousel-inner > div.carousel-item.active > p:nth-child(4){
+	margin-bottom: .3em;
+}
+#carouselExampleControls a{
+	text-decoration: underline;
 }
 
-/*TESTIMONIALS*/
-.findMe > article > p {
-	margin: 0 auto;
-}
 
-/* main > article > #carouselExampleControls > .carousel-item > a.carousel-control-prev #back,#carouselExampleControls > a.carousel-control-prev > span.carousel-control-prev-icons, #back {
-	color: #000000 !important;
-	opacity: 1 !important;
-} */
 .carousel-inner{
-	/* width: 30% !important;
-	height: 80% !important; */
 	margin: 0 auto;
-	/* width: 70% !important; */
 	width: 85% !important;
 	height: 50% !important;
-	/* display: block; */
 }
 .carousel-control-prev-icon{
 	/* background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%6db3b7' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important; */
@@ -545,8 +503,6 @@ body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > section > div.col-12
 	width: 100%;
 	height: 100%;
 	color:	rgb(220,220,220) !important;
-	/* color: #3f4756 !important; */
-	/* opacity: .75 !important; */
 	margin-right: 1em;
 }
 .carousel-control-next-icon{
@@ -556,21 +512,16 @@ body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > section > div.col-12
 	height: 100%;
 	color:	rgb(220,220,220) !important;
 	margin-left: 1em;
-	/* color: #3f4756 !important; */
-	/* opacity: .75 !important; */
-}
-.carousel-control-prev, .carousel-control-next {
-	/* opacity: .75 !important; */
 }
 #carouselExampleControls a:hover, #carouselExampleControls a:visited{
 	color:#5a86ad;
 }
 
 
-/*END ASIDE FIND ME*/
+/*END ARTICLE FIND ME*/
 /*END ARTICLE FOR TESTIMONIES*/
 
-/*BEGIN ASIDE - FIND ME*/
+/*BEGIN ASIDE - ONLINE CONTACTS*/
  main > aside{
 	background-color: white;
 	width: inherit;
@@ -609,10 +560,8 @@ aside a{
 aside a:hover, aside a:visited{
 	color: #3f4756;
 }
-/* aside ul li, aside ul li a{
-	font-weight: bolder; 
-} */
 /*END ASIDE - FIND ME*/
+
 /*BEGIN FOOTER*/
 footer {
 	background-color: #a4844e;
@@ -719,11 +668,7 @@ footer p {
 	#recommendations > h3{
 		font-size: 3.2em;
 	}
-	#carouselExampleControls{
-		/* width: 80% !important;
-		font-size: 1.3em;
-		border-radius: 0; */
-	}
+
 	#projects > div > a:nth-child(1) > p, #projects > div > a:nth-child(2) > p{
 		font-size: 1em;
 	}
@@ -794,27 +739,19 @@ footer p {
 	aside h4{
 		margin-bottom: .5em;
 	}
-	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(1)  {
+	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(1), body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(2)  {
 		font-size: 1.3em;
 		margin-bottom: 1em;
 	}
-	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(2){
-		font-size: 1.3em;
+	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(1){
+		margin-bottom: 1em;
 	}
 
 	aside ul li, aside ul li a{
 		font-weight: bolder !important; 
+		display:block;
+		width: 100%;
 	}
-
-}
-
-/*LG SCREEN TO MEDIUM*/
-@media only screen and (max-width: 1119px) and (min-width: 768px) {
-/*
-	.navbar-collapse{
-		padding-right: .5em !important;
-	}
-*/
 
 }
 
@@ -877,19 +814,16 @@ footer p {
 		font-size: 2.3em;
 		margin-bottom: 1em;
 	}
-	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(1)  {
+	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(1), body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(2)  {
 		font-size: 1.2em;
+
+	}
+	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(1){
 		margin-bottom: 1.5em;
 	}
-	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(1) > a{
+	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(1) > a, body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(2)> a{
 		 display: block; 
-	}
-	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(2){
-		font-size: 1.2em;
-	}
-	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(2)> a{
-		display: block;
-		font-size: 1em;
+		 font-size: .9em;
 	}
 
 	aside ul li, aside ul li a{
@@ -909,10 +843,6 @@ footer p {
 		transform: none;
 	}
 
-	 header .jumbotron {
-		/* position: relative; */
-
-	} 
 	body > div > div > div.col-lg-2.col-md-2.col-sm-12 > nav, .navDiv {
 		 padding: 0 !important; 
 	}
@@ -924,7 +854,6 @@ footer p {
 	}
 	.jumbotron {
 	max-width: 100%;
-
 }
 body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(1){
 	margin-bottom: 1.5em;
@@ -976,9 +905,6 @@ body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-
 		font-size: 63px;
 		-webkit-text-stroke: 1.5px #a4844e;
 	}
-	article.project{
-		
-	}
 	article.about{
 		height: 23em;
 	}
@@ -1004,20 +930,6 @@ body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-
 	#projects > div > a:nth-child(1) > p{
 		 margin-right: .4em; 
 	}
-
-	main > aside > h4{
-		font-size: 2.3em;
-		margin-bottom: 1em;
-	}
-	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(1)  {
-		font-size: 1.2em;
-	}
-	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(2){
-		font-size: 1.2em;
-	}
-	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(2)> a{
-		font-size: 1em;
-	}
 	#recommendations > h3{
 		font-size: 3em;
 	}
@@ -1026,6 +938,22 @@ body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-
 		font-size: 1.2em;
 		
 	}
+	main > aside > h4{
+		font-size: 2.3em;
+		margin-bottom: 1em;
+	}
+	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(1), body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(2)  {
+		font-size: 1.2em;
+		display: block;
+		width: 100%;
+	}
+
+	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(1)> a,body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(2)> a{
+		font-size: 1em;
+		display: block;
+		width: 100%;
+	}
+
 }
 
 /*EX SM SCREEN*/
@@ -1098,57 +1026,34 @@ body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-
 	#recommendations > h3{
 		font-size: 3em;
 	}
-	#carouselExampleSlidesOnly{
-		width: 300px;
-		height: 430px;
-		padding: .8em .8em 1em .8em;
+	#carouselExampleControls{
+		width: 80% !important;
+		font-size: 1.2em;
 	}
 	main > aside > h4{
 		font-size: 2.3em;
 		margin-bottom: 1em;
 	}
-	aside ul a{
-		display: block;
-		width: 100%;
-		font-weight: bolder !important;
-	}
-	aside ul li{
-		font-weight: bolder !important;
-	}
+	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(1), body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(2)  {
+		font-size: 1.2em; 
+	   display: block;
+	   width:100%;
+   }
+   body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(2){
+	   margin-top: 2em;
+   
+   }
+   body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(1) > a, body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(2) > a{
+	   font-size: 1em;
+	   display: block;
+	   width: 100%;
+   }
+   aside ul li, aside ul a{
+	   display: block;
+	   width: 100%;
+	   font-weight: bolder;
+   }
 	
-	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(1)   {
-	 	font-size: 1.2em; 
-		display: block;
-		width:100%;
-	}
-	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(1) > a{
-		font-size: .8em;
-		display: block;
-		width: 100%;
-	}
-	
-	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(2){
-		width: 100%;
-		margin-top: 2em;
-		display: block;
-	}
-	
-	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(2){
-		font-size: 1.2em !important;
-		width: 100%;
-		display: block;
-	}
-	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(2) > a{
-		font-size: .8em !important;
-		width: 100%;
-		display: block;
-	}
-	#carouselExampleControls{
-		/* width: 85% !important; */
-		width: 80% !important;
-		font-size: 1.1em;
-		
-	}
 	
 }
 /*EX SMALL*/
@@ -1220,51 +1125,6 @@ body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-
 	#projects > div > a:nth-child(1) > p, #projects > div > a:nth-child(2) > p{
 		font-size: 1em;
 	}
-	#carouselExampleSlidesOnly{
-		width: 300px;
-		height: 430px;
-		padding: .8em .8em 1em .8em;
-	}
-	main > aside > h4{
-		font-size: 2.3em;
-		margin-bottom: 1em;
-	}
-	aside ul a{
-		display: block;
-		width: 100%;
-		font-weight: bolder;
-	}
-	aside ul li{
-		font-weight: bolder;
-	}
-	
-	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(1)   {
-	 	font-size: 1.2em; 
-		display: block;
-		width:100%;
-	}
-	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(1) > a{
-		font-size: 1em;
-		display: block;
-		width: 100%;
-	}
-	
-	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(2){
-		width: 100%;
-		margin-top: 2em;
-		display: block;
-	}
-	
-	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(2){
-		font-size: 1.2em !important;
-		width: 100%;
-		display: block;
-	}
-	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(2) > a{
-		font-size: 1em !important;
-		width: 100%;
-		display: block;
-	}
 	#recommendations > h3{
 		font-size: 2.5em;
 	}
@@ -1273,6 +1133,30 @@ body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-
 		font-size: 1.2em;
 		
 	}
+	main > aside > h4{
+		font-size: 2.3em;
+		margin-bottom: 1em;
+	}
+	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(1), body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(2)  {
+	 	font-size: 1.2em; 
+		display: block;
+		width:100%;
+	}
+	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(2){
+		margin-top: 2em;
+	
+	}
+	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(1) > a, body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(2) > a{
+		font-size: 1em;
+		display: block;
+		width: 100%;
+	}
+	aside ul li, aside ul a{
+		display: block;
+		width: 100%;
+		font-weight: bolder;
+	}
+
 
 }
 /*EX SM*/
@@ -1344,30 +1228,7 @@ body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-
 	#projects > div > a:nth-child(1) > p, #projects > div > a:nth-child(2) > p{
 		font-size: 1em;
 	}
-	#carouselExampleSlidesOnly{
-		width: 300px;
-		height: 430px;
-		padding: .8em .8em 1em .8em;
-	}
-	main > aside > h4{
-		font-size: 2.3em;
-		margin-bottom: 1em;
-	}
-	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(1)  {
-		font-size: 1.2em;
-	}
-	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(2){
-		font-size: 1.2em;
-		margin-top: 2em;
-		/* display: block;
-		width: 100%; */
-	}
-	
-	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(2)> a{
-		font-size: 1em;
-		display: block;
-		width: 100%;
-	}
+
 	#recommendations > h3{
 		font-size: 2.5em;
 	}
@@ -1379,4 +1240,25 @@ body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-
 	#back > span.carousel-control-prev-icon{
 		margin-left: 10px;
 	}
+	main > aside > h4{
+		font-size: 2.3em;
+		margin-bottom: 1em;
+	}
+	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(1),body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(2)  {
+		font-size: 1.2em;
+		display: block;
+		width: 100%;
+	}
+	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(2){
+		margin-top: 2em;
+		display: block;
+		width: 100%;
+	}
+	
+	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(1) > a, body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(2)> a{
+		font-size: .8em;
+		display: block;
+		width: 100%;
+	}
+
 }
