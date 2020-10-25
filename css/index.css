@@ -51,6 +51,7 @@ main.menu-active {
 .navbar > button:hover {
 	color: #353441 !important;
 	background: white !important;
+	border: none;
 
 }
 
@@ -94,6 +95,7 @@ main.menu-active {
 .navbar-toggler:focus,
  li .dropdown a:active, #collapseExample > ul > li.nav-item.dropdown.show > a{
 	text-decoration: none;
+	outline: none;
 }
 
 /*STYLE THE INNER Of DROPDOWN*/

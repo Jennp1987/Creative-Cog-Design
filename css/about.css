@@ -12,13 +12,6 @@ body {
 	border-top: 1em #3f4756 solid;
 	
 }
-/*PRELOADING BCKG IMG*/
-/*
-body::after{
-	position:absolute; width:0; height:0; overflow:hidden; z-index:-1;
-	content: url('https://jennp1987.github.io/Creative-Cog-Design/images/creativeCogHeaderNewpng825.png');
-}
-*/
 
 /*MAIN*/
 main{
@@ -74,7 +67,7 @@ nav {
 }
 
 .navbar li,
-collapseExample > ul > li.nav-item.dropdown > div {
+#collapseExample > ul > li.nav-item.dropdown > div {
 	background-color: #353441;
 
 }
@@ -112,60 +105,19 @@ collapseExample > ul > li.nav-item.dropdown > div {
 
 /*section fixed*/
 .jumbotron.img-fluid {
-	/* background: url('../images/aboutMeLgPhoto.jpg') center center no-repeat fixed;   */
 	background: url('../images/aboutPhoto8.jpg') center center no-repeat fixed;
- 	/* background-size: contain;   */
 	max-width: 100%;
 	height: 854px;
-	/* height: 100%; */
-	/* height:auto; */
 	margin: 0 auto;
 	display: block;
 	padding: 0 !important;
 	margin-bottom: 0 !important;
 	border-radius: 0 !important;
 	background-color: #21212d !important;
-	/* background-color: none !important; */
-	/* background-color:white !important; */
 }
-div.overlay{
-	/* max-width: inherit; */
-
-	/* width: 100%;
-	height: 854px;  */
-
-	/* height: 100%; */
-	/* margin: 0 auto;
-	display: block; */
-
-	/* position: absolute;  */
-    /* opacity: 0.20; */
-	/* background-color: rgba(75, 119, 190, 1); */
-	/* z-index: 10;  */
-
-
-}
-
 
 /*section end*/
 /*ARTICLE BEGIN*/
-/* div.skew{
-	background-color: white;
-	position: relative;
-	z-index: 10;
-	clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10vw), 0 100%);
-	margin-bottom: -10vw;
-} */
-/* div.skew{
-	background-color: white;
-	text-align: left;
-	padding-top: 3em;
-	position: relative;
-	z-index: 10;
-	clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10vw), 0 100%);
-	margin-bottom: -10vw; 
-	
-} */
 
 article:nth-child(2){
 	width: 100%;
@@ -173,25 +125,12 @@ article:nth-child(2){
 	background-color: white;
 	padding-top: 3em;
 	padding-bottom: 4em;
-	/* padding: 3em 0 15em 0;
-	position: relative;
-	z-index: 10;
-	clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10vw), 0 100%);
-	margin-bottom: -10vw;  */
 }
 article:nth-child(2) h1{
 	text-align: center;
 	font-size: 3em;
-	/* color:#a3abbd; */
 	color: #3f4756;
 }
-/* article h1 span{
-	font-family: brandon-grotesque, sans-serif !important;
-		-webkit-text-stroke: 1.5px #a4844e;
-		-webkit-text-fill-color: white;
-		font-weight: 300;
-		font-style: normal;  
-} */
 article:nth-child(2) p{
 	margin: 0 auto;
 	margin-bottom: 0;
@@ -206,8 +145,6 @@ article:nth-child(2) p{
 }
 
 article:nth-child(2) > p > a{
-	/* text-align: left;
-	max-width: 695px; */
 	color: #5a86ad;
 	text-decoration: underline;
 	cursor: grab;
@@ -216,29 +153,22 @@ article:nth-child(2) > p > a{
 	color: #3f4756;
 }
 
-
 /*1st ARTICLE ENDS*/
 
 /*2nd ARTICLE - Contact*/
 
 article:nth-child(3) {
-	background: url("../images/aboutContactBackground5.png") no-repeat center center;
+	background: url("../images/aboutContactBackground6.png") no-repeat center center;
 	background-size: cover;
 	width: 100%;
-	height: 10em;
-	/* text-align: center;	 */
-	/* padding-bottom: 5em; */
+	height: 11em;
 } 
 div.D-flex{
 	display: flex;
 	justify-content: center;
-	/* margin:5em auto; */
 	width: 100%;
 	height: auto;
-	padding-top: 2.8em;
-	/* padding-bottom: 5em; */
-	/* margin-top: 5em;
-	margin-bottom: 5em; */
+	padding-top: 3em;
 
 }
 
@@ -246,30 +176,20 @@ div.D-flex{
 	margin-right: 3em;
 	font-size: 3em;
 	color: white;
-	/* margin-top: 4em; */
 	
 }
 .D-flex button{
 	width: 10em;
 	height: 3.5em;
 	background-color: #5a86ad;
-	/* background-color: #a3abbd; */
 	border: none;
-
 	border-radius: 3px;
-	/* font-size: 1.5em; */
-	/* margin-top:5em; */
 	
 }
 .D-flex button a{
 	font-family: open-sans, sans-serif !important;
 	color: white;
 }
-.D-flex p{
-	/* padding-bottom: 5em; */
-
-}
-
 /*
 /*BEGIN ASIDE - FIND ME*/
  main > aside{
@@ -292,11 +212,8 @@ main > aside > h4 {
 }
 
 aside ul {
-
 	list-style: none;
 	display: block;
-	/* background-color: white;
-} */
 }
 
 aside li {
@@ -312,11 +229,8 @@ aside a{
 }
 aside a:hover, aside a:visited{
 	color: #3f4756;
-	/* color: #5a86ad; */
 }
-aside ul li, aside ul li a{
-	/* font-weight: bolder; */
-}
+
 /*END ASIDE - FIND ME*/
 /*BEGIN FOOTER*/
 footer {
@@ -333,11 +247,18 @@ footer p {
 	line-height: 1.5em;
 }
 /*EX LG*/
+@media only screen and (max-width: 1578px) and (min-width:1223px ) {
+	article > .D-flex > p{
+		margin-right: 1.5em!important;
+	}
+
+}
+/*EX LG*/
 @media only screen and (max-width: 1222px) and (min-width: 1162px) {
-	article h1{
-		font-size: 2.75em;
+	 h1{
+		font-size: 2.75em !important;
 	} 
-	article p{
+	main > article:nth-child(2) > p{
 		font-size: 1.4em;
 		line-height: 1.9em;
 	}
@@ -345,10 +266,10 @@ footer p {
 }
 /*large*/
 @media only screen and (max-width: 1161px) and (min-width: 992px) {
-	article h1{
-		font-size: 2.4em;
+	 h1{
+		font-size: 2.4em !important;
 	} 
-	article p{
+	main > article:nth-child(2) > p{
 		font-size:1.3em;
 		line-height: 1.8em;
 		max-width: 580px;
@@ -367,10 +288,10 @@ footer p {
 }
 /*medium*/
 @media only screen and (max-width: 991px) and (min-width:768px) {
-	article h1{
-		font-size: 1.9em;
+	h1{
+		font-size: 1.9em !important;
 	} 
-	article p{
+	main > article:nth-child(2) > p{
 		font-size:1.2em;
 		line-height: 1.7em;
 		max-width: 440px;
@@ -411,25 +332,16 @@ footer p {
 		transform: none; 
 	}
 
-	header .jumbotron {
-		/* position: relative; */
-
-	}
 	body > div > div > div.col-lg-2.col-md-2.col-sm-12 > nav, .navDiv{
 		 padding: 0 !important; 
 	}
-	/* .navDiv {
-		padding-left: 0px !important;
-		padding-right: 0px !important;
-		
 
-
-	} */
-@media only screen and (max-width: 767px) and (min-width: 576px) {
-	article h1{
-		font-size: 2em;
 	} 
-	article p{
+@media only screen and (max-width: 767px) and (min-width: 576px) {
+	 h1{
+		font-size: 2em !important;
+	} 
+	main > article:nth-child(2) > p{
 		font-size:1.3em;
 		line-height: 1.7em;
 		max-width: 500px;
