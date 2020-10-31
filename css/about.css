@@ -22,7 +22,8 @@ transition: transform 150ms ease-out;
 	right: 0px;
 	margin: auto;
 	max-width: 100%;
-	background-color: #3f4756 !important;
+	/* background-color: #3f4756 !important; */
+	background-color: #21212d !important;
 	transform: none;
 }
 main.menu-active {
@@ -158,11 +159,14 @@ article:nth-child(2) > p > a{
 /*2nd ARTICLE - Contact*/
 
 article:nth-child(3) {
-	background: url("../images/aboutContactBackground6.png") no-repeat center center;
-	background-size: cover;
-	max-width: 100%;
+	/* background: url("../images/aboutContactBackground6.png") no-repeat; */
+	background: url('../images/aboutContact1.png') no-repeat center;
+	background-size: contain;
+	padding: 2em 0 2em 0;
+	background-position: center;
+	/* max-width: 100%;
 	height: auto;
-	padding: 2.5em 0 2.5em 0;
+	 */
 	/* width: 100%;
 	height: 11em; */
 } 
@@ -171,30 +175,38 @@ div.D-flex{
 	justify-content: center;
 	width: 100%;
 	height: auto;
-	padding-top: 3em;
+	padding-top: 1em;
 	/* justify-content: space-evenly; */
 
 }
 
 .D-flex p{
-	margin-right: 3em;
+	margin-right: 2em;
 	font-size: 3em;
 	color: white;
 	
 }
 .D-flex button{
-	width: 10em;
-	height: 3.5em;
+	width: 12em;
+	height: 4em;
 	background-color: #5a86ad;
 	border: none;
 	border-radius: 3px;
+	font-family: brandon-grotesque, sans-serif;
+	border-radius: 80px;
+	letter-spacing: .1em;
+	font-weight: 200;
 	
 }
 .D-flex button a{
-	font-family: open-sans, sans-serif !important;
+	/* font-family: open-sans, sans-serif !important; */
 	color: white;
+	font-size: 1.5em;
+	
 }
-/*
+
+
+
 /*BEGIN ASIDE - FIND ME*/
  main > aside{
 	background-color: white; 
@@ -253,16 +265,21 @@ footer p {
 /*EX LG*/
 @media only screen and (max-width: 1578px) and (min-width:1223px ) {
 	article:nth-child(3){
-		padding: 1.5em 0;
+		/* padding: 1em 0; */
 	}
 	article > .D-flex > p{
-		margin-right: 1.5em!important;
-		font-size: 2.8em;
+		margin-right: 1em!important;
+		font-size: 2.5em;
 	}
-	.D-flex button{
-		width: 7em;
 
+	.D-flex button{
+		width: 10em;
+		height: 3em;
 	}
+	.D-flex button a{
+		font-size: 1.5em;
+	}
+
 
 	
 }
@@ -277,26 +294,34 @@ footer p {
 	}
 	article:nth-child(3){
 		/* height: 15em; */
-		background: url("../images/aboutContactBackground7.png") no-repeat center center;
-		background-size: cover;
+		background: url("../images/aboutContact2.png") no-repeat center;
+		background-size: contain;
+		background-position: center;
 		padding: 0;
+		/*padding: 0 1em 0 1em;
+		width: 100%; */
 		
 	}
 	article > .D-flex{
-		
 		flex-direction: column;
 		align-items: center;
 		padding-bottom: 3em;
-		
 	}
+	
 	article > .D-flex > p{
 		margin-right: 0px;
 		/* width: 100%; */
-		height: auto;
+		/* height: auto; */
+		font-size: 2.5em;
+		margin-bottom: 1em;
 		
 	}
 	.D-flex button{
-		/* margin-bottom: 3em; */
+		width: 10em;
+		height: 2.75em;
+	}
+	.D-flex button a{
+		font-size: 1.4em;
 	}
 
 }
@@ -312,9 +337,33 @@ footer p {
 	}
 	article:nth-child(3){
 		/* height: 15em; */
-		background: url("../images/aboutContactBackground8.png") no-repeat center center;
-		background-size: cover;
+		/* background: url("../images/aboutContactBackground9.png") no-repeat center center;
+		background-size: contain;
+		padding: 0; */
+		background: url("../images/aboutContact2.png") no-repeat;
+		background-size: contain;
+		background-position: center;
+		padding: 0;
 		
+	}
+	article > .D-flex{
+		flex-direction: column;
+		align-items: center;
+		padding-bottom: 3em;
+		
+	}
+	article > .D-flex > p{
+		margin-right: 0px;
+		font-size: 2.5em;
+		margin-bottom: 1em;
+		
+	}
+	.D-flex button{
+		width: 10em;
+		height: 2.75em;
+	}
+	.D-flex button a{
+		font-size: 1.4em;
 	}
 	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(1), body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(2){
 		font-size: 1.5em;
@@ -340,15 +389,44 @@ footer p {
 	}
 	article:nth-child(3){
 		/* height: 15em; */
-		background: url("../images/aboutContactBackground7.png") no-repeat center center;
-		background-size: cover;
+		/* background: url("../images/aboutContactBackground7.png") no-repeat center center;
+		background-size: cover; */
+		background: url("../images/aboutContact2.png") no-repeat;
+		background-size: contain;
+		background-position: center;
+		padding: 0;
 		
 	}
+	article > .D-flex{
+		flex-direction: column;
+		align-items: center;
+		padding-bottom: 1em;
+		
+	}
+	article > .D-flex > p{
+		margin-right: 0px;
+		font-size: 2em;
+		margin-bottom: 1em;
+		
+	}
+	.D-flex button{
+		width: 6em;
+		height: 3em;
+	}
+	.D-flex button a{
+		font-size: 1.3em;
+	}
+	.D-flex button{
+		width: 10em;
+		height: 2.75em;
+		margin-bottom: 1em;
+	}
+	
 	main > aside{
 		padding-top: 1em;
 		padding-bottom: 3.5em;
 	}
-	main > aside > h4{
+	/* main > aside > h4{
 		font-size: 2.3em;
 		margin-bottom: 1em;
 	}
@@ -357,10 +435,30 @@ footer p {
 		 
 	} 
 	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(1) > a, body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(2) > a{
-		display: block;
+		display: block; */
+		main > aside > h4{
+			font-size: 2.3em;
+			margin-bottom: 1em;
+		}
+		body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(1), body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(2)  {
+			font-size: 1.2em;
+	
+		}
+		body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(1){
+			margin-bottom: 1.5em;
+		}
+		body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(1) > a, body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(2)> a{
+			 display: block; 
+			 font-size: .9em;
+		}
+	
+		aside ul li, aside ul li a{
+			font-weight: bolder !important; 
+		}
 		
 		
-	}
+	
+	
 
 }
 
@@ -385,6 +483,8 @@ footer p {
 	}
 
 	} 
+
+
 @media only screen and (max-width: 767px) and (min-width: 576px) {
 	 h1{
 		font-size: 2em !important;
@@ -394,6 +494,42 @@ footer p {
 		line-height: 1.7em;
 		max-width: 500px;
 	}
+	article:nth-child(3){
+		background: url("../images/aboutContact3.png") no-repeat;
+		background-size: contain;
+		background-position: center;
+		padding: 0;
+		
+	}
+	article > .D-flex{
+		flex-direction: column;
+		align-items: center;
+		padding-bottom: 1em;
+		
+	}
+	article > .D-flex > p{
+		margin-right: 0px;
+		/* width: 100%; */
+		/* height: auto; */
+		font-size: 2.5em;
+		margin-bottom: 1em;
+		
+	}
+	/* .D-flex button{
+		
+		width: 6em;
+		height: 3em;
+	} */
+	.D-flex button{
+		width: 10em;
+		height: 2.75em;
+		margin-bottom: 1em;
+		/* line-height: 60px */
+		/* font-size: 0.8em; */
+	}
+	.D-flex button a{
+		font-size: 1.3em;
+	}
 	main > aside{
 		padding-top: 1em;
 		padding-bottom: 3.5em;
@@ -402,15 +538,164 @@ footer p {
 		font-size: 2.3em;
 		margin-bottom: 1em;
 	}
-	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(1), body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(2){
-		font-size: 1.4em;
-		 
-	} 
-	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(1) > a, body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(2) > a{
+	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(1), body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(2)  {
+		font-size: 1.2em;
 		display: block;
-		
+		width: 100%;
+	}
+
+	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(1)> a,body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(2)> a{
+		font-size: 1em;
+		display: block;
+		width: 100%;
+	}
+	aside ul li, aside ul a{
+		display: block;
+		width: 100%;
+		font-weight: bolder;
+	}
+
+
+}
+@media only screen and (max-width: 575px) and (min-width: 460px){
+	h1{
+		font-size: 2em !important;
+	} 
+	main > article:nth-child(2) > p{
+		font-size:1.3em;
+		line-height: 1.7em;
+		max-width: 430px;
+	}
+	article:nth-child(3){
+		background: url("../images/aboutContact3.png") no-repeat;
+		background-size: contain;
+		background-position: center;
+		padding: 0;
 		
 	}
+	article > .D-flex{
+		flex-direction: column;
+		align-items: center;
+		padding-bottom: 1em;
+		
+	}
+	article > .D-flex > p{
+		margin-right: 0px;
+		/* width: 100%; */
+		/* height: auto; */
+		font-size: 2em;
+		margin-bottom: 1em;
+		
+	}
+	.D-flex button{
+		border-radius: 80px;
+		width: 7.5em;
+		height: 2.75em;
+		margin-bottom: 1em;
+	}
+	.D-flex button a{
+		font-size: 1.3em;
+	}
+	main > aside{
+		padding-top: 1em;
+		padding-bottom: 3.5em;
+	}
+	main > aside > h4{
+		font-size: 2.3em;
+		margin-bottom: 1em;
+	}	main > aside > h4{
+		font-size: 2.3em;
+		margin-bottom: 1em;
+	}
+	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(1), body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(2)  {
+	 	font-size: 1.2em; 
+		display: block;
+		width:100%;
+	}
+	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(2){
+		margin-top: 2em;
+	
+	}
+	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(1) > a, body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(2) > a{
+		font-size: 1em;
+		display: block;
+		width: 100%;
+	}
+	aside ul li, aside ul a{
+		display: block;
+		width: 100%;
+		font-weight: bolder;
+	}
+
+}
+@media only screen and (max-width: 459px) and (min-width: 363px) {
+	h1{
+		font-size: 2em !important;
+	} 
+	main > article:nth-child(2) > p{
+		font-size:1.2em;
+		line-height: 1.5em;
+		max-width: 350px;
+	}
+	article:nth-child(3){
+		background: url("../images/aboutContact3.png") no-repeat;
+		background-size: contain;
+		background-position: center;
+		padding: 0;
+		
+	}
+	article > .D-flex{
+		flex-direction: column;
+		align-items: center;
+		padding-bottom: 1em;
+		
+	}
+	article > .D-flex > p{
+		margin-right: 0px;
+		/* width: 100%; */
+		/* height: auto; */
+		font-size: 1.7em;
+		margin-bottom: 1em;
+		
+	}
+	.D-flex button{
+		border-radius: 80px;
+		width: 7.5em;
+		height: 2.75em;
+		margin-bottom: 1em;
+	}
+	.D-flex button a{
+		font-size: 1.3em;
+	}
+	main > aside{
+		padding-top: 1em;
+		padding-bottom: 3.5em;
+	}
+	main > aside > h4{
+		font-size: 2.3em;
+		margin-bottom: 1em;
+	}	
+	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(1), body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(2)  {
+	 	font-size: 1.2em; 
+		display: block;
+		width:100%;
+	}
+	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(2){
+		margin-top: 2em;
+	
+	}
+	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(1) > a, body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(2) > a{
+		/* font-size: 1em; */
+		font-size: .8em;
+		display: block;
+		width: 100%;
+	}
+	aside ul li, aside ul a{
+		display: block;
+		width: 100%;
+		font-weight: bolder;
+	}
+
 
 }
 
