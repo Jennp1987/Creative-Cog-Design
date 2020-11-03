@@ -142,12 +142,12 @@ article:nth-child(2) p{
 	line-height: 2em;
 }
 
-article:nth-child(2) > p > a{
+article:nth-child(2) > p > a, article:nth-child(2) > p > a:visited{
 	color: #5a86ad;
 	text-decoration: underline;
 	cursor: grab;
 }
-  p a:hover, p a:visited{
+ article:nth-child(2) > p > a:hover, article:nth-child(2) > p > a:focus{
 	color: #3f4756;
 }
 
@@ -237,11 +237,14 @@ aside li {
 	line-height: 2em;
 	
 }
-aside a{
+aside a, aside a:visited{
 	color: #5a86ad;
+	text-decoration: underline;
 }
-aside a:hover, aside a:visited{
+aside a:hover, aside a:focus{
 	color: #3f4756;
+	text-decoration: underline;
+
 }
 
 /*END ASIDE - FIND ME*/
