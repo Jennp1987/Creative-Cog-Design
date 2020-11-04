@@ -1202,7 +1202,7 @@ body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-
 	}
 	.headerContainer h3 {
 		font-size: 22px !important;
-		letter-spacing: 1px;
+		/* letter-spacing: 1px; */
 	}
 	/*Padding for Heading*/
 	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > header > div > div > div:nth-child(1) > .col-10, body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > header > div > div > div:nth-child(2) > .col-9, body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > header > div > div > div:nth-child(3) > .col-8{
