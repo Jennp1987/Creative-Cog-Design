@@ -675,8 +675,11 @@ footer p {
 	article > .D-flex{
 		flex-direction: column;
 		align-items: center;
-		padding-bottom: 1em;
+		/* padding-bottom: 1em; */
 		
+	}
+	div.D-flex{
+		padding-top: 0;
 	}
 	article > .D-flex > p{
 		margin-right: 0px;
