@@ -123,10 +123,12 @@ h1{
     letter-spacing: 2px;
 }
 /*HEADER END*/
-/*SECTION*/
 
-/*ARTICLE*/
-div:nth-child(1) > img{
+/*SECTION*/
+.row{
+	padding: 4em 0;
+}
+img{
 	width: 100%;
 	height: auto;
 }
@@ -142,7 +144,7 @@ h2{
 body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > section > div > div > div.col-lg-5.col-md-6.col-sm-6.col-3 > button:nth-child(3){
 	margin-right: 1em;
 }
- body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > section > div > div > div.col-lg-5.col-md-6.col-sm-6.col-3 > button:nth-child(3), body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > section > div > div > div.col-lg-5.col-md-6.col-sm-6.col-3 > button:nth-child(4){
+a button{
 	width: 6em;
 	height: 1.8em;
 	background-color: #5a86ad;
@@ -155,6 +157,12 @@ body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > section > div > div 
 	font-size: 1.5em;
 
 }
+ P{
+	font-family: open-sans, sans-serif;
+    font-weight: 400;
+	font-style: normal;
+	font-size: 1em;
+ }
 /*BEGIN FOOTER*/
 footer {
 	background-color: #a4844e;
