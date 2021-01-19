@@ -10,6 +10,7 @@ body {
 	perspective: 800px;
 	background-color: #21212d !important;
 	border-top: 1em #3f4756 solid;
+	font-size: 16px;
 	
 }
 /*PRELOADING BCKG IMG*/
@@ -120,12 +121,13 @@ h1{
     font-size: 3.75em;
     font-style: normal !important;
     font-weight: 500 !important;
-    letter-spacing: 2px;
+	letter-spacing: 2px;
+	
 }
 /*HEADER END*/
 
 /*SECTION*/
-.row{
+.row:not(:first-child){
 	padding: 4em 0;
 }
 img{
@@ -137,16 +139,17 @@ h2{
 	font-family: open-sans, sans-serif;
     font-weight: 400;
 	font-style: normal;
-	font-size: 1.5em !important;
+	font-size: 1.7em !important;
 	text-align: left;
+	margin-bottom: 1rem !important;
 	
 }
-body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > section > div > div > div.col-lg-5.col-md-6.col-sm-6.col-3 > button:nth-child(3){
-	margin-right: 1em;
+ body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > section > div > div:nth-child(4) > div.col-lg-5.col-md-6.col-sm-6.col-3 > a:nth-child(4) > button, body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > section > div > div:nth-child(6) > div.col-lg-5.col-md-6.col-sm-6.col-3 > a:nth-child(4) > button{
+	margin-right: 2em;
 }
 a button{
 	width: 6em;
-	height: 1.8em;
+	height: 1.7em;
 	background-color: #5a86ad;
 	border: none;
 	font-family: brandon-grotesque, sans-serif;
@@ -155,13 +158,16 @@ a button{
 	font-weight: 200;
 	color: white;
 	font-size: 1.5em;
+	margin-top: 1.5em;
 
 }
- P{
+ p{
 	font-family: open-sans, sans-serif;
     font-weight: 400;
 	font-style: normal;
 	font-size: 1em;
+	line-height: 23.2px;
+	margin-bottom:0;
  }
 /*BEGIN FOOTER*/
 footer {
