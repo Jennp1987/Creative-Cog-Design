@@ -595,6 +595,8 @@ footer p {
 	font-size: 1.2em;
 	line-height: 1.5em;
 }
+/*END FOOTER*/
+/*MEDIA QUERIES*/
 @media only screen and (max-width: 1770px) and (min-width:1707px ) {
 	#carouselExampleControls{
 		/* width: 48%; */
@@ -1322,6 +1324,9 @@ body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-
 		font-size: .8em;
 		display: block;
 		width: 100%;
+	}
+	footer{
+		padding: 1em 0 1em 0;
 	}
 
 }

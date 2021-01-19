@@ -4,34 +4,129 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Projects</title>
-    <link href="web.css" rel="stylesheet" type="text/css">
+	<link href="../css/web.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://use.typekit.net/ufy4eie.css">
+	<link rel="stylesheet" href="https://use.typekit.net/ufy4eie.css">
 </head>
 <body>
 
-    <h1>Image Slider</h1>
-    <div class="slide-container">
-      <div class="slide fade">
-        <img src='https://images.unsplash.com/photo-1590595978583-3967cf17d2ea?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ' alt=''>
-      </div>
-      <div class="slide fade">
-        <img src='https://images.unsplash.com/photo-1588807308097-fb6e5047df8c?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ' alt=''>
-      </div>
-      <div class="slide fade">
-        <img src='https://images.unsplash.com/photo-1589808710416-24cf7ac026f2?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ' alt=''>
-      </div>
-      <div class="slide fade">
-        <img src='https://images.unsplash.com/photo-1588796388882-a4d533c47e5e?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ' alt=''>
-      </div>
+  <div class="container-fluid">
+		<!-- BEGIN ROW -->
+		  <div class="row">
+			  <!--BEGIN NAV COL-->
+			<div class="col-lg-2 col-md-2 col-sm-12 navDiv">
+				<nav class="navbar sticky-top">
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapseExample">MENU</button>
+					<div class="collapse navbar-collapse" id="collapseExample">
+						<ul class="navbar-nav">
+							<li class="nav-item">
+								<a class="nav-link active" href="..\index.html">HOME</a>
+							</li>
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" data-toggle="dropdown" data-target="dropdown_target" href="#">PROJECTS
+									<span class="caret"></span>
+								</a>
+								<div class="dropdown-menu" aria-labelledby="dropdown_target">
+									<div>
+										<a class="dropdown-item" href="./pages/web.html">WEB</a>
+									</div>
 
-      <a href="#" class="prev" title="Previous">&#10094</a>
-      <a href="#" class="next" title="Next">&#10095</a>
-    </div>
-    <div class="dots-container">
-      <span class="dot"></span>
-      <span class="dot"></span>
-      <span class="dot"></span>
-      <span class="dot"></span>
-    </div>
-    <script src="../js/web.js"></script>
+									<div>
+										<a class="dropdown-item">GRAPHICS</a>
+									</div>
+								</div>
+
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="./pages/about.html">ABOUT</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="./pages/contact.html">HIRE</a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+				<!--END NAV COL-->
+			</div>
+			<!--BEGIN MIDDLE COL-->
+			<div class="col-lg-8 col-md-8 col-sm-12">
+				<!--class='menu-active'-->
+				<main >
+					<header>
+						<h1>Web Projects</h1>
+					</header>
+
+					<section>
+						<div class = 'container'>
+							<div class='row'>
+								<div class ="col-lg-7 col-md-6 col-sm-6 col-3">
+									<img src="/images/trainingWithElainaImage.png" alt="personal trainer website design"></img>
+								</div>
+								<div class ="col-lg-5 col-md-6 col-sm-6 col-3">
+									<h2>Personal Trainer Site Redesign</h2>
+									<p>Roles: Website redesign and development.</p>
+									<button>see live!</button>
+									<button>my code</button>
+								</div>
+								
+							</div>
+						</div>
+					</section>
+					
+					
+		
+				<footer>
+					<p>&copy; 2020 Creative Cog Design</p>
+					<p>San Diego, CA</p>
+				</footer>
+			</main>
+			<!--END MIDDLE MAIN CO-->
+			</div>
+		<div class="col-lg-2 col-md-2 col-sm-0"></div>
+			<!--END ROW-->
+		</div>
+			<!--END DIV CONTAINER-FLUID-->
+		</div>
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+	<script>
+
+		$(document).click(function(event) {
+			var clickover = $(event.target);
+			var $navbar = $(".navbar-collapse");
+			var _opened = $navbar.hasClass("show");
+			var _navToggle = $(".navbar-toggler");
+			var _closed = _navToggle.hasClass('collapsed');
+			var $main = $('main');
+			//FIRST CONDITION ---
+			//SECOND CONDITION --- _opened === true &&
+			//IF IT'S OPEN AND IF YOU CLICK ON THE BUTTON YOU CLOSE THE MENU AND REMOVES SKEW
+			 if ( _opened === true && clickover.hasClass('navbar-toggler')) {
+				$main.removeClass('menu-active');
+				//$navbar.collapse('hide');
+
+			//CLOSES NAV AND REMOVES SKEW WHEN YOU CLICK OFF OF NAV
+			 } else if (!clickover.hasClass('navbar-toggler')) {
+				$navbar.collapse('hide');
+				$main.removeClass('menu-active');
+
+			//IF ITS CLOSED REMOVE CLASS 
+			} else if (clickover.hasClass('navbar-toggler collapsed')) {
+				$main.removeClass('menu-active');
+			//REMOVE CLASS IF CLICK EVENT IS NOT ON BUTTON. USED FOR A TAGS. 
+			} else if ( !clickover.hasClass('navbar-toggler')) {
+				$main.removeClass('menu-active');
+			}else {
+				$main.addClass('menu-active');
+			}
+
+		});
+
+
+	</script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<script src="https://kit.fontawesome.com/ec4eb3f4ab.js" crossorigin="anonymous"></script>
 </body>
 </html>

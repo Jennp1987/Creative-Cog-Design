@@ -649,6 +649,9 @@ footer p {
 
 }
 @media only screen and (max-width: 459px) and (min-width: 363px) {
+	body{
+		border-top: 0 !important;
+	}
 	section.jumbotron.img-fluid {
 		background: url('../images/aboutPhotoBlur459.jpg') center center no-repeat;
 		background-size: cover;
@@ -679,13 +682,13 @@ footer p {
 		
 	}
 	div.D-flex{
-		padding-top: 0;
+		padding-top: 1em;
 	}
 	article > .D-flex > p{
 		margin-right: 0px;
 		/* width: 100%; */
 		/* height: auto; */
-		font-size: 1.7em;
+		font-size: 1.5em;
 		margin-bottom: 1em;
 		
 	}
@@ -725,6 +728,9 @@ footer p {
 		display: block;
 		width: 100%;
 		font-weight: bolder;
+	}
+	footer{
+		padding: 1em 0 1em 0;
 	}
 
 
