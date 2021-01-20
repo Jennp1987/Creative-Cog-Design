@@ -112,11 +112,13 @@ header{
 	height: 6em;
 	width: auto;
 	padding: 2em 0;
+	background-color:#a4844e ;
+	
 	
 }
 h1{
 	text-align: center;
-	color: #3f4756;
+	color: #fff;
     font-family: brandon-grotesque, sans-serif !important;
     font-size: 3.75em;
     font-style: normal !important;
@@ -127,9 +129,16 @@ h1{
 /*HEADER END*/
 
 /*SECTION*/
-.row:not(:first-child){
+section{
+	/* padding-top: 4em; */
+}
+section .container .row{
 	padding: 4em 0;
 }
+/* .row {
+	padding: 4em 0;
+
+} */
 img{
 	width: 100%;
 	height: auto;
@@ -144,7 +153,16 @@ h2{
 	margin-bottom: 1rem !important;
 	
 }
- body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > section > div > div:nth-child(4) > div.col-lg-5.col-md-6.col-sm-6.col-3 > a:nth-child(4) > button, body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > section > div > div:nth-child(6) > div.col-lg-5.col-md-6.col-sm-6.col-3 > a:nth-child(4) > button{
+.D-flex{
+	display: flex;
+	justify-content: space-evenly;
+
+}
+
+.D-flex:nth-of-type(3){
+	justify-content: space-between;
+}
+body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > section > div > div:nth-child(2) > div.col-lg-5.col-md-6.col-sm-6.col-3 > a:nth-child(4) > button, body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > section > div > div:nth-child(4) > div.col-lg-5.col-md-6.col-sm-6.col-3 > a:nth-child(4) > button, body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > section > div > div:nth-child(6) > div.col-lg-5.col-md-6.col-sm-6.col-3 > a:nth-child(6) > button{
 	margin-right: 2em;
 }
 a button{
@@ -155,11 +173,17 @@ a button{
 	font-family: brandon-grotesque, sans-serif;
 	border-radius: 80px;
 	letter-spacing: .1em;
-	font-weight: 200;
+	font-weight: 500;
 	color: white;
 	font-size: 1.5em;
 	margin-top: 1.5em;
 
+}
+a button:hover, a button:focus, a button:active{
+	background: #fff;
+	border: 3px solid #5a86ad;
+	color: #5a86ad;
+	font-weight: 500;
 }
  p{
 	font-family: open-sans, sans-serif;
@@ -168,6 +192,39 @@ a button{
 	font-size: 1em;
 	line-height: 23.2px;
 	margin-bottom:0;
+ }
+ button.code {
+    background: #a3abbd;
+}
+a button.code:hover, a button.code:focus, a button.code:active{
+	background: #fff;
+	border: 3px solid  #a3abbd;
+	color: #a3abbd;
+	font-weight: 500;
+}
+button.process {
+    background: #3f4756;
+}
+button.process:hover, button.process:focus, button.process:active{
+	background: #fff;
+	border: 3px solid #3f4756;
+	color: #3f4756;
+	font-weight: 500;
+
+}
+ a#personalTrainerLink{
+	 display: block;
+	 margin-bottom: 1rem;
+	 text-decoration: underline;
+	 color: #5a86ad;
+ }
+ a#personalTrainerLink:focus{
+	text-decoration: underline;
+	color:#3f4756;
+ }
+ /*ARTICLE*/
+ article{
+	 text-align: center;
  }
 /*BEGIN FOOTER*/
 footer {

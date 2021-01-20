@@ -192,7 +192,7 @@ div.D-flex{
 	font-family: brandon-grotesque, sans-serif;
 	border-radius: 80px;
 	letter-spacing: .1em;
-	font-weight: 200;
+	font-weight: 500;
 	
 }
 .D-flex button a{
@@ -201,7 +201,21 @@ div.D-flex{
 	font-size: 1.5em;
 	
 }
+.D-flex button:hover{
+	background: #fff;
+	border: 3px solid #5a86ad;
+	font-weight: 500;
 
+}
+.D-flex button a:hover{
+	color: #5a86ad;
+}
+ /* a:hover,  a:focus, a:active{
+	background: #fff;
+	border: 3px solid #5a86ad;
+	color: #5a86ad;
+	font-weight: 500;
+} */
 
 
 /*BEGIN ASIDE - FIND ME*/
