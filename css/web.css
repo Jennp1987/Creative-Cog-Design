@@ -159,8 +159,13 @@ h2{
 
 }
 
-.D-flex:nth-of-type(3){
+/* .D-flex:nth-of-type(3){
 	justify-content: space-between;
+} */
+#D-flex{
+	display: flex;
+	justify-content: center;
+
 }
 body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > section > div > div:nth-child(2) > div.col-lg-5.col-md-6.col-sm-6.col-3 > a:nth-child(4) > button, body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > section > div > div:nth-child(4) > div.col-lg-5.col-md-6.col-sm-6.col-3 > a:nth-child(4) > button, body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > section > div > div:nth-child(6) > div.col-lg-5.col-md-6.col-sm-6.col-3 > a:nth-child(6) > button{
 	margin-right: 2em;
@@ -225,11 +230,18 @@ button.process:hover, button.process:focus, button.process:active{
  /*ARTICLE*/
  article{
 	 text-align: center;
-	 background: url('../images/ccWebPortBanner.png') no-repeat center;
-	 background-size: contain;
-	 padding: 2em 0 2em 0;
-	 background-position: center;
+	 /* background: url('../images/ccWebPortBanner1.png') no-repeat center;
+	 background-size: cover;
+	 padding: 2em 0 1em 0;
+	 background-position: center; */
+	 background-color:  #a3abbd;
 	 color: #fff;
+	 width: 100%;
+	 height: auto;
+	 padding: 2em 0 2em 0;
+ }
+ article button{
+	
  }
 /*BEGIN FOOTER*/
 footer {
