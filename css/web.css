@@ -225,6 +225,11 @@ button.process:hover, button.process:focus, button.process:active{
  /*ARTICLE*/
  article{
 	 text-align: center;
+	 background: url('../images/ccWebPortBanner.png') no-repeat center;
+	 background-size: contain;
+	 padding: 2em 0 2em 0;
+	 background-position: center;
+	 color: #fff;
  }
 /*BEGIN FOOTER*/
 footer {
