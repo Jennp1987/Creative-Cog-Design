@@ -230,15 +230,20 @@ button.process:hover, button.process:focus, button.process:active{
  /*ARTICLE*/
  article{
 	 text-align: center;
+	 background: url('../images/aboutContact1.png') no-repeat center;
+	 background-size: contain;
+	 padding: 1.5em 0 1.5em 0;
+	 background-position: center;
 	 /* background: url('../images/ccWebPortBanner1.png') no-repeat center;
 	 background-size: cover;
 	 padding: 2em 0 1em 0;
 	 background-position: center; */
-	 background-color:  #a3abbd;
+	 /* background-color:  #a3abbd; */
+	 background-color: #21212d;
 	 color: #fff;
-	 width: 100%;
-	 height: auto;
-	 padding: 2em 0 2em 0;
+	 /* width: 100%;
+	 height: auto; */
+	 /* padding: 2em 0 2em 0; */
  }
  article button{
 	
@@ -258,3 +263,126 @@ footer p {
 	line-height: 1.5em;
 }
 /*END FOOTER*/
+
+/*MEDIA QUERIES*/
+
+@media only screen and (max-width: 1222px) and (min-width: 1162px) {
+
+   article{
+	   /* height: 15em; */
+	   background: url("../images/aboutContact2.png") no-repeat center;
+	   /* background-size: contain; */
+	   background-size: cover;
+	   /* background-size: cover; */
+	   background-position: center;
+	   /* padding: 0; */
+	   /*padding: 0 1em 0 1em;
+	   width: 100%; */
+	   /* padding: 2em 2em; */
+	   padding: 1.5em 2em;
+	   background-color: #21212d;
+	   
+   }
+   
+   
+   
+
+}
+
+@media only screen and (max-width: 1161px) and (min-width: 992px) {
+   article{
+	   /* height: 15em; */
+	   /* background: url("../images/aboutContactBackground9.png") no-repeat center center;
+	   background-size: contain;
+	   padding: 0; */
+	   background: url("../images/aboutContact2.png") no-repeat;
+	   background-size: cover;
+	   background-position: center;
+	   padding: 1.5em 1em;
+	   background-color: #21212d;
+	   
+	   
+   }
+   h3{
+	   font-size: 1.5em !important;
+   }
+
+
+}
+/*medium*/
+@media only screen and (max-width: 991px) and (min-width:768px) {
+   
+   article{
+	   /* height: 15em; */
+	   /* background: url("../images/aboutContactBackground7.png") no-repeat center center;
+	   background-size: cover; */
+	   background: url("../images/aboutContact3.png") no-repeat;
+	   background-size: cover;
+	   background-position: center center;
+	   /* padding: 0; */
+	   padding: 1.5em 0;
+	   background-color: #21212d;
+	   
+   }
+  
+
+}
+
+/*AFTER 767px MAIN GOES TO FLUID SCREEN*/
+
+/*ALL SCREENS SMALLER THAN 767*/
+@media only screen and (max-width:767px) {
+	 .navDiv {
+		position: absolute !important;
+
+	}
+	body > div > div > div.col-lg-8.col-md-8.col-sm-12{
+		padding: 0;
+	}
+	main.menu-active{
+		transform: none; 
+	}
+
+	body > div > div > div.col-lg-2.col-md-2.col-sm-12 > nav, .navDiv{
+		 padding: 0 !important; 
+	}
+
+} 
+
+
+@media only screen and (max-width: 767px) and (min-width: 576px) {
+   
+   article{
+	   background: url("../images/aboutContact3.png") no-repeat center;
+	   background-size: cover;
+	   background-position: center;
+	   padding: 1.75em 0;
+	   /* padding: 1em 0; */
+	   
+   }
+
+
+}
+@media only screen and (max-width: 575px) and (min-width: 460px){
+   
+   article{
+	   background: url("../images/aboutContact3.png") no-repeat center;
+	   background-size: cover;
+	   background-position: center;
+	   /* padding: 0; */
+	   
+   }
+   
+}
+@media only screen and (max-width: 459px) and (min-width: 363px) {
+  
+   article{
+	   background: url("../images/aboutContact3.png") no-repeat center;
+	   background-size: cover;
+	   background-position: center;
+	   /* padding: 0; */
+	   
+   }
+
+
+}
