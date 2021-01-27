@@ -144,6 +144,17 @@ img{
 	width: 100%;
 	height: auto;
 }
+.thumbnail:hover{
+	position:relative;
+	top:-25px;
+	right: -130px;
+    /* left:-60px; */
+    width:800px;
+    height:auto;
+    display:block;
+    z-index:999;
+
+}
 h2{	
 	color: #383838;
 	font-family: open-sans, sans-serif;
@@ -155,19 +166,13 @@ h2{
 	line-height: 34px !important;
 	
 }
-/*FIRST P AFTER IMG*/
-/* body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > section > div > div:nth-child(1) > div.col-lg-7.col-md-12.col-sm-12.col-12 > p:nth-child(2),body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > section > div > div:nth-child(3) > div.col-lg-7.col-md-12.col-sm-12.col-12 > p:nth-child(2), body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > section > div > div:nth-child(5) > div.col-lg-7.col-md-12.col-sm-12.col-12 > p:nth-child(2){
-	font-size: 1.2em;
-} */
+
 .D-flex{
 	display: flex;
 	justify-content: space-evenly;
 
 }
 
-/* .D-flex:nth-of-type(3){
-	justify-content: space-between;
-} */
 #D-flex{
 	display: flex;
 	justify-content: center;
@@ -253,9 +258,6 @@ button.process:hover, button.process:focus, button.process:active{
 	 height: auto; */
 	 /* padding: 2em 0 2em 0; */
  }
- article button{
-	
- }
 /*BEGIN FOOTER*/
 footer {
 	background-color: #a4844e;
@@ -271,6 +273,31 @@ footer p {
 	line-height: 1.5em;
 }
 /*END FOOTER*/
+
+/*LIGHTBOX*/
+#lightbox{
+position:fixed; /* keeps the lightbox window in the current viewport */
+top:0; 
+left:0; 
+width:100%; 
+height:100%; 
+background:rgba(0,0,0,.7); 
+text-align:center;
+}
+
+#lightbox p {
+    text-align:right; 
+    color:#fff; 
+    margin-right:20px; 
+    font-size:12px; 
+}
+
+#lightbox img {
+    box-shadow:0 0 25px #111;
+    max-width: 700px;
+}
+
+/*LIGHTBOX END*/
 
 /*MEDIA QUERIES*/
 

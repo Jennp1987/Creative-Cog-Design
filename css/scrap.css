@@ -10,6 +10,7 @@ body {
 	perspective: 800px;
 	background-color: #21212d !important;
 	border-top: 1em #3f4756 solid;
+	font-size: 16px;
 	
 }
 /*PRELOADING BCKG IMG*/
@@ -29,7 +30,8 @@ transition: transform 150ms ease-out;
 	right: 0px;
 	margin: auto;
 	max-width: 100%;
-	background-color: #3f4756;
+	background-color: white;
+	/* background-color: #3f4756; */
 	transform: none;
 }
 main.menu-active {
@@ -37,10 +39,6 @@ main.menu-active {
 }
 
 /*NAV*/
-nav {
-	
-}
-
 .navbar > button {
 	background-color: #353441;
 	color: white;
@@ -55,6 +53,7 @@ nav {
 .navbar > button:hover {
 	color: #353441 !important;
 	background: white !important;
+	border: none;
 
 }
 
@@ -65,8 +64,6 @@ nav {
 .navbar li {
 	list-style: none;
 	padding-right: .5em;
-
-
 }
 
 #collapseExample > ul > li.nav-item.dropdown.show > div {
@@ -74,7 +71,7 @@ nav {
 }
 
 .navbar li,
-collapseExample > ul > li.nav-item.dropdown > div {
+#collapseExample > ul > li.nav-item.dropdown > div {
 	background-color: #353441;
 
 }
@@ -95,11 +92,11 @@ collapseExample > ul > li.nav-item.dropdown > div {
 }
 .navbar li a:hover {
 	background-color: #a4844e;
-	
 
 }
 .navbar-toggler:focus,
  li .dropdown a:active, #collapseExample > ul > li.nav-item.dropdown.show > a{
+	text-decoration: none;
 	outline: none;
 }
 
@@ -110,439 +107,147 @@ collapseExample > ul > li.nav-item.dropdown > div {
 }
 
 /*END NAV*/
-
 /*HEADER*/
-.jumbotron {
-	width: 100%;
-	 background: url('../images/header2.png'); 
+header{
+	height: 6em;
+	width: auto;
+	padding: 2em 0;
+	background-color:#a4844e ;
 	
-	background-size: cover;
-	background-position: center;
-	height: auto;
-	background-repeat:no-repeat;
-	background-color: #21212d;
-	border-radius: 0 !important;
-	margin-bottom: 0 !important;
-	padding-top: 27% !important;
-	padding-bottom: 27% !important; 
-
+	
 }
-
-div .headerContainer {
-	width: inherit;
-	height: inherit;
-}
-
-.headerContainer h1 {
-	display: inline-block;
-	height: auto;
-	font-size: 80px;
-	font-family: brandon-grotesque, sans-serif !important;
-	-webkit-text-stroke: 1px #a4844e;
-	-webkit-text-fill-color: #21212d;
-	font-weight: 300;
-	font-style: normal;
-}
-/*FOR IE 10 & ABOVE*/
-_:-ms-lang(x), .headerContainer h1  { 
-	/* text-shadow: 
-	0 0 2px #a4844e,
-    0 0 2px #a4844e,  
-    0 0 2px #a4844e,
-    0 0 2px #a4844e,
-	0 0 2px #a4844e;   */
-	color: #a4844e;
-      }
-
-.headerContainer h2 {
-	display: inline-block;
-	height: auto;
-	font-size: 3.75em;
+h1{
+	text-align: center;
 	color: #fff;
-	font-family: brandon-grotesque, sans-serif !important;
-	font-weight: 500;
-	font-style: normal;
-	animation: fadeIn ease 8s;
-	-webkit-animation: fadeIn ease 8s;
-	-moz-animation: fadeIn ease 8s;
-	-o-animation: fadeIn ease 8s;
-	-ms-animation: fadeIn ease 8s;
-
-
-}
-
-@keyframes fadeIn {
-	0% {
-		opacity: 0;
-	}
-
-	100% {
-		opacity: 1;
-	}
-}
-
-@-moz-keyframes fadeOut {
-	0% {
-		opacity: 1;
-	}
-
-	100% {
-		opacity: 0;
-	}
-}
-
-@-webkit-keyframes fadeOut {
-	0% {
-		opacity: 1;
-	}
-
-	100% {
-		opacity: 0;
-	}
-}
-
-@-o-keyframes fadeOut {
-	0% {
-		opacity: 1;
-	}
-
-	100% {
-		opacity: 0;
-	}
-}
-
-@-ms-keyframes fadeOut {
-	0% {
-		opacity: 1;
-	}
-
-	100% {
-		opacity: 0;
-	}
-}
-
-.headerContainer h3 {
-	display: inline-block;
-	height: auto;
-	color: #a4844e;
-	font-size: 55px;
-	font-style: normal;
-	font-family: brandon-grotesque, sans-serif !important;
-	font-weight: 350;
+    font-family: brandon-grotesque, sans-serif !important;
+    font-size: 3em !important;
+    font-style: normal !important;
+    font-weight: 500 !important;
+	letter-spacing: 2px;
+	/* padding-bottom: 2em; */
 	
-}
-
-.headerContainer h1, .headerContainer h2, .headerContainer h3{
-	display: inline-block;
 }
 /*HEADER END*/
-/*SECTION BEGIN*/
+
+/*SECTION*/
 section{
-	background-color: white;
-	padding: 2em 0 0 0;
-	width: 100%;
-	height: auto;
-	padding-top: 10em;
-	margin: 0 auto;
+	/* padding-top: 4em; */
 }
+section .container .row{
+	padding: 4em 0;
+}
+/* .row {
+	padding: 4em 0;
 
-section > div > h2.outlineText{
-	text-align: center;
-	font-size: 82px;
-	font-family: brandon-grotesque, sans-serif !important;
-	font-weight: 300;
-	font-style: normal;
-	color: white;
-	text-shadow:
-	/*TOP RIGHT, TOP LEFT, BOTTOM LEFT, BOTTOM RIGHT*/
-	/* 0 0 4px #a4844e,
-    0 0 4px #a4844e,  
-    0 0 4px #a4844e,
-    0 0 4px #a4844e,
-	0 0 4px #a4844e;   */
-     
-}
-
-
- 
- /* @supports (	-webkit-text-stroke: 2px #a4844e) { */
-	section > div > h2.outlineText{
-		text-align: center;
-		font-size: 82px;
-		font-family: brandon-grotesque, sans-serif !important;
-		-webkit-text-stroke: 2px #a4844e;
-		-webkit-text-fill-color: white;
-		font-weight: 300;
-		font-style: normal;  
-	
-		}
-	/*}*/
-	_:-ms-lang(x), h2.outlineText  {
-		/* color: #a4844e;
-		font-size: 82px;
-		font-weight: 300; */
-	
-	    text-shadow: 
-	   0 0 3px #a4844e,
-	   0 0 3px #a4844e,  
-	   0 0 3px #a4844e,
-	   0 0 3px #a4844e,
-	   0 0 3px #a4844e;   
-		 } 
-div.skew{
-	background-color: white;
-	position: relative;
-	z-index: 10;
-	clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10vw), 0 100%);
-	margin-bottom: -10vw;
-}
-article.about {
-	width: 100%;
-	height: 30em ;
-	padding-top: 2em;
-}
+} */
 img{
-	width: 60%;
+	width: 100%;
 	height: auto;
-	margin: auto;
-	display: block;
-
 }
-.about p {
-	max-width: 705px;
-	margin: 0 auto;
-	font-size: 1.5em;
-	font-family: open-sans, sans-serif;
-	font-weight: 400;
-	font-style: normal;
+
+h2{	
 	color: #383838;
-}
-/*ABOUT LINK*/
-body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > section > div.col-12.skew > article > p > a{
-	text-decoration: underline;
-	color: #5a86ad;
-}
-body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > section > div.col-12.skew > article > p > a:hover{
-	color:#3f4756;
-	
-}
-/*PROJECTS*/
-/*HAS d-flex class*/
-#projects {
-	background-color: #3f4756;
-	width: 100%;
-	height: auto;
-	text-align: center;
-	padding-top: 15em; 
-	padding-bottom: 10em;
-	margin: 0 auto;
-}
-
-#projects h2{
-	color: white;
-	font-family: brandon-grotesque, sans-serif !important;
-	font-size: 3.75em;
-	margin-bottom: 1.5em;
-	font-style: normal !important;
-	font-weight: 500 !important;
-	letter-spacing: 2px;
-
-
-}
-#projects div{
-	font-size: 4em;
-	justify-content: center; 
-	display: flex;
-}
-.circle {
-	display: inline-block;
-	height: 9em;
-	width: 9em;
-	line-height: 18px;
-	border-radius: 50%;
-	color: white;
-	
-}
-#projects div a:nth-child(1){ 
-	position: relative;
-	z-index: 1;
-	background-color:#a3abbd;
-	text-decoration: underline;
-	
-}
-#projects div a:nth-child(2){ 
-	position: relative;
-	z-index: 2;
-	background-color: #a4844e;
-	margin-left: -100px;
-	
-}
-#projects > div > a:nth-child(1) > p, #projects > div > a:nth-child(2) > p{
-	font-family: brandon-grotesque, sans-serif !important;
-	font-weight: 350 !important;
-	font-style: normal !important;
-	color: white;
-	text-decoration: underline;
-}
-#projects > div > a:nth-child(1) > p:visited, #projects > div > a:nth-child(2) > p:visited{
-	color: #3f4756;
-}
-#projects > div > a:nth-child(1) > p:hover, #projects > div > a:nth-child(2) > p:hover{
-	color: #3f4756;
-	text-decoration: underline;
-	
-}
-
-#projects div a{ 
-	display: flex;
-	justify-content: center;
-	align-items: center
-  }
-/*SECTION END*/
- #recommendations {
-	width: 100%;
-	height: auto;
-	text-align: center;
-	padding: 7em 0 3em 0;
-	background-color: white;
-	
-}
-/*BEGIN FIND ME*/
-/*BEGIN ARTICLE FOR TESTIMONIES*/
-.findMe {
-	 display: inline-block; 
-	background-color: white;
-	/*for slider*/
-	width: 100%;
-	height: auto;
-	text-align: center; 
-	margin: 0 auto;
-	display: flex;
-	justify-content: center;
-
-
-
-}
-
-#carouselExampleSlidesOnly{
-	 width: 405px;
-	height: 365px;
-	border: solid 5px #a4844e;
-	border-radius: 30px;
+	font-family: open-sans, sans-serif;
+    font-weight: 400;
+	font-style: normal;
+	font-size: 1.5em !important;
 	text-align: left;
-	font-size: 1.2em;
-	font-weight: bolder;
-	padding: .8em;
-	display: block;
-	 position: relative; 
-	 z-index: 1;
+	margin-bottom: 1rem !important;
+	line-height: 34px !important;
+	
 }
 
-	div.testimonialCircle {
-	border-radius: 40px;
+.D-flex{
+	display: flex;
+	justify-content: space-evenly;
+
+}
+
+#D-flex{
+	display: flex;
+	justify-content: center;
+
+}
+body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > section > div > div:nth-child(2) > div.col-lg-5.col-md-6.col-sm-6.col-3 > a:nth-child(4) > button, body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > section > div > div:nth-child(4) > div.col-lg-5.col-md-6.col-sm-6.col-3 > a:nth-child(4) > button, body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > section > div > div:nth-child(6) > div.col-lg-5.col-md-6.col-sm-6.col-3 > a:nth-child(6) > button{
+	margin-right: 2em;
+}
+a button{
+	width: 6em;
+	height: 1.7em;
+	background-color: #5a86ad;
 	border: none;
-	position: absolute; 
-	z-index: 10; 
-}
-#circleOne{
-	border: solid 3px #a3abbd;
-	left: -35px; 
-	top: -38px; 
-	width: 60px;
-	height: 60px;
-}
-#circleTwo{
-	border: solid 3px #a3abbd;
-	bottom: 10px;
-	right: 10px; 
-	width: 24px;
-	height: 24px;
-}
-#circleThree{
-	background: 3px  #a3abbd;
-	width: 20px;
-	height: 20px;
-	top: -35px;
-	left: 30px;
-}
-#circleFour{
-	background: 3px #a3abbd;
-	bottom: 3px;
-	right: -25px; 
-	width: 10px;
-	height: 10px;
-}
-#circleFive{
-	background: 3px #a3abbd;
-	bottom: -27px;
-	right: -6px; 
-	width: 17px;
-	height: 17px;
-}
-#circleSix{
-	background: 3px #a3abbd;
-	width: 10px;
-	height: 10px;
-	left: -25px;
-	top: 29px;
-}
-/*NAME & POSITION*/
-#carouselExampleSlidesOnly > div.carousel-inner > div.carousel-item.active > p:nth-child(3),
-#carouselExampleSlidesOnly > div > div:nth-child(1) > div > p:nth-child(3),#carouselExampleSlidesOnly > div > div:nth-child(1) > p:nth-child(4),#carouselExampleSlidesOnly > div > div:nth-child(1) > p:nth-child(5), #carouselExampleSlidesOnly > div > div.carousel-item.active > div > p:nth-child(3), #carouselExampleSlidesOnly > div > div.carousel-item.active > p:nth-child(4), #carouselExampleSlidesOnly > div > div.carousel-item.active >  p:nth-child(5){
-	line-height: .5em;
-}
-
-/*TESTIMONIALS*/
-.findMe > article > p {
-	margin: 0 auto;
-}
-
-/*END ASIDE FIND ME*/
-/*END ARTICLE FOR TESTIMONIES*/
-
-/*BEGIN ASIDE - FIND ME*/
- main > aside{
-	background-color: white;
-	width: inherit;
-	height: auto;
-	padding-bottom: 7em;
-	padding-top: 7em;
-	margin: 0 auto;
-	text-align: center;;
-
-}
-
-main > aside > h4 {
-	font-size: 3em;
-	color: #3f4756;
-	text-align: center;
+	font-family: brandon-grotesque, sans-serif;
+	border-radius: 80px;
+	letter-spacing: .1em;
+	font-weight: 500;
+	color: white;
+	font-size: 1.5em;
 	margin-top: 1.5em;
-	display: block;
-}
 
-aside ul {
-
-	list-style: none;
-	display: block;
 }
-
-aside li {
-	width: 80%;
-	height: auto;
-	font-size: 2em;
-	margin: 0 auto;
-	line-height: 2em;
-}
-aside a{
+a button:hover, a button:focus, a button:active{
+	background: #fff;
+	border: 3px solid #5a86ad;
 	color: #5a86ad;
+	font-weight: 500;
 }
-aside a:hover, aside a:visited{
+ p{
+	font-family: open-sans, sans-serif;
+    font-weight: 400;
+	font-style: normal;
+	font-size: 1em;
+	line-height: 23.2px;
+	margin-bottom:0;
+ }
+ button.code {
+    background: #a3abbd;
+}
+a button.code:hover, a button.code:focus, a button.code:active{
+	background: #fff;
+	border: 3px solid  #a3abbd;
+	color: #a3abbd;
+	font-weight: 500;
+}
+button.process {
+    background: #3f4756;
+}
+button.process:hover, button.process:focus, button.process:active{
+	background: #fff;
+	border: 3px solid #3f4756;
 	color: #3f4756;
+	font-weight: 500;
+
 }
-aside ul li, aside ul li a{
-	/* font-weight: bolder; */
-}
-/*END ASIDE - FIND ME*/
+ a#personalTrainerLink{
+	 display: block;
+	 margin-bottom: 1rem;
+	 text-decoration: underline;
+	 color: #5a86ad;
+	 font-size: 1.2em;
+	 font-weight: bolder;
+ }
+ a#personalTrainerLink:focus{
+	text-decoration: underline;
+	color:#3f4756;
+ }
+ /*ARTICLE*/
+ article{
+	 text-align: center;
+	 background: url('../images/aboutContact1.png') no-repeat center;
+	 background-size: contain;
+	 padding: 1.5em 0 1.5em 0;
+	 background-position: center;
+	 /* background: url('../images/ccWebPortBanner1.png') no-repeat center;
+	 background-size: cover;
+	 padding: 2em 0 1em 0;
+	 background-position: center; */
+	 /* background-color:  #a3abbd; */
+	 background-color: #21212d;
+	 color: #fff;
+	 /* width: 100%;
+	 height: auto; */
+	 /* padding: 2em 0 2em 0; */
+ }
 /*BEGIN FOOTER*/
 footer {
 	background-color: #a4844e;
@@ -557,623 +262,324 @@ footer p {
 	font-size: 1.2em;
 	line-height: 1.5em;
 }
-@media only screen and (max-width: 1706px) {
-	.circle{
-		width: 8em;
-		height: 8em;
+/*END FOOTER*/
 
-	}
-}
+/*LIGHTBOX*/
 
-/*EX EX LG SCREEN*/
-@media only screen and (max-width: 1582px) and (min-width: 1552px){
-	.jumbotron{
-		padding-top: 20%;
-		padding-bottom: 20%;
-	}
+/* // --- BEGIN: custom styling demo --- //
+// An example of custom styling for gallery and lightbox, to show what's possible in terms of aesthetic customization. */
 
-	
-}
-@media only screen and (max-width: 1551px) and (min-width: 1433px) {
-	.jumbotron{
-		padding-top: 18%;
-		padding-bottom: 18%;
-	}
-	.headerContainer h1{
-		font-size: 75px !important;
-	}
-	.headerContainer h2{
-		font-size: 53px;
-		
-	}
-	.headerContainer h3{
-		font-size: 38px;
-	}
-	.circle{
-		height: 7.8em;
-		width: 7.8em;
-	}
-	
-	
-}
-/*EX LG SCREEN*/
-@media only screen and (max-width: 1432px) and (min-width: 1200px) {
-	.jumbotron{
-		padding-top: 17%;
-		padding-bottom: 17%;
-	}
-	.headerContainer h1 {
-		font-size: 63px !important;
-	}
-
-	.headerContainer h2 {
-		font-size: 44px !important;
-	}
-
-	.headerContainer h3 {
-		font-size: 35px !important;
-	}
-	section > div > h2.outlineText{
-		font-size: 79px;
-	}
-	.about p{
-		max-width: 665px;
-		font-size: 1.4em;
-	}
-	.circle{
-		width: 6.5em;
-		height:6.5em;
-
-	}
-	#projects > div > a:nth-child(1) > p, #projects > div > a:nth-child(2) > p{
-		font-size: 1em;
-	}
-	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(1)  {
-		font-size: 1.6em;
-	}
-	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(2){
-		font-size: 1.6em;
-	}
-
-
-
+/* * {
+  transition: 0.3s;
 }
 
 
-/*LG SCREEN*/
-@media only screen and (max-width: 1199px) and (min-width: 992px) {
-	.jumbotron{
-		padding-top: 16%;
-		padding-bottom: 16%;
-	}
-	.headerContainer h1 {
-		font-size: 50px !important;
-	}
+  .modal-header {
+    border:none;
+    
+    button {
+      background: none;
+      border-radius: 100px 100px 0 0;
+      padding: 5px 10px;
+      opacity: 1;
+      position: relative;
+      top: 3px;
+      border: solid 2px white;
+      
+      @media (min-width: $bootstrap-lg) {
+        top: 15px;
+      }
+      
+      &:hover {
+        top: 3px;
+      }
+    }
+    
+    span {
+      color: white;
+    }
+  }
+  
+  .modal-body {
+    padding: 0;
+    border: none;
+    position: relative;
+    
+    &::before, &::after {
+      content: '';
+      height: 50px;
+      width: 50px;
+      display: block;
+      position: absolute;
+      background: white;
+      border-radius: 3px 10px;
+      
+      @media (min-width: $bootstrap-md) {
+        border-radius: 3px 30px;
+        height: 100px;
+        width: 100px;
+      }
+    }
+    
+    &::before {
+      top: -5px;
+      left: -5px;
+      
+      @media (min-width: $bootstrap-md) {
+        top: -15px;
+        left: -15px;
+      }
+    }
+    
+    &::after {
+      bottom: -5px;
+      right: -5px;
+      z-index: -1;
+      
+      @media (min-width: $bootstrap-md) {
+        bottom: -15px;
+        right: -15px;
+      }
+    }
+  }
+  
+  .modal-footer {
+    border: none;
+    margin-top: 60px;
+    
+    @media (min-width: $bootstrap-lg) {
+      margin-top: 40px;
+    }
+    
+    .btn {
+      margin: auto;
+      border: solid 2px white;
+      background: none;
+      text-transform: uppercase;
+      font-size: 0.8em;
+      letter-spacing: 0.1em;
+      font-weight: bold;
+      padding: 0.2em 0.7em;
+      
+      &:hover {
+        background: white;
+        color: black;
+      }
+    }
+  }
+  
+  .carousel-control-prev, .carousel-control-next {
+    font-size: 2em;
+    top: auto;
+    opacity: 1;
+    bottom: -52px;
+    
+    @media (min-width: $bootstrap-md) {
+      top: 0;
+      opacity: 0.5;
+      bottom: 0;
+    }
+  }
+  
+  .carousel-control-next-icon,  .carousel-control-prev-icon {
+    height: 30px;
+    width: 30px;
+  }
+  
+  .carousel-control-prev {
+    @media (min-width: $bootstrap-md) {
+      left: -90px;
+    }
+  }
+  
+  .carousel-control-next {
+    @media (min-width: $bootstrap-md) {
+      right: -90px;
+    }
+  }
+  
+  .carousel-indicators {
+    bottom: -60px;
+    
+    @media (min-width: $bootstrap-lg) {
+      bottom: -30px;
+    }
+    
+    li {
+      height: 30px;
+      border-radius: 100px;
+      background: none;
+      border: solid 2px white;
+      
+      @media (min-width: $bootstrap-lg) {
+        height: 10px;
+      }
+      
+      &:hover {
+        background: white;
+      }
+      
+      &.active {
+        background: white;
+      }
+    }
+  }
+} */
 
-	.headerContainer h2 {
-		font-size: 35px !important;
-	}
+/* // --- END: custom styling demo --- // */
 
-	.headerContainer h3 {
-		font-size: 28px !important;
-	}
-	section > div > h2.outlineText{
-		font-size: 70px;
-	}
-	.about p{
-		max-width: 655px;
-		font-size: 1.4em;
-	}
-	.circle{
-		width: 5.5em;
-		height:5.5em;
+/*LIGHTBOX END*/
 
-	}
-	#projects > div > a:nth-child(1) > p, #projects > div > a:nth-child(2) > p{
-		font-size: 1em;
-	}
-	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(1)  {
-		font-size: 1.3em;
-	}
-	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(2){
-		font-size: 1.3em;
-	}
+/*MEDIA QUERIES*/
+
+@media only screen and (max-width: 1222px) and (min-width: 1162px) {
+
+   article{
+	   /* height: 15em; */
+	   background: url("../images/aboutContact2.png") no-repeat center;
+	   /* background-size: contain; */
+	   background-size: cover;
+	   /* background-size: cover; */
+	   background-position: center;
+	   /* padding: 0; */
+	   /*padding: 0 1em 0 1em;
+	   width: 100%; */
+	   /* padding: 2em 2em; */
+	   padding: 1.5em 2em;
+	   background-color: #21212d;
+	   
+   }
+   
+   
+   
 
 }
 
-/*LG SCREEN TO MEDIUM*/
-@media only screen and (max-width: 1119px) and (min-width: 768px) {
-/*
-	.navbar-collapse{
-		padding-right: .5em !important;
-	}
-*/
-}
+@media only screen and (max-width: 1161px) and (min-width: 992px) {
+   article{
+	   /* height: 15em; */
+	   /* background: url("../images/aboutContactBackground9.png") no-repeat center center;
+	   background-size: contain;
+	   padding: 0; */
+	   background: url("../images/aboutContact2.png") no-repeat;
+	   background-size: cover;
+	   background-position: center;
+	   padding: 1.5em 1em;
+	   background-color: #21212d;
+	   
+	   
+   }
+   h3{
+	   font-size: 1.5em !important;
+   }
 
-/*MED SCREEN*/
-@media only screen and (max-width: 991px) and (min-width: 768px) {
-	.container{
-	padding-left:2.5em !important;
-}
-	.headerContainer h1 {
-		font-size: 40px !important;
-	}
-	.headerContainer h2 {
-		font-size: 29px !important;
-	}
-	.headerContainer h3 {
-		font-size: 23px !important;
-	}
-	section > div > h2.outlineText{
-		font-size: 52px;
-		-webkit-text-stroke: 1.5px #a4844e;
-		-webkit-text-fill-color: white;
-	}
-	.about p{
-		max-width: 645px;
-		font-size: 1.3em;
-	}
-	#projects h2{
-		font-size: 3.25em;
-	}
-	.circle{
-		width: 4.3em;
-		height:4.3em;
-	}
-	#projects > div > a:nth-child(1) > p, #projects > div > a:nth-child(2) > p{
-		font-size: 1em;
-	}
-	#projects > div > a:nth-child(1) > p{
-		margin-right: .8em;
-	}
-	main > aside > h4{
-		font-size: 2.3em;
-		margin-bottom: 1em;
-	}
-	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(1)  {
-		font-size: 1.2em;
-	}
-	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(1) > a{
-		display: block;
-	}
-	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(2){
-		font-size: 1.2em;
-	}
-	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(2)> a{
-		display: block;
-		font-size: 1em;
-	}
 
 }
+/*ALL SCREENS SMALLER THAN 991px*/
+@media only screen and (max-width: 991px) {
+	img{
+		margin-bottom: 3em;
+	}
+	h2{
+		margin-bottom: 2em;
+	}
+
+
+}	
+/*medium*/
+@media only screen and (max-width: 991px) and (min-width:768px) {
+   
+   article{
+	   /* height: 15em; */
+	   /* background: url("../images/aboutContactBackground7.png") no-repeat center center;
+	   background-size: cover; */
+	   background: url("../images/aboutContact3.png") no-repeat;
+	   background-size: cover;
+	   background-position: center center;
+	   /* padding: 0; */
+	   padding: 1.5em 0;
+	   background-color: #21212d;
+	   
+   }
+   h3{
+	   font-size: 1.5rem !important;
+   }
+   
+  
+
+}
+
+/*AFTER 767px MAIN GOES TO FLUID SCREEN*/
 
 /*ALL SCREENS SMALLER THAN 767*/
 @media only screen and (max-width:767px) {
-
-	body > div > div > div.col-lg-2.col-md-2.col-sm-12.navDiv {
+	 .navDiv {
 		position: absolute !important;
 
 	}
+	body > div > div > div.col-lg-8.col-md-8.col-sm-12{
+		padding: 0;
+	}
 	main.menu-active{
-		transform: none;
+		transform: none; 
 	}
 
-	header .jumbotron {
-		position: relative;
-
+	body > div > div > div.col-lg-2.col-md-2.col-sm-12 > nav, .navDiv{
+		 padding: 0 !important; 
 	}
-	body > div > div > div.col-lg-2.col-md-2.col-sm-12 > nav {
-		padding: 0 !important;
-	}
-	.navDiv {
-		padding-left: 0px !important;
-		padding-right: 0px !important;
-		
+
+} 
 
 
-	}
-	
+@media only screen and (max-width: 767px) and (min-width: 576px) {
+   
+   article{
+	   background: url("../images/aboutContact3.png") no-repeat center;
+	   background-size: cover;
+	   background-position: center;
+	   padding: 1.75em 0;
+	   /* padding: 1em 0; */
+	   
+   }
+   h3{
+	font-size: 1.5rem !important;
+   }
 
-	body > div > div > div.col-lg-8.col-md-8.col-sm-12 {
-		padding-left: 0px !important;
-		padding-right: 0px !important;
-
-	}
-	.jumbotron {
-	max-width: 100%;
 
 }
+@media only screen and (max-width: 575px) and (min-width: 460px){
+   
+   article{
+	   background: url("../images/aboutContact3.png") no-repeat center;
+	   background-size: cover;
+	   background-position: center;
+	   /* padding: 0; */
+	   
+   }
+   h3{
+	font-size: 1.5rem !important;
+   }
+   
 }
-
-/*SM SCREEN*/
-@media only screen and (max-width: 767px) and (min-width: 577px) {
-	.jumbotron{
-		padding-bottom: 0;
-	}
-
-	body > div > div > div.col-lg-2.col-md-2.col-sm-12 > nav {
-		padding: 0 !important;
-	}
-	.navbar-toggler {
-		    padding: .25rem 1.2rem !important;
-		
-	}
-	button {
-		text-align: left;
-	}
-	.navDiv {
-		padding-left: 0px !important;
-		padding-right: 0px !important;
-	}
-	.headerContainer h1 {
-		font-size: 40px !important;
-	}
-
-	.headerContainer h2 {
-		font-size: 35px !important;
-	}
-
-	.headerContainer h3 {
-		font-size: 29px !important;
-	}
-	.container{
-		padding-left: 3em !important;
-	}
-	section > div > h2.outlineText{
-		font-size: 63px;
-		-webkit-text-stroke: 1.5px #a4844e;
-	}
-	.about p{
-		max-width: 600px; 
-		font-size: 1.4em;
-	}
-	#projects h2{
-		font-size: 3.25em;
-	}
-	.circle{
-		width: 4.5em;
-		height:4.5em;
-
-	}
-	#projects > div > a:nth-child(1) > p, #projects > div > a:nth-child(2) > p{
-		font-size: 1em;
-	}
-	#projects > div > a:nth-child(1) > p{
-		 margin-right: .4em; 
-	}
-
-	main > aside > h4{
-		font-size: 2.3em;
-		margin-bottom: 1em;
-	}
-	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(1)  {
-		font-size: 1.2em;
-	}
-	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(2){
-		font-size: 1.2em;
-	}
-	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(2)> a{
-		font-size: 1em;
-	}
-}
-
-/*EX SM SCREEN*/
-/*NEEDED TO FIX POSITION OF THE HEADINGS*/
-@media only screen and (max-width: 576px) and (min-width: 575px) {
-	.jumbotron{
-		background: url('../images/newMobile576pxLargerCircles7.png');
-		background-color: #21212d !important;
-		width: 100%;
-		height: auto;
-		padding-left: 5em !important; 
-		padding-bottom: 22% !important;
-	}
-	/*padding for headings*/
-	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > header > div > div > div:nth-child(1) > .col-10, body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > header > div > div > div:nth-child(2) > .col-9, body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > header > div > div > div:nth-child(3) > .col-8 {
-		padding-left: 0px !important;
-	}
-	h1 {
-		font-size: 35px !important;
-	}
-
-	.headerContainer h2 {
-		font-size: 30px !important;
-	}
-
-	.headerContainer h3 {
-		font-size: 24px !important;
-	}
-	section {
-		padding-top: 3em;
-	}
-	article.about{
-		height: 20em;
-	}
-	section > div > h2.outlineText{
-		font-size: 38px !important;
-		-webkit-text-stroke: 1.25px #a4844e;
-	}
-	.about p{
-		max-width: 600px; 
-		font-size: 1.1em;
-	}
-	#projects {
-		padding-top: 10em; 
-	}
-	#projects h2{
-		font-size: 3.25em;
-	}
-	#projects > div{
-		flex-direction: column;
-		align-items: center;
-
-	}
-	.circle{
-		width: 5em;
-		height: 5em;
-
-	}
-	/*bottom of first circle*/
-	#projects > div > a:nth-child(1){
-		margin-bottom: 1em;
-	}
-	#projects div a:nth-child(2){
-		 margin-left: 0 !important;
-
-	}
-	#projects > div > a:nth-child(1) > p, #projects > div > a:nth-child(2) > p{
-		font-size: 1em;
-	}
-	
-	#carouselExampleSlidesOnly{
-		width: 300px;
-		height: 430px;
-		padding: .8em .8em 1em .8em;
-	}
-	main > aside > h4{
-		font-size: 2.3em;
-		margin-bottom: 1em;
-	}
-	aside ul a{
-		display: block;
-		width: 100%;
-		font-weight: bolder;
-	}
-	aside ul li{
-		font-weight: bolder;
-	}
-	
-	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(1)   {
-	 	font-size: 1.2em; 
-		display: block;
-		width:100%;
-	}
-	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(1) > a{
-		font-size: .8em;
-		display: block;
-		width: 100%;
-	}
-	
-	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(2){
-		width: 100%;
-		margin-top: 2em;
-		display: block;
-	}
-	
-	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(2){
-		font-size: 1.2em !important;
-		width: 100%;
-		display: block;
-	}
-	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(2) > a{
-		font-size: .8em !important;
-		width: 100%;
-		display: block;
-	}
-}
-/*EX SMALL*/
-@media only screen and (max-width: 574px) and (min-width: 460px) {
-	.jumbotron{
-		background: url('../images/newMobile576pxLargerCircles7.png');
-		background-size: contain;
-		background-color: #21212d !important;
-		width: 100%;
-		height: auto;
-		padding-bottom: 22% !important;
-		padding-left: 5px !important;
-		background-repeat: none;
-	}
-	/*padding for headings*/
-	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > header > div > div > div:nth-child(1) > .col-10, body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > header > div > div > div:nth-child(2) > .col-9, body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > header > div > div > div:nth-child(3) > .col-8 {
-		padding-left: 0px !important;
-	}
-	h1 {
-		font-size: 35px !important;
-	}
-
-	.headerContainer h2 {
-		font-size: 30px !important;
-	}
-
-	.headerContainer h3 {
-		font-size: 24px !important;
-	}
-	section {
-		padding-top: 3em;
-	}
-	article.about{
-		height: 20em;
-	}
-	section > div > h2.outlineText{
-		font-size: 38px !important;
-		-webkit-text-stroke: 1.25px #a4844e;
-	}
-	.about p{
-		max-width: 600px; 
-		font-size: 1.1em;
-	}
-	#projects {
-		padding-top: 10em; 
-	}
-	#projects h2{
-		font-size: 3.25em;
-	}
-	#projects > div{
-		flex-direction: column;
-		align-items: center;
-
-	}
-	.circle{
-		width: 5em;
-		height: 5em;
-
-	}
-	/*bottom of first circle*/
-	#projects > div > a:nth-child(1){
-		margin-bottom: 1em;
-	}
-	#projects div a:nth-child(2){
-		 margin-left: 0 !important;
-
-	}
-	#projects > div > a:nth-child(1) > p, #projects > div > a:nth-child(2) > p{
-		font-size: 1em;
-	}
-	#carouselExampleSlidesOnly{
-		width: 300px;
-		height: 430px;
-		padding: .8em .8em 1em .8em;
-	}
-	main > aside > h4{
-		font-size: 2.3em;
-		margin-bottom: 1em;
-	}
-	aside ul a{
-		display: block;
-		width: 100%;
-		font-weight: bolder;
-	}
-	aside ul li{
-		font-weight: bolder;
-	}
-	
-	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(1)   {
-	 	font-size: 1.2em; 
-		display: block;
-		width:100%;
-	}
-	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(1) > a{
-		font-size: .8em;
-		display: block;
-		width: 100%;
-	}
-	
-	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(2){
-		width: 100%;
-		margin-top: 2em;
-		display: block;
-	}
-	
-	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(2){
-		font-size: 1.2em !important;
-		width: 100%;
-		display: block;
-	}
-	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(2) > a{
-		font-size: .8em !important;
-		width: 100%;
-		display: block;
-	}
-
-}
-/*EX SM*/
-@media only screen and (max-width: 459px) and (min-width: 363px){
-	.jumbotron{
-		padding-left: 0 !important;
-		padding-bottom: 0 !important;
-		background-color: #21212d !important;
-		padding-bottom: 22% !important; 
-		background: url('../images/mobileMax459px9.png');
-		background-repeat: none;
-		background-size: cover;
+@media only screen and (max-width: 459px) and (min-width: 363px) {
+  
+   article{
+	   background: url("../images/aboutContact3.png") no-repeat center;
+	   background-size: cover;
+	   background-position: center;
+	   /* padding: 0; */
+	   
+   }
+   h1{
+	   font-size: 2.2em !important;
+   }
+   h3{
+	font-size: 1.4rem !important;
+   }
+   footer p{
+	   font-size: 1em;
+	   line-height: 23.2px;
+   }
 
 
-	}
-	div .headerContainer{
-	
-	}
-	.headerContainer h1 {
-		font-size: 33px !important;
-		margin-top: 1em;
-	}
-
-	.headerContainer h2 {
-		font-size: 28px !important;
-	}
-	.headerContainer h3 {
-		font-size: 22px !important;
-	}
-	/*Padding for Heading*/
-	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > header > div > div > div:nth-child(1) > .col-10, body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > header > div > div > div:nth-child(2) > .col-9, body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > header > div > div > div:nth-child(3) > .col-8{
-		padding-left: 0 !important;
-	}
-	section > div > h2.outlineText{
-		font-size: 45px !important;
-		-webkit-text-stroke: 1.25px #a4844e;
-	}
-	article.about{
-		height: 25em;
-	}
-	.about p{
-		font-size: 1.3em;
-	}
-	section {
-		padding-top: 3em;
-	}
-	#projects{
-		padding-top: 10em;
-		padding-bottom: 8em;
-	}
-	#projects > div{
-		flex-direction: column;
-		align-items: center;
-	}
-	#projects h2{
-		font-size: 3em;
-	}
-	.circle{
-		width: 4em;
-		height: 4em;
-
-	}
-	/*bottom of first circle*/
-	#projects > div > a:nth-child(1){
-		margin-bottom: 1em;
-	}
-	#projects div a:nth-child(2){
-		 margin-left: 0 !important;
-
-	}
-	#projects > div > a:nth-child(1) > p, #projects > div > a:nth-child(2) > p{
-		font-size: 1em;
-	}
-	#carouselExampleSlidesOnly{
-		width: 300px;
-		height: 430px;
-		padding: .8em .8em 1em .8em;
-	}
-	main > aside > h4{
-		font-size: 2.3em;
-		margin-bottom: 1em;
-	}
-	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(1)  {
-		font-size: 1.2em;
-	}
-	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(2){
-		font-size: 1.2em;
-		margin-top: 2em;
-	}
-	
-	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(2)> a{
-		font-size: 1em;
-	}
 }
