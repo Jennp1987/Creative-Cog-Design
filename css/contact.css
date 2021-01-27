@@ -1,0 +1,167 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+
+body {
+	font-family: brandon-grotesque, Helvetica, sans-serif !important;
+	perspective: 800px;
+	background-color: #21212d !important;
+	border-top: 1em #3f4756 solid;
+	font-size: 16px;
+	
+}
+/*PRELOADING BCKG IMG*/
+/*
+body::after{
+	position:absolute; width:0; height:0; overflow:hidden; z-index:-1;
+	content: url('https://jennp1987.github.io/Creative-Cog-Design/images/creativeCogHeaderNewpng825.png');
+}
+*/
+
+/*MAIN*/
+main{
+transition: transform 150ms ease-out;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	margin: auto;
+	max-width: 100%;
+	background-color: #3f4756;
+	transform: none;
+}
+main.menu-active {
+	transform: translateX(1em) rotateY(1deg);
+}
+
+/*NAV*/
+.navbar > button {
+	background-color: #353441;
+	color: white;
+	font-family: brandon-grotesque, sans-serif;
+	font-weight: 200;
+	line-height: 60px;
+	font-size: 0.8em;
+	letter-spacing: .1em;
+	border-radius: 0;
+}
+
+.navbar > button:hover {
+	color: #353441 !important;
+	background: white !important;
+	border: none;
+
+}
+
+.navbar-nav .nav-link {
+	padding-left: 1em !important;
+}
+
+.navbar li {
+	list-style: none;
+	padding-right: .5em;
+}
+
+#collapseExample > ul > li.nav-item.dropdown.show > div {
+	background-color: #353441;
+}
+
+.navbar li,
+#collapseExample > ul > li.nav-item.dropdown > div {
+	background-color: #353441;
+
+}
+
+/*STYLES A*/
+#collapseExample > ul > li > a,
+#collapseExample > ul > li.nav-item.dropdown.show > div > div:nth-child(1) > a,
+#collapseExample > ul > li.nav-item.dropdown.show > div > div:nth-child(2) > a {
+	color: #bbd1df;
+
+}
+
+/*HOVER STYLE*/
+#collapseExample > ul > li > a:hover,
+#collapseExample > ul > li.nav-item.dropdown.show > div > div:nth-child(1) > a:hover,
+#collapseExample > ul > li.nav-item.dropdown.show > div > div:nth-child(2) > a:hover {
+	color: #9dc6d1;
+}
+.navbar li a:hover {
+	background-color: #a4844e;
+
+}
+.navbar-toggler:focus,
+ li .dropdown a:active, #collapseExample > ul > li.nav-item.dropdown.show > a{
+	text-decoration: none;
+	outline: none;
+}
+
+/*STYLE THE INNER Of DROPDOWN*/
+#collapseExample > ul > li.nav-item.dropdown.show > div {
+	padding: 0;
+	border: none;
+}
+
+/*END NAV*/
+
+
+/*BEGIN ASIDE - ONLINE CONTACTS*/
+main > aside{
+	background-color: white;
+	width: inherit;
+	height: auto;
+	padding-bottom: 7em;
+	padding-top: 7em;
+	margin: 0 auto;
+	text-align: center;;
+
+}
+
+main > aside > h4 {
+	font-size: 3em;
+	color: #3f4756;
+	text-align: center;
+	margin-top: 1.5em;
+	display: block;
+}
+
+aside ul {
+
+	list-style: none;
+	display: block;
+}
+
+aside li {
+	width: 80%;
+	height: auto;
+	font-size: 2em;
+	margin: 0 auto;
+	line-height: 2em;
+}
+aside a, aside a:visited{
+	color: #5a86ad;
+	text-decoration: underline;
+}
+aside a:hover, aside a:focus{
+	color: #3f4756;
+	text-decoration: underline;
+}
+/*END ASIDE - FIND ME*/
+
+/*BEGIN FOOTER*/
+footer {
+	background-color: #a4844e;
+	width: 100%;
+	height: auto;
+	padding: 2em 0 2em 0;
+}
+
+footer p {
+	text-align: center;
+	color: #fff;
+	font-size: 1.2em;
+	line-height: 1.5em;
+}
