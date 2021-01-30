@@ -20,7 +20,7 @@
 					<div class="collapse navbar-collapse" id="collapseExample">
 						<ul class="navbar-nav">
 							<li class="nav-item">
-								<a class="nav-link active" href="..\index.html">HOME</a>
+								<a class="nav-link active" href="index.html">HOME</a>
 							</li>
 							<li class="nav-item dropdown">
 								<a class="nav-link dropdown-toggle" data-toggle="dropdown" data-target="dropdown_target" href="#">PROJECTS
@@ -38,10 +38,10 @@
 
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="../pages/about.html">ABOUT</a>
+								<a class="nav-link" href="./pages/about.html">ABOUT</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="./pages/contact.html">HIRE</a>
+								<a class="nav-link" href="./pages/contactme.html">HIRE</a>
 							</li>
 						</ul>
 					</div>
@@ -53,10 +53,9 @@
 				<!--class='menu-active'-->
 				<main >
 					<header class="jumbotron">
-						<h1>Need help with a project?</h1>
 					</header>
 					<section>
-						<p>lets chat!</p>
+						<p>Say Hello</p>
 						<form class="contactForm" action="contact.php" method="post">
 							<!-- <input type="text" name="name" placeholder="Full Name">
 							<input type="text" name="mail" placeholder="Your Email">
@@ -65,45 +64,47 @@
 							<button type="submit" name="submit">Send</button> -->
 
 							<div class="form-row">
-								<div class="col-lg-2 col-md-1 col-sm-1"></div>
-								<div class="col-lg-8 col-md-10 col-sm-10">
+                                <div class="col-lg-8 col-md-8 col-sm-12">
+                                </div>
+								<div class="col">
 								  <label for="name">Full Name</label>
-								  <input type="text" id="name" name="name" placeholder="Your full name">
 								</div>
-								<div class="col-lg-2 col-md-1 col-sm-1"></div>
-							</div>
-
-							<div class="form-row">
-								<div class="col-lg-2 col-md-1 col-sm-1"></div>
-								<div class="col-lg-8 col-md-10 col-sm-10">
-								  <label for="mail">Email</label>
-								  <input type="text" id="mail" name="mail" placeholder="Your email">
+								<div class= "col">
+								  <input type="text" id="name" name="name" placeholder="Your full name..">
 								</div>
-								<div class="col-lg-2 col-md-1 col-sm-1"></div>
 							</div>
 							<div class="form-row">
-								<div class="col-lg-2 col-md-1 col-sm-1"></div>
-								<div class="col-lg-8 col-md-10 col-sm-10">
+								<div class="col">
+								  <label for="mail">Your Email</label>
+								</div>
+								<div class="col">
+								  <input type="text" id="mail" name="mail" placeholder="Your Email..">
+								</div>
+							</div>
+							<div class="form-row">
+								<div class="col">
 								  <label for="subject">Subject</label>
+								</div>
+								<div class="col">
 								  <input type="text" id="subject" name="subject" placeholder="What is the project?">
 								</div>
-								<div class="col-lg-2 col-md-1 col-sm-1"></div>
 							</div>
 							<div class="form-row">
-								<div class="col-lg-2 col-md-1 col-sm-1"></div>
-								<div class="col-lg-8 col-md-10 col-sm-10">
+								<div class="col">
 								  <label for="message">Message</label>
-								  <textarea id="message" name="message" placeholder="Describe what you need help with." style="height:200px"></textarea>
 								</div>
-								<div class="col-lg-2 col-md-1 col-sm-1"></div>
+								<div class="col">
+								  <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
+								</div>
 							</div>
 							
 							<div class="form-row">
-								<div class="col-lg-2 col-md-1 col-sm-1"></div>
-								<div class="col-lg-8 col-md-10 col-sm-10">
-									<input type="submit" value="Submit">
-								</div>
-								<div class="col-lg-2 col-md-1 col-sm-1"></div>
+								  <div class="col">
+									
+								  </div>
+								  <div class="col">
+									  <input type="submit" value="Submit">
+								  </div>
 							</div>
 
 						</form>

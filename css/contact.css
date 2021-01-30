@@ -30,8 +30,9 @@ transition: transform 150ms ease-out;
 	right: 0px;
 	margin: auto;
 	max-width: 100%;
-	background-color: #3f4756;
+	/* background-color: #3f4756; */
 	transform: none;
+	background-color: #3f4756
 }
 main.menu-active {
 	transform: translateX(1em) rotateY(1deg);
@@ -107,6 +108,128 @@ main.menu-active {
 
 /*END NAV*/
 
+/*HEADER*/
+.jumbotron {
+	width: 100%;
+    background: url(../images/aboutContact1.png);
+    background-size: cover;
+    background-position: center;
+    height: auto;
+    background-repeat: no-repeat;
+    background-color: #21212d;
+	border-radius: 0 !important;
+	text-align: center;
+	padding: 2rem 1rem !important;
+
+}
+.jumbotron h1{
+	color: #fff;
+}
+/*HEADER END*/
+
+/*SECTION*/
+section{
+	color: #fff;
+}
+section p{
+	text-align: center;
+	font-size: 2em;
+}
+
+/*SECTION END*/
+/*FORM*/
+label{
+	display: block !important;
+	margin-bottom: .5rem;
+	font-size: 1.2em;
+	margin: .7em 0 .7em .2em !important;
+	/* float: right; */
+	/* text-align: right; */
+}
+label  {
+	/* float: right; */
+}
+input[type=submit] {
+    width: 10em;
+	height: 3em;
+	background-color: #5a86ad;
+    border: none;
+    border-radius: 3px;
+    font-family: brandon-grotesque, sans-serif;
+    border-radius: 80px;
+    letter-spacing: .1em;
+	font-weight: 500;
+	color: #fff;
+	margin: .7em 0 4em 0 !important;
+}
+/* Style inputs, select elements and textareas */
+ form {
+
+}
+input[type=text], select, textarea{
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	resize: vertical;
+	/* font-size: 1.2em;
+    font-family: open-sans, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #383838; */
+  } 
+  
+  /* Style the label to display next to the inputs */
+  /* label {
+	padding: 12px 12px 12px 0;
+	display: inline-block;
+	width: 25%;
+	
+  } */
+  
+  /* Style the submit button */
+  /* input[type=submit] {
+	background-color: #4CAF50;
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+
+  } */
+  
+  /* Style the container */
+  /* .container {
+	border-radius: 5px;
+	background-color: #f2f2f2;
+	padding: 20px;
+
+  } */
+  
+  /* Floating column for labels: 25% width */
+  /* .col-25 {
+	float: left;
+	width: 25%;
+	margin-top: 6px;
+  } */
+  
+  /* Floating column for inputs: 75% width */
+  /* .col-75 {
+	float: left;
+	width: 75%;
+	margin-top: 6px;
+  } */
+  
+  /* Clear floats after the columns */
+  .form-row:after {
+	content: "";
+	display: table;
+	clear: both;
+  }
+  
+  
+/*FORM END*/
 
 /*BEGIN ASIDE - ONLINE CONTACTS*/
 main > aside{
@@ -165,3 +288,265 @@ footer p {
 	font-size: 1.2em;
 	line-height: 1.5em;
 }
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+	.col-25, .col-75, input[type=submit] {
+	  width: 100%;
+	  margin-top: 0;
+	}
+
+	
+  }
+
+
+
+  /*large*/
+@media only screen and (max-width: 1161px) and (min-width: 992px) {
+	
+   .jumbotron{
+	   /* height: 15em; */
+	   /* background: url("../images/aboutContactBackground9.png") no-repeat center center;
+	   background-size: contain;
+	   padding: 0; */
+	   background: url("../images/aboutContact2.png") no-repeat;
+	   background-size: cover;
+	   background-position: center;
+	   padding: 2rem 1rem !important;
+	   
+   }
+   body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(1), body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(2){
+	font-size: 1.5em;
+	 
+   } 
+	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(1) > a, body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(2) > a{
+	display: block;
+	
+	
+   }
+
+}
+/*medium*/
+@media only screen and (max-width: 991px) and (min-width:768px) {
+
+   .jumbotron{
+	   background: url("../images/aboutContact2.png") no-repeat;
+	   background-size: cover;
+	   background-position: center;
+	   padding: 2rem 1rem !important;
+	   
+   }
+   .jumbotron h1{
+	   font-size: 2.3em;
+   }
+	main > aside{
+		padding-top: 1em;
+		padding-bottom: 3.5em;
+	}
+	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(1), body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(2)  {
+		font-size: 1.2em;
+
+	}
+	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(1){
+		margin-bottom: 1.5em;
+	}
+	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(1) > a, body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(2)> a{
+		display: block; 
+		font-size: .9em;
+	}
+
+	aside ul li, aside ul li a{
+		font-weight: bolder !important; 
+	}
+	
+}
+
+/*AFTER 767px MAIN GOES TO FLUID SCREEN*/
+
+/*ALL SCREENS SMALLER THAN 767*/
+@media only screen and (max-width:767px) {
+
+   body > div > div > div.col-lg-2.col-md-2.col-sm-12.navDiv {
+	   position: absolute !important;
+
+   }
+   body > div > div > div.col-lg-8.col-md-8.col-sm-12{
+	   padding: 0;
+   }
+   main.menu-active{
+	   transform: none; 
+   }
+
+   body > div > div > div.col-lg-2.col-md-2.col-sm-12 > nav, .navDiv{
+		padding: 0 !important; 
+   }
+
+   } 
+
+
+@media only screen and (max-width: 767px) and (min-width: 576px) {
+  
+   .jumbotron{
+	   background: url("../images/aboutContact3.png") no-repeat;
+	   background-size: cover;
+	   background-position: center;
+	   padding: 2rem 1rem !important;
+	   
+   }
+   	main > aside{
+	padding-top: 1em;
+	padding-bottom: 3.5em;
+   }
+	main > aside > h4{
+		font-size: 2.3em;
+		margin-bottom: 1em;
+	}
+   
+   body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(1), body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(2)  {
+	   font-size: 1.2em;
+	   display: block;
+	   width: 100%;
+   }
+
+   body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(1)> a,body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(2)> a{
+	   font-size: 1em;
+	   display: block;
+	   width: 100%;
+   }
+   aside ul li, aside ul a{
+	   display: block;
+	   width: 100%;
+	   font-weight: bolder;
+   }
+
+
+}
+@media only screen and (max-width: 575px) and (min-width: 460px){
+   
+   .jumbotron{
+	   background: url("../images/aboutContact3.png") no-repeat;
+	   background-size: cover;
+	   background-position: center;
+	   padding: 2rem 1rem !important;
+	   
+   }
+   .jumbotron h1{
+	   font-size: 2.2em;
+   }
+   label{
+	margin: .7em 0 .7em .8em !important;
+   }
+   input[type=text], select, textarea{
+	   width:96%;
+	   margin: 0 2% !important;
+	   
+   }
+   input[type=submit] {
+		width: 60%;
+		margin-left: 20% !important;
+		margin-right: 20% !important;
+		margin-top: 3em !important;
+   }
+   main > aside{
+	padding-top: 1em;
+	padding-bottom: 3.5em;
+   }
+	main > aside > h4{
+	font-size: 2.3em;
+	margin-bottom: 1em;
+	}	
+   aside ul li{
+	   font-size: 1.2em !important;
+	   width: 100%;
+	   font-weight: bolder;
+   }
+   main > aside > ul > li:nth-child(2){
+	margin-top: 2em;
+
+}
+   aside > ul > li:nth-child(2) > a{
+	   /* font-size: 1em !important;
+	   display: block;
+	   width: 100%; */
+	   
+   }
+   aside ul li a{
+	display: block;
+	width: 100%;
+	font-size: 1em;
+	font-weight: bolder;
+   }
+   
+   aside ul li, aside ul a{
+	   /* display: block;
+	   width: 100%;
+	   font-weight: bolder; */
+   }
+
+}
+@media only screen and (max-width: 459px) and (min-width: 363px) {
+   body{
+	   border-top: 0 !important;
+   }
+   
+   .jumbotron{
+	   background: url("../images/aboutContact3.png") no-repeat;
+	   background-size: cover;
+	   background-position: center;
+	   padding: 2rem 1rem !important;
+	   /* padding: 0; */
+	   
+   }
+   .jumbotron h1{
+	font-size: 2rem;
+    margin-top: 1.5em;
+   }
+   label{
+	margin: .7em 0 .7em .8em !important;
+   }
+   input[type=text], select, textarea{
+	   width:96%;
+	   margin: 0 2% !important;
+	   
+   }
+   input[type=submit] {
+		width: 60%;
+		margin-left: 20% !important;
+		margin-right: 20% !important;
+		margin-top: 3em !important;
+   }
+	main > aside{
+		padding-top: 1em;
+		padding-bottom: 3.5em;
+	}
+	main > aside > h4{
+		font-size: 2.3em;
+		margin-bottom: 1em;
+	}
+   body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(1), body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(2)  {
+		font-size: 1.2em; 
+	   display: block;
+	   width:100%;
+   }
+   main > aside > ul > li:nth-child(2){
+	   margin-top: 2em;
+   
+   }
+   body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(1) > a, body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(2) > a{
+	   /* font-size: 1em; */
+	   font-size: .8em;
+	   display: block;
+	   width: 100%;
+   }
+   aside ul li, aside ul a{
+	   display: block;
+	   width: 100%;
+	   font-weight: bolder;
+   }
+   footer{
+	   padding: 1em 0 1em 0;
+   }
+
+
+}
+
