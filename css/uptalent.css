@@ -1,0 +1,108 @@
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+
+body {
+	font-family: brandon-grotesque, Helvetica, sans-serif !important;
+	background-color: #21212d !important;
+    border-top: 1em #3f4756 solid;
+    color: #fff !important;
+    width: 100%;
+    height: auto;
+    font-size: 1.2em !important;
+	
+}
+/*FIRST COL*/
+body > div > div > div{
+    padding: 0 !important;
+
+}
+
+.jumbotron{
+    /* background: url('../images/uptalentArchImage.jpg') no-repeat center !important;
+	background-size: contain;
+	/* padding: 2em 0 2em 0; */
+    /* background-position: center;  */
+    background-color: #fff !important;
+    padding: 0 !important;
+
+    
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+a{
+    color: #5a86ad !important;
+	
+}
+section{
+    /* display: flex;
+    justify-content: space-between; */
+    width: 100%;
+    height: auto;
+  
+}
+.video{
+ margin: 0 auto;
+}
+iframe{
+    width: 100%;
+}
+
+.html5-video-player{
+    background-color: #fff !important;
+}
+p{
+    margin-bottom: .5em !important;
+}
+ h1{
+    font-size: 1.5em !important;
+    margin-bottom: 2em !important;
+}
+
+#details p:nth-child(1), #details > p:nth-child(3), h2,h3,h4{
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+
+#details{
+    margin: 0 auto !important;
+    width: 35%;
+    text-align: ;
+}
+#summary{
+    width: 53%;
+    height: auto;
+
+}
+#summary p:nth-child(1){
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+.defineProblem{
+    background-color:#fff !important;
+    color: #383838;
+}
+
+
+
+/*FOOTER BEGIN*/
+footer {
+	background-color: #a4844e;
+	width: 100%;
+	height: auto;
+	padding: 2em 0 2em 0;
+}
+
+footer p {
+	text-align: center;
+	color: #fff;
+	font-size: 1.2em;
+	line-height: 1.5em;
+}
