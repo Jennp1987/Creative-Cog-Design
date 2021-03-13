@@ -77,57 +77,32 @@ p{
 }
 
 /*VIDEO*/
-#video{
+ #video{
     background-color: #fff;
-    /* display: block;
-    height: auto;
-    width: 100%;
-    margin: auto; */
+    
 }
+/*
 .video{
     background-color: #fff;
     display: block;
     height: auto;
     width: 100%;
     margin: auto;
-  
 }
 .iframe-container{
  position: relative;
     width: 100%;
-    /* padding-bottom: 56.25%; */
     height: auto;
-   
-    /* max-width: 1215px;
-    max-height: 480px; */
     margin: 0 auto;
- 
    
-
 }
 .iframe-container iframe{
-    /* display: block;
-    width: 100%;
-    height: auto; */
     display: block;
     margin: 0 auto;
-  
-   
-    /* position: absolute;
-    margin: auto;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); */
-    /* position: absolute;
-    margin: 0 auto;
-    /* top: 0;
-    left: 0; */
-   /* width: 70%;
-    height: 70%; */
 }
 #movie_player{
     background-color: #fff !important;
-}
+} */
 
   /*VIDEO ENDS*/
 
