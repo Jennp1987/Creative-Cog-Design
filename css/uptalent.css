@@ -14,6 +14,7 @@ body {
     width: 100%;
     height: auto;
     font-size: 1.2em !important;
+    /* line-height: 25.2px; */
 	
 }
 
@@ -24,8 +25,8 @@ body {
 
 
 .jumbotron{
-    /* background: url('../images/uptalentArchImage.jpg') no-repeat center !important;
-	background-size: contain;
+    /* background: url('../images/uptalentArhImageResized1.jpg') no-repeat center !important;
+	background-size: contain; */
 	/* padding: 2em 0 2em 0; */
     /* background-position: center;  */
     background-color: #fff !important;
@@ -37,12 +38,35 @@ img{
 }
 div#back {
     padding-left: 2em;
+    margin-bottom: 2em;
 }
 a{
     color: #5a86ad !important;
+    text-decoration: underline !important;
+    cursor: pointer;
+    
 	
 }
+button{
+	width: 6em;
+	height: 1.7em;
+	background-color: #5a86ad;
+	border: none;
+	font-family: brandon-grotesque, sans-serif;
+	border-radius: 80px !important;
+	letter-spacing: .1em;
+	font-weight: 500;
+	color: white;
+	font-size: 1.5em;
+	margin-top: 1.5em;
 
+}
+button:hover, button:focus, button:active{
+	background: #fff;
+	border: 3px solid #5a86ad;
+	color: #5a86ad;
+	font-weight: 500;
+}
 p{
     margin-bottom: .5em !important;
 }
@@ -60,22 +84,45 @@ p{
 #details{
     margin: 0 auto !important;
     width: 35%;
-    text-align: ;
+    padding-bottom: 2em;
+    
 }
 #summary{
     width: 65%;
     height: auto;
 
 }
-#summary p:nth-child(1){
-    text-transform: uppercase;
-    text-decoration: underline;
+#summary p{
+    margin-bottom: 2em !important;
+    /* text-transform: uppercase;
+    text-decoration: underline; */
+
+ } 
+ div.defineProblem .col-sm-5 img,
+ div.defineProblem .col-sm-7{
+    padding: 20px;
 }
-.defineProblem{
+div.defineProblem .col-sm-7 ul{
+    margin-left: 2em;
+}
+/* div.defineProblem .col-sm-5 img{
+    padding-top: 20px;
+} */
+/* div.defineProblem .col-sm-7{
+    padding: 20px;
+} */
+/* body > div > div > div.row.defineProblem > div.col-sm-7 > h3:nth-child(5) */
+div.defineProblem .col-sm-7 h3:nth-child(5){
+    /* margin-top:4.7em; */
+}
+.defineProblem, div.outcome{
     background-color:#fff !important;
     color: #383838;
+    
 }
-
+.defineProblem .col-sm-5, .defineProblem .col-sm-7{
+    margin-bottom: 5em;
+}
 /*VIDEO*/
  #video{
     background-color: #fff;
@@ -105,7 +152,43 @@ p{
 } */
 
   /*VIDEO ENDS*/
+#userFlow{
+  margin: 0 20px;
+}
+#userFlow .col-sm-8{
+    margin: 5em 0;
+    padding: 0 2em 0 2em;
 
+}
+#userFlow .col-sm-8 p:nth-child(4){
+    margin-bottom: 5em !important;
+}
+div.userFlow{
+    width: 50%;
+    float: left;
+}
+#userFlow ol{
+     margin: 1.5em 0 1.5em 2em;
+}
+/* #userFlow ol li::marker{
+    margin-right: 2em;
+} */
+div.userFlow img{
+    width: 80%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+div.outcome h3{
+    margin-top: 3em ;
+    /* clear: both; */
+    /* background-color: #fff; */
+    
+}
+div.outcome .col-sm-8{
+    padding: 0 2em 0 2em;
+    margin-bottom: 5em;
+}
 /*FOOTER BEGIN*/
 footer {
 	background-color: #a4844e;
@@ -120,3 +203,36 @@ footer p {
 	font-size: 1.2em;
 	line-height: 1.5em;
 }
+/*MEDIA QUERIES*/
+/*LG DEVICES*/
+/* @media only screen and (max-width: 1199px) and (min-width: 992px){
+    #summary{
+        margin-bottom: 3em;
+    }
+}*/
+/*MEDIUM DEVICES*/
+/*@media only screen and (max-width: 991px ) and (min-width: 768px) {
+    #summary{
+        margin-bottom: 3em;
+        width: 75%;
+    }
+
+}*/
+/*SMALL DEVICES*/
+/*@media only screen and (max-width: 767px) and (min-width: 576px) {
+    #summary{
+        margin-bottom: 3em;
+        width: 85%;
+    }
+}*/
+
+/*EX SMALL DEVICES*/
+/*@media only screen and (max-width: 575px) and (min-width: 360px){
+    #details{
+        width: 100%;
+    }
+    #summary{
+        margin-bottom: 3em;
+        width: 100%;
+    }
+} */
