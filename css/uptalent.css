@@ -76,7 +76,9 @@ p{
 #details{
     margin: 0 auto !important;
     width: 35%;
-    padding-bottom: 2em;   
+    padding-bottom: 2em;
+    display: flex;  
+    flex-direction: column;
 }
 #summary{
     width: 65%;
@@ -213,13 +215,24 @@ footer p {
         display: inline-block;
         width: 50%;
     } */
+    div#back{
+        padding-left: 1em;
+    }
     #details{
         width: 100%;
-        margin: 0 auto;
+        margin: 0;
+        flex-direction: row;
+    }
+    #client, #role{
+        width: 50%;
+        justify-content: space-between;
     }
     #summary{
         margin-bottom: 3em;
         width: 100%;
+    }
+    .defineProblem div:nth-child(1) img, .defineProblem div:nth-child(3) img,.defineProblem div:nth-child(2), .defineProblem div:nth-child(4){
+        margin-bottom: 1em;
     }
     #userFlow div:nth-child(2) {
         /* margin: 5em 0; */
