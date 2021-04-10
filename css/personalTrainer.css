@@ -147,10 +147,15 @@ div.defineProblem .col-sm-7 ul{
     padding-top: 5em;
 }
 .cardSorting div:nth-child(2){
-    /* padding-top: 12em; */
+    padding-top: 6em;
+    
 }
 .cardSorting img {
     padding: 0 10%;
+}
+body > div > div > div.row.cardSorting > div.col-lg-7.order-md-2.col-md-7.order-md-2.col-sm-12.order-sm-1.col-12 > h4:nth-child(3){   
+    margin-top: 4em;
+
 }
 .mockups{
     background-color: #fff;
@@ -210,10 +215,10 @@ footer p {
         /* padding: 0; */
     }
     .cardSorting div:nth-child(2){
-        padding-top: 10em;
+        /* padding-top: 10em; */
     }
     .mockups div:nth-child(2){
-        padding-top: 6em !important;
+        /* padding-top: 6em !important; */
     }
 }
 @media only screen and (max-width: 1199px) and (min-width: 992px){
@@ -226,6 +231,9 @@ footer p {
     }
     .defineProblem div {
         padding: 3em 0;
+    }
+    .cardSorting img {
+        padding: 0 ;
     }
 }
 /*MEDIUM DEVICES*/
@@ -243,6 +251,29 @@ footer p {
     .defineProblem div {
         padding: 3em 0;
     }
+    h4{
+        font-size: 1.3rem !important;
+    }
+    h3{
+        font-size: 1.5rem !important;
+    }
+    .cardSorting div, .cardSorting div:nth-child(2){
+        padding-top: 3em;
+        padding-bottom: 3em;
+    }
+
+    .cardSorting div:nth-child(2) h4:nth-child(3){
+        margin-top: 2em;
+    }
+    .cardSorting img {
+        padding: 0;
+    }
+    /* #development div:nth-child(1){
+        margin-top: 3em;
+    } */
+    /* .mockups div:nth-child(2) {
+        padding-top: 5em;
+    } */
     /* .defineProblem div:nth-child(2), .defineProblem div:nth-child(4){
         margin-bottom: 2em;
     } */
@@ -279,15 +310,41 @@ footer p {
         margin-bottom: 3em;
         width: 100%;
     }
-    .defineProblem div:nth-child(1) {
+    .defineProblem div:nth-child(1), .cardSorting div {
         padding: 3em 0;
     }
+    .cardSorting div:nth-child(2){
+        padding: 0 20px;
+    }
     .defineProblem div:nth-child(2) {
-        padding: 0 0 1em 20px;
+        padding: 0 0 4em 20px;
     } 
+   
+    .defineProblem div:nth-child(2) h3{
+        margin-top: 2em;
+    }
+    .defineProblem div:nth-child(2) h4{
+        margin-top: 1.5em;
+    }
     .defineProblem img:nth-child(1) {
         padding: 0 5% 0 5%;
     }
+    h4{
+        font-size: 1.3rem !important;
+    }
+    h3{
+        font-size: 1.5rem !important;
+    }
+    .cardSorting div, .cardSorting div:nth-child(2){
+        /* padding-top: 3em; */
+        padding-bottom: 3em;
+    }
+    .cardSorting div:nth-child(2) h4:nth-child(3){
+        margin-top: 2em;
+    }
+    /* .cardSorting img {
+        padding: 0;
+    } */
 
 }
 
@@ -315,7 +372,7 @@ footer p {
         margin-bottom: 3em;
         width: 100%;
     }
-    .defineProblem div:nth-child(1) {
+    /* .defineProblem div:nth-child(1) {
         padding: 3em 0;
     }
     .defineProblem div:nth-child(2) {
@@ -323,27 +380,37 @@ footer p {
     } 
     .defineProblem img:nth-child(1) {
         padding: 0 5% 0 5%;
-    }
-    /* .defineProblem div:nth-child(1) img, .defineProblem div:nth-child(3) img,.defineProblem div:nth-child(2), .defineProblem div:nth-child(4){
-        margin-bottom: 1em;
-    }
-    #userFlow div:nth-child(2) {
-        padding: 3em 15px;
-    }
-    div.userFlow{
-        float: none;
-        margin: 0 auto;
-        width: 100%;
-
-    }
-    div.userFlow img{
-        width: 100%;
-        
-    }
-    #userFlow > div.col-lg-8.col-md-10.col-sm-12 > div:nth-child(5) > img {
-        margin-bottom: 1.5em;
-    }
-    h3, div.outcome h3{
-        font-size: 1.1em !important;
     } */
+    .defineProblem div:nth-child(1) {
+        padding: 2em 0;
+    }
+    .defineProblem div:nth-child(2) {
+        padding: 0 0 3em 20px;
+    } 
+    .defineProblem div:nth-child(2) h3{
+        margin-top: 1.5em;
+    }
+    .defineProblem div:nth-child(2) h4{
+        margin-top: 1.5em;
+    }
+    .defineProblem img:nth-child(1) {
+        padding: 0 5% 0 5%;
+    }
+    h4{
+        font-size: 1.2rem !important;
+    }
+    h3{
+        font-size: 1.4rem !important;
+    }
+    .cardSorting div, .cardSorting div:nth-child(2){
+        padding-top: 2em;
+        padding-bottom: 2em;
+    }
+    .cardSorting div:nth-child(2) h4:nth-child(3){
+        margin-top: 2em;
+    }
+    #development div:nth-child(1) {
+        padding-left: 15px;
+    }
+    
 }
