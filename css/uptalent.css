@@ -91,9 +91,9 @@ p{
  div.defineProblem .col-sm-7{
     padding: 20px;
 }
-div.defineProblem .col-sm-7 ul{
+/* div.defineProblem ul{
     margin-left: 2em;
-}
+} */
 .defineProblem, div.outcome{
     background-color:#fff !important;
     color: #383838;

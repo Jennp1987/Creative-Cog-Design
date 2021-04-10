@@ -1,0 +1,349 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: brandon-grotesque, Helvetica, sans-serif !important;
+	background-color: #21212d !important;
+    border-top: 1em #3f4756 solid;
+    color: #fff !important;
+    width: 100%;
+    height: auto;
+    font-size: 1.2em !important;
+	
+}
+h1, h2, h3, h4{
+    margin-bottom: .75em !important;
+}
+
+.container-fluid, .row, .col{
+    margin: 0 !important;
+    padding: 0 !important;
+} 
+.jumbotron{
+    /* background: url('../images/uptalentArhImageResized1.jpg') no-repeat center !important;
+	background-size: contain; */
+	/* padding: 2em 0 2em 0; */
+    /* background-position: center;  */
+    background-color: #fff !important;
+    padding: 0 !important; 
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+div#back {
+    padding-left: 2em;
+    margin-bottom: 2em;
+}
+a{
+    color: #5a86ad !important;
+    text-decoration: underline !important;
+    cursor: pointer;	
+}
+button{
+	width: 6em;
+	height: 1.7em;
+	background-color: #5a86ad;
+	border: none;
+	font-family: brandon-grotesque, sans-serif;
+	border-radius: 80px !important;
+	letter-spacing: .1em;
+	font-weight: 500;
+	color: white;
+	font-size: 1.5em;
+	margin-top: 1.5em;
+}
+button:hover, button:focus, button:active{
+	background: #fff;
+	border: 3px solid #5a86ad;
+	color: #5a86ad;
+	font-weight: 500;
+}
+p{
+    margin-bottom: .5em !important;
+}
+ h1{
+    font-size: 1.5em !important;
+    margin-bottom: 2em !important;
+}
+#details p:nth-child(1), #details > p:nth-child(3), h2,h3,h4{
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+#details{
+    margin: 0 auto !important;
+    width: 45%;
+    padding-bottom: 2em;
+    display: flex;  
+    flex-direction: column;
+}
+#summary{
+    width: 65%;
+    height: auto;
+    margin-bottom: 4em;
+}
+#summary p{
+    margin-bottom: 2em !important;
+ } 
+ div.defineProblem .col-sm-5 img,
+ div.defineProblem .col-sm-7{
+    /* padding: 20px; */
+}
+/* div.defineProblem .col-lg-7{
+    padding-top: 3%;
+} */
+div.defineProblem .col-sm-7 ul{
+    /* margin-left: 2em; */
+}
+.defineProblem div{
+    padding: 7em 0;
+}
+.defineProblem div:nth-child(2){
+    /* padding-top:5em; */
+    /* padding-bottom: 5em; */
+    padding-right: 20px;
+}
+.defineProblem, div.outcome, .cardSorting{
+    background-color:#fff !important;
+    color: #383838;
+    
+}
+.defineProblem img:nth-child(1){
+     padding: 0 10% 0 10%;
+} 
+
+.defineProblem ul{
+    margin: 1.5em 0 1.5em 2em;
+}
+/* .defineProblem div{
+    margin: 2em 0;
+} */
+/*PERSONAS*/
+.personas{
+    padding: 3em 0;
+
+}
+.personaImages{
+    background-color: #fff;
+   
+}
+/* .personaImages div{
+    margin: 0 auto;
+}
+.personaImages img{
+    width: 80%;
+    height: auto;
+    
+} */
+.banner{
+    background-color: #21212d;
+    height: 5em;
+    width: 100%;
+}
+
+.cardSorting div{
+    padding-top: 5em;
+}
+.cardSorting div:nth-child(2){
+    /* padding-top: 12em; */
+}
+.cardSorting img {
+    padding: 0 10%;
+}
+.mockups{
+    background-color: #fff;
+    color: #383838;
+}
+.mockups div:nth-child(2){
+    padding-top: 10em;
+}
+#development div{
+    padding: 3em 0;
+   
+}
+#development div:nth-child(1){
+    padding-left: 100px;;
+}
+/* #devMockup{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+} */
+#development div:nth-child(2){
+    /* margin: 0 auto; */
+}
+#development img{
+    margin: 0 auto;
+    display: block;
+    /* width: 70%;
+    height: auto;
+    display: block; */
+   
+}
+div.outcome div:nth-child(2){
+    /*padding: 0 2em 0 2em;*/
+    margin: 3em 0;
+}
+/*FOOTER BEGIN*/
+footer {
+	background-color: #a4844e;
+	width: 100%;
+	height: auto;
+	padding: 2em 0 2em 0;
+}
+
+footer p {
+	text-align: center;
+	color: #fff;
+	font-size: 1.2em;
+	line-height: 1.5em;
+}
+/*MEDIA QUERIES*/
+/*LG DEVICES*/
+@media only screen and (max-width: 1500px) and (min-width: 1200px) {
+    #details{
+        width: 60%;
+    }
+    .defineProblem img:nth-child(1), .cardSorting img{
+        /* padding: 0; */
+    }
+    .cardSorting div:nth-child(2){
+        padding-top: 10em;
+    }
+    .mockups div:nth-child(2){
+        padding-top: 6em !important;
+    }
+}
+@media only screen and (max-width: 1199px) and (min-width: 992px){
+    #summary{
+        margin-bottom: 3em;
+        width: 85%;
+    }
+    #details{
+        width: 70%;
+    }
+    .defineProblem div {
+        padding: 3em 0;
+    }
+}
+/*MEDIUM DEVICES*/
+@media only screen and (max-width: 991px ) and (min-width: 768px) {
+    div#back{
+        padding-left: 1em;
+    }
+    #summary{
+        margin-bottom: 3em;
+        width: 90%;
+    }
+    #details{
+        width: 100%;
+    }
+    .defineProblem div {
+        padding: 3em 0;
+    }
+    /* .defineProblem div:nth-child(2), .defineProblem div:nth-child(4){
+        margin-bottom: 2em;
+    } */
+    /* #userFlow div:nth-child(2){
+        padding-top: 2em;
+    } */
+    /* div.userFlow{
+        padding: 2em 0;
+    } */
+
+}
+/*SMALL DEVICES*/
+@media only screen and (max-width: 767px) and (min-width: 576px) {
+    div#back{
+        padding-left: .9em;
+    }
+    #details{
+        width: 100%;
+        margin: 0;
+        flex-direction: row;
+    }
+    #client, #role{
+        justify-content: space-between;
+    }
+    #client{
+        width: 60%;
+    }
+    #role{
+       margin-left: 10%;
+       width: 30%;
+       
+    }
+    #summary{
+        margin-bottom: 3em;
+        width: 100%;
+    }
+    .defineProblem div:nth-child(1) {
+        padding: 3em 0;
+    }
+    .defineProblem div:nth-child(2) {
+        padding: 0 0 1em 20px;
+    } 
+    .defineProblem img:nth-child(1) {
+        padding: 0 5% 0 5%;
+    }
+
+}
+
+/*EX SMALL DEVICES*/
+@media only screen and (max-width: 575px) and (min-width: 360px){
+    div#back{
+        padding-left: .9em;
+    }
+    #details{
+        width: 100%;
+        margin: 0;
+        flex-direction: column;
+    }
+    #client, #role{
+        justify-content: space-between;
+    }
+    #client{
+        width: 100%;
+    }
+    #role{
+       width: 100%;
+       
+    }
+    #summary{
+        margin-bottom: 3em;
+        width: 100%;
+    }
+    .defineProblem div:nth-child(1) {
+        padding: 3em 0;
+    }
+    .defineProblem div:nth-child(2) {
+        padding: 0 0 1em 20px;
+    } 
+    .defineProblem img:nth-child(1) {
+        padding: 0 5% 0 5%;
+    }
+    /* .defineProblem div:nth-child(1) img, .defineProblem div:nth-child(3) img,.defineProblem div:nth-child(2), .defineProblem div:nth-child(4){
+        margin-bottom: 1em;
+    }
+    #userFlow div:nth-child(2) {
+        padding: 3em 15px;
+    }
+    div.userFlow{
+        float: none;
+        margin: 0 auto;
+        width: 100%;
+
+    }
+    div.userFlow img{
+        width: 100%;
+        
+    }
+    #userFlow > div.col-lg-8.col-md-10.col-sm-12 > div:nth-child(5) > img {
+        margin-bottom: 1.5em;
+    }
+    h3, div.outcome h3{
+        font-size: 1.1em !important;
+    } */
+}

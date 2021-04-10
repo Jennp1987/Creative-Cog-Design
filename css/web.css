@@ -144,17 +144,16 @@ img{
 	width: 100%;
 	height: auto;
 }
-.thumbnail:hover{
+/* .thumbnail:hover{
 	position:relative;
 	top:-25px;
 	right: -130px;
-    /* left:-60px; */
     width:800px;
     height:auto;
     display:block;
     z-index:999;
 
-}
+} */
 h2{	
 	color: #383838;
 	font-family: open-sans, sans-serif;
