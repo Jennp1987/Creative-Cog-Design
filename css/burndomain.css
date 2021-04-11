@@ -1,0 +1,85 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family:  acumin-pro, sans-serif, sans-serif !important;
+	background-image: linear-gradient(to right, #000,#ed2040) !important;
+    border-top: 1em #000 solid;
+    color: #fff !important;
+    width: 100%;
+    height: auto;
+    font-size: 1.2em !important;	
+}
+h1, h2, h3, h4{
+    margin-bottom: .75em !important;
+}
+.container-fluid, .row, .col{
+    margin: 0 !important;
+    padding: 0 !important;
+} 
+  #back a{
+      color: #fff !important;
+  }
+  /*HEADER*/
+  .logo img{
+      width: 50%;
+  }
+  h1{
+    font-family: acumin-pro-condensed, sans-serif;
+    font-weight: 200;
+    font-style: normal;
+
+  }
+  hr{
+      border: 1px solid #fff !important;
+      width: 60%;
+      
+      /* height: 5px;
+      width: 100%; */
+  }
+  header div:nth-child(3) p{
+    font-family: acumin-pro-wide, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+/*FOOTER BEGIN*/
+footer {
+	background-color: #a4844e;
+	width: 100%;
+	height: auto;
+	padding: 2em 0 2em 0;
+}
+
+footer p {
+	text-align: center;
+	color: #fff;
+	font-size: 1.2em;
+	line-height: 1.5em;
+}
+/*MEDIA QUERIES*/
+/*LG DEVICES*/
+@media only screen and (max-width: 1500px) and (min-width: 1200px) {
+ 
+}
+@media only screen and (max-width: 1199px) and (min-width: 992px){
+ 
+   
+}
+/*MEDIUM DEVICES*/
+@media only screen and (max-width: 991px ) and (min-width: 768px) {
+   
+
+}
+/*SMALL DEVICES*/
+@media only screen and (max-width: 767px) and (min-width: 576px) {
+ 
+
+}
+
+/*EX SMALL DEVICES*/
+@media only screen and (max-width: 575px) and (min-width: 360px){
+
+    
+}
