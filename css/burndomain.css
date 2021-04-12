@@ -6,11 +6,11 @@
 body {
 	font-family:  acumin-pro, sans-serif, sans-serif !important;
 	background-image: linear-gradient(to right, #000,#ed2040) !important;
-    border-top: 1em #000 solid;
-    color: #fff !important;
-    width: 100%;
-    height: auto;
-    font-size: 1.2em !important;	
+  border-top: 1em #000 solid;
+  color: #fff !important;
+  width: 100%;
+  height: auto;
+  font-size: 16px !important;	
 }
 h1, h2, h3, h4{
     margin-bottom: .75em !important;
@@ -21,8 +21,14 @@ h1, h2, h3, h4{
 } 
   #back a{
       color: #fff !important;
+      text-decoration: underline;
   }
   /*HEADER*/
+  .container-fluid div:nth-child(1), .socialMedia article{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+
+  }
   .logo img{
       width: 50%;
   }
@@ -30,20 +36,57 @@ h1, h2, h3, h4{
     font-family: acumin-pro-condensed, sans-serif;
     font-weight: 200;
     font-style: normal;
+    margin-top: 0px !important;
+    margin-bottom: 30px !important;
 
   }
   hr{
       border: 1px solid #fff !important;
-      width: 60%;
-      
-      /* height: 5px;
-      width: 100%; */
+      /* width: 60%; */
+  }
+  header hr:nth-child(1){
+    margin-bottom: 2em !important;
+    
+  }
+  body > div > div > div.row > header > div:nth-child(3) > hr:nth-child(3){
+    margin-top: 2em;
+    margin-bottom: 180px;
   }
   header div:nth-child(3) p{
-    font-family: acumin-pro-wide, sans-serif;
+    font-family: "acumin-pro-wide", sans-serif;
     font-weight: 400;
     font-style: normal;
+    font-size: 1.8em;
+    line-height: 43.4px;
+    /* padding-bottom: 2em; */
   }
+  header div:nth-child(3) p,  header div:nth-child(3) hr{
+    margin: 0 auto;
+    width: 49%;
+    height: auto;
+  }
+/*HEADER ENDS*/
+/*SOCIAL MEDIA POSTS*/
+.socialMedia{
+  background-color: #fff;
+}
+.socialMedia article{
+  padding-top: 3em;
+}
+.socialMedia article div:nth-child(1){
+  width: 100% !important;
+  height: auto;
+  background: #000000;
+  display: block !important;
+}
+h2{
+ text-transform: uppercase;
+ 
+}
+#socialMediaFlyers{
+  background-image: url('');
+}
+/*SOCIAL MEDIA POSTS END*/
 /*FOOTER BEGIN*/
 footer {
 	background-color: #a4844e;
