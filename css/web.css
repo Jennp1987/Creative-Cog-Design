@@ -143,6 +143,17 @@ section .container .row{
 img{
 	width: 100%;
 	height: auto;
+
+}
+img:nth-child(1){
+	border: 10px solid #5a86ad !important;
+	border-radius: 10px;
+}
+img:nth-child(){
+	border: 10px solid  #353441 !important;
+}
+img:nth-child(3){
+	border: 10px solid  #a3abbd !important;
 }
 /* .thumbnail:hover{
 	position:relative;

@@ -10,9 +10,10 @@ body {
   color: #fff !important;
   width: 100%;
   height: auto;
-  font-size: 16px !important;	
+  font-size: 100% !important;	
+  /* font-size: 16px !important;	 */
 }
-h1, h2, h3, h4{
+h1, h2, h4{
     margin-bottom: .75em !important;
 }
 .container-fluid, .row, .col{
@@ -24,7 +25,7 @@ h1, h2, h3, h4{
       text-decoration: underline;
   }
   /*HEADER*/
-  .container-fluid div:nth-child(1), .socialMedia article{
+  .container-fluid div:nth-child(1), .socialMedia article, section, .logos{
     padding-left: 0 !important;
     padding-right: 0 !important;
 
@@ -72,21 +73,77 @@ h1, h2, h3, h4{
 }
 .socialMedia article{
   padding-top: 3em;
-}
-.socialMedia article div:nth-child(1){
-  width: 100% !important;
-  height: auto;
-  background: #000000;
-  display: block !important;
+  padding-bottom: 3em;
 }
 h2{
  text-transform: uppercase;
- 
+ background: #000000;
+ padding: 30px 0 30px 30px;
+   
+}
+span{
+  color: #ed2040;
+  margin-right: 5px;
 }
 #socialMediaFlyers{
-  background-image: url('');
+  background-image: url('../images/burnDomainBackground.png');
+  background-size: cover;
+	background-position: center;
+	height: auto;
+	background-repeat:no-repeat;
+}
+.socialMediaFlyers{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+#socialMediaFlyers img{
+  width: 25%;
+  height: auto;
+ 
+}
+#socialMediaFlyers img:nth-child(1), #socialMediaFlyers img:nth-child(2){
+  margin-bottom: 60px;
+}
+#socialMediaFlyers > div:nth-child(3),#socialMediaFlyers > div:nth-child(4),  #socialMediaFlyers > div:nth-child(5){
+  background-color: #000000 !important;
+  height: auto;
+  padding: 30px 0 !important;
+  text-align: left;
+  font-family: acumin-pro-wide, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.7em;
+  line-height: 33.6px;
+}
+.socialMedia article img, section img{
+  margin: 0 auto;
+  display: block;
+  margin-top: 3em;
 }
 /*SOCIAL MEDIA POSTS END*/
+/*ABOUT*/
+.about, .logos{
+  border-style: outset;
+  border-width: 50px;
+  border-image: linear-gradient(45deg, rgb(0,0,0),#ed2040) 1;
+  background-color: #000;
+  color: #fff;
+ 
+}
+.about section, .logos{
+  padding: 3em 30px !important;
+}
+
+.about h3{
+  font-size: 2em;
+}
+.about p, .logos p{
+  font-size: 1.5em;
+  line-height: 34.8px;
+  margin-bottom: 2em;
+}
+/*ABOUT END*/
 /*FOOTER BEGIN*/
 footer {
 	background-color: #a4844e;
