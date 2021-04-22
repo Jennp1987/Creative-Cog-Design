@@ -4,18 +4,17 @@
 	padding: 0;
 }
 body {
-	font-family:  acumin-pro, sans-serif, sans-serif !important;
+	font-family:  acumin-pro, sans-serif !important;
 	background-image: linear-gradient(to right, #000,#ed2040) !important;
   /* border-top: 1em #000 solid; */
   color: #fff !important;
   width: 100%;
   height: auto;
-  font-size: 100% !important;	
-  
+  /* font-size: 100% !important;	 */
   font-weight: 400;
   font-style: normal;
-  font-size: 1.8em;
-  /* font-size: 16px !important;	 */
+  /* font-size: 1.8em; */
+  font-size: 16px !important;	
 }
 h1, h4{
     margin-bottom: .75em !important;
@@ -27,10 +26,15 @@ h2{
     margin: 0 !important;
     padding: 0 !important;
 } 
-  #back a{
-      color: #fff !important;
-      text-decoration: underline;
-  }
+#back{
+  padding-top:2em;
+}
+#back a{
+    color: #fff !important;
+    text-decoration: underline;
+    margin-left: 3em;
+    
+}
   /*HEADER*/
   .container-fluid div:nth-child(1), .socialMedia article, section, .logos{
     padding-left: 0 !important;
@@ -172,6 +176,30 @@ body > div > div > article > img:nth-child(4), .logos div:nth-child(2) img, sect
   margin: 0  0 3em 0!important;
 
 } */
+.flag div:nth-child(1){
+  /* background-color: #000; */
+  text-align: center;
+  margin-bottom: 3em;
+
+}
+.flag h5{
+  margin: 3em 0 0 0;
+  text-transform: uppercase;
+}
+.flag img{
+  width: 35%;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 3em;
+  /* border: solid 10px #000 ; */
+  
+
+}
+.flag hr{
+  width: 40%;
+  margin: 0 auto;
+}
 /*ABOUT END*/
 /*FOOTER BEGIN*/
 footer {
@@ -189,26 +217,85 @@ footer p {
 }
 /*MEDIA QUERIES*/
 /*LG DEVICES*/
-@media only screen and (max-width: 1500px) and (min-width: 1200px) {
+/* @media only screen and (max-width: 1500px) and (min-width: 1200px) {
  
-}
+} */
 @media only screen and (max-width: 1199px) and (min-width: 992px){
+ .logo img{
+   width: 65%;
+ }
+ header div:nth-child(3) p, header div:nth-child(3) hr{
+   width:62%;
+  }
+  header div:nth-child(3) p{
+  font-size: 1.5em;
  
-   
+  }
 }
 /*MEDIUM DEVICES*/
 @media only screen and (max-width: 991px ) and (min-width: 768px) {
-   
+  .logo img{
+    width: 70%;
+  }
+  header div:nth-child(3) p, header div:nth-child(3) hr{
+    width:68%;
+   }
+   header div:nth-child(3) p{
+   font-size: 1.4em;
+  
+   }
+   header > div:nth-child(3) > hr:first-of-type{
+    margin-bottom: 1.5em !important;
+   } body > div > div > div.row > header > div:nth-child(3) > hr:nth-child(3){
+     margin-top: 1.5em;
+   }
 
 }
 /*SMALL DEVICES*/
 @media only screen and (max-width: 767px) and (min-width: 576px) {
- 
+  .logo img{
+    width: 75%;
+  }
+  h1{
+    font-size: 1.7rem !important;
+  }
+  header div:nth-child(3) p, header div:nth-child(3) hr{
+    width:70%;
+   }
+   header div:nth-child(3) p{
+   font-size: 1.4em;
+  
+   }
+   header > div:nth-child(3) > hr:first-of-type{
+    margin-bottom: 1.5em !important;
+   } body > div > div > div.row > header > div:nth-child(3) > hr:nth-child(3){
+     margin-top: 1.5em;
+   }
 
 }
 
 /*EX SMALL DEVICES*/
 @media only screen and (max-width: 575px) and (min-width: 360px){
+  .logo img{
+    width: 90%;
+    margin-bottom: .8em !important;
+  }
+  h1{
+    font-size: 1.4rem !important;
+  }
+  header div:nth-child(3) p, header div:nth-child(3) hr{
+    width:88%;
+   }
+   header div:nth-child(3) p{
+   font-size: 1.2em;
+  
+   }
+   header > div:nth-child(3) > hr:first-of-type{
+    margin-bottom: 1.5em !important;
+   } body > div > div > div.row > header > div:nth-child(3) > hr:nth-child(3){
+     margin-top: 1.5em;
+     margin-bottom: 130px;
+   }
 
     
 }
