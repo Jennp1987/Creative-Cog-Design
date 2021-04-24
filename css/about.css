@@ -183,9 +183,11 @@ div.D-flex{
 	color: white;
 	
 }
-.D-flex button{
-	width: 12em;
-	height: 4em;
+a .chat{
+	/* width: 12em;
+	height: 4em; */
+	width: 6em;
+	height: 1.7em;
 	background-color: #5a86ad;
 	border: none;
 	border-radius: 3px;
@@ -193,30 +195,29 @@ div.D-flex{
 	border-radius: 80px;
 	letter-spacing: .1em;
 	font-weight: 500;
+	margin-top: 1em;
 	
 }
-.D-flex button a{
+a .chat{
 	/* font-family: open-sans, sans-serif !important; */
 	color: white;
 	font-size: 1.5em;
 	
 }
-.D-flex button:hover{
-	background: #fff;
-	border: 3px solid #5a86ad;
-	font-weight: 500;
 
-}
-.D-flex button a:hover{
-	color: #5a86ad;
-}
- /* a:hover,  a:focus, a:active{
+a .chat:hover{
 	background: #fff;
 	border: 3px solid #5a86ad;
-	color: #5a86ad;
 	font-weight: 500;
+	color: #5a86ad !important;
+}
+/* .D-flex button a:hover{
+	color: #5a86ad !important;
 } */
-
+a .chat:focus{
+	outline: none;
+	color: #5a86ad !important;
+}
 
 /*BEGIN ASIDE - FIND ME*/
  main > aside{
@@ -286,13 +287,13 @@ footer p {
 		font-size: 2.5em;
 	}
 
-	.D-flex button{
+	/* .D-flex button{
 		width: 10em;
 		height: 3em;
 	}
 	.D-flex button a{
 		font-size: 1.5em;
-	}
+	} */
 
 
 	
@@ -330,13 +331,13 @@ footer p {
 		margin-bottom: 1em;
 		
 	}
-	.D-flex button{
+	/* .D-flex button{
 		width: 10em;
 		height: 2.75em;
 	}
 	.D-flex button a{
 		font-size: 1.4em;
-	}
+	} */
 
 }
 /*large*/
@@ -372,13 +373,13 @@ footer p {
 		margin-bottom: 1em;
 		
 	}
-	.D-flex button{
+	/* .D-flex button{
 		width: 10em;
 		height: 2.75em;
 	}
 	.D-flex button a{
 		font-size: 1.4em;
-	}
+	} */
 	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(1), body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(2){
 		font-size: 1.5em;
 		 
@@ -423,7 +424,7 @@ footer p {
 		margin-bottom: 1em;
 		
 	}
-	.D-flex button{
+	/* .D-flex button{
 		width: 6em;
 		height: 3em;
 	}
@@ -434,7 +435,7 @@ footer p {
 		width: 10em;
 		height: 2.75em;
 		margin-bottom: 1em;
-	}
+	} */
 	
 	main > aside{
 		padding-top: 1em;
@@ -541,21 +542,15 @@ footer p {
 		margin-bottom: 1em;
 		
 	}
+
 	/* .D-flex button{
-		
-		width: 6em;
-		height: 3em;
-	} */
-	.D-flex button{
 		width: 10em;
 		height: 2.75em;
 		margin-bottom: 1em;
-		/* line-height: 60px */
-		/* font-size: 0.8em; */
 	}
 	.D-flex button a{
 		font-size: 1.3em;
-	}
+	} */
 	main > aside{
 		padding-top: 1em;
 		padding-bottom: 3.5em;
@@ -621,7 +616,7 @@ footer p {
 		margin-bottom: 1em;
 		
 	}
-	.D-flex button{
+	/* .D-flex button{
 		border-radius: 80px;
 		width: 7.5em;
 		height: 2.75em;
@@ -629,7 +624,7 @@ footer p {
 	}
 	.D-flex button a{
 		font-size: 1.3em;
-	}
+	} */
 	main > aside{
 		padding-top: 1em;
 		padding-bottom: 3.5em;
@@ -703,14 +698,8 @@ footer p {
 		margin-bottom: 1em;
 		
 	}
-	.D-flex button{
-		border-radius: 80px;
-		width: 7.5em;
-		height: 2.75em;
+	a .chat{
 		margin-bottom: 1em;
-	}
-	.D-flex button a{
-		font-size: 1.3em;
 	}
 	main > aside{
 		padding-top: 1em;

@@ -79,7 +79,8 @@ h2{
   }
 /*HEADER ENDS*/
 /*SOCIAL MEDIA POSTS*/
-.socialMedia{
+
+.socialMedia article{
   background-color: #fff;
 }
 .socialMedia div:nth-child(2){
@@ -153,7 +154,7 @@ body > div > div > article > img:nth-child(4), .logos div:nth-child(2) img, sect
 .about{
   border-style: outset;
   border-width: 50px;
-  border-image: linear-gradient(45deg, rgb(0,0,0),#ed2040) 1;
+  border-image: linear-gradient(to left,#ed2040,  #aa003d) 1;
   background-color: #000;
   color: #fff;
  
@@ -185,6 +186,23 @@ body > div > div > article > img:nth-child(4), .logos div:nth-child(2) img, sect
   margin-bottom: .5em;
   font-size: 2.3em;
   letter-spacing: 1px;
+  /* background-image: linear-gradient(45deg, #aa003d, #ed2040); */
+  background-color: none;
+  background-image: linear-gradient(#fa2747 0%, #ed2040 100%);
+
+  /* Set the background size and repeat properties. */
+  background-size: 100%;
+  background-repeat: repeat;
+
+/* Use the text as a mask for the background. */
+/* This will show the gradient as a text color rather than element bg. */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  -ms-background-clip: none;
+  -ms-text-fill-color: none; 
+
 }
 .fontFamily p:nth-child(1), .fontFamily p:nth-child(2), .fontFamily p:nth-child(3){
   font-family: acumin-pro-extra-condensed, sans-serif;
@@ -207,17 +225,7 @@ body > div > div > article > img:nth-child(4), .logos div:nth-child(2) img, sect
 .fontFamily p:nth-child(2), .fontFamily p:nth-child(3), .fontFamily p:nth-child(5), .fontFamily p:nth-child(6), .fontFamily p:nth-child(8), .fontFamily p:nth-child(9){
   font-size: 1.9em ;
    /* Create the gradient. */
-   background-image: linear-gradient(45deg, #aa003d, #ed2040);
-    /* Set the background size and repeat properties. */
-  background-size: 100%;
-  background-repeat: repeat;
-
-  /* Use the text as a mask for the background. */
-  /* This will show the gradient as a text color rather than element bg. */
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; 
-  -moz-background-clip: text;
-  -moz-text-fill-color: transparent;
+ 
 
 }
 /* section.logos .about img{
@@ -233,6 +241,7 @@ body > div > div > article > img:nth-child(4), .logos div:nth-child(2) img, sect
 .flag h5{
   margin: 3em 0 0 0;
   text-transform: uppercase;
+  letter-spacing: 1px;
 }
 .flag img{
   width: 35%;
@@ -323,6 +332,9 @@ footer p {
   .about h3{
     font-size: 1.8em;
   }
+  .fontFamily p:nth-child(2), .fontFamily p:nth-child(3), .fontFamily p:nth-child(5), .fontFamily p:nth-child(6), .fontFamily p:nth-child(8), .fontFamily p:nth-child(9){
+    font-size: 1.7em ;
+  }
 }
 /*SMALL DEVICES*/
 @media only screen and (max-width: 767px) and (min-width: 576px) {
@@ -375,6 +387,9 @@ footer p {
   .about{
     border-width: 30px;
   }
+  .about div{
+    padding-top: 1.5em
+  }
   .about p, .logos p{
     font-size: 1.3em;
     margin-left: 15px !important;
@@ -385,7 +400,12 @@ footer p {
     font-size: 1.8em;
     margin-left: 15px !important;
   }
-
+  /* .fontFamily {
+    display: none;
+  } */
+  .fontFamily p:nth-child(2), .fontFamily p:nth-child(3), .fontFamily p:nth-child(5), .fontFamily p:nth-child(6), .fontFamily p:nth-child(8), .fontFamily p:nth-child(9){
+    font-size: 1.25em ;
+  }
 }
 
 /*EX SMALL DEVICES*/
@@ -447,9 +467,19 @@ footer p {
     margin-right: 15px !important;
     line-height: 25px;
   }
+  .about div{
+    padding-top: 1.5em
+  }
   .about h3{
     font-size: 1.6em;
     margin-left: 15px !important;
   }
+  .fontFamily {
+    display: none;
+  }
+  .flag h5{
+    font-size: 1.1rem;
+  }
+ 
     
 }

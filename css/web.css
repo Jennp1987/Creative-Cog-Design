@@ -155,16 +155,7 @@ img:nth-child(){
 img:nth-child(3){
 	border: 10px solid  #a3abbd !important;
 }
-/* .thumbnail:hover{
-	position:relative;
-	top:-25px;
-	right: -130px;
-    width:800px;
-    height:auto;
-    display:block;
-    z-index:999;
 
-} */
 h2{	
 	color: #383838;
 	font-family: open-sans, sans-serif;
@@ -210,6 +201,9 @@ a button:hover, a button:focus, a button:active{
 	border: 3px solid #5a86ad;
 	color: #5a86ad;
 	font-weight: 500;
+}
+a button:focus{
+	outline: none;
 }
  p{
 	font-family: open-sans, sans-serif;
