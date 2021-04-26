@@ -697,13 +697,11 @@ footer p {
 	aside h4{
 		margin-bottom: .5em;
 	}
-	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(1)  {
-		font-size: 1.6em;
+	main > aside > ul > li:nth-child(1)  {
 		margin-bottom: 1em;
 	}
-	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(2){
-		font-size: 1.6em;
-		
+	main > aside > ul > li:nth-child(1), main > aside > ul > li:nth-child(2){
+		font-size: 1.6em;	
 	}
 	
 
@@ -734,7 +732,6 @@ footer p {
 		font-size: 70px;
 	}
 	.about p{
-		/* max-width: 655px; */
 		max-width: 600px;
 		font-size: 1.4em;
 	}
@@ -761,11 +758,8 @@ footer p {
 	aside h4{
 		margin-bottom: .5em;
 	}
-	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(1), body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(2)  {
+	 main > aside > ul > li:nth-child(1), main > aside > ul > li:nth-child(2)  {
 		font-size: 1.3em;
-		margin-bottom: 1em;
-	}
-	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(1){
 		margin-bottom: 1em;
 	}
 
@@ -781,7 +775,7 @@ footer p {
 @media only screen and (max-width: 991px) and (min-width: 768px) {
 	.container{
 	padding-left:2.5em !important;
-}
+	}
 	.headerContainer h1 {
 		font-size: 40px !important;
 	}
@@ -836,14 +830,14 @@ footer p {
 		font-size: 2.3em;
 		margin-bottom: 1em;
 	}
-	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(1), body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(2)  {
+	main > aside > ul > li:nth-child(1), main > aside > ul > li:nth-child(2)  {
 		font-size: 1.2em;
 
 	}
-	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(1){
+	main > aside > ul > li:nth-child(1){
 		margin-bottom: 1.5em;
 	}
-	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(1) > a, body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(2)> a{
+		main > aside > ul > li > a{
 		 display: block; 
 		 font-size: .9em;
 	}
@@ -876,13 +870,24 @@ footer p {
 	}
 	.jumbotron {
 	max-width: 100%;
-}
-body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(1){
-	margin-bottom: 1.5em;
-}
+	}
+	main > aside > h4{
+		font-size: 2.3em;
+		margin-bottom: 1em;
+	}
+	main > aside > ul > li:nth-child(1){
+		margin-bottom: 1.5em;
+	}
 	aside ul li, aside ul li a{
-		font-weight: bolder !important; 
-}
+		font-weight: bolder !important;
+		display: block;
+		width: 100%; 
+		
+	}
+	main > aside > ul > li {
+		font-size: 1.2em;
+	}
+	
 }
 
 /*SM SCREEN*/
@@ -890,13 +895,11 @@ body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-
 	.jumbotron{
 		padding-bottom: 0;
 	}
-
 	body > div > div > div.col-lg-2.col-md-2.col-sm-12 > nav {
 		padding: 0 !important;
 	}
 	.navbar-toggler {
-		    padding: .25rem 1.2rem !important;
-		
+		    padding: .25rem 1.2rem !important;	
 	}
 	button {
 		text-align: left;
@@ -908,11 +911,9 @@ body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-
 	.headerContainer h1 {
 		font-size: 40px !important;
 	}
-
 	.headerContainer h2 {
 		font-size: 35px !important;
 	}
-
 	.headerContainer h3 {
 		font-size: 29px !important;
 	}
@@ -921,7 +922,6 @@ body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-
 	}
 	 body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > section{
 		padding-top: 5em;
-		/* height: 28em; */
 	} 
 	section > div > h2.outlineText{
 		font-size: 63px;
@@ -944,7 +944,6 @@ body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-
 	.circle{
 		width: 4.5em;
 		height:4.5em;
-
 	}
 	#projects > div > a:nth-child(1) > p, #projects > div > a:nth-child(2) > p{
 		font-size: 1em;
@@ -960,20 +959,8 @@ body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-
 		font-size: 1.2em;
 		
 	}
-	main > aside > h4{
-		font-size: 2.3em;
-		margin-bottom: 1em;
-	}
-	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(1), body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(2)  {
-		font-size: 1.2em;
-		display: block;
-		width: 100%;
-	}
-
-	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(1)> a,body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(2)> a{
+	main > aside > ul > li > a {
 		font-size: 1em;
-		display: block;
-		width: 100%;
 	}
 
 }
@@ -995,17 +982,12 @@ body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-
 	}
 	h1 {
 		font-size: 35px !important;
-		/* font-size: 40px !important;  */
 	}
-
 	.headerContainer h2 {
 		font-size: 30px !important;
-		/* font-size: 43px; */
 	}
-
 	.headerContainer h3 {
 		font-size: 24px !important;
-		/* font-size: 30px; */
 	}
 	section {
 		padding-top: 5em;
@@ -1055,31 +1037,12 @@ body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-
 		width: 80% !important;
 		font-size: 1.2em;
 	}
-	main > aside > h4{
-		font-size: 2.3em;
-		margin-bottom: 1em;
-	}
-	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(1), body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(2)  {
-		font-size: 1.2em; 
-	   display: block;
-	   width:100%;
-   }
-   body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(2){
+ 	main > aside > ul > li:nth-child(2){
 	   margin-top: 2em;
-   
    }
-   body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(1) > a, body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(2) > a{
+    main > aside > ul > li > a{
 	   font-size: 1em;
-	   display: block;
-	   width: 100%;
    }
-   aside ul li, aside ul a{
-	   display: block;
-	   width: 100%;
-	   font-weight: bolder;
-   }
-	
-	
 }
 /*EX SMALL*/
 @media only screen and (max-width: 574px) and (min-width: 460px) {
@@ -1091,53 +1054,16 @@ body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-
 		height: auto;
 		padding-bottom: 22% !important;
 		padding-left: 5px !important;
-		background-repeat: none;
-		/* text-align: center;
-		margin: 0 auto; */
-		
-	}
-	/*padding for headings*/
-	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > header > div > div > div:nth-child(1) > .col-10, body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > header > div > div > div:nth-child(2) > .col-9, body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > header > div > div > div:nth-child(3) > .col-8 {
-		/* padding-left: 0px !important; */
-		/* text-align: center; */
-		
-	
-	}
-	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > header > div > div > div:nth-child(1), body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > header > div > div > div:nth-child(2), body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > header > div > div > div:nth-child(3){
-		/* text-align: center;
-		display: block;
-		margin: 0 auto; */
-		/* padding-left: 2em; */
-	}
-	div.headerContainer{
-		/* display: flex; */
-		/* align-items: center; */
-		/* justify-content:left ; */
-
-/* 
-		text-align: left;
-		display: block;
-		margin: 0 auto; */
-
-		
+		background-repeat: none;	
 	}
 	h1 {
-		font-size: 35px !important;
-		/* font-size: 40px !important; */
-		
+		font-size: 35px !important;	
 	}
-
 	.headerContainer h2 {
 		font-size: 30px !important;
-		/* font-size: 35px; */
-		/* font-size: 40px; */
-		
 	}
-
 	.headerContainer h3 {
 		font-size: 24px !important;
-		/* font-size: 30px; */
-		
 	}
 	section {
 		padding-top: 5em;
@@ -1189,30 +1115,13 @@ body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-
 		font-size: 1.2em;
 		
 	}
-	main > aside > h4{
-		font-size: 2.3em;
-		margin-bottom: 1em;
-	}
-	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(1), body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(2)  {
-	 	font-size: 1.2em; 
-		display: block;
-		width:100%;
-	}
-	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(2){
+	main > aside > ul > li:nth-child(2){
 		margin-top: 2em;
 	
 	}
-	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(1) > a, body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(2) > a{
+	main > aside > ul > li > a{
 		font-size: 1em;
-		display: block;
-		width: 100%;
 	}
-	aside ul li, aside ul a{
-		display: block;
-		width: 100%;
-		font-weight: bolder;
-	}
-
 
 }
 /*EX SM*/
@@ -1306,25 +1215,11 @@ body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-
 	#back > span.carousel-control-prev-icon{
 		margin-left: 10px;
 	}
-	main > aside > h4{
-		font-size: 2.3em;
-		margin-bottom: 1em;
-	}
-	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(1),body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(2)  {
-		font-size: 1.2em;
-		display: block;
-		width: 100%;
-	}
-	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(2){
+	main > aside > ul > li:nth-child(2){
 		margin-top: 2em;
-		display: block;
-		width: 100%;
 	}
-	
-	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(1) > a, body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(2)> a{
+	main > aside > ul > li > a{
 		font-size: .8em;
-		display: block;
-		width: 100%;
 	}
 	footer{
 		padding: 1em 0 1em 0;

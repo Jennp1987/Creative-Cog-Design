@@ -279,24 +279,14 @@ footer p {
 }
 /*EX LG*/
 @media only screen and (max-width: 1578px) and (min-width:1223px ) {
-	article:nth-child(3){
-		/* padding: 1em 0; */
-	}
 	article > .D-flex > p{
 		margin-right: 1em!important;
 		font-size: 2.5em;
 	}
-
-	/* .D-flex button{
-		width: 10em;
-		height: 3em;
-	}
-	.D-flex button a{
-		font-size: 1.5em;
-	} */
-
-
-	
+	main > aside > ul > li{
+		font-size: 1.6em;
+		margin-bottom: 1em; 
+	} 
 }
 /*EX LG*/
 @media only screen and (max-width: 1222px) and (min-width: 1162px) {
@@ -308,37 +298,33 @@ footer p {
 		line-height: 1.9em;
 	}
 	article:nth-child(3){
-		/* height: 15em; */
 		background: url("../images/aboutContact2.png") no-repeat center;
 		background-size: contain;
 		background-position: center;
 		padding: 0;
-		/*padding: 0 1em 0 1em;
-		width: 100%; */
-		
 	}
 	article > .D-flex{
 		flex-direction: column;
 		align-items: center;
 		padding-bottom: 3em;
 	}
-	
 	article > .D-flex > p{
 		margin-right: 0px;
-		/* width: 100%; */
-		/* height: auto; */
 		font-size: 2.5em;
-		margin-bottom: 1em;
-		
+		margin-bottom: 1em;	
 	}
-	/* .D-flex button{
-		width: 10em;
-		height: 2.75em;
+	aside h4{
+		margin-bottom: .5em;
 	}
-	.D-flex button a{
-		font-size: 1.4em;
-	} */
-
+	main > aside > ul > li{
+		font-size: 1.3em;
+		margin-bottom: 1em;	 
+	}
+	aside > ul > li, aside > ul > li > a{
+		font-weight: bolder !important;
+		display: block;
+		width: 100%;
+	}
 }
 /*large*/
 @media only screen and (max-width: 1161px) and (min-width: 992px) {
@@ -351,46 +337,33 @@ footer p {
 		max-width: 580px;
 	}
 	article:nth-child(3){
-		/* height: 15em; */
-		/* background: url("../images/aboutContactBackground9.png") no-repeat center center;
-		background-size: contain;
-		padding: 0; */
 		background: url("../images/aboutContact2.png") no-repeat;
 		background-size: contain;
 		background-position: center;
-		padding: 0;
-		
+		padding: 0;	
 	}
 	article > .D-flex{
 		flex-direction: column;
 		align-items: center;
 		padding-bottom: 3em;
-		
 	}
 	article > .D-flex > p{
 		margin-right: 0px;
 		font-size: 2.5em;
-		margin-bottom: 1em;
-		
+		margin-bottom: 1em;	
 	}
-	/* .D-flex button{
-		width: 10em;
-		height: 2.75em;
+	aside h4{
+		margin-bottom: .5em;
 	}
-	.D-flex button a{
-		font-size: 1.4em;
-	} */
-	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(1), body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(2){
-		font-size: 1.5em;
-		 
-	} 
-	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(1) > a, body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(2) > a{
+	main > aside > ul > li{
+		font-size: 1.3em;
+		margin-bottom: 1em;	 
+	}
+	aside > ul > li, aside > ul > li > a{
+		font-weight: bolder !important;
 		display: block;
-		
-		
+		width: 100%;
 	}
-
-
 }
 /*medium*/
 @media only screen and (max-width: 991px) and (min-width:768px) {
@@ -403,110 +376,82 @@ footer p {
 		max-width: 440px;
 	}
 	article:nth-child(3){
-		/* height: 15em; */
-		/* background: url("../images/aboutContactBackground7.png") no-repeat center center;
-		background-size: cover; */
 		background: url("../images/aboutContact2.png") no-repeat;
 		background-size: contain;
 		background-position: center;
-		padding: 0;
-		
+		padding: 0;	
 	}
 	article > .D-flex{
 		flex-direction: column;
 		align-items: center;
 		padding-bottom: 1em;
-		
 	}
 	article > .D-flex > p{
 		margin-right: 0px;
 		font-size: 2em;
-		margin-bottom: 1em;
-		
+		margin-bottom: 1em;	
 	}
-	/* .D-flex button{
-		width: 6em;
-		height: 3em;
-	}
-	.D-flex button a{
-		font-size: 1.3em;
-	}
-	.D-flex button{
-		width: 10em;
-		height: 2.75em;
-		margin-bottom: 1em;
-	} */
-	
 	main > aside{
 		padding-top: 1em;
 		padding-bottom: 3.5em;
 	}
-	/* main > aside > h4{
+	main > aside > h4{
 		font-size: 2.3em;
 		margin-bottom: 1em;
 	}
-	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(1), body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(2){
+	 main > aside > ul > li  {
 		font-size: 1.2em;
-		 
-	} 
-	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(1) > a, body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(2) > a{
-		display: block; */
-		main > aside > h4{
-			font-size: 2.3em;
-			margin-bottom: 1em;
-		}
-		body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(1), body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(2)  {
-			font-size: 1.2em;
-	
-		}
-		body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(1){
-			margin-bottom: 1.5em;
-		}
-		body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(1) > a, body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(2)> a{
-			 display: block; 
-			 font-size: .9em;
-		}
-	
-		aside ul li, aside ul li a{
-			font-weight: bolder !important; 
-		}
-		
-		
-	
-	
-
+	}
+	main > aside > ul > li:nth-child(1){
+		margin-bottom: 1.5em;
+	}
+	main > aside > ul > li > a{
+			display: block; 
+			font-size: .9em;
+	}
+	aside ul li, aside ul li a{
+		font-weight: bolder !important; 
+	}
 }
 
 /*AFTER 767px MAIN GOES TO FLUID SCREEN*/
 
 /*ALL SCREENS SMALLER THAN 767*/
 @media only screen and (max-width:767px) {
-
-	body > div > div > div.col-lg-2.col-md-2.col-sm-12.navDiv {
-		position: absolute !important;
-
-	}
-	body > div > div > div.col-lg-8.col-md-8.col-sm-12{
-		padding: 0;
-	}
-	main.menu-active{
-		transform: none; 
-	}
-
-	body > div > div > div.col-lg-2.col-md-2.col-sm-12 > nav, .navDiv{
-		 padding: 0 !important; 
-	}
+		body > div > div > div.col-lg-2.col-md-2.col-sm-12.navDiv {
+			position: absolute !important;
+		}
+		body > div > div > div.col-lg-8.col-md-8.col-sm-12{
+			padding: 0;
+		}
+		main.menu-active{
+			transform: none; 
+		}
+		body > div > div > div.col-lg-2.col-md-2.col-sm-12 > nav, .navDiv{
+			padding: 0 !important; 
+		}
+		main > aside > h4{
+			font-size: 2.3em;
+			margin-bottom: 1em;
+		}
+		main > aside > ul > li:nth-child(1){
+			margin-bottom: 1.5em !important;
+		}
+		main > aside > ul > li  {
+			font-size: 1.2em; 
+		   display: block;
+		   width:100%;
+	   }
+		aside ul li, aside ul a{
+			display: block;
+			width: 100%;
+			font-weight: bolder;
+		}
 
 	} 
 
-
 @media only screen and (max-width: 767px) and (min-width: 576px) {
-	/* section.jumbotron.img-fluid{
-		background: url("../images/aboutPhoto8.png") no-repeat;
-		background-size: contain;
-		background-position: center;
 
-	} */
 	section.jumbotron.img-fluid {
 		background: url('../images/aboutPhotoBlur767.jpg') center center no-repeat;
 		max-width: 100%;
@@ -525,58 +470,25 @@ footer p {
 		background: url("../images/aboutContact3.png") no-repeat;
 		background-size: contain;
 		background-position: center;
-		padding: 0;
-		
+		padding: 0;	
 	}
 	article > .D-flex{
 		flex-direction: column;
 		align-items: center;
-		padding-bottom: 1em;
-		
+		padding-bottom: 1em;	
 	}
 	article > .D-flex > p{
 		margin-right: 0px;
-		/* width: 100%; */
-		/* height: auto; */
 		font-size: 2.5em;
-		margin-bottom: 1em;
-		
+		margin-bottom: 1em;	
 	}
-
-	/* .D-flex button{
-		width: 10em;
-		height: 2.75em;
-		margin-bottom: 1em;
-	}
-	.D-flex button a{
-		font-size: 1.3em;
-	} */
 	main > aside{
 		padding-top: 1em;
 		padding-bottom: 3.5em;
 	}
-	main > aside > h4{
-		font-size: 2.3em;
-		margin-bottom: 1em;
-	}
-	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(1), body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(2)  {
-		font-size: 1.2em;
-		display: block;
-		width: 100%;
-	}
-
-	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(1)> a,body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(2)> a{
+	main > aside > ul > li > a{
 		font-size: 1em;
-		display: block;
-		width: 100%;
 	}
-	aside ul li, aside ul a{
-		display: block;
-		width: 100%;
-		font-weight: bolder;
-	}
-
-
 }
 @media only screen and (max-width: 575px) and (min-width: 460px){
 	section.jumbotron.img-fluid {
@@ -584,8 +496,6 @@ footer p {
 		background-size: cover;
 		height: 376px;
 		max-width: 100%;
-		/* max-width: 100%;
-		height: 854px; */
 	}
 	h1{
 		font-size: 2em !important;
@@ -599,60 +509,29 @@ footer p {
 		background: url("../images/aboutContact3.png") no-repeat;
 		background-size: contain;
 		background-position: center;
-		padding: 0;
-		
+		padding: 0;	
 	}
 	article > .D-flex{
 		flex-direction: column;
 		align-items: center;
-		padding-bottom: 1em;
-		
+		padding-bottom: 1em;	
 	}
 	article > .D-flex > p{
 		margin-right: 0px;
-		/* width: 100%; */
-		/* height: auto; */
 		font-size: 2em;
 		margin-bottom: 1em;
-		
 	}
-	/* .D-flex button{
-		border-radius: 80px;
-		width: 7.5em;
-		height: 2.75em;
-		margin-bottom: 1em;
-	}
-	.D-flex button a{
-		font-size: 1.3em;
-	} */
 	main > aside{
 		padding-top: 1em;
 		padding-bottom: 3.5em;
-	}
-	main > aside > h4{
-		font-size: 2.3em;
-		margin-bottom: 1em;
 	}	
-	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(1), body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(2)  {
-	 	font-size: 1.2em; 
-		display: block;
-		width:100%;
-	}
-	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(2){
+	main > aside > ul > li:nth-child(2){
 		margin-top: 2em;
 	
 	}
-	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(1) > a, body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(2) > a{
+	 main > aside > ul > li > a{
 		font-size: 1em;
-		display: block;
-		width: 100%;
 	}
-	aside ul li, aside ul a{
-		display: block;
-		width: 100%;
-		font-weight: bolder;
-	}
-
 }
 @media only screen and (max-width: 459px) and (min-width: 363px) {
 	body{
@@ -663,8 +542,6 @@ footer p {
 		background-size: cover;
 		height: 300px;
 		max-width: 100%;
-		/* max-width: 100%;
-		height: 854px; */
 	}
 	h1{
 		font-size: 1.8em !important;
@@ -679,24 +556,18 @@ footer p {
 		background-size: contain;
 		background-position: center;
 		padding: 0;
-		
 	}
 	article > .D-flex{
 		flex-direction: column;
-		align-items: center;
-		/* padding-bottom: 1em; */
-		
+		align-items: center;	
 	}
 	div.D-flex{
 		padding-top: 1em;
 	}
 	article > .D-flex > p{
 		margin-right: 0px;
-		/* width: 100%; */
-		/* height: auto; */
 		font-size: 1.5em;
-		margin-bottom: 1em;
-		
+		margin-bottom: 1em;	
 	}
 	a .chat{
 		margin-bottom: 1em;
@@ -704,30 +575,13 @@ footer p {
 	main > aside{
 		padding-top: 1em;
 		padding-bottom: 3.5em;
-	}
-	main > aside > h4{
-		font-size: 2.3em;
-		margin-bottom: 1em;
 	}	
-	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(1), body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(2)  {
-	 	font-size: 1.2em; 
-		display: block;
-		width:100%;
-	}
-	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(2){
+	main > aside > ul > li:nth-child(2){
 		margin-top: 2em;
 	
 	}
-	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(1) > a, body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(2) > a{
-		/* font-size: 1em; */
+	main > aside > ul > li > a{
 		font-size: .8em;
-		display: block;
-		width: 100%;
-	}
-	aside ul li, aside ul a{
-		display: block;
-		width: 100%;
-		font-weight: bolder;
 	}
 	footer{
 		padding: 1em 0 1em 0;
