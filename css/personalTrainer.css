@@ -284,7 +284,7 @@ footer p {
     #details{
         width: 100%;
         margin: 0;
-        flex-direction: column;
+        flex-direction: row;
     }
     #client, #role{
         justify-content: space-between;
