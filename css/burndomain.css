@@ -415,6 +415,7 @@ footer p {
   }
   .logo img{
     width: 90%;
+    height: auto;
     margin-bottom: .8em !important;
   }
   h1{
