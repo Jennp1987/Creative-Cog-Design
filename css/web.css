@@ -361,7 +361,7 @@ text-align:center;
 }	
 /*medium*/
 @media only screen and (max-width: 991px) and (min-width:768px) {
-   
+
    article{
 	   /* height: 15em; */
 	   /* background: url("../images/aboutContactBackground7.png") no-repeat center center;
@@ -399,6 +399,15 @@ text-align:center;
 
 	body > div > div > div.col-lg-2.col-md-2.col-sm-12 > nav, .navDiv{
 		 padding: 0 !important; 
+	}
+	header{
+		height: 4.35em;
+		width: auto;
+		padding:  0;
+		background-color:#a4844e;	
+	}
+	h1{
+		margin-bottom: 0;
 	}
 
 } 
@@ -445,6 +454,7 @@ text-align:center;
    }
    h1{
 	   font-size: 2.2em !important;
+	   padding-top: 15px !important;
    }
    h3{
 	font-size: 1.4rem !important;

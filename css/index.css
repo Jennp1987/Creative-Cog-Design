@@ -420,14 +420,16 @@ body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > section > article.ab
 
 }
 #carouselExampleControls{
+   /*IE FALLBACK*/	
+   border: solid 5px rgb(164,132,78);
    border: solid 5px rgb(164,132,78,.8);
    text-align: left;
    font-size: 1.3em;
    padding: 1em;
    display: block;
-	position: relative; 
-	z-index: 1;
-	margin: 0 auto;
+   position: relative; 
+   z-index: 1;
+   /* margin: 0 auto; */
    width: 48%;
    height: 40%;
    font-family: open-sans, sans-serif;
