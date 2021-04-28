@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Creative Cog Design</title>
+	<title>Contact Creative Cog Design</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<link href="../css/contact.css" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" type="text/css" href="../css/normalize.css">
