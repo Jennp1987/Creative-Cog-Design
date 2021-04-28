@@ -250,13 +250,10 @@ main > aside > h4 {
 	margin-top: 1.5em;
 	display: block;
 }
-
 aside ul {
-
 	list-style: none;
 	display: block;
 }
-
 aside li {
 	width: 80%;
 	height: auto;
@@ -305,23 +302,20 @@ footer p {
 @media only screen and (max-width: 1161px) and (min-width: 992px) {
 	
    .jumbotron{
-	   /* height: 15em; */
-	   /* background: url("../images/aboutContactBackground9.png") no-repeat center center;
-	   background-size: contain;
-	   padding: 0; */
 	   background: url("../images/aboutContact2.png") no-repeat;
 	   background-size: cover;
 	   background-position: center;
 	   padding: 2rem 1rem !important;
 	   
    }
-   body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(1), body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(2){
-	font-size: 1.5em;
-	 
+   main > aside > ul > li{
+	font-size: 1.3em;
+	margin-bottom: 1em;
    } 
-	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(1) > a, body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(2) > a{
-	display: block;
-	
+   aside ul li, aside ul li a{
+	font-weight: bolder !important; 
+	display:block;
+	width: 100%;
 	
    }
 
@@ -343,14 +337,18 @@ footer p {
 		padding-top: 1em;
 		padding-bottom: 3.5em;
 	}
-	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(1), body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(2)  {
+	main > aside > h4{
+		font-size: 2.3em;
+		margin-bottom: 1em;
+	}
+	 main > aside > ul > li  {
 		font-size: 1.2em;
 
 	}
-	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(1){
+	main > aside > ul > li:nth-child(1){
 		margin-bottom: 1.5em;
 	}
-	body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(1) > a, body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(2)> a{
+	 main > aside > ul > li > a{
 		display: block; 
 		font-size: .9em;
 	}
@@ -380,8 +378,24 @@ footer p {
    body > div > div > div.col-lg-2.col-md-2.col-sm-12 > nav, .navDiv{
 		padding: 0 !important; 
    }
+   main > aside > h4{
+	font-size: 2.3em;
+	margin-bottom: 1em;
+	}
+	main > aside > ul > li:nth-child(1){
+		margin-bottom: 1.5em;
+	}
+	aside ul li, aside ul li a{
+		font-weight: bolder !important;
+		display: block;
+		width: 100%; 
+		
+	}
+	main > aside > ul > li {
+		font-size: 1.2em;
+	}
 
-   } 
+} 
 
 
 @media only screen and (max-width: 767px) and (min-width: 576px) {
@@ -391,35 +405,14 @@ footer p {
 	   background-size: cover;
 	   background-position: center;
 	   padding: 2rem 1rem !important;
-	   
    }
    	main > aside{
 	padding-top: 1em;
 	padding-bottom: 3.5em;
    }
-	main > aside > h4{
-		font-size: 2.3em;
-		margin-bottom: 1em;
-	}
-   
-   body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(1), body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(2)  {
-	   font-size: 1.2em;
-	   display: block;
-	   width: 100%;
-   }
-
-   body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(1)> a,body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(2)> a{
+    main > aside > ul > li> a{
 	   font-size: 1em;
-	   display: block;
-	   width: 100%;
    }
-   aside ul li, aside ul a{
-	   display: block;
-	   width: 100%;
-	   font-weight: bolder;
-   }
-
-
 }
 @media only screen and (max-width: 575px) and (min-width: 460px){
    
@@ -455,34 +448,12 @@ footer p {
 	font-size: 2.3em;
 	margin-bottom: 1em;
 	}	
-   aside ul li{
-	   font-size: 1.2em !important;
-	   width: 100%;
-	   font-weight: bolder;
-   }
-   main > aside > ul > li:nth-child(2){
+   	main > aside > ul > li:nth-child(2){
 	margin-top: 2em;
-
-}
-   aside > ul > li:nth-child(2) > a{
-	   /* font-size: 1em !important;
-	   display: block;
-	   width: 100%; */
-	   
-   }
-   aside ul li a{
-	display: block;
-	width: 100%;
-	font-size: 1em;
-	font-weight: bolder;
-   }
-   
-   aside ul li, aside ul a{
-	   /* display: block;
-	   width: 100%;
-	   font-weight: bolder; */
-   }
-
+   	}
+	main > aside > ul > li > a{
+		font-size: 1em;
+	}
 }
 @media only screen and (max-width: 459px) and (min-width: 363px) {
    body{
@@ -494,7 +465,6 @@ footer p {
 	   background-size: cover;
 	   background-position: center;
 	   padding: 2rem 1rem !important;
-	   /* padding: 0; */
 	   
    }
    .jumbotron h1{
@@ -506,8 +476,7 @@ footer p {
    }
    input[type=text], select, textarea{
 	   width:96%;
-	   margin: 0 2% !important;
-	   
+	   margin: 0 2% !important;  
    }
    input[type=submit] {
 		width: 60%;
@@ -523,29 +492,15 @@ footer p {
 		font-size: 2.3em;
 		margin-bottom: 1em;
 	}
-   body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(1), body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(2)  {
-		font-size: 1.2em; 
-	   display: block;
-	   width:100%;
-   }
-   main > aside > ul > li:nth-child(2){
+   	main > aside > ul > li:nth-child(2){
 	   margin-top: 2em;
-   
-   }
-   body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(1) > a, body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > aside > ul > li:nth-child(2) > a{
-	   /* font-size: 1em; */
-	   font-size: .8em;
-	   display: block;
-	   width: 100%;
-   }
-   aside ul li, aside ul a{
-	   display: block;
-	   width: 100%;
-	   font-weight: bolder;
-   }
-   footer{
+   	}
+   	main > aside > ul > li > a{
+	   font-size: .8em !important;
+   	}
+   	footer{
 	   padding: 1em 0 1em 0;
-   }
+   	}
 
 
 }

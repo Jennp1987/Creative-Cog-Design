@@ -284,17 +284,10 @@ footer p {
     #details{
         width: 100%;
         margin: 0;
-        flex-direction: row;
+        /* flex-direction: row; */
     }
     #client, #role{
-        justify-content: space-between;
-    }
-    #client{
         width: 100%;
-    }
-    #role{
-       width: 100%;
-       
     }
     #summary{
         margin-bottom: 3em;

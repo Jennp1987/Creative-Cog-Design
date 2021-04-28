@@ -550,9 +550,7 @@ body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > section > article.ab
 	padding-top: 7em;
 	margin: 0 auto;
 	text-align: center;;
-
 }
-
 main > aside > h4 {
 	font-size: 3em;
 	color: #3f4756;
@@ -560,13 +558,10 @@ main > aside > h4 {
 	margin-top: 1.5em;
 	display: block;
 }
-
 aside ul {
-
 	list-style: none;
 	display: block;
 }
-
 aside li {
 	width: 80%;
 	height: auto;
@@ -625,13 +620,6 @@ footer p {
 		padding-top: 20%;
 		padding-bottom: 20%;
 	}
-	#carouselExampleControls{
-		/* width: 60%; */
-	}
-	
-	
-
-
 	
 }
 @media only screen and (max-width: 1551px) and (min-width: 1433px) {
@@ -653,12 +641,6 @@ footer p {
 		height: 7.8em;
 		width: 7.8em;
 	}
-	#carouselExampleControls{
-		/* width: 45%; */
-	}
-	
-	
-	
 }
 /*EX LG SCREEN*/
 @media only screen and (max-width: 1432px) and (min-width: 1200px) {
@@ -705,10 +687,6 @@ footer p {
 	main > aside > ul > li:nth-child(1), main > aside > ul > li:nth-child(2){
 		font-size: 1.6em;	
 	}
-	
-
-
-
 
 }
 
@@ -839,11 +817,10 @@ footer p {
 	main > aside > ul > li:nth-child(1){
 		margin-bottom: 1.5em;
 	}
-		main > aside > ul > li > a{
+	main > aside > ul > li > a{
 		 display: block; 
 		 font-size: .9em;
 	}
-
 	aside ul li, aside ul li a{
 		font-weight: bolder !important; 
 	}
@@ -1114,17 +1091,14 @@ footer p {
 	}
 	#carouselExampleControls{
 		width: 85% !important;
-		font-size: 1.2em;
-		
+		font-size: 1.2em;	
 	}
 	main > aside > ul > li:nth-child(2){
 		margin-top: 2em;
-	
 	}
 	main > aside > ul > li > a{
 		font-size: 1em;
 	}
-
 }
 /*EX SM*/
 @media only screen and (max-width: 459px) and (min-width: 363px){
@@ -1136,22 +1110,17 @@ footer p {
 		background: url('../images/mobileMax459px9.png');
 		background-repeat: none;
 		background-size: cover;
-
 	}
 	.headerContainer h1 {
-		/* font-size: 33px !important; */
 		font-size: 30px !important;
 		margin-top: 1em;
 		letter-spacing: 1px;
 	}
-
 	.headerContainer h2 {
-		/* font-size: 28px !important; */
 		font-size: 26px !important;
 		letter-spacing: 1px;
 	}
 	.headerContainer h3 {
-		/* font-size: 22px !important; */
 		font-size: 20px !important;
 		letter-spacing: 1px;
 	}
