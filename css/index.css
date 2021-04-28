@@ -248,13 +248,6 @@ section > div > h2.outlineText{
 	font-weight: 300;
 	font-style: normal;
 	color: white;
-	text-shadow:
-	/*TOP RIGHT, TOP LEFT, BOTTOM LEFT, BOTTOM RIGHT*/
-	/* 0 0 4px #a4844e,
-    0 0 4px #a4844e,  
-    0 0 4px #a4844e,
-    0 0 4px #a4844e,
-	0 0 4px #a4844e;   */
      
 }
 
@@ -514,7 +507,6 @@ body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > section > article.ab
 	height: 50% !important;
 }
 .carousel-control-prev-icon{
-	/* background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%6db3b7' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important; */
 	background:url("https://jennp1987.github.io/Creative-Cog-Design/images/leftAngle6-02.svg") no-repeat !important;
 	background-size: 100%;
 	width: 100%;
@@ -530,14 +522,6 @@ body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > section > article.ab
 	color:	rgb(220,220,220) !important;
 	margin-left: 1em;
 }
-/* #carouselExampleControls a{
-	
-}
-#carouselExampleControls a:hover, #carouselExampleControls a:visited{
-	outline-color: #3f4756;
-} */
-
-
 /*END ARTICLE FIND ME*/
 /*END ARTICLE FOR TESTIMONIES*/
 

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Creative Cog Design</title>
+	<title>Contact Creative Cog Design</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<link href="../css/contact.css" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" type="text/css" href="../css/normalize.css">
@@ -20,7 +20,7 @@
 					<div class="collapse navbar-collapse" id="collapseExample">
 						<ul class="navbar-nav">
 							<li class="nav-item">
-								<a class="nav-link active" href="index.html">HOME</a>
+								<a class="nav-link active" href="..\index.html">HOME</a>
 							</li>
 							<li class="nav-item dropdown">
 								<a class="nav-link dropdown-toggle" data-toggle="dropdown" data-target="dropdown_target" href="#">PROJECTS
@@ -28,20 +28,20 @@
 								</a>
 								<div class="dropdown-menu" aria-labelledby="dropdown_target">
 									<div>
-										<a class="dropdown-item" href="./pages/web.html">WEB</a>
+										<a class="dropdown-item" href="../pages/web.html">WEB</a>
 									</div>
 
 									<div>
-										<a class="dropdown-item">GRAPHICS</a>
+										<a class="dropdown-item" href="../pages/graphics.html">GRAPHICS</a>
 									</div>
 								</div>
 
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="./pages/about.html">ABOUT</a>
+								<a class="nav-link" href="../pages/about.html">ABOUT</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="./pages/contactme.html">HIRE</a>
+								<a class="nav-link" href="./pages/contactMe.php">HIRE</a>
 							</li>
 						</ul>
 					</div>
@@ -53,58 +53,62 @@
 				<!--class='menu-active'-->
 				<main >
 					<header class="jumbotron">
+						<h1>Need help with a project?</h1>
 					</header>
 					<section>
-						<p>Say Hello</p>
+						<p>lets chat!</p>
+                        <?php
+                            if(isset($_GET['error']))
+                            {
+                              $Msg = " Please fill in the blanks";      
+                              echo '<div class="alert alert-danger">'.$Msg.'</div>';  
+                            }
+                            if(isset($_GET['success'])) {
+                                $Msg = " Your message was sent";      
+                                echo '<div class="alert alert-success">'.$Msg.'</div>';  
+                            }
+                        ?>
 						<form class="contactForm" action="contact.php" method="post">
-							<!-- <input type="text" name="name" placeholder="Full Name">
-							<input type="text" name="mail" placeholder="Your Email">
-							<input type="text" name="subject" placeholder="Subject">
-							<textarea name="message" placeholder="Message"></textarea>
-							<button type="submit" name="submit">Send</button> -->
+							<div class="form-row">
+								<div class="col-lg-2 col-md-1 col-sm-1"></div>
+								<div class="col-lg-8 col-md-10 col-sm-10">
+								  <label for="name">Full Name</label>
+								  <input type="text" id="name" name="name" placeholder="Your full name">
+								</div>
+								<div class="col-lg-2 col-md-1 col-sm-1"></div>
+							</div>
 
 							<div class="form-row">
-                                <div class="col-lg-8 col-md-8 col-sm-12">
-                                </div>
-								<div class="col">
-								  <label for="name">Full Name</label>
+								<div class="col-lg-2 col-md-1 col-sm-1"></div>
+								<div class="col-lg-8 col-md-10 col-sm-10">
+								  <label for="mail">Email</label>
+								  <input type="text" id="mail" name="mail" placeholder="Your email">
 								</div>
-								<div class= "col">
-								  <input type="text" id="name" name="name" placeholder="Your full name..">
-								</div>
+								<div class="col-lg-2 col-md-1 col-sm-1"></div>
 							</div>
 							<div class="form-row">
-								<div class="col">
-								  <label for="mail">Your Email</label>
-								</div>
-								<div class="col">
-								  <input type="text" id="mail" name="mail" placeholder="Your Email..">
-								</div>
-							</div>
-							<div class="form-row">
-								<div class="col">
+								<div class="col-lg-2 col-md-1 col-sm-1"></div>
+								<div class="col-lg-8 col-md-10 col-sm-10">
 								  <label for="subject">Subject</label>
-								</div>
-								<div class="col">
 								  <input type="text" id="subject" name="subject" placeholder="What is the project?">
 								</div>
+								<div class="col-lg-2 col-md-1 col-sm-1"></div>
 							</div>
 							<div class="form-row">
-								<div class="col">
+								<div class="col-lg-2 col-md-1 col-sm-1"></div>
+								<div class="col-lg-8 col-md-10 col-sm-10">
 								  <label for="message">Message</label>
+								  <textarea id="message" name="message" placeholder="Describe what you need help with." style="height:200px"></textarea>
 								</div>
-								<div class="col">
-								  <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
-								</div>
+								<div class="col-lg-2 col-md-1 col-sm-1"></div>
 							</div>
 							
 							<div class="form-row">
-								  <div class="col">
-									
-								  </div>
-								  <div class="col">
-									  <input type="submit" value="Submit">
-								  </div>
+								<div class="col-lg-2 col-md-1 col-sm-1"></div>
+								<div class="col-lg-8 col-md-10 col-sm-10">
+									<input type="submit" value="submit" name = "btn-send">
+								</div>
+								<div class="col-lg-2 col-md-1 col-sm-1"></div>
 							</div>
 
 						</form>
@@ -113,8 +117,8 @@
 					<aside class="onlineContacts ">
 						<h4>find me</h4>
 						<ul>
-							<li>LinkedIn <a href="https://www.linkedin.com/in/jennifer-anne-phillips/">https://www.linkedin.com/in/jennifer-anne-phillips/</a></li>
-							<li>Github <a href="https://www.github.com/jennp1987">https://www.github.com/jennp1987</a></li>
+							<li>linkedIn <a href="https://www.linkedin.com/in/jennifer-anne-phillips/">https://www.linkedin.com/in/jennifer-anne-phillips/</a></li>
+							<li>github <a href="https://www.github.com/jennp1987">https://www.github.com/jennp1987</a></li>
 						</ul>
 					</aside>
 		
