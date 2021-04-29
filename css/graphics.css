@@ -1,0 +1,451 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+
+body {
+	font-family: brandon-grotesque, Helvetica, sans-serif !important;
+	perspective: 800px;
+	background-color: #21212d !important;
+	border-top: 1em #3f4756 solid;
+	font-size: 16px;
+	
+}
+/*PRELOADING BCKG IMG*/
+/*
+body::after{
+	position:absolute; width:0; height:0; overflow:hidden; z-index:-1;
+	content: url('https://jennp1987.github.io/Creative-Cog-Design/images/creativeCogHeaderNewpng825.png');
+}
+*/
+
+/*MAIN*/
+main{
+transition: transform 150ms ease-out;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	margin: auto;
+	max-width: 100%;
+	background-color: white;
+	/* background-color: #3f4756; */
+	transform: none;
+}
+main.menu-active {
+	transform: translateX(1em) rotateY(1deg);
+}
+
+/*NAV*/
+.navbar > button {
+	background-color: #353441;
+	color: white;
+	font-family: brandon-grotesque, sans-serif;
+	font-weight: 200;
+	line-height: 60px;
+	font-size: 0.8em;
+	letter-spacing: .1em;
+	border-radius: 0;
+}
+
+.navbar > button:hover {
+	color: #353441 !important;
+	background: white !important;
+	border: none;
+
+}
+
+.navbar-nav .nav-link {
+	padding-left: 1em !important;
+}
+
+.navbar li {
+	list-style: none;
+	padding-right: .5em;
+}
+
+#collapseExample > ul > li.nav-item.dropdown.show > div {
+	background-color: #353441;
+}
+
+.navbar li,
+#collapseExample > ul > li.nav-item.dropdown > div {
+	background-color: #353441;
+
+}
+
+/*STYLES A*/
+#collapseExample > ul > li > a,
+#collapseExample > ul > li.nav-item.dropdown.show > div > div:nth-child(1) > a,
+#collapseExample > ul > li.nav-item.dropdown.show > div > div:nth-child(2) > a {
+	color: #bbd1df;
+
+}
+
+/*HOVER STYLE*/
+#collapseExample > ul > li > a:hover,
+#collapseExample > ul > li.nav-item.dropdown.show > div > div:nth-child(1) > a:hover,
+#collapseExample > ul > li.nav-item.dropdown.show > div > div:nth-child(2) > a:hover {
+	color: #9dc6d1;
+}
+.navbar li a:hover {
+	background-color: #a4844e;
+
+}
+.navbar-toggler:focus,
+ li .dropdown a:active, #collapseExample > ul > li.nav-item.dropdown.show > a{
+	text-decoration: none;
+	outline: none;
+}
+
+/*STYLE THE INNER Of DROPDOWN*/
+#collapseExample > ul > li.nav-item.dropdown.show > div {
+	padding: 0;
+	border: none;
+}
+
+/*END NAV*/
+/*HEADER*/
+header{
+	height: 6em;
+	width: auto;
+	padding: 2em 0;
+	background-color:#a4844e ;
+	
+	
+}
+h1{
+	text-align: center;
+	color: #fff;
+    font-family: brandon-grotesque, sans-serif !important;
+    font-size: 3em !important;
+    font-style: normal !important;
+    font-weight: 500 !important;
+	letter-spacing: 2px;
+	/* padding-bottom: 2em; */
+	
+}
+/*HEADER END*/
+
+/*SECTION*/
+section{
+	/* padding-top: 4em; */
+}
+section .container .row{
+	padding: 4em 0;
+}
+/* .row {
+	padding: 4em 0;
+
+} */
+img{
+	width: 100%;
+	height: auto;
+
+}
+img:nth-child(1){
+	border: 10px solid #5a86ad !important;
+	border-radius: 10px;
+}
+img:nth-child(){
+	border: 10px solid  #353441 !important;
+}
+img:nth-child(3){
+	border: 10px solid  #a3abbd !important;
+}
+
+h2{	
+	color: #383838;
+	font-family: open-sans, sans-serif;
+    font-weight: 400;
+	font-style: normal;
+	font-size: 1.5em !important;
+	text-align: left;
+	margin-bottom: 1rem !important;
+	line-height: 34px !important;
+	
+}
+
+.D-flex{
+	display: flex;
+	/* justify-content: space-evenly; */
+
+}
+/* #D-flex{
+	display: flex;
+	justify-content: center;
+
+} */
+body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > section > div > div:nth-child(2) > div.col-lg-5.col-md-6.col-sm-6.col-3 > a:nth-child(4) > button, body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > section > div > div:nth-child(4) > div.col-lg-5.col-md-6.col-sm-6.col-3 > a:nth-child(4) > button, body > div > div > div.col-lg-8.col-md-8.col-sm-12 > main > section > div > div:nth-child(6) > div.col-lg-5.col-md-6.col-sm-6.col-3 > a:nth-child(6) > button{
+	margin-right: 2em;
+}
+a button{
+	width: 6em;
+	height: 1.7em;
+	background-color: #5a86ad;
+	border: none;
+	font-family: brandon-grotesque, sans-serif;
+	border-radius: 80px;
+	letter-spacing: .1em;
+	font-weight: 500;
+	color: white;
+	font-size: 1.5em;
+	margin-top: 1.5em;
+
+}
+a button:hover, a button:focus, a button:active{
+	background: #fff;
+	border: 3px solid #5a86ad;
+	color: #5a86ad;
+	font-weight: 500;
+}
+a button:focus{
+	outline: none;
+}
+p{
+	font-family: open-sans, sans-serif;
+    font-weight: 400;
+	font-style: normal;
+	font-size: 1em;
+	line-height: 23.2px;
+	margin-bottom:0;
+ }
+ button.code {
+    background: #a3abbd;
+}
+a button.code:hover, a button.code:focus, a button.code:active{
+	background: #fff;
+	border: 3px solid  #a3abbd;
+	color: #a3abbd;
+	font-weight: 500;
+}
+button.process {
+    background: #3f4756;
+}
+button.process:hover, button.process:focus, button.process:active{
+	background: #fff;
+	border: 3px solid #3f4756;
+	color: #3f4756;
+	font-weight: 500;
+
+}
+ a#personalTrainerLink{
+	 display: block;
+	 margin-bottom: 1rem;
+	 text-decoration: underline;
+	 color: #5a86ad;
+	 font-size: 1.2em;
+	 font-weight: bolder;
+ }
+ a#personalTrainerLink:focus{
+	text-decoration: underline;
+	color:#3f4756;
+ }
+ /*ARTICLE*/
+ article{
+	 text-align: center;
+	 background: url('../images/aboutContact1.png') no-repeat center;
+	 background-size: contain;
+	 padding: 1.5em 0 1.5em 0;
+	 background-position: center;
+	 background-color: #21212d;
+	 color: #fff;
+ }
+/*BEGIN FOOTER*/
+footer {
+	background-color: #a4844e;
+	width: 100%;
+	height: auto;
+	padding: 2em 0 2em 0;
+	
+}
+
+footer p {
+	text-align: center;
+	color: #fff;
+	font-size: 1.2em;
+	line-height: 1.5em;
+	font-family: brandon-grotesque, sans-serif !important;
+}
+
+/*END FOOTER*/
+
+/*MEDIA QUERIES*/
+
+@media only screen and (max-width: 1222px) and (min-width: 1162px) {
+
+   article{
+	   /* height: 15em; */
+	   background: url("../images/aboutContact2.png") no-repeat center;
+	   /* background-size: contain; */
+	   background-size: cover;
+	   /* background-size: cover; */
+	   background-position: center;
+	   /* padding: 0; */
+	   /*padding: 0 1em 0 1em;
+	   width: 100%; */
+	   /* padding: 2em 2em; */
+	   padding: 1.5em 2em;
+	   background-color: #21212d;
+	   
+   }
+   
+   
+   
+
+}
+
+@media only screen and (max-width: 1161px) and (min-width: 992px) {
+   article{
+	   /* height: 15em; */
+	   /* background: url("../images/aboutContactBackground9.png") no-repeat center center;
+	   background-size: contain;
+	   padding: 0; */
+	   background: url("../images/aboutContact2.png") no-repeat;
+	   background-size: cover;
+	   background-position: center;
+	   padding: 1.5em 1em;
+	   background-color: #21212d;
+	   
+	   
+   }
+   h3{
+	   font-size: 1.5em !important;
+   }
+
+
+}
+/*ALL SCREENS SMALLER THAN 991px*/
+@media only screen and (max-width: 991px) {
+	img{
+		margin-bottom: 3em;
+	}
+	h2{
+		margin-bottom: 2em;
+	}
+
+
+}	
+/*medium*/
+@media only screen and (max-width: 991px) and (min-width:768px) {
+
+   article{
+	   /* height: 15em; */
+	   /* background: url("../images/aboutContactBackground7.png") no-repeat center center;
+	   background-size: cover; */
+	   background: url("../images/aboutContact3.png") no-repeat;
+	   background-size: cover;
+	   background-position: center center;
+	   /* padding: 0; */
+	   padding: 1.5em 0;
+	   background-color: #21212d;
+	   
+   }
+   h3{
+	   font-size: 1.5rem !important;
+   }
+   
+  
+
+}
+
+/*AFTER 767px MAIN GOES TO FLUID SCREEN*/
+
+/*ALL SCREENS SMALLER THAN 767*/
+@media only screen and (max-width:767px) {
+	 .navDiv {
+		position: absolute !important;
+
+	}
+	body > div > div > div.col-lg-8.col-md-8.col-sm-12{
+		padding: 0;
+	}
+	main.menu-active{
+		transform: none; 
+	}
+
+	body > div > div > div.col-lg-2.col-md-2.col-sm-12 > nav, .navDiv{
+		 padding: 0 !important; 
+	}
+	header{
+		height: 4.35em;
+		width: auto;
+		padding:  0;
+		background-color:#a4844e;	
+	}
+	h1{
+		margin-bottom: 0;
+	}
+
+} 
+
+
+@media only screen and (max-width: 767px) and (min-width: 576px) {
+   
+   article{
+	   background: url("../images/aboutContact3.png") no-repeat center;
+	   background-size: cover;
+	   background-position: center;
+	   padding: 1.75em 0;
+	   /* padding: 1em 0; */
+	   
+   }
+   h3{
+	font-size: 1.5rem !important;
+   }
+
+
+}
+@media only screen and (max-width: 575px) and (min-width: 460px){
+   
+   article{
+	   background: url("../images/aboutContact3.png") no-repeat center;
+	   background-size: cover;
+	   background-position: center;
+	   /* padding: 0; */
+	   
+   }
+   h1{
+       font-size: 2.4em !important;
+       margin-bottom: 0 !important;
+       padding-top: .25rem;
+       padding-bottom: .25rem;
+   }
+   h3{
+	font-size: 1.5rem !important;
+   }
+   
+}
+@media only screen and (max-width: 459px) and (min-width: 363px) {
+  
+   article{
+	   background: url("../images/aboutContact3.png") no-repeat center;
+	   background-size: cover;
+	   background-position: center;
+	   /* padding: 0; */
+	   
+   }
+   h1{
+    font-size: 1.5em !important;
+    margin-bottom: 0 !important;
+    margin-top: 1em;
+    text-align: center;
+    padding-top: .75em;
+    /*padding-bottom: .75rem; */
+    }
+   /* h1{
+	   font-size: 2.2em !important;
+	   padding-top: 15px !important;
+   } */
+   h3{
+	font-size: 1.4rem !important;
+   }
+   footer p{
+	   font-size: 1em;
+	   line-height: 23.2px;
+   }
+
+
+}
