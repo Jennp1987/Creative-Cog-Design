@@ -423,8 +423,9 @@ footer p {
 	   
    }
    h1{
-	   font-size: 2.2em !important;
-	   padding-top: 15px !important;
+	   font-size: 1.5em !important;
+	   margin-bottom: 0 !important;
+	   padding-top: .75em;
    }
    h3{
 	font-size: 1.4rem !important;

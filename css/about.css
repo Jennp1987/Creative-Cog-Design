@@ -196,28 +196,21 @@ a .chat{
 	letter-spacing: .1em;
 	font-weight: 500;
 	margin-top: 1em;
-	
-}
-a .chat{
-	/* font-family: open-sans, sans-serif !important; */
 	color: white;
 	font-size: 1.5em;
 	
 }
 
-a .chat:hover{
+a .chat:hover, a .chat:focus, a .chat:active{
 	background: #fff;
 	border: 3px solid #5a86ad;
 	font-weight: 500;
 	color: #5a86ad !important;
 }
-/* .D-flex button a:hover{
-	color: #5a86ad !important;
-} */
+
 a .chat:focus{
 	outline: none;
-	color: #5a86ad !important;
-}
+}	
 
 /*BEGIN ASIDE - FIND ME*/
  main > aside{
