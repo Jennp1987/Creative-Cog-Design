@@ -23,19 +23,21 @@ h1, h2, h3, h4{
 } 
  div.img-fluid.banner{
    
-    background:url('https://jennp1987.github.io/Creative-Cog-Design/images/uptalentDesktopImage.png') no-repeat !important;
+    background:url('https://jennp1987.github.io/Creative-Cog-Design/images/uptalentHomePage.png') fixed center no-repeat !important;
     background-size: cover !important;
-	background-position: center center;
-    background-attachment: fixed;
+	/* background-position: center center;
+    background-attachment: fixed; */
     /* max-width: 100%; */
     /* height: 1550px; */
     /* min-height: 100%; */
     border-radius: 0 ;
+    /* width: 100%; */
+    /* height: 1500px; */
     /* display: flex;
     align-items: center; */
     /* height: 100%;
     width: 100%; */
-    min-height: 100vh;
+    height: 100vh;
     /* max-width: 100%;
     width: 100%; */
 
@@ -48,7 +50,8 @@ h1, h2, h3, h4{
 	/* padding: 2em 0 2em 0; */
     /* background-position: center;  */
     background-color: #fff !important;
-    padding: 5em 0 !important; 
+    /* margin-bottom: 10em; */
+    /* padding-bottom: 15em !important;  */
 }
 img{
     max-width: 100%;
@@ -215,15 +218,23 @@ footer p {
 }
 /*SMALL DEVICES*/
 @media only screen and (max-width: 767px) and (min-width: 576px) {
+
     div.img-fluid.banner{
-        background:url('https://jennp1987.github.io/Creative-Cog-Design/images/uptalentMobileImg.jpg') no-repeat center center!important;
-        background-size: contain!important;
-        /* background-position: center; */
-        /* height: 100%;
-        width: 100%; */
-        height: auto;
-        max-width: 100%;
-        /* height: 100vh; */
+   
+        background:url('https://jennp1987.github.io/Creative-Cog-Design/images/uptalentMobileImg.jpg') center center no-repeat !important;
+        background-size: contain !important;
+        /* background-position: center center;
+        background-attachment: fixed; */
+        /* max-width: 100%; */
+        /* height: 1550px; */
+        /* min-height: 100%; */
+        border-radius: 0 ;
+        /* width: 100%; */
+        /* height: 1500px; */
+        /* display: flex;
+        align-items: center; */
+        
+        /* min-height: 100vh; */
         /* max-width: 100%;
         width: 100%; */
     
@@ -236,8 +247,32 @@ footer p {
         /* padding: 2em 0 2em 0; */
         /* background-position: center;  */
         background-color: #fff !important;
-        padding: 0 !important; 
+        /* margin-bottom: 10em; */
+        /* padding-bottom: 15em !important;  */
     }
+    /* div.img-fluid.banner{
+        background:url('https://jennp1987.github.io/Creative-Cog-Design/images/uptalentMobileImg.jpg') no-repeat center center!important;
+        background-size: contain!important;
+        /* background-position: center; */
+        /* height: 100%;
+        width: 100%; */
+        /* height: auto;
+        max-width: 100%; */
+        /* height: 100vh; */
+        /* max-width: 100%;
+        width: 100%; */
+    
+        /* background-size: 100% 100%; */
+        /* width: 100%;
+        height: 100%;
+        display: block; */
+        /* background: url('../images/uptalentArhImageResized1.jpg') no-repeat center !important;
+        background-size: contain; */
+        /* padding: 2em 0 2em 0; */
+        /* background-position: center;  */
+        /*background-color: #fff !important;
+        padding: 0 !important; 
+    } */
     
     /* .banner{
         background:url('https://jennp1987.github.io/Creative-Cog-Design/images/uptalentMobileImg.jpg') no-repeat !important;
@@ -266,34 +301,13 @@ footer p {
 
 /*EX SMALL DEVICES*/
 @media only screen and (max-width: 575px) and (min-width: 360px){
+   
     div.img-fluid.banner{
-        background:url('https://jennp1987.github.io/Creative-Cog-Design/images/uptalentMobileImg.jpg') no-repeat center center!important;
-        background-size: cover!important;
-        /* background-position: center; */
-        height: 100%;
-        width: 100%;
-        max-width: 100%;
-        /* height: 100%;
-        width: 100%; */
-        /* height: 100vh; */
-        /* max-width: 100%;
-        width: 100%; */
-    
-        /* background-size: 100% 100%; */
-        /* width: 100%;
-        height: 100%;
-        display: block; */
-        /* background: url('../images/uptalentArhImageResized1.jpg') no-repeat center !important;
-        background-size: contain; */
-        /* padding: 2em 0 2em 0; */
-        /* background-position: center;  */
+        background:url('https://jennp1987.github.io/Creative-Cog-Design/images/uptalentMobileImg.jpg') center center no-repeat !important;
+        background-size: contain !important;
+        border-radius: 0 ;
         background-color: #fff !important;
-        padding: 0 !important; 
     }
-    /* #details p:nth-child(1), #details p:nth-child(3), #details > p:nth-child(3){
-        display: inline-block;
-        width: 50%;
-    } */
     div#back{
         padding-left: 1em;
     }
