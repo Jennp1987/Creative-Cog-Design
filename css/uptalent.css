@@ -21,16 +21,15 @@ h1, h2, h3, h4{
     margin: 0 !important;
     padding: 0 !important;
 } 
- /* div.img-fluid.banner{
-   
-    background:url('https://jennp1987.github.io/Creative-Cog-Design/images/uptalentHomePage.png') fixed center no-repeat !important;
-    background-size: cover !important;
-    border-radius: 0 ;
-    min-height: 100vh;
-    background-color: #fff !important;
-} */
 div.img-fluid.banner{
     padding: 0 !important;
+}
+body > div > div > div.jumbotron.img-fluid.banner > a:nth-child(1) > img{
+    display: block;
+}
+body > div > div > div.jumbotron.img-fluid.banner > a:nth-child(2) > img{
+
+    display: none;
 }
 img{
     max-width: 100%;
@@ -141,14 +140,7 @@ div.userFlow img{
     display: block;
     margin: 0 auto;
 }
-div.outcome h3{
-    /* margin: 3em 0; */
-    /* clear: both; */
-    /* background-color: #fff; */
-    
-}
 div.outcome div:nth-child(2){
-    /*padding: 0 2em 0 2em;*/
     margin: 3em 0;
 }
 /*FOOTER BEGIN*/
@@ -168,12 +160,27 @@ footer p {
 /*MEDIA QUERIES*/
 /*LG DEVICES*/
 @media only screen and (max-width: 1199px) and (min-width: 992px){
+    body > div > div > div.jumbotron.img-fluid.banner > a:nth-child(1) > img{
+        display: block;
+    }
+    body > div > div > div.jumbotron.img-fluid.banner > a:nth-child(2) > img{
+    
+        display: none;
+    }
+    
     #summary{
         margin-bottom: 3em;
     }
 }
 /*MEDIUM DEVICES*/
 @media only screen and (max-width: 991px ) and (min-width: 768px) {
+    body > div > div > div.jumbotron.img-fluid.banner > a:nth-child(1) > img{
+        display: block;
+    }
+    body > div > div > div.jumbotron.img-fluid.banner > a:nth-child(2) > img{
+    
+        display: none;
+    }
     div#back{
         padding-left: 3em;
     }
@@ -194,14 +201,12 @@ footer p {
 }
 /*SMALL DEVICES*/
 @media only screen and (max-width: 767px) and (min-width: 576px) {
-
-    /* div.img-fluid.banner{
-        background:url('https://jennp1987.github.io/Creative-Cog-Design/images/uptalentMobileImg.jpg') fixed center no-repeat !important;
-        background-size: contain !important;
-        border-radius: 0 ;
-        background-color: #fff !important;
-    } */
-   
+    body > div > div > div.jumbotron.img-fluid.banner > a:nth-child(1) > img{
+        display: none;
+    }
+    body > div > div > div.jumbotron.img-fluid.banner > a:nth-child(2) > img{
+        display: block;
+    }
     div#back{
         padding-left: 1em;
     }
@@ -222,13 +227,12 @@ footer p {
 
 /*EX SMALL DEVICES*/
 @media only screen and (max-width: 575px) and (min-width: 360px){
-   
-    /* div.img-fluid.banner{
-        background:url('https://jennp1987.github.io/Creative-Cog-Design/images/uptalentMobileImg.jpg') center center no-repeat !important;
-        background-size: contain !important;
-        border-radius: 0 ;
-        background-color: #fff !important;
-    } */
+    body > div > div > div.jumbotron.img-fluid.banner > a:nth-child(1) > img{
+        display: none;
+    }
+    body > div > div > div.jumbotron.img-fluid.banner > a:nth-child(2) > img{
+        display: block;
+    }
     div#back{
         padding-left: 1em;
     }
