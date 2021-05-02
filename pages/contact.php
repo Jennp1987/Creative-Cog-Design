@@ -14,7 +14,7 @@
 		else{
 			$to = "jenniferp1987@yahoo.com";
 
-			if(main($to, $subject, $msg, $email)){
+			if(mail($to, $subject, $msg, $email)){
 				header("location:contactMe.php?success");
 			}
 		}

@@ -61,12 +61,12 @@
                         <?php
                             if(isset($_GET['error']))
                             {
-                              $Msg = " Please fill in the blanks";      
-                              echo '<div class="alert alert-danger">'.$Msg.'</div>';  
+                              $msg = " Please fill in the blanks.";      
+                              echo '<div class="alert alert-danger">'.$msg.'</div>';  
                             }
                             if(isset($_GET['success'])) {
-                                $Msg = " Your message was sent";      
-                                echo '<div class="alert alert-success">'.$Msg.'</div>';  
+                                $msg = " Your message was sent.";      
+                                echo '<div class="alert alert-success">'.$msg.'</div>';  
                             }
                         ?>
 						<form class="contactForm" action="contact.php" method="post">
