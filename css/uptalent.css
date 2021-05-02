@@ -96,9 +96,6 @@ p{
  div.defineProblem .col-sm-7{
     padding: 20px;
 }
-/* div.defineProblem ul{
-    margin-left: 2em;
-} */
 .defineProblem, div.outcome{
     background-color:#fff !important;
     color: #383838;
@@ -253,7 +250,6 @@ footer p {
         margin-bottom: 1em;
     }
     #userFlow div:nth-child(2) {
-        /* margin: 5em 0; */
         padding: 3em 15px;
     }
     div.userFlow{
